@@ -1,6 +1,6 @@
 # Pilot evidence pack — Damodaran FCFF, 2026-10-04
 
-Start with the [portfolio summary](../../../BENCHMARK_SUMMARY.md), then the [complete technical report](../../../analysis/pilot_report.md) or [benchmark-design research](../../../analysis/benchmark_design.md).
+Start with the [benchmark summary](../../../BENCHMARK_SUMMARY.md), then the [model comparison](../../../analysis/model_comparison.md), [complete technical report](../../../analysis/pilot_report.md), or [benchmark-design research](../../../analysis/benchmark_design.md).
 
 ## Contents and accounting
 

@@ -256,6 +256,12 @@ The seven regressions exercise real boundary behavior: private-file/symlink/netw
 
 **This is a working, reproducible one-workbook agent pilot with two fully correct tested submissions—not an all-pass campaign and not a leaderboard.** Gemini demonstrated a successful 9-execution submission before later service/quota failures. Mistral demonstrated both an execution-budget submission failure and a separate successful 10-execution submission. The evidence supports those concrete observations and no broader winner claim.
 
+### Did one model perform better?
+
+Gemini had the better initial native-pilot outcome: 100/100 in nine accepted executions versus Mistral's budget/submission failure at 0/100 after twelve. Both models nevertheless produced a fully credited standalone artifact in this campaign. Among those successful artifacts, Mistral's run took 125.015 seconds versus Gemini's 168.943 seconds, while Gemini needed one fewer execution (nine versus ten). Mistral completed the concurrent paired attempt; Gemini did not, because of service/quota failures rather than an observed numerical failure.
+
+These observations favor different systems on different measures, not one overall winner. Client settings/authentication differed, elapsed times include overhead and retries, and there were too few independent task/run observations for a reliability or model-only ranking. See the [full model comparison](model_comparison.md) for denominators, evidence, and the distinction between conditional score and operational completion.
+
 An excellent next campaign should freeze conditions in advance, independently review the oracle and meaningful defect coverage, create a fresh multi-task holdout, plan repetitions and uncertainty at the task/run level, and preserve complete failure/cost/provenance accounting. The [researched design assessment](benchmark_design.md) maps those recommendations to HELM, HumanEval, EvalPlus, SWE-bench Verified, and Inspect.
 
 ## 9. Publication and reproducibility boundaries

@@ -1,8 +1,8 @@
 {
-  "generated_at": "2026-10-04T22:07:10.943553+00:00",
+  "generated_at": "2026-10-04T22:22:20.420932+00:00",
   "scope": "SHA-256 integrity of curated payloads and current published sources, not immutable historical per-run build provenance",
   "payload_sha256": {
-    "README.md": "4afe86ddffc3880608b6e33b678f0fbe81f97be060d5bce6b5d46688cbfc7e39",
+    "README.md": "4d79c44d6ead2da9ea89dc555ca6e701dde9a787991014a2249cfe45a8c74f97",
     "attempts.csv": "29e447acd94aee9407e0d329a9913ff8fb8a5aa5a0bf47065aee991a99966593",
     "attempts.json": "a14bb813a36772c661275c9c2aba6cc01c36b5dbb41dac7c6debdef06c91738f",
     "comparison.json": "67869ee08c6a1ccbc8fccc88fcc4a6f1b79824090233170d8c8113ce8d452264",
@@ -24,12 +24,12 @@
   },
   "source_sha256": {
     ".gitignore": "edd205b4428496184d8360823a17db14c7aa2e42cbe390bc44fc01a98aa5b72b",
-    "README.md": "63b8c5c58013e5ff85ee4480286fd1d73fcfad4644d14d34137317d14e873572",
-    "BENCHMARK_SUMMARY.md": "c02eecd053a3948519f8384598ef3d3ca530bdda764c2a8fc748030acad8e6ac",
+    "README.md": "4c75fedd736a6b4394eef9c3927ed5148d9bb9f9cad9ab862d4d059641af23a6",
+    "BENCHMARK_SUMMARY.md": "4184ad8cfc1a5112b10d0cc6a51b4d094adf013dbfbf034438cb39137894d1f6",
     "requirements.txt": "0b9a1b66ccc5f7615151c82e2bf106dec0cdd2d369e9da193ca90a16c1c01ede",
-    "analysis/pilot_report.md": "d8e93c530ae0c49ab7e2966417a98bd4d52cf9e6b54fa7448acba823b44fdf18",
+    "analysis/pilot_report.md": "dbecfd2246ede5d2332433638487b640d7db317c7a94c35b814b942eae1db0ed",
     "analysis/benchmark_design.md": "577709911e244dc50a1fbb214481579d90472a29ccdb7a70920b324a42366d9f",
-    "analysis/failure_taxonomy.md": "118cb2902176d3c27219719b78574219d3afd808d558dd1bb71a211ca7d2c2ba",
+    "analysis/failure_taxonomy.md": "a2532749c0048921b0c67caa8bbd9ff5ffaca87a1527f3831a2117503aad795e",
     "evaluator/grader.py": "047e86e65f7f98944538919f1ec4a78f97a51d6588343e5792823ff860e5cc7e",
     "evaluator/hidden_cases.py": "2273791fae8595a1fd71d153ae90f5222ad9c74bb288970522259b59e76c4949",
     "evaluator/run_grader.py": "91020f12345b10b2ad6a1e98b5ef7c9f01c8f98b4086815a05c3aa34c69a4bb2",
@@ -55,6 +55,7 @@
     "harness/providers/gemini_cli.py": "b5a33f3f223e90062d254b707af34f10f2cf1d3f5bfe0462ea8265eecbf3d910",
     "tests/test_executor.py": "9f3327ac3eee522d16b9f8f3c0152d29aae8608c3f7d2e1f05d28e949b6bacc5",
     "tests/test_mcp_server.py": "0e5f4b6827cfb222c5e90ee5514459cc776e0b1fcdd2f95bd253f3e26f4c7581",
-    "tests/test_terminal.py": "f444b4c3dcf483f6616ce7152e53ee44df8cefd703ce82b7c1e2f05da6cd14db"
+    "tests/test_terminal.py": "f444b4c3dcf483f6616ce7152e53ee44df8cefd703ce82b7c1e2f05da6cd14db",
+    "analysis/model_comparison.md": "c3cd87e14ae207b12b9a130db5aa463d6f3a5e1b6879c408121caa79fd0bd5eb"
   }
 }

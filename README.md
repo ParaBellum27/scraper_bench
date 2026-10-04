@@ -2,14 +2,17 @@
 
 A benchmark for evaluating whether coding-capable language models can translate real financial-modeling logic into correct, executable, and robust Python programs.
 
-## Results and portfolio summary
+## Benchmark results
 
-- **[Portfolio summary for AfterQuery / Mercor](BENCHMARK_SUMMARY.md)** — concise findings, a worked example, tested-versus-planned controls, and a technical appendix.
+- [Benchmark summary](BENCHMARK_SUMMARY.md)
 - [Complete pilot report](analysis/pilot_report.md) — methodology, every recorded attempt, diagnostics, and conclusions.
+- [Model comparison](analysis/model_comparison.md) — where Gemini or Mistral did better in the observed runs, and why the evidence does not establish an overall winner.
 - [Research-backed benchmark assessment](analysis/benchmark_design.md) — design principles, evidence gaps, and proposed next steps.
 - [Reproducible evidence pack](results/damodaran_fcff2st/pilot-2026-10-04/README.md) — frozen submissions, per-case grades, CSV/JSON ledger, hashes, and offline commands.
 
 The recorded campaign contains **nine finance attempts: three graded submissions scoring 100, 0, and 100; six attempts without a graded submission**. This is one independent workbook task, not a model leaderboard. All three frozen submissions reproduced their historical grades; seven local regressions and the harness/test type check passed. See the evidence pack for actual outputs and limitations.
+
+**Observed comparison:** Gemini performed better in the initial native pilot (100 versus 0). Both models later had a 100/100 submission; Mistral's successful run had lower elapsed time, while Gemini's used one fewer Python execution. Mistral completed the concurrent paired attempt, while Gemini was interrupted by service/quota failures. These are different advantages under different conditions, not a controlled model ranking.
 
 ## Current scope
 
@@ -53,6 +56,7 @@ The benchmark tests more than whether a model can match one final valuation. A s
 │   └── damodaran_fcff2st/pilot-2026-10-04/
 └── analysis/
     ├── pilot_report.md
+    ├── model_comparison.md
     ├── benchmark_design.md
     └── failure_taxonomy.md
 ```

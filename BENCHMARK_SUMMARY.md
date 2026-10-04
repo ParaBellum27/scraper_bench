@@ -1,6 +1,6 @@
-# Coding-task design and evaluation: financial-model replication pilot
+# Financial coding benchmark summary
 
-**Portfolio evidence for AfterQuery / Mercor** · One independent task · AI-assisted project · Recorded model attempts: 2026-10-04
+**One independent task** · AI-assisted project · Recorded model attempts: 2026-10-04
 
 ## What this demonstrates
 
@@ -39,11 +39,15 @@ Client versions, authentication and generation settings differ; [exact settings 
 
 **Lesson:** Mistral's first attempt spent all 12 executions on inspection; its rejected thirteenth call left a workbook-dependent script that scored 0. A separate attempt succeeded. Gemini succeeded once, then hit service/quota failures. Successful tool calls do not guarantee a valid submission. OpenAI inputs were prepared, but no OpenAI result exists.
 
-## Contribution and next production step
+## Did one model perform better?
 
-**Suggested portfolio description:** “I led an AI-assisted financial-coding evaluation pilot, producing an auditable task contract, numerical-oracle checks, reproducible grading, and explicit failure accounting.”
+**Gemini did better in the initial native pilot:** its submission scored 100/100 in nine executions, while Mistral exhausted its 12-execution budget and left an inspection script scoring 0. **The successful submissions tied on correctness:** both scored 100/100 across the public case and all 13 held-out scenarios.
 
-Project direction and evaluation decisions are evidenced; implementation, execution, and documentation were AI-assisted. The portfolio does not establish sole manual authorship, a novel valuation method, or measured task-production throughput.
+Mistral's successful separate run took 125.015 seconds versus Gemini's 168.943 seconds; Gemini used nine accepted executions versus Mistral's ten. Mistral also completed the concurrent paired attempt, whereas Gemini was interrupted by service/quota failures and produced no graded submission. Elapsed time includes client/preflight overhead and provider retries; calls are not a cost measure.
+
+**No overall model winner is established.** There were only two Mistral and three Gemini native attempts, with different client settings, authentication and service conditions. A graded-only average of 100 for Gemini versus 50 for Mistral would omit Gemini's two ungraded attempts and compare unequal samples. See the [full comparison](analysis/model_comparison.md) for the evidence and limitations.
+
+## Next evaluation steps
 
 **Planned, not completed:** independent changed-input oracle review, more task families, realistic mutation/exploit checks, frozen repeated-run protocols, and cost/review-time measurement. Production gates and evidence gaps follow.
 

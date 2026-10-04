@@ -1,6 +1,6 @@
 # Failure Taxonomy
 
-For the complete nine-attempt history and offline-reproduced outcomes, see the [pilot report](pilot_report.md), [portfolio summary](../BENCHMARK_SUMMARY.md), and [sanitized evidence pack](../results/damodaran_fcff2st/pilot-2026-10-04/README.md). Local raw-archive paths below are provenance references, not published transcripts.
+For the complete nine-attempt history and offline-reproduced outcomes, see the [pilot report](pilot_report.md), [benchmark summary](../BENCHMARK_SUMMARY.md), [model comparison](model_comparison.md), and [sanitized evidence pack](../results/damodaran_fcff2st/pilot-2026-10-04/README.md). Local raw-archive paths below are provenance references, not published transcripts.
 
 This document will track recurring model failure modes observed across benchmark runs.
 
