@@ -1,1 +1,30 @@
-{}
+{
+  "fundamental_growth_rate": 0.10563432558830081,
+  "high_growth_rate": 0.10563432558830081,
+  "cost_of_equity": 0.097,
+  "equity_weight": 0.9855985496111194,
+  "after_tax_cost_of_debt": 0.0393305,
+  "debt_weight": 0.014401450388880632,
+  "wacc": 0.09616947555679844,
+  "working_capital_pct_revenues": 0.22483683611759775,
+  "yearly": [
+    {"year": 1, "ebit_after_tax": 4100.254404899414, "capex_minus_depreciation": 1021.6061168435897, "change_working_capital": 396.6568925840694, "fcff": 2681.991395471755, "present_value": 2446.6941064103607},
+    {"year": 2, "ebit_after_tax": 4533.382013701424, "capex_minus_depreciation": 1129.5227900132452, "change_working_capital": 438.557475922139, "fcff": 2965.3017477660396, "present_value": 2467.8200301899583},
+    {"year": 3, "ebit_after_tax": 5012.262765352906, "capex_minus_depreciation": 1248.8391681729104, "change_working_capital": 484.8841991228813, "fcff": 3278.5393980571143, "present_value": 2489.128365270736},
+    {"year": 4, "ebit_after_tax": 5541.729762242312, "capex_minus_depreciation": 1380.7594514711104, "change_working_capital": 536.1046144856509, "fcff": 3624.8656962855503, "present_value": 2510.620686678864},
+    {"year": 5, "ebit_after_tax": 6127.126648269393, "capex_minus_depreciation": 1526.6150449269337, "change_working_capital": 592.735663881618, "fcff": 4007.775939460841, "present_value": 2532.298583040038}
+  ],
+  "terminal_ebit_after_tax": 6494.754247165559,
+  "terminal_capex_minus_depreciation": 2875.140792822998,
+  "terminal_change_working_capital": 372.2363307597814,
+  "terminal_fcff": 3247.3771235827794,
+  "terminal_value": 89782.25626974565,
+  "pv_high_growth_fcff": 12446.561771589957,
+  "pv_terminal_value": 56728.59056202633,
+  "firm_value": 69175.15233361628,
+  "cash_and_marketable_securities": 500.0,
+  "market_value_debt": 1822.0,
+  "market_value_equity": 67853.15233361628,
+  "equity_options_value": 1500.0,
+  "value_per_share": 66.78256422156092
+}
