@@ -1,0 +1,16 @@
+{
+  "task_id": "damodaran_fcff2st",
+  "title": "Damodaran Two-Stage FCFF Valuation",
+  "domain": "finance",
+  "task_type": "code_generation",
+  "language": "python",
+  "source_artifact": "fcff2st.xls",
+  "status": "scaffolded",
+  "scoring": {
+    "execution": true,
+    "base_case": true,
+    "intermediate_outputs": true,
+    "hidden_scenarios": true,
+    "anti_hardcoding": true
+  }
+}
