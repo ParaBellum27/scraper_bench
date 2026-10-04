@@ -1,0 +1,299 @@
+{
+  "verified_at": "2026-10-04T21:37:03.896085+00:00",
+  "method": "Compare original workbook cached values with independent Python reference and stored expected outputs; no Excel recalculation",
+  "workbook_sha256": "0f329a49478cfa8072286b26edd2d365c1016a77de31e82d06365caca0fb3789",
+  "sheet": "NewFCFF2Stage",
+  "reference_output_fields": 28,
+  "numeric_comparisons": 36,
+  "max_absolute_difference": 2.1827872842550278e-11,
+  "comparisons": [
+    {
+      "field": "cost_of_equity",
+      "workbook_cell_or_expression": "D106",
+      "cached_workbook_value": 0.097,
+      "reference_value": 0.097,
+      "stored_expected_value": 0.097,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "equity_weight",
+      "workbook_cell_or_expression": "D107",
+      "cached_workbook_value": 0.9855985496111194,
+      "reference_value": 0.9855985496111194,
+      "stored_expected_value": 0.9855985496111194,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "after_tax_cost_of_debt",
+      "workbook_cell_or_expression": "D108",
+      "cached_workbook_value": 0.039330500000000004,
+      "reference_value": 0.039330500000000004,
+      "stored_expected_value": 0.039330500000000004,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "debt_weight",
+      "workbook_cell_or_expression": "D109",
+      "cached_workbook_value": 0.014401450388880632,
+      "reference_value": 0.014401450388880632,
+      "stored_expected_value": 0.014401450388880632,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "wacc",
+      "workbook_cell_or_expression": "D110",
+      "cached_workbook_value": 0.09616947555679844,
+      "reference_value": 0.09616947555679844,
+      "stored_expected_value": 0.09616947555679844,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "current_after_tax_ebit",
+      "workbook_cell_or_expression": "E113",
+      "cached_workbook_value": 3708.5086000000006,
+      "reference_value": 3708.5086000000006,
+      "stored_expected_value": 3708.5086000000006,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "current_fcff",
+      "workbook_cell_or_expression": "E116",
+      "cached_workbook_value": 2285.5086000000006,
+      "reference_value": 2285.5086000000006,
+      "stored_expected_value": 2285.5086000000006,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "historical_growth_rate",
+      "workbook_cell_or_expression": "D120",
+      "cached_workbook_value": 0.453277350548531,
+      "reference_value": 0.4532773505485308,
+      "stored_expected_value": 0.4532773505485308,
+      "absolute_difference": 2.220446049250313e-16
+    },
+    {
+      "field": "fundamental_roc",
+      "workbook_cell_or_expression": "C67",
+      "cached_workbook_value": 0.27529571672481634,
+      "reference_value": 0.27529571672481634,
+      "stored_expected_value": 0.27529571672481634,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "fundamental_reinvestment_rate",
+      "workbook_cell_or_expression": "C68",
+      "cached_workbook_value": 0.3837122017190414,
+      "reference_value": 0.3837122017190414,
+      "stored_expected_value": 0.3837122017190414,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "fundamental_growth_rate",
+      "workbook_cell_or_expression": "D122",
+      "cached_workbook_value": 0.10563432558830081,
+      "reference_value": 0.10563432558830081,
+      "stored_expected_value": 0.10563432558830081,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "weighted_growth_rate",
+      "workbook_cell_or_expression": "D123",
+      "cached_workbook_value": 0.10563432558830081,
+      "reference_value": 0.10563432558830081,
+      "stored_expected_value": 0.10563432558830081,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "working_capital_pct_revenue",
+      "workbook_cell_or_expression": "E131",
+      "cached_workbook_value": 0.22483683611759775,
+      "reference_value": 0.22483683611759775,
+      "stored_expected_value": 0.22483683611759775,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "stable_growth_rate",
+      "workbook_cell_or_expression": "E140",
+      "cached_workbook_value": 0.06,
+      "reference_value": 0.06,
+      "stored_expected_value": 0.06,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "terminal_after_tax_ebit",
+      "workbook_cell_or_expression": "N134",
+      "cached_workbook_value": 6494.754247165559,
+      "reference_value": 6494.754247165557,
+      "stored_expected_value": 6494.754247165557,
+      "absolute_difference": 1.8189894035458565e-12
+    },
+    {
+      "field": "terminal_change_working_capital",
+      "workbook_cell_or_expression": "N136",
+      "cached_workbook_value": 372.2363307597814,
+      "reference_value": 372.2363307597814,
+      "stored_expected_value": 372.2363307597814,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "terminal_net_capex",
+      "workbook_cell_or_expression": "N135",
+      "cached_workbook_value": 2875.140792822998,
+      "reference_value": 2875.140792822997,
+      "stored_expected_value": 2875.140792822997,
+      "absolute_difference": 9.094947017729282e-13
+    },
+    {
+      "field": "terminal_fcff",
+      "workbook_cell_or_expression": "N137",
+      "cached_workbook_value": 3247.3771235827794,
+      "reference_value": 3247.3771235827785,
+      "stored_expected_value": 3247.3771235827785,
+      "absolute_difference": 9.094947017729282e-13
+    },
+    {
+      "field": "stable_wacc",
+      "workbook_cell_or_expression": "E146",
+      "cached_workbook_value": 0.09616947555679844,
+      "reference_value": 0.09616947555679844,
+      "stored_expected_value": 0.09616947555679844,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "terminal_value",
+      "workbook_cell_or_expression": "E147",
+      "cached_workbook_value": 89782.25626974565,
+      "reference_value": 89782.25626974563,
+      "stored_expected_value": 89782.25626974563,
+      "absolute_difference": 1.4551915228366852e-11
+    },
+    {
+      "field": "pv_high_growth_fcff",
+      "workbook_cell_or_expression": "F149",
+      "cached_workbook_value": 12446.561771589957,
+      "reference_value": 12446.561771589957,
+      "stored_expected_value": 12446.561771589957,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "pv_terminal_value",
+      "workbook_cell_or_expression": "F150",
+      "cached_workbook_value": 56728.59056202633,
+      "reference_value": 56728.59056202631,
+      "stored_expected_value": 56728.59056202631,
+      "absolute_difference": 2.1827872842550278e-11
+    },
+    {
+      "field": "firm_value",
+      "workbook_cell_or_expression": "F151",
+      "cached_workbook_value": 69175.15233361628,
+      "reference_value": 69175.15233361626,
+      "stored_expected_value": 69175.15233361626,
+      "absolute_difference": 1.4551915228366852e-11
+    },
+    {
+      "field": "market_value_equity",
+      "workbook_cell_or_expression": "F154",
+      "cached_workbook_value": 67853.15233361628,
+      "reference_value": 67853.15233361626,
+      "stored_expected_value": 67853.15233361626,
+      "absolute_difference": 1.4551915228366852e-11
+    },
+    {
+      "field": "equity_value_per_share",
+      "workbook_cell_or_expression": "F156",
+      "cached_workbook_value": 66.78256422156092,
+      "reference_value": 66.7825642215609,
+      "stored_expected_value": 66.7825642215609,
+      "absolute_difference": 1.4210854715202004e-14
+    },
+    {
+      "field": "stable_reinvestment_rate",
+      "workbook_cell_or_expression": "E140/F101 (derived from cached inputs)",
+      "cached_workbook_value": 0.5,
+      "reference_value": 0.5,
+      "stored_expected_value": 0.5,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "high_growth_fcff[0]",
+      "workbook_cell_or_expression": "D137",
+      "cached_workbook_value": 2681.991395471755,
+      "reference_value": 2681.991395471755,
+      "stored_expected_value": 2681.991395471755,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "high_growth_fcff[1]",
+      "workbook_cell_or_expression": "E137",
+      "cached_workbook_value": 2965.3017477660396,
+      "reference_value": 2965.3017477660396,
+      "stored_expected_value": 2965.3017477660396,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "high_growth_fcff[2]",
+      "workbook_cell_or_expression": "F137",
+      "cached_workbook_value": 3278.5393980571143,
+      "reference_value": 3278.539398057115,
+      "stored_expected_value": 3278.539398057115,
+      "absolute_difference": 4.547473508864641e-13
+    },
+    {
+      "field": "high_growth_fcff[3]",
+      "workbook_cell_or_expression": "G137",
+      "cached_workbook_value": 3624.8656962855503,
+      "reference_value": 3624.865696285551,
+      "stored_expected_value": 3624.865696285551,
+      "absolute_difference": 9.094947017729282e-13
+    },
+    {
+      "field": "high_growth_fcff[4]",
+      "workbook_cell_or_expression": "H137",
+      "cached_workbook_value": 4007.775939460841,
+      "reference_value": 4007.775939460841,
+      "stored_expected_value": 4007.775939460841,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "high_growth_pv[0]",
+      "workbook_cell_or_expression": "D138",
+      "cached_workbook_value": 2446.6941064103607,
+      "reference_value": 2446.6941064103607,
+      "stored_expected_value": 2446.6941064103607,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "high_growth_pv[1]",
+      "workbook_cell_or_expression": "E138",
+      "cached_workbook_value": 2467.8200301899583,
+      "reference_value": 2467.8200301899583,
+      "stored_expected_value": 2467.8200301899583,
+      "absolute_difference": 0.0
+    },
+    {
+      "field": "high_growth_pv[2]",
+      "workbook_cell_or_expression": "F138",
+      "cached_workbook_value": 2489.128365270736,
+      "reference_value": 2489.1283652707366,
+      "stored_expected_value": 2489.1283652707366,
+      "absolute_difference": 4.547473508864641e-13
+    },
+    {
+      "field": "high_growth_pv[3]",
+      "workbook_cell_or_expression": "G138",
+      "cached_workbook_value": 2510.620686678864,
+      "reference_value": 2510.6206866788643,
+      "stored_expected_value": 2510.6206866788643,
+      "absolute_difference": 4.547473508864641e-13
+    },
+    {
+      "field": "high_growth_pv[4]",
+      "workbook_cell_or_expression": "H138",
+      "cached_workbook_value": 2532.298583040038,
+      "reference_value": 2532.2985830400376,
+      "stored_expected_value": 2532.2985830400376,
+      "absolute_difference": 4.547473508864641e-13
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+  "verified_at": "2026-10-04T21:54:29.405644+00:00",
+  "submission": "submissions/gemini-cli-pilot-01.py",
+  "submission_sha256": "77bbd60ae191b8e49d27990bb1f3190917d729b93291c0188c43d91d45771f91",
+  "method": "Unchanged published candidate executed in fresh workbook-free sandbox for each input; compared against reference with production grader",
+  "cases": [
+    {
+      "name": "base_case",
+      "inputs": {
+        "current_ebit": 5186.0,
+        "current_interest_expense": 118.0,
+        "current_capex": 2152.0,
+        "current_depreciation": 1228.0,
+        "tax_rate": 0.2849,
+        "current_revenues": 16701.0,
+        "current_noncash_working_capital": 3755.0,
+        "change_working_capital": 499.0,
+        "cash_and_marketable_securities": 500.0,
+        "equity_options_value": 1500.0,
+        "book_value_debt": 1479.0,
+        "prior_book_value_debt": 1315.0,
+        "book_value_equity": 12941.0,
+        "prior_book_value_equity": 12156.0,
+        "market_price_per_share": 125.5,
+        "shares_outstanding": 993.57,
+        "market_value_debt": 1822.0,
+        "high_growth_years": 5,
+        "beta": 0.8,
+        "riskfree_rate": 0.053,
+        "risk_premium": 0.055,
+        "pre_tax_cost_of_debt": 0.055,
+        "ebit_five_years_ago": 800.0,
+        "outside_growth_rate": 0.125,
+        "growth_weights": {
+          "historical": 0.0,
+          "outside": 0.0,
+          "fundamental": 1.0
+        },
+        "stable_growth_rate": 0.06,
+        "stable_return_on_capital": 0.12
+      },
+      "actual_candidate_output": {
+        "cost_of_equity": 0.097,
+        "equity_weight": 0.9855985496111194,
+        "after_tax_cost_of_debt": 0.039330500000000004,
+        "debt_weight": 0.014401450388880632,
+        "wacc": 0.09616947555679844,
+        "current_fcff": 2285.5086000000006,
+        "historical_growth_rate": 0.4532773505485308,
+        "fundamental_roc": 0.27529571672481634,
+        "fundamental_reinvestment_rate": 0.3837122017190414,
+        "fundamental_growth_rate": 0.10563432558830081,
+        "weighted_growth_rate": 0.10563432558830081,
+        "working_capital_pct_revenue": 0.22483683611759775,
+        "high_growth_fcff": [
+          2681.991395471755,
+          2965.3017477660396,
+          3278.539398057115,
+          3624.865696285551,
+          4007.775939460841
+        ],
+        "high_growth_pv": [
+          2446.6941064103607,
+          2467.8200301899583,
+          2489.1283652707366,
+          2510.6206866788643,
+          2532.2985830400376
+        ],
+        "stable_reinvestment_rate": 0.5,
+        "terminal_fcff": 3247.3771235827785,
+        "stable_wacc": 0.09616947555679844,
+        "terminal_value": 89782.25626974563,
+        "pv_high_growth_fcff": 12446.561771589957,
+        "pv_terminal_value": 56728.59056202631,
+        "firm_value": 69175.15233361626,
+        "market_value_equity": 67853.15233361626,
+        "equity_value_per_share": 66.7825642215609
+      },
+      "grade": {
+        "name": "base_case",
+        "score": 100.0,
+        "group_scores": {
+          "discount_rate": 1.0,
+          "growth_reinvestment": 1.0,
+          "high_growth_fcff": 1.0,
+          "terminal_value": 1.0,
+          "valuation_bridge": 1.0
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      }
+    },
+    {
+      "name": "short_high_growth_horizon",
+      "inputs": {
+        "current_ebit": 5186.0,
+        "current_interest_expense": 118.0,
+        "current_capex": 2152.0,
+        "current_depreciation": 1228.0,
+        "tax_rate": 0.2849,
+        "current_revenues": 16701.0,
+        "current_noncash_working_capital": 3755.0,
+        "change_working_capital": 499.0,
+        "cash_and_marketable_securities": 500.0,
+        "equity_options_value": 1500.0,
+        "book_value_debt": 1479.0,
+        "prior_book_value_debt": 1315.0,
+        "book_value_equity": 12941.0,
+        "prior_book_value_equity": 12156.0,
+        "market_price_per_share": 125.5,
+        "shares_outstanding": 993.57,
+        "market_value_debt": 1822.0,
+        "high_growth_years": 3,
+        "beta": 0.8,
+        "riskfree_rate": 0.053,
+        "risk_premium": 0.055,
+        "pre_tax_cost_of_debt": 0.055,
+        "ebit_five_years_ago": 800.0,
+        "outside_growth_rate": 0.125,
+        "growth_weights": {
+          "historical": 0.0,
+          "outside": 0.0,
+          "fundamental": 1.0
+        },
+        "stable_growth_rate": 0.04,
+        "stable_return_on_capital": 0.1
+      },
+      "actual_candidate_output": {
+        "cost_of_equity": 0.097,
+        "equity_weight": 0.9855985496111194,
+        "after_tax_cost_of_debt": 0.039330500000000004,
+        "debt_weight": 0.014401450388880632,
+        "wacc": 0.09616947555679844,
+        "current_fcff": 2285.5086000000006,
+        "historical_growth_rate": 0.4532773505485308,
+        "fundamental_roc": 0.27529571672481634,
+        "fundamental_reinvestment_rate": 0.3837122017190414,
+        "fundamental_growth_rate": 0.10563432558830081,
+        "weighted_growth_rate": 0.10563432558830081,
+        "working_capital_pct_revenue": 0.22483683611759775,
+        "high_growth_fcff": [
+          2681.991395471755,
+          2965.3017477660396,
+          3278.539398057115
+        ],
+        "high_growth_pv": [
+          2446.6941064103607,
+          2467.8200301899583,
+          2489.1283652707366
+        ],
+        "stable_reinvestment_rate": 0.39999999999999997,
+        "terminal_fcff": 3127.6519655802135,
+        "stable_wacc": 0.09616947555679844,
+        "terminal_value": 55682.413527566925,
+        "pv_high_growth_fcff": 7403.642501871056,
+        "pv_terminal_value": 42275.128686981014,
+        "firm_value": 49678.77118885207,
+        "market_value_equity": 48356.77118885207,
+        "equity_value_per_share": 47.16001005349605
+      },
+      "grade": {
+        "name": "short_high_growth_horizon",
+        "score": 100.0,
+        "group_scores": {
+          "discount_rate": 1.0,
+          "growth_reinvestment": 1.0,
+          "high_growth_fcff": 1.0,
+          "terminal_value": 1.0,
+          "valuation_bridge": 1.0
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      }
+    }
+  ]
+}

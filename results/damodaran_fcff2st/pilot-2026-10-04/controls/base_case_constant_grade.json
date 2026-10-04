@@ -1,0 +1,1026 @@
+{
+  "base_case": {
+    "execution_error": null,
+    "group_scores": {
+      "discount_rate": 1.0,
+      "growth_reinvestment": 1.0,
+      "high_growth_fcff": 1.0,
+      "terminal_value": 1.0,
+      "valuation_bridge": 1.0
+    },
+    "mismatches": {},
+    "missing_fields": [],
+    "name": "base_case",
+    "score": 100.0
+  },
+  "base_case_score": 100.0,
+  "hidden_average_score": 30.53846153846154,
+  "hidden_cases": [
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 0.4,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 0.6666666666666666,
+        "terminal_value": 0.0,
+        "valuation_bridge": 0.0
+      },
+      "mismatches": {
+        "after_tax_cost_of_debt": {
+          "actual": 0.039330500000000004,
+          "expected": 0.04648150000000001
+        },
+        "cost_of_equity": {
+          "actual": 0.097,
+          "expected": 0.111
+        },
+        "equity_value_per_share": {
+          "actual": 66.7825642215609,
+          "expected": 45.421481646479734
+        },
+        "firm_value": {
+          "actual": 69175.15233361626,
+          "expected": 47951.42151949287
+        },
+        "high_growth_pv": {
+          "bad_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "market_value_equity": {
+          "actual": 67853.15233361626,
+          "expected": 46629.42151949287
+        },
+        "pv_high_growth_fcff": {
+          "actual": 12446.561771589957,
+          "expected": 11984.09636238436
+        },
+        "pv_terminal_value": {
+          "actual": 56728.59056202631,
+          "expected": 35967.325157108506
+        },
+        "stable_reinvestment_rate": {
+          "actual": 0.5,
+          "expected": 0.33333333333333337
+        },
+        "stable_wacc": {
+          "actual": 0.09616947555679844,
+          "expected": 0.110070840023085
+        },
+        "terminal_fcff": {
+          "actual": 3247.3771235827785,
+          "expected": 4248.141142800112
+        },
+        "terminal_value": {
+          "actual": 89782.25626974563,
+          "expected": 60626.376698217864
+        },
+        "wacc": {
+          "actual": 0.09616947555679844,
+          "expected": 0.110070840023085
+        }
+      },
+      "missing_fields": [],
+      "name": "discount_rate_shift",
+      "score": 37.666666666666664
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 0.3333333333333333,
+        "terminal_value": 0.25,
+        "valuation_bridge": 0.0
+      },
+      "mismatches": {
+        "equity_value_per_share": {
+          "actual": 66.7825642215609,
+          "expected": 47.16001005349605
+        },
+        "firm_value": {
+          "actual": 69175.15233361626,
+          "expected": 49678.77118885207
+        },
+        "high_growth_fcff": {
+          "actual_length": 5,
+          "expected_length": 3
+        },
+        "high_growth_pv": {
+          "actual_length": 5,
+          "expected_length": 3
+        },
+        "market_value_equity": {
+          "actual": 67853.15233361626,
+          "expected": 48356.77118885207
+        },
+        "pv_high_growth_fcff": {
+          "actual": 12446.561771589957,
+          "expected": 7403.642501871056
+        },
+        "pv_terminal_value": {
+          "actual": 56728.59056202631,
+          "expected": 42275.128686981014
+        },
+        "stable_reinvestment_rate": {
+          "actual": 0.5,
+          "expected": 0.39999999999999997
+        },
+        "terminal_fcff": {
+          "actual": 3247.3771235827785,
+          "expected": 3127.651965580213
+        },
+        "terminal_value": {
+          "actual": 89782.25626974563,
+          "expected": 55682.41352756692
+        }
+      },
+      "missing_fields": [],
+      "name": "short_high_growth_horizon",
+      "score": 43.33333333333333
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 0.3333333333333333,
+        "terminal_value": 0.25,
+        "valuation_bridge": 0.0
+      },
+      "mismatches": {
+        "equity_value_per_share": {
+          "actual": 66.7825642215609,
+          "expected": 65.71570608396584
+        },
+        "firm_value": {
+          "actual": 69175.15233361626,
+          "expected": 68115.15409384595
+        },
+        "high_growth_fcff": {
+          "actual_length": 5,
+          "expected_length": 8
+        },
+        "high_growth_pv": {
+          "actual_length": 5,
+          "expected_length": 8
+        },
+        "market_value_equity": {
+          "actual": 67853.15233361626,
+          "expected": 66793.15409384595
+        },
+        "pv_high_growth_fcff": {
+          "actual": 12446.561771589957,
+          "expected": 20175.4047666791
+        },
+        "pv_terminal_value": {
+          "actual": 56728.59056202631,
+          "expected": 47939.74932716685
+        },
+        "stable_reinvestment_rate": {
+          "actual": 0.5,
+          "expected": 0.40909090909090906
+        },
+        "terminal_fcff": {
+          "actual": 3247.3771235827785,
+          "expected": 5113.618910818617
+        },
+        "terminal_value": {
+          "actual": 89782.25626974563,
+          "expected": 99934.94862268947
+        }
+      },
+      "missing_fields": [],
+      "name": "long_high_growth_horizon",
+      "score": 43.33333333333333
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 0.6666666666666666,
+        "high_growth_fcff": 0.3333333333333333,
+        "terminal_value": 0.25,
+        "valuation_bridge": 0.0
+      },
+      "mismatches": {
+        "equity_value_per_share": {
+          "actual": 66.7825642215609,
+          "expected": 57.088886853632204
+        },
+        "firm_value": {
+          "actual": 69175.15233361626,
+          "expected": 59543.80531116335
+        },
+        "high_growth_fcff": {
+          "bad_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "high_growth_pv": {
+          "bad_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "historical_growth_rate": {
+          "actual": 0.4532773505485308,
+          "expected": 0.11568668874379218
+        },
+        "market_value_equity": {
+          "actual": 67853.15233361626,
+          "expected": 58221.80531116335
+        },
+        "pv_high_growth_fcff": {
+          "actual": 12446.561771589957,
+          "expected": 12392.804643887284
+        },
+        "pv_terminal_value": {
+          "actual": 56728.59056202631,
+          "expected": 47151.000667276065
+        },
+        "stable_reinvestment_rate": {
+          "actual": 0.5,
+          "expected": 0.33333333333333337
+        },
+        "terminal_fcff": {
+          "actual": 3247.3771235827785,
+          "expected": 4191.599739581855
+        },
+        "terminal_value": {
+          "actual": 89782.25626974563,
+          "expected": 74624.15659094625
+        },
+        "weighted_growth_rate": {
+          "actual": 0.10563432558830081,
+          "expected": 0.10267540242126838
+        }
+      },
+      "missing_fields": [],
+      "name": "mixed_growth_sources",
+      "score": 38.33333333333333
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 0.0,
+        "high_growth_fcff": 0.0,
+        "terminal_value": 0.25,
+        "valuation_bridge": 0.0
+      },
+      "mismatches": {
+        "current_fcff": {
+          "actual": 2285.5086000000006,
+          "expected": 2604.5600000000004
+        },
+        "equity_value_per_share": {
+          "actual": 66.7825642215609,
+          "expected": 55.90851397293443
+        },
+        "firm_value": {
+          "actual": 69175.15233361626,
+          "expected": 58371.02222808846
+        },
+        "fundamental_growth_rate": {
+          "actual": 0.10563432558830081,
+          "expected": 0.07777777777777778
+        },
+        "fundamental_reinvestment_rate": {
+          "actual": 0.3837122017190414,
+          "expected": 0.34960145434205003
+        },
+        "fundamental_roc": {
+          "actual": 0.27529571672481634,
+          "expected": 0.22247555555555557
+        },
+        "high_growth_fcff": {
+          "bad_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "high_growth_pv": {
+          "bad_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "historical_growth_rate": {
+          "actual": 0.4532773505485308,
+          "expected": 0.4757731615945522
+        },
+        "market_value_equity": {
+          "actual": 67853.15233361626,
+          "expected": 57049.02222808846
+        },
+        "pv_high_growth_fcff": {
+          "actual": 12446.561771589957,
+          "expected": 12950.291302186346
+        },
+        "pv_terminal_value": {
+          "actual": 56728.59056202631,
+          "expected": 45420.73092590211
+        },
+        "stable_reinvestment_rate": {
+          "actual": 0.5,
+          "expected": 0.33333333333333337
+        },
+        "terminal_fcff": {
+          "actual": 3247.3771235827785,
+          "expected": 4037.78331798504
+        },
+        "terminal_value": {
+          "actual": 89782.25626974563,
+          "expected": 71885.72223541669
+        },
+        "weighted_growth_rate": {
+          "actual": 0.10563432558830081,
+          "expected": 0.07777777777777778
+        },
+        "working_capital_pct_revenue": {
+          "actual": 0.22483683611759775,
+          "expected": 0.1388888888888889
+        }
+      },
+      "missing_fields": [],
+      "name": "reinvestment_and_working_capital",
+      "score": 20.0
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 0.0,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 0.6666666666666666,
+        "terminal_value": 0.0,
+        "valuation_bridge": 0.0
+      },
+      "mismatches": {
+        "after_tax_cost_of_debt": {
+          "actual": 0.039330500000000004,
+          "expected": 0.05005700000000001
+        },
+        "cost_of_equity": {
+          "actual": 0.097,
+          "expected": 0.108
+        },
+        "debt_weight": {
+          "actual": 0.014401450388880632,
+          "expected": 0.16666666666666663
+        },
+        "equity_value_per_share": {
+          "actual": 66.7825642215609,
+          "expected": 56.15744479685951
+        },
+        "equity_weight": {
+          "actual": 0.9855985496111194,
+          "expected": 0.8333333333333334
+        },
+        "firm_value": {
+          "actual": 69175.15233361626,
+          "expected": 57925.95583748761
+        },
+        "high_growth_pv": {
+          "bad_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "market_value_equity": {
+          "actual": 67853.15233361626,
+          "expected": 46425.95583748761
+        },
+        "pv_high_growth_fcff": {
+          "actual": 12446.561771589957,
+          "expected": 12372.448733170213
+        },
+        "pv_terminal_value": {
+          "actual": 56728.59056202631,
+          "expected": 45553.507104317396
+        },
+        "stable_reinvestment_rate": {
+          "actual": 0.5,
+          "expected": 0.33333333333333337
+        },
+        "stable_wacc": {
+          "actual": 0.09616947555679844,
+          "expected": 0.09834283333333332
+        },
+        "terminal_fcff": {
+          "actual": 3247.3771235827785,
+          "expected": 4248.141142800112
+        },
+        "terminal_value": {
+          "actual": 89782.25626974563,
+          "expected": 72813.41854840977
+        },
+        "wacc": {
+          "actual": 0.09616947555679844,
+          "expected": 0.09834283333333332
+        }
+      },
+      "missing_fields": [],
+      "name": "capital_structure_shift",
+      "score": 31.666666666666664
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 0.4,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 0.6666666666666666,
+        "terminal_value": 0.0,
+        "valuation_bridge": 0.0
+      },
+      "mismatches": {
+        "debt_weight": {
+          "actual": 0.014401450388880632,
+          "expected": 0.03831417624521072
+        },
+        "equity_value_per_share": {
+          "actual": 66.7825642215609,
+          "expected": 47.74422079780274
+        },
+        "equity_weight": {
+          "actual": 0.9855985496111194,
+          "expected": 0.9616858237547893
+        },
+        "firm_value": {
+          "actual": 69175.15233361626,
+          "expected": 61793.06495736328
+        },
+        "high_growth_pv": {
+          "bad_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "market_value_equity": {
+          "actual": 67853.15233361626,
+          "expected": 59793.06495736328
+        },
+        "pv_high_growth_fcff": {
+          "actual": 12446.561771589957,
+          "expected": 12493.945591955988
+        },
+        "pv_terminal_value": {
+          "actual": 56728.59056202631,
+          "expected": 49299.11936540729
+        },
+        "stable_reinvestment_rate": {
+          "actual": 0.5,
+          "expected": 0.33333333333333337
+        },
+        "stable_wacc": {
+          "actual": 0.09616947555679844,
+          "expected": 0.09479044061302681
+        },
+        "terminal_fcff": {
+          "actual": 3247.3771235827785,
+          "expected": 4248.141142800112
+        },
+        "terminal_value": {
+          "actual": 89782.25626974563,
+          "expected": 77534.34897163587
+        },
+        "wacc": {
+          "actual": 0.09616947555679844,
+          "expected": 0.09479044061302681
+        }
+      },
+      "missing_fields": [],
+      "name": "equity_bridge_shift",
+      "score": 37.666666666666664
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 1.0,
+        "terminal_value": 1.0,
+        "valuation_bridge": 1.0
+      },
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "interest_expense_invariance",
+      "score": 100.0
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 0.0,
+        "terminal_value": 0.5,
+        "valuation_bridge": 0.2
+      },
+      "mismatches": {
+        "current_fcff": {
+          "actual": 2285.5086000000006,
+          "expected": 4571.017200000001
+        },
+        "firm_value": {
+          "actual": 69175.15233361626,
+          "expected": 138350.30466723253
+        },
+        "high_growth_fcff": {
+          "bad_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "high_growth_pv": {
+          "bad_indices": [
+            0,
+            1,
+            2,
+            3,
+            4
+          ]
+        },
+        "market_value_equity": {
+          "actual": 67853.15233361626,
+          "expected": 135706.30466723253
+        },
+        "pv_high_growth_fcff": {
+          "actual": 12446.561771589957,
+          "expected": 24893.123543179914
+        },
+        "pv_terminal_value": {
+          "actual": 56728.59056202631,
+          "expected": 113457.18112405261
+        },
+        "terminal_fcff": {
+          "actual": 3247.3771235827785,
+          "expected": 6494.754247165557
+        },
+        "terminal_value": {
+          "actual": 89782.25626974563,
+          "expected": 179564.51253949126
+        }
+      },
+      "missing_fields": [],
+      "name": "scale_invariance_x2",
+      "score": 45.0
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 0.0,
+        "growth_reinvestment": 0.0,
+        "high_growth_fcff": 0.0,
+        "terminal_value": 0.0,
+        "valuation_bridge": 0.0
+      },
+      "mismatches": {
+        "after_tax_cost_of_debt": {
+          "actual": 0.039330500000000004,
+          "expected": 0.03856578026983257
+        },
+        "cost_of_equity": {
+          "actual": 0.097,
+          "expected": 0.11577040881091105
+        },
+        "current_fcff": {
+          "actual": 2285.5086000000006,
+          "expected": 153.28266243195236
+        },
+        "debt_weight": {
+          "actual": 0.014401450388880632,
+          "expected": 0.07065661399847412
+        },
+        "equity_value_per_share": {
+          "actual": 66.7825642215609,
+          "expected": 16.671159879285938
+        },
+        "equity_weight": {
+          "actual": 0.9855985496111194,
+          "expected": 0.9293433860015259
+        },
+        "firm_value": {
+          "actual": 69175.15233361626,
+          "expected": 18455.19766117166
+        },
+        "fundamental_growth_rate": {
+          "actual": 0.10563432558830081,
+          "expected": 0.10614408719778767
+        },
+        "fundamental_reinvestment_rate": {
+          "actual": 0.3837122017190414,
+          "expected": 0.9410721420009832
+        },
+        "fundamental_roc": {
+          "actual": 0.27529571672481634,
+          "expected": 0.11279059538633839
+        },
+        "high_growth_fcff": {
+          "actual_length": 5,
+          "expected_length": 8
+        },
+        "high_growth_pv": {
+          "actual_length": 5,
+          "expected_length": 8
+        },
+        "historical_growth_rate": {
+          "actual": 0.4532773505485308,
+          "expected": 0.022551509142151094
+        },
+        "market_value_equity": {
+          "actual": 67853.15233361626,
+          "expected": 12972.372563949299
+        },
+        "pv_high_growth_fcff": {
+          "actual": 12446.561771589957,
+          "expected": 3110.8720145371526
+        },
+        "pv_terminal_value": {
+          "actual": 56728.59056202631,
+          "expected": 15344.325646634508
+        },
+        "stable_reinvestment_rate": {
+          "actual": 0.5,
+          "expected": 0.2957618637054002
+        },
+        "stable_wacc": {
+          "actual": 0.09616947555679844,
+          "expected": 0.1103153911731885
+        },
+        "terminal_fcff": {
+          "actual": 3247.3771235827785,
+          "expected": 2860.8681979960884
+        },
+        "terminal_value": {
+          "actual": 89782.25626974563,
+          "expected": 35442.038017978135
+        },
+        "wacc": {
+          "actual": 0.09616947555679844,
+          "expected": 0.1103153911731885
+        },
+        "weighted_growth_rate": {
+          "actual": 0.10563432558830081,
+          "expected": 0.053458418458180626
+        },
+        "working_capital_pct_revenue": {
+          "actual": 0.22483683611759775,
+          "expected": 0.17387997295022853
+        }
+      },
+      "missing_fields": [],
+      "name": "seeded_random_1",
+      "score": 0.0
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 0.0,
+        "growth_reinvestment": 0.0,
+        "high_growth_fcff": 0.0,
+        "terminal_value": 0.0,
+        "valuation_bridge": 0.0
+      },
+      "mismatches": {
+        "after_tax_cost_of_debt": {
+          "actual": 0.039330500000000004,
+          "expected": 0.05105689831307575
+        },
+        "cost_of_equity": {
+          "actual": 0.097,
+          "expected": 0.07869843603048192
+        },
+        "current_fcff": {
+          "actual": 2285.5086000000006,
+          "expected": 3321.613671340688
+        },
+        "debt_weight": {
+          "actual": 0.014401450388880632,
+          "expected": 0.020752875353360234
+        },
+        "equity_value_per_share": {
+          "actual": 66.7825642215609,
+          "expected": 146.450404863896
+        },
+        "equity_weight": {
+          "actual": 0.9855985496111194,
+          "expected": 0.9792471246466398
+        },
+        "firm_value": {
+          "actual": 69175.15233361626,
+          "expected": 182687.59282458868
+        },
+        "fundamental_growth_rate": {
+          "actual": 0.10563432558830081,
+          "expected": 0.17419238711775273
+        },
+        "fundamental_reinvestment_rate": {
+          "actual": 0.3837122017190414,
+          "expected": 0.40609882096172073
+        },
+        "fundamental_roc": {
+          "actual": 0.27529571672481634,
+          "expected": 0.4289408836628272
+        },
+        "high_growth_fcff": {
+          "actual_length": 5,
+          "expected_length": 9
+        },
+        "high_growth_pv": {
+          "actual_length": 5,
+          "expected_length": 9
+        },
+        "historical_growth_rate": {
+          "actual": 0.4532773505485308,
+          "expected": 0.12296196176737317
+        },
+        "market_value_equity": {
+          "actual": 67853.15233361626,
+          "expected": 180014.31373095044
+        },
+        "pv_high_growth_fcff": {
+          "actual": 12446.561771589957,
+          "expected": 42704.76094401208
+        },
+        "pv_terminal_value": {
+          "actual": 56728.59056202631,
+          "expected": 139982.8318805766
+        },
+        "stable_reinvestment_rate": {
+          "actual": 0.5,
+          "expected": 0.44421931809257204
+        },
+        "stable_wacc": {
+          "actual": 0.09616947555679844,
+          "expected": 0.07812479464365739
+        },
+        "terminal_fcff": {
+          "actual": 3247.3771235827785,
+          "expected": 9479.033416063783
+        },
+        "terminal_value": {
+          "actual": 89782.25626974563,
+          "expected": 275483.810423796
+        },
+        "wacc": {
+          "actual": 0.09616947555679844,
+          "expected": 0.07812479464365739
+        },
+        "weighted_growth_rate": {
+          "actual": 0.10563432558830081,
+          "expected": 0.1265180189483847
+        },
+        "working_capital_pct_revenue": {
+          "actual": 0.22483683611759775,
+          "expected": 0.06397183415966823
+        }
+      },
+      "missing_fields": [],
+      "name": "seeded_random_2",
+      "score": 0.0
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 0.0,
+        "growth_reinvestment": 0.0,
+        "high_growth_fcff": 0.0,
+        "terminal_value": 0.0,
+        "valuation_bridge": 0.0
+      },
+      "mismatches": {
+        "after_tax_cost_of_debt": {
+          "actual": 0.039330500000000004,
+          "expected": 0.05652698685500587
+        },
+        "cost_of_equity": {
+          "actual": 0.097,
+          "expected": 0.1193125749730091
+        },
+        "current_fcff": {
+          "actual": 2285.5086000000006,
+          "expected": 3291.212865083456
+        },
+        "debt_weight": {
+          "actual": 0.014401450388880632,
+          "expected": 0.03263281167152865
+        },
+        "equity_value_per_share": {
+          "actual": 66.7825642215609,
+          "expected": 24.657475408055042
+        },
+        "equity_weight": {
+          "actual": 0.9855985496111194,
+          "expected": 0.9673671883284714
+        },
+        "firm_value": {
+          "actual": 69175.15233361626,
+          "expected": 37803.0196368272
+        },
+        "fundamental_growth_rate": {
+          "actual": 0.10563432558830081,
+          "expected": 0.05671889497815032
+        },
+        "fundamental_reinvestment_rate": {
+          "actual": 0.3837122017190414,
+          "expected": 0.20999942092750784
+        },
+        "fundamental_roc": {
+          "actual": 0.27529571672481634,
+          "expected": 0.2700907208583674
+        },
+        "high_growth_fcff": {
+          "actual_length": 5,
+          "expected_length": 2
+        },
+        "high_growth_pv": {
+          "actual_length": 5,
+          "expected_length": 2
+        },
+        "historical_growth_rate": {
+          "actual": 0.4532773505485308,
+          "expected": 0.05551201807710471
+        },
+        "market_value_equity": {
+          "actual": 67853.15233361626,
+          "expected": 32439.49623364982
+        },
+        "pv_high_growth_fcff": {
+          "actual": 12446.561771589957,
+          "expected": 7181.759218882974
+        },
+        "pv_terminal_value": {
+          "actual": 56728.59056202631,
+          "expected": 30621.260417944228
+        },
+        "stable_reinvestment_rate": {
+          "actual": 0.5,
+          "expected": 0.3878969161071619
+        },
+        "stable_wacc": {
+          "actual": 0.09616947555679844,
+          "expected": 0.11726370470026813
+        },
+        "terminal_fcff": {
+          "actual": 3247.3771235827785,
+          "expected": 3050.5960754244
+        },
+        "terminal_value": {
+          "actual": 89782.25626974563,
+          "expected": 38223.85140266301
+        },
+        "wacc": {
+          "actual": 0.09616947555679844,
+          "expected": 0.11726370470026813
+        },
+        "weighted_growth_rate": {
+          "actual": 0.10563432558830081,
+          "expected": 0.07381917453884292
+        },
+        "working_capital_pct_revenue": {
+          "actual": 0.22483683611759775,
+          "expected": 0.09948071926473037
+        }
+      },
+      "missing_fields": [],
+      "name": "seeded_random_3",
+      "score": 0.0
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 0.0,
+        "growth_reinvestment": 0.0,
+        "high_growth_fcff": 0.0,
+        "terminal_value": 0.0,
+        "valuation_bridge": 0.0
+      },
+      "mismatches": {
+        "after_tax_cost_of_debt": {
+          "actual": 0.039330500000000004,
+          "expected": 0.03914278209110889
+        },
+        "cost_of_equity": {
+          "actual": 0.097,
+          "expected": 0.08452699091588815
+        },
+        "current_fcff": {
+          "actual": 2285.5086000000006,
+          "expected": 2938.5324262036975
+        },
+        "debt_weight": {
+          "actual": 0.014401450388880632,
+          "expected": 0.03012409767861235
+        },
+        "equity_value_per_share": {
+          "actual": 66.7825642215609,
+          "expected": 55.93076251424432
+        },
+        "equity_weight": {
+          "actual": 0.9855985496111194,
+          "expected": 0.9698759023213877
+        },
+        "firm_value": {
+          "actual": 69175.15233361626,
+          "expected": 72995.99597620234
+        },
+        "fundamental_growth_rate": {
+          "actual": 0.10563432558830081,
+          "expected": 0.034795749455994014
+        },
+        "fundamental_reinvestment_rate": {
+          "actual": 0.3837122017190414,
+          "expected": 0.22722415526773482
+        },
+        "fundamental_roc": {
+          "actual": 0.27529571672481634,
+          "expected": 0.1531340249235153
+        },
+        "high_growth_fcff": {
+          "actual_length": 5,
+          "expected_length": 8
+        },
+        "high_growth_pv": {
+          "actual_length": 5,
+          "expected_length": 8
+        },
+        "historical_growth_rate": {
+          "actual": 0.4532773505485308,
+          "expected": 0.11094173583690092
+        },
+        "market_value_equity": {
+          "actual": 67853.15233361626,
+          "expected": 67338.15234809477
+        },
+        "pv_high_growth_fcff": {
+          "actual": 12446.561771589957,
+          "expected": 24527.042411974035
+        },
+        "pv_terminal_value": {
+          "actual": 56728.59056202631,
+          "expected": 48468.95356422831
+        },
+        "stable_reinvestment_rate": {
+          "actual": 0.5,
+          "expected": 0.27329864712390634
+        },
+        "stable_wacc": {
+          "actual": 0.09616947555679844,
+          "expected": 0.08315983257618396
+        },
+        "terminal_fcff": {
+          "actual": 3247.3771235827785,
+          "expected": 5022.151519378536
+        },
+        "terminal_value": {
+          "actual": 89782.25626974563,
+          "expected": 91834.10866420569
+        },
+        "wacc": {
+          "actual": 0.09616947555679844,
+          "expected": 0.08315983257618396
+        },
+        "weighted_growth_rate": {
+          "actual": 0.10563432558830081,
+          "expected": 0.07376197422857594
+        },
+        "working_capital_pct_revenue": {
+          "actual": 0.22483683611759775,
+          "expected": 0.1841825056396996
+        }
+      },
+      "missing_fields": [],
+      "name": "seeded_random_4",
+      "score": 0.0
+    }
+  ],
+  "hidden_cases_passed_95": 1,
+  "hidden_cases_total": 13,
+  "score": 44.43076923076923
+}

@@ -1,0 +1,121 @@
+{
+  "base_case": {
+    "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"<SANDBOX>/solution.py\", line 3, in <module>\n    wb = openpyxl.load_workbook('fcff2st.xlsx', data_only=True)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 346, in load_workbook\n    reader = ExcelReader(filename, read_only, keep_vba,\n                         data_only, keep_links, rich_text)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 123, in __init__\n    self.archive = _validate_archive(fn)\n                   ~~~~~~~~~~~~~~~~~^^^^\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 95, in _validate_archive\n    archive = ZipFile(filename, 'r')\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zipfile/__init__.py\", line 1367, in __init__\n    self.fp = io.open(file, filemode)\n              ~~~~~~~^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'fcff2st.xlsx'",
+    "group_scores": {},
+    "mismatches": {},
+    "missing_fields": [],
+    "name": "base_case",
+    "score": 0.0
+  },
+  "base_case_score": 0.0,
+  "hidden_average_score": 0.0,
+  "hidden_cases": [
+    {
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"<SANDBOX>/solution.py\", line 3, in <module>\n    wb = openpyxl.load_workbook('fcff2st.xlsx', data_only=True)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 346, in load_workbook\n    reader = ExcelReader(filename, read_only, keep_vba,\n                         data_only, keep_links, rich_text)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 123, in __init__\n    self.archive = _validate_archive(fn)\n                   ~~~~~~~~~~~~~~~~~^^^^\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 95, in _validate_archive\n    archive = ZipFile(filename, 'r')\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zipfile/__init__.py\", line 1367, in __init__\n    self.fp = io.open(file, filemode)\n              ~~~~~~~^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'fcff2st.xlsx'",
+      "group_scores": {},
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "discount_rate_shift",
+      "score": 0.0
+    },
+    {
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"<SANDBOX>/solution.py\", line 3, in <module>\n    wb = openpyxl.load_workbook('fcff2st.xlsx', data_only=True)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 346, in load_workbook\n    reader = ExcelReader(filename, read_only, keep_vba,\n                         data_only, keep_links, rich_text)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 123, in __init__\n    self.archive = _validate_archive(fn)\n                   ~~~~~~~~~~~~~~~~~^^^^\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 95, in _validate_archive\n    archive = ZipFile(filename, 'r')\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zipfile/__init__.py\", line 1367, in __init__\n    self.fp = io.open(file, filemode)\n              ~~~~~~~^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'fcff2st.xlsx'",
+      "group_scores": {},
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "short_high_growth_horizon",
+      "score": 0.0
+    },
+    {
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"<SANDBOX>/solution.py\", line 3, in <module>\n    wb = openpyxl.load_workbook('fcff2st.xlsx', data_only=True)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 346, in load_workbook\n    reader = ExcelReader(filename, read_only, keep_vba,\n                         data_only, keep_links, rich_text)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 123, in __init__\n    self.archive = _validate_archive(fn)\n                   ~~~~~~~~~~~~~~~~~^^^^\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 95, in _validate_archive\n    archive = ZipFile(filename, 'r')\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zipfile/__init__.py\", line 1367, in __init__\n    self.fp = io.open(file, filemode)\n              ~~~~~~~^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'fcff2st.xlsx'",
+      "group_scores": {},
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "long_high_growth_horizon",
+      "score": 0.0
+    },
+    {
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"<SANDBOX>/solution.py\", line 3, in <module>\n    wb = openpyxl.load_workbook('fcff2st.xlsx', data_only=True)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 346, in load_workbook\n    reader = ExcelReader(filename, read_only, keep_vba,\n                         data_only, keep_links, rich_text)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 123, in __init__\n    self.archive = _validate_archive(fn)\n                   ~~~~~~~~~~~~~~~~~^^^^\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 95, in _validate_archive\n    archive = ZipFile(filename, 'r')\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zipfile/__init__.py\", line 1367, in __init__\n    self.fp = io.open(file, filemode)\n              ~~~~~~~^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'fcff2st.xlsx'",
+      "group_scores": {},
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "mixed_growth_sources",
+      "score": 0.0
+    },
+    {
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"<SANDBOX>/solution.py\", line 3, in <module>\n    wb = openpyxl.load_workbook('fcff2st.xlsx', data_only=True)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 346, in load_workbook\n    reader = ExcelReader(filename, read_only, keep_vba,\n                         data_only, keep_links, rich_text)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 123, in __init__\n    self.archive = _validate_archive(fn)\n                   ~~~~~~~~~~~~~~~~~^^^^\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 95, in _validate_archive\n    archive = ZipFile(filename, 'r')\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zipfile/__init__.py\", line 1367, in __init__\n    self.fp = io.open(file, filemode)\n              ~~~~~~~^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'fcff2st.xlsx'",
+      "group_scores": {},
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "reinvestment_and_working_capital",
+      "score": 0.0
+    },
+    {
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"<SANDBOX>/solution.py\", line 3, in <module>\n    wb = openpyxl.load_workbook('fcff2st.xlsx', data_only=True)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 346, in load_workbook\n    reader = ExcelReader(filename, read_only, keep_vba,\n                         data_only, keep_links, rich_text)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 123, in __init__\n    self.archive = _validate_archive(fn)\n                   ~~~~~~~~~~~~~~~~~^^^^\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 95, in _validate_archive\n    archive = ZipFile(filename, 'r')\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zipfile/__init__.py\", line 1367, in __init__\n    self.fp = io.open(file, filemode)\n              ~~~~~~~^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'fcff2st.xlsx'",
+      "group_scores": {},
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "capital_structure_shift",
+      "score": 0.0
+    },
+    {
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"<SANDBOX>/solution.py\", line 3, in <module>\n    wb = openpyxl.load_workbook('fcff2st.xlsx', data_only=True)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 346, in load_workbook\n    reader = ExcelReader(filename, read_only, keep_vba,\n                         data_only, keep_links, rich_text)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 123, in __init__\n    self.archive = _validate_archive(fn)\n                   ~~~~~~~~~~~~~~~~~^^^^\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 95, in _validate_archive\n    archive = ZipFile(filename, 'r')\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zipfile/__init__.py\", line 1367, in __init__\n    self.fp = io.open(file, filemode)\n              ~~~~~~~^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'fcff2st.xlsx'",
+      "group_scores": {},
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "equity_bridge_shift",
+      "score": 0.0
+    },
+    {
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"<SANDBOX>/solution.py\", line 3, in <module>\n    wb = openpyxl.load_workbook('fcff2st.xlsx', data_only=True)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 346, in load_workbook\n    reader = ExcelReader(filename, read_only, keep_vba,\n                         data_only, keep_links, rich_text)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 123, in __init__\n    self.archive = _validate_archive(fn)\n                   ~~~~~~~~~~~~~~~~~^^^^\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 95, in _validate_archive\n    archive = ZipFile(filename, 'r')\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zipfile/__init__.py\", line 1367, in __init__\n    self.fp = io.open(file, filemode)\n              ~~~~~~~^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'fcff2st.xlsx'",
+      "group_scores": {},
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "interest_expense_invariance",
+      "score": 0.0
+    },
+    {
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"<SANDBOX>/solution.py\", line 3, in <module>\n    wb = openpyxl.load_workbook('fcff2st.xlsx', data_only=True)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 346, in load_workbook\n    reader = ExcelReader(filename, read_only, keep_vba,\n                         data_only, keep_links, rich_text)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 123, in __init__\n    self.archive = _validate_archive(fn)\n                   ~~~~~~~~~~~~~~~~~^^^^\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 95, in _validate_archive\n    archive = ZipFile(filename, 'r')\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zipfile/__init__.py\", line 1367, in __init__\n    self.fp = io.open(file, filemode)\n              ~~~~~~~^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'fcff2st.xlsx'",
+      "group_scores": {},
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "scale_invariance_x2",
+      "score": 0.0
+    },
+    {
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"<SANDBOX>/solution.py\", line 3, in <module>\n    wb = openpyxl.load_workbook('fcff2st.xlsx', data_only=True)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 346, in load_workbook\n    reader = ExcelReader(filename, read_only, keep_vba,\n                         data_only, keep_links, rich_text)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 123, in __init__\n    self.archive = _validate_archive(fn)\n                   ~~~~~~~~~~~~~~~~~^^^^\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 95, in _validate_archive\n    archive = ZipFile(filename, 'r')\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zipfile/__init__.py\", line 1367, in __init__\n    self.fp = io.open(file, filemode)\n              ~~~~~~~^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'fcff2st.xlsx'",
+      "group_scores": {},
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "seeded_random_1",
+      "score": 0.0
+    },
+    {
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"<SANDBOX>/solution.py\", line 3, in <module>\n    wb = openpyxl.load_workbook('fcff2st.xlsx', data_only=True)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 346, in load_workbook\n    reader = ExcelReader(filename, read_only, keep_vba,\n                         data_only, keep_links, rich_text)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 123, in __init__\n    self.archive = _validate_archive(fn)\n                   ~~~~~~~~~~~~~~~~~^^^^\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 95, in _validate_archive\n    archive = ZipFile(filename, 'r')\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zipfile/__init__.py\", line 1367, in __init__\n    self.fp = io.open(file, filemode)\n              ~~~~~~~^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'fcff2st.xlsx'",
+      "group_scores": {},
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "seeded_random_2",
+      "score": 0.0
+    },
+    {
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"<SANDBOX>/solution.py\", line 3, in <module>\n    wb = openpyxl.load_workbook('fcff2st.xlsx', data_only=True)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 346, in load_workbook\n    reader = ExcelReader(filename, read_only, keep_vba,\n                         data_only, keep_links, rich_text)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 123, in __init__\n    self.archive = _validate_archive(fn)\n                   ~~~~~~~~~~~~~~~~~^^^^\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 95, in _validate_archive\n    archive = ZipFile(filename, 'r')\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zipfile/__init__.py\", line 1367, in __init__\n    self.fp = io.open(file, filemode)\n              ~~~~~~~^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'fcff2st.xlsx'",
+      "group_scores": {},
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "seeded_random_3",
+      "score": 0.0
+    },
+    {
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"<SANDBOX>/solution.py\", line 3, in <module>\n    wb = openpyxl.load_workbook('fcff2st.xlsx', data_only=True)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 346, in load_workbook\n    reader = ExcelReader(filename, read_only, keep_vba,\n                         data_only, keep_links, rich_text)\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 123, in __init__\n    self.archive = _validate_archive(fn)\n                   ~~~~~~~~~~~~~~~~~^^^^\n  File \"<HOME>/.local/share/scraper-bench/runtime/lib/python3.13/site-packages/openpyxl/reader/excel.py\", line 95, in _validate_archive\n    archive = ZipFile(filename, 'r')\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/zipfile/__init__.py\", line 1367, in __init__\n    self.fp = io.open(file, filemode)\n              ~~~~~~~^^^^^^^^^^^^^^^^\nFileNotFoundError: [Errno 2] No such file or directory: 'fcff2st.xlsx'",
+      "group_scores": {},
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "seeded_random_4",
+      "score": 0.0
+    }
+  ],
+  "hidden_cases_passed_95": 0,
+  "hidden_cases_total": 13,
+  "score": 0.0
+}

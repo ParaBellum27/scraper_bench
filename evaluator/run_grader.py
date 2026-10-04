@@ -10,8 +10,9 @@ import argparse
 import json
 import os
 from pathlib import Path
-import subprocess
+import shutil
 import sys
+import tempfile
 from typing import Any, Dict, Tuple
 
 HERE = Path(__file__).resolve().parent
@@ -20,32 +21,30 @@ sys.path.insert(0, str(REPO))
 
 from evaluator.grader import grade_case, summarize
 from evaluator.hidden_cases import generate_hidden_cases
+from harness.executor import run_solution
 from reference.damodaran_fcff2st.reference import value_company
 
 
 def run_submission(path: Path, inputs: Dict[str, Any], timeout: float) -> Tuple[Dict[str, Any] | None, str | None]:
     try:
-        proc = subprocess.run(
-            [sys.executable, str(path)],
-            input=json.dumps(inputs),
-            text=True,
-            capture_output=True,
-            timeout=timeout,
-            cwd=str(path.parent),
-            env={"PATH": os.environ.get("PATH", ""), "PYTHONIOENCODING": "utf-8"},
-        )
-    except subprocess.TimeoutExpired:
-        return None, f"timeout after {timeout:.1f}s"
+        # Every case gets a new outside-repo workspace: no workbook, task,
+        # public input file, prior-case scratch, or hidden grading artifacts.
+        with tempfile.TemporaryDirectory(prefix="finance-grade-", dir="/private/tmp") as directory:
+            solution = Path(directory) / "solution.py"
+            shutil.copyfile(path, solution)
+            result = run_solution(str(solution), timeout=timeout, stdin=json.dumps(inputs))
     except Exception as exc:
         return None, f"execution failed: {exc}"
 
-    if proc.returncode != 0:
-        err = proc.stderr.strip()[-1200:]
-        return None, f"non-zero exit {proc.returncode}: {err}"
+    if result["exit_code"] == 124:
+        return None, f"timeout after {timeout:.1f}s"
+    if result["exit_code"] != 0:
+        err = result["stderr"].strip()[-1200:]
+        return None, f"non-zero exit {result['exit_code']}: {err}"
     try:
-        return json.loads(proc.stdout), None
+        return json.loads(result["stdout"]), None
     except json.JSONDecodeError as exc:
-        return None, f"invalid JSON output: {exc}; stdout={proc.stdout[-500:]!r}"
+        return None, f"invalid JSON output: {exc}; stdout={result['stdout'][-500:]!r}"
 
 
 def main() -> int:

@@ -25,3 +25,9 @@ Task 001 is anchored to Aswath Damodaran's own two-stage FCFF materials.
 ## Benchmark policy
 
 The spreadsheet is the base-case numerical oracle. The Python reference implementation independently reproduces its active formulas. Hidden-case expected values are generated from that verified implementation rather than by re-running Excel during grading.
+
+## Recorded reconciliation and limits
+
+The publication check compared 36 numerical values across 28 reference output fields against the original workbook's cached values and the stored expected outputs. Maximum absolute difference: `2.1827872842550278e-11`. The [cell-level verification record](../../results/damodaran_fcff2st/pilot-2026-10-04/oracle_check.json) identifies each cell/expression; stable reinvestment is derived from cached growth/ROC inputs.
+
+This was not a fresh Excel recalculation or an independent audit of every changed-input scenario. Those remain next validation steps. The workbook's redistribution permission is not documented, so the workbook/ZIP is not included in the published evidence pack; its original SHA-256 is recorded for provenance.
