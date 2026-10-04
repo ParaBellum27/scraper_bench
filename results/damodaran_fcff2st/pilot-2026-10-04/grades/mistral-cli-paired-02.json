@@ -1,0 +1,205 @@
+{
+  "base_case": {
+    "execution_error": null,
+    "group_scores": {
+      "discount_rate": 1.0,
+      "growth_reinvestment": 1.0,
+      "high_growth_fcff": 1.0,
+      "terminal_value": 1.0,
+      "valuation_bridge": 1.0
+    },
+    "mismatches": {},
+    "missing_fields": [],
+    "name": "base_case",
+    "score": 100.0
+  },
+  "base_case_score": 100.0,
+  "hidden_average_score": 100.0,
+  "hidden_cases": [
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 1.0,
+        "terminal_value": 1.0,
+        "valuation_bridge": 1.0
+      },
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "discount_rate_shift",
+      "score": 100.0
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 1.0,
+        "terminal_value": 1.0,
+        "valuation_bridge": 1.0
+      },
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "short_high_growth_horizon",
+      "score": 100.0
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 1.0,
+        "terminal_value": 1.0,
+        "valuation_bridge": 1.0
+      },
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "long_high_growth_horizon",
+      "score": 100.0
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 1.0,
+        "terminal_value": 1.0,
+        "valuation_bridge": 1.0
+      },
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "mixed_growth_sources",
+      "score": 100.0
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 1.0,
+        "terminal_value": 1.0,
+        "valuation_bridge": 1.0
+      },
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "reinvestment_and_working_capital",
+      "score": 100.0
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 1.0,
+        "terminal_value": 1.0,
+        "valuation_bridge": 1.0
+      },
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "capital_structure_shift",
+      "score": 100.0
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 1.0,
+        "terminal_value": 1.0,
+        "valuation_bridge": 1.0
+      },
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "equity_bridge_shift",
+      "score": 100.0
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 1.0,
+        "terminal_value": 1.0,
+        "valuation_bridge": 1.0
+      },
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "interest_expense_invariance",
+      "score": 100.0
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 1.0,
+        "terminal_value": 1.0,
+        "valuation_bridge": 1.0
+      },
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "scale_invariance_x2",
+      "score": 100.0
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 1.0,
+        "terminal_value": 1.0,
+        "valuation_bridge": 1.0
+      },
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "seeded_random_1",
+      "score": 100.0
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 1.0,
+        "terminal_value": 1.0,
+        "valuation_bridge": 1.0
+      },
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "seeded_random_2",
+      "score": 100.0
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 1.0,
+        "terminal_value": 1.0,
+        "valuation_bridge": 1.0
+      },
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "seeded_random_3",
+      "score": 100.0
+    },
+    {
+      "execution_error": null,
+      "group_scores": {
+        "discount_rate": 1.0,
+        "growth_reinvestment": 1.0,
+        "high_growth_fcff": 1.0,
+        "terminal_value": 1.0,
+        "valuation_bridge": 1.0
+      },
+      "mismatches": {},
+      "missing_fields": [],
+      "name": "seeded_random_4",
+      "score": 100.0
+    }
+  ],
+  "hidden_cases_passed_95": 13,
+  "hidden_cases_total": 13,
+  "score": 100.0
+}

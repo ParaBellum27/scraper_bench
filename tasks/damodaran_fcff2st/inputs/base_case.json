@@ -1,0 +1,33 @@
+{
+  "current_ebit": 5186.0,
+  "current_interest_expense": 118.0,
+  "current_capex": 2152.0,
+  "current_depreciation": 1228.0,
+  "tax_rate": 0.2849,
+  "current_revenues": 16701.0,
+  "current_noncash_working_capital": 3755.0,
+  "change_working_capital": 499.0,
+  "cash_and_marketable_securities": 500.0,
+  "equity_options_value": 1500.0,
+  "book_value_debt": 1479.0,
+  "prior_book_value_debt": 1315.0,
+  "book_value_equity": 12941.0,
+  "prior_book_value_equity": 12156.0,
+  "market_price_per_share": 125.5,
+  "shares_outstanding": 993.57,
+  "market_value_debt": 1822.0,
+  "high_growth_years": 5,
+  "beta": 0.8,
+  "riskfree_rate": 0.053,
+  "risk_premium": 0.055,
+  "pre_tax_cost_of_debt": 0.055,
+  "ebit_five_years_ago": 800.0,
+  "outside_growth_rate": 0.125,
+  "growth_weights": {
+    "historical": 0.0,
+    "outside": 0.0,
+    "fundamental": 1.0
+  },
+  "stable_growth_rate": 0.06,
+  "stable_return_on_capital": 0.12
+}

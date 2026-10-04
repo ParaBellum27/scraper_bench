@@ -1,0 +1,95 @@
+{
+  "verified_at": "2026-10-04T21:45:03.521650+00:00",
+  "new_provider_requests": 0,
+  "grading_seed": 20261003,
+  "grading_timeout_seconds": 5,
+  "regraded_submissions": [
+    {
+      "id": "gemini-cli-pilot-01",
+      "submission_sha256": "77bbd60ae191b8e49d27990bb1f3190917d729b93291c0188c43d91d45771f91",
+      "all_14_case_scores_groups_missing_fields_and_mismatches_match": true,
+      "score": 100.0,
+      "base_case_score": 100.0,
+      "hidden_average_score": 100.0,
+      "hidden_cases_passed_95": 13,
+      "hidden_cases_total": 13
+    },
+    {
+      "id": "mistral-cli-pilot-01",
+      "submission_sha256": "026fd38bfaf02177f8993233bff7359596da4a668a548e2169f4b568d2cc2eed",
+      "all_14_case_scores_groups_missing_fields_and_mismatches_match": true,
+      "score": 0.0,
+      "base_case_score": 0.0,
+      "hidden_average_score": 0.0,
+      "hidden_cases_passed_95": 0,
+      "hidden_cases_total": 13
+    },
+    {
+      "id": "mistral-cli-paired-02",
+      "submission_sha256": "0bc6c8224000dda253e661e0778ea1c57d79c9e9eae4dd5da20e8dd0a700efc4",
+      "all_14_case_scores_groups_missing_fields_and_mismatches_match": true,
+      "score": 100.0,
+      "base_case_score": 100.0,
+      "hidden_average_score": 100.0,
+      "hidden_cases_passed_95": 13,
+      "hidden_cases_total": 13
+    }
+  ],
+  "grader_controls": [
+    {
+      "name": "reference",
+      "source_sha256": "e210626b57e3ddcd3f54846d9537784e6b7480e4c44d3363c6cbb3019ae9e468",
+      "source_recipe": "Reference module plus JSON stdin/stdout entry point",
+      "grade_file": "controls/reference_grade.json",
+      "score": 100.0,
+      "base_case_score": 100.0,
+      "hidden_average_score": 100.0,
+      "hidden_cases_passed_95": 13,
+      "hidden_cases_total": 13
+    },
+    {
+      "name": "base_case_constant",
+      "source_sha256": "852b902f125184fb053f2f40d9ccee82c9beaa7a1143e2ff984bf45dba3779af",
+      "source_recipe": "Consume JSON stdin and emit fixed expected_outputs.json regardless of inputs",
+      "grade_file": "controls/base_case_constant_grade.json",
+      "score": 44.43076923076923,
+      "base_case_score": 100.0,
+      "hidden_average_score": 30.53846153846154,
+      "hidden_cases_passed_95": 1,
+      "hidden_cases_total": 13
+    }
+  ],
+  "checks": [
+    {
+      "name": "regression_suite",
+      "command": [
+        "$PYTHON",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "tests",
+        "-v"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "test_grading_hides_workbook_and_resets_case_state (test_executor.ExecutorTests.test_grading_hides_workbook_and_resets_case_state) ... ok\ntest_hung_and_noisy_candidates_are_stopped (test_executor.ExecutorTests.test_hung_and_noisy_candidates_are_stopped) ... ok\ntest_public_stdin_scratch_and_private_boundaries (test_executor.ExecutorTests.test_public_stdin_scratch_and_private_boundaries) ... ok\ntest_restart_preserves_original_stdin_after_candidate_modification (test_mcp_server.McpServerTests.test_restart_preserves_original_stdin_after_candidate_modification) ... ok\ntest_server_restart_does_not_reset_execution_budget (test_mcp_server.McpServerTests.test_server_restart_does_not_reset_execution_budget) ... ok\ntest_native_shell_effect_invalidates_one_tool_trial (test_terminal.TerminalAuditTests.test_native_shell_effect_invalidates_one_tool_trial) ... ok\ntest_per_turn_model_change_invalidates_requested_model_trial (test_terminal.TerminalAuditTests.test_per_turn_model_change_invalidates_requested_model_trial) ... ok\n\n----------------------------------------------------------------------\nRan 7 tests in 2.993s\n\nOK\n"
+    },
+    {
+      "name": "static_types",
+      "command": [
+        "ty",
+        "check",
+        "--python",
+        "$PYTHON",
+        "--output-format",
+        "concise",
+        "harness",
+        "tests"
+      ],
+      "exit_code": 0,
+      "stdout": "All checks passed!\n",
+      "stderr": ""
+    }
+  ]
+}

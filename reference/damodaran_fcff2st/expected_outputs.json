@@ -1,1 +1,42 @@
-{}
+{
+  "cost_of_equity": 0.097,
+  "equity_weight": 0.9855985496111194,
+  "after_tax_cost_of_debt": 0.039330500000000004,
+  "debt_weight": 0.014401450388880632,
+  "wacc": 0.09616947555679844,
+  "current_after_tax_ebit": 3708.5086000000006,
+  "current_fcff": 2285.5086000000006,
+  "historical_growth_rate": 0.4532773505485308,
+  "fundamental_roc": 0.27529571672481634,
+  "fundamental_reinvestment_rate": 0.3837122017190414,
+  "fundamental_growth_rate": 0.10563432558830081,
+  "weighted_growth_rate": 0.10563432558830081,
+  "working_capital_pct_revenue": 0.22483683611759775,
+  "high_growth_fcff": [
+    2681.991395471755,
+    2965.3017477660396,
+    3278.539398057115,
+    3624.865696285551,
+    4007.775939460841
+  ],
+  "high_growth_pv": [
+    2446.6941064103607,
+    2467.8200301899583,
+    2489.1283652707366,
+    2510.6206866788643,
+    2532.2985830400376
+  ],
+  "stable_growth_rate": 0.06,
+  "stable_reinvestment_rate": 0.5,
+  "terminal_after_tax_ebit": 6494.754247165557,
+  "terminal_change_working_capital": 372.2363307597814,
+  "terminal_net_capex": 2875.140792822997,
+  "terminal_fcff": 3247.3771235827785,
+  "stable_wacc": 0.09616947555679844,
+  "terminal_value": 89782.25626974563,
+  "pv_high_growth_fcff": 12446.561771589957,
+  "pv_terminal_value": 56728.59056202631,
+  "firm_value": 69175.15233361626,
+  "market_value_equity": 67853.15233361626,
+  "equity_value_per_share": 66.7825642215609
+}

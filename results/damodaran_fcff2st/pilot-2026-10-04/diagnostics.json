@@ -1,0 +1,74 @@
+{
+  "scope": "Non-finance diagnostics, lifecycle smoke, and preparation only. Authentication/setup observations without standalone run artifacts are documented separately in the report.",
+  "records": [
+    {
+      "id": "medium-diagnostic-mistral-medium-3-5",
+      "evidence": "persisted diagnostic artifact",
+      "started_at": "2026-10-04T06:08:25.484636+00:00",
+      "requested_model": "mistral-medium-3-5",
+      "max_tokens": 16,
+      "http_status": 429,
+      "effective_requests_per_minute_limit": 0,
+      "finance_score": null,
+      "result": "No completion; effective request limit zero",
+      "source_artifact_sha256": "984fac2ceb2b9191ac67b801753a501f2c83b1cf58848da0e1ebad807a7254e2"
+    },
+    {
+      "id": "medium-diagnostic-mistral-medium-latest",
+      "evidence": "persisted diagnostic artifact",
+      "started_at": "2026-10-04T06:08:27.090017+00:00",
+      "requested_model": "mistral-medium-latest",
+      "max_tokens": 16,
+      "http_status": 429,
+      "effective_requests_per_minute_limit": 0,
+      "finance_score": null,
+      "result": "No completion; effective request limit zero",
+      "source_artifact_sha256": "984fac2ceb2b9191ac67b801753a501f2c83b1cf58848da0e1ebad807a7254e2"
+    },
+    {
+      "id": "ministral-entitlement-control",
+      "evidence": "persisted diagnostic artifact",
+      "started_at": "2026-10-04T06:47:14.340513+00:00",
+      "requested_model": "ministral-3b-2512",
+      "returned_model": "ministral-3b-2512",
+      "http_status": 200,
+      "native_usage": {
+        "prompt_tokens": 7,
+        "total_tokens": 9,
+        "completion_tokens": 2,
+        "prompt_tokens_details": {
+          "cached_tokens": 0
+        },
+        "service_tier": "standard"
+      },
+      "finance_score": null,
+      "result": "Tiny control completion succeeded; not a Medium substitute or finance trial",
+      "source_artifact_sha256": "cfbc3c6550dbec1e9f09d57b80d63c96bb83449598f5bbc3e821fa142020d1f9"
+    },
+    {
+      "id": "browser-capability-check",
+      "evidence": "persisted capability-check artifact; identifying UI text omitted",
+      "started_at": null,
+      "finance_score": null,
+      "result": "Native Python unavailable; native TypeScript6*7 returned42. The finance attempt subsequently used chat-mediated local Python."
+    },
+    {
+      "id": "terminal-lifecycle-smoke-01",
+      "evidence": "persisted native run and execution ledger",
+      "started_at": "2026-10-04T15:13:08.673514+00:00",
+      "finished_at": "2026-10-04T15:13:37.488078+00:00",
+      "requested_model": "gemini-3.8-flash",
+      "status": "frozen",
+      "accepted_executions": 1,
+      "finance_score": null,
+      "result": "Actual native Gemini + MCP lifecycle returned {\"echo\":42}",
+      "submission_sha256": "233366eb0102bf5944b06f7d7e10537021c7ecc7aea2ccd87a526ad7c1aa25f3"
+    },
+    {
+      "id": "openai-public-input-package",
+      "evidence": "prepared ZIP only",
+      "finance_score": null,
+      "result": "Input package prepared; no recorded candidate/model attempt or grade. Excluded from attempt counts."
+    }
+  ]
+}

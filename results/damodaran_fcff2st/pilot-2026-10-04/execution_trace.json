@@ -1,0 +1,419 @@
+{
+  "scope": "Accepted finance executions only; no model reasoning, raw outputs, or invented timings. Rejected requests are counted separately in the attempt ledger.",
+  "executions": [
+    {
+      "attempt": "mistral-browser-2026-10-04T05-58-38-478Z",
+      "accepted_execution": 1,
+      "source_sha256": "cb7a782207f425e5b74c941c2238248fd80d30fd73cf825848e8c26d7a91b220",
+      "exit_code": 124,
+      "stdout_bytes": 0,
+      "stderr_bytes": 30,
+      "execution_timed_out": true
+    },
+    {
+      "attempt": "mistral-browser-2026-10-04T05-58-38-478Z",
+      "accepted_execution": 2,
+      "source_sha256": "a4a0e4e481f95f28ac6b41ed05df2d104cdd7f81792d2f380f26295d97562fd3",
+      "exit_code": 124,
+      "stdout_bytes": 0,
+      "stderr_bytes": 30,
+      "execution_timed_out": true
+    },
+    {
+      "attempt": "mistral-browser-2026-10-04T05-58-38-478Z",
+      "accepted_execution": 3,
+      "source_sha256": "7b7aa1ac1e1951f4053211576f2a918af31657ec858d3ff00ae63ea7a42f0357",
+      "exit_code": 0,
+      "stdout_bytes": 331,
+      "stderr_bytes": 0,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-browser-2026-10-04T05-58-38-478Z",
+      "accepted_execution": 4,
+      "source_sha256": "6a5b5e37c5b41f85c8a053b9728a294db3e15ee1af519b79074e31a335167a43",
+      "exit_code": 0,
+      "stdout_bytes": 9,
+      "stderr_bytes": 0,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-browser-2026-10-04T05-58-38-478Z",
+      "accepted_execution": 5,
+      "source_sha256": "73c1e4cb086095c18ed18511cd4dbf1c58a88edeaabb7db9a9aa64e2a8282356",
+      "exit_code": 0,
+      "stdout_bytes": 7165,
+      "stderr_bytes": 0,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-browser-2026-10-04T05-58-38-478Z",
+      "accepted_execution": 6,
+      "source_sha256": "3108f1412ccc75a8fa12f0457a1f7acf8fb104b9e6d24bb2b2d118d43748466f",
+      "exit_code": 0,
+      "stdout_bytes": 1,
+      "stderr_bytes": 0,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-browser-2026-10-04T05-58-38-478Z",
+      "accepted_execution": 7,
+      "source_sha256": "78be5e156424c55bb0a8f70b3c9230916a0b3f8549159889b5f3b4b079b3815a",
+      "exit_code": 0,
+      "stdout_bytes": 4452,
+      "stderr_bytes": 0,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-browser-2026-10-04T05-58-38-478Z",
+      "accepted_execution": 8,
+      "source_sha256": "cd2c6b4d1e3d0c3aa4771ffccaf7e87c2fbcfc336e5b8f16f1d37af24359d146",
+      "exit_code": 0,
+      "stdout_bytes": 11285,
+      "stderr_bytes": 0,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-browser-2026-10-04T05-58-38-478Z",
+      "accepted_execution": 9,
+      "source_sha256": "7629f96bef96da117707a99041bf0d3b9d4e5a3635af540d082228d1bc046739",
+      "exit_code": 0,
+      "stdout_bytes": 7515,
+      "stderr_bytes": 0,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "gemini-cli-pilot-01",
+      "accepted_execution": 1,
+      "source_sha256": "8bbd9fe22e06bbb18ff55bbaab6d08c057103c2bff56a30dc153a113621eff8a",
+      "exit_code": 0,
+      "stdout_bytes": 1608,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "gemini-cli-pilot-01",
+      "accepted_execution": 2,
+      "source_sha256": "074beea6a9a2f922a2ad868fe190677d90c54d43b001fa682d5c629686bee90a",
+      "exit_code": 0,
+      "stdout_bytes": 20634,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "gemini-cli-pilot-01",
+      "accepted_execution": 3,
+      "source_sha256": "1149cf4bc4b428c2b75feb860512f6130c152efb532814b60df8bb79cdc9bb78",
+      "exit_code": 0,
+      "stdout_bytes": 1941,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "gemini-cli-pilot-01",
+      "accepted_execution": 4,
+      "source_sha256": "8cda7e9578c2252dfc6eb90e7b339d084f555eeee0009ac9e48476fbbcd8ec51",
+      "exit_code": 0,
+      "stdout_bytes": 26,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "gemini-cli-pilot-01",
+      "accepted_execution": 5,
+      "source_sha256": "df857697ec8461082fff30f1d0ade6298d9884c5cb6a87622419d9b84b33774c",
+      "exit_code": 0,
+      "stdout_bytes": 4313,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "gemini-cli-pilot-01",
+      "accepted_execution": 6,
+      "source_sha256": "b0c410d9dfd3db45132706150df5231f08408985bbc2f00b890e2af0903086d2",
+      "exit_code": 0,
+      "stdout_bytes": 459,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "gemini-cli-pilot-01",
+      "accepted_execution": 7,
+      "source_sha256": "4a0ced123f217692420d6cce93b3d295c816c8e66f8017a4ceaaa80dd8b217b9",
+      "exit_code": 0,
+      "stdout_bytes": 1475,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "gemini-cli-pilot-01",
+      "accepted_execution": 8,
+      "source_sha256": "b541a281b546442449d38807d6ea7a1f3ee1d2f1f200842f1b49a1180a186348",
+      "exit_code": 0,
+      "stdout_bytes": 95,
+      "stderr_bytes": 0,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "gemini-cli-pilot-01",
+      "accepted_execution": 9,
+      "source_sha256": "77bbd60ae191b8e49d27990bb1f3190917d729b93291c0188c43d91d45771f91",
+      "exit_code": 0,
+      "stdout_bytes": 1176,
+      "stderr_bytes": 0,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-pilot-01",
+      "accepted_execution": 1,
+      "source_sha256": "1ea62f0b1fecf0771a86e8c626cd65cad81301e27ae6fdcb6349c26167bf7477",
+      "exit_code": 0,
+      "stdout_bytes": 1440,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-pilot-01",
+      "accepted_execution": 2,
+      "source_sha256": "518e7eba920bc16e369a4192ef752e1771e50b7683e3f3a2989eef930aa53608",
+      "exit_code": 0,
+      "stdout_bytes": 10951,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-pilot-01",
+      "accepted_execution": 3,
+      "source_sha256": "00e1d84fd5edd0524ed6d1403d3395e537a4d6c8d461dd4e64e65642b204ef20",
+      "exit_code": 0,
+      "stdout_bytes": 6512,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-pilot-01",
+      "accepted_execution": 4,
+      "source_sha256": "78312042e4f6104cdf772417f09312fc796ec13e0bf206a3c9dc62f2e48b5c91",
+      "exit_code": 0,
+      "stdout_bytes": 2559,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-pilot-01",
+      "accepted_execution": 5,
+      "source_sha256": "8bc4cc5bb285c3861f579d0f00dd7288646218a6db6a513cac425639316aa2ca",
+      "exit_code": 0,
+      "stdout_bytes": 2391,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-pilot-01",
+      "accepted_execution": 6,
+      "source_sha256": "49ce2afbc6dd322367e68a9733a26739a5e4fd547d538004f061cb6393fb7143",
+      "exit_code": 0,
+      "stdout_bytes": 1646,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-pilot-01",
+      "accepted_execution": 7,
+      "source_sha256": "68b182125c4b8c789ef4fdaf1d28a46a89ccc38efb8ba9acf2911d3a76368175",
+      "exit_code": 0,
+      "stdout_bytes": 1265,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-pilot-01",
+      "accepted_execution": 8,
+      "source_sha256": "7216a03b55247d4757b275757ecc68b4a084379d30d74f21c9c865ecabf1e752",
+      "exit_code": 0,
+      "stdout_bytes": 113,
+      "stderr_bytes": 0,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-pilot-01",
+      "accepted_execution": 9,
+      "source_sha256": "378c9837e6f987d6eccae858ae158f05fbfa24005181440c8fe8682b4aee4d19",
+      "exit_code": 0,
+      "stdout_bytes": 1201,
+      "stderr_bytes": 0,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-pilot-01",
+      "accepted_execution": 10,
+      "source_sha256": "442c635992f18ee2094cb31c6c95609649e7709c4d5e99b2d9b399e01bb936d9",
+      "exit_code": 0,
+      "stdout_bytes": 1173,
+      "stderr_bytes": 0,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-pilot-01",
+      "accepted_execution": 11,
+      "source_sha256": "1347703340055aefc65d73e91aeadb8850172ddeb810e913243b1112f9f3e231",
+      "exit_code": 0,
+      "stdout_bytes": 1230,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-pilot-01",
+      "accepted_execution": 12,
+      "source_sha256": "026fd38bfaf02177f8993233bff7359596da4a668a548e2169f4b568d2cc2eed",
+      "exit_code": 0,
+      "stdout_bytes": 725,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-paired-02",
+      "accepted_execution": 1,
+      "source_sha256": "d07e6c32c1647c4826ace27979d57da7a6016fe7eae4300e125450e228411e21",
+      "exit_code": 0,
+      "stdout_bytes": 2025,
+      "stderr_bytes": 0,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-paired-02",
+      "accepted_execution": 2,
+      "source_sha256": "7fad39fafeb106ec6b08eb45d23b7ccd9c21c97c2e9efe048874fea492034dbf",
+      "exit_code": 0,
+      "stdout_bytes": 1770,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-paired-02",
+      "accepted_execution": 3,
+      "source_sha256": "79570991ecd8053ae5fd9586b28c27322d6de32838eaec693a6a500d2fa0884e",
+      "exit_code": 0,
+      "stdout_bytes": 11994,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-paired-02",
+      "accepted_execution": 4,
+      "source_sha256": "c19ab1dcc2494ed566d5dfde6563a463c2376f806c603b635011252d12b3178e",
+      "exit_code": 0,
+      "stdout_bytes": 8975,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-paired-02",
+      "accepted_execution": 5,
+      "source_sha256": "59d1bc12adcefe2d9653e30ab0c8c482675f69feaf4124192845a5fba05f1eeb",
+      "exit_code": 0,
+      "stdout_bytes": 10929,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-paired-02",
+      "accepted_execution": 6,
+      "source_sha256": "bc31dda6cc75da1cabf0c22be8f79fa72b37fed340661d25ccdc25b25d62ce8e",
+      "exit_code": 0,
+      "stdout_bytes": 1173,
+      "stderr_bytes": 0,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-paired-02",
+      "accepted_execution": 7,
+      "source_sha256": "d2a12a297d9dd8444fd74c0fb355148fd2eece8a6476a6754d60d6c46c43f9eb",
+      "exit_code": 0,
+      "stdout_bytes": 1354,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-paired-02",
+      "accepted_execution": 8,
+      "source_sha256": "21a1a4794c4783ca29669d47025c26d0b0617a2377881309ecadf4bad4747486",
+      "exit_code": 0,
+      "stdout_bytes": 1172,
+      "stderr_bytes": 0,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-paired-02",
+      "accepted_execution": 9,
+      "source_sha256": "ddbf103e09246d709f619aca544daa2fd037a8e57b2cc434deb8f8d4c3b72edb",
+      "exit_code": 0,
+      "stdout_bytes": 1076,
+      "stderr_bytes": 0,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "mistral-cli-paired-02",
+      "accepted_execution": 10,
+      "source_sha256": "0bc6c8224000dda253e661e0778ea1c57d79c9e9eae4dd5da20e8dd0a700efc4",
+      "exit_code": 0,
+      "stdout_bytes": 1076,
+      "stderr_bytes": 0,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "gemini-cli-paired-02",
+      "accepted_execution": 1,
+      "source_sha256": "d957dea242dc70f03808054bde3bcae4419c3e529851f482e8443cd2e77e9822",
+      "exit_code": 0,
+      "stdout_bytes": 8136,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "gemini-cli-paired-02",
+      "accepted_execution": 2,
+      "source_sha256": "6a115f59e8504089a0ec1401f9baed11da7d68dc0f081e9718a98f7391fee3a5",
+      "exit_code": 0,
+      "stdout_bytes": 6556,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "gemini-cli-paired-02",
+      "accepted_execution": 3,
+      "source_sha256": "2b340d0aa8143fa671d5debb93f89b188f21c2ad7f765e75aad93dcc8ced5d24",
+      "exit_code": 0,
+      "stdout_bytes": 6764,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "gemini-cli-paired-02",
+      "accepted_execution": 4,
+      "source_sha256": "6ae22aebf15e86a5acb5e4d4a5a5dc0d323e87e263fa5651388ef6c00f24c3a4",
+      "exit_code": 0,
+      "stdout_bytes": 1645,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "gemini-cli-paired-02",
+      "accepted_execution": 5,
+      "source_sha256": "a4f82f99e1f438c8e9e8c59d3437f810e3e552fd3d5d7217708a51f34530ad0e",
+      "exit_code": 0,
+      "stdout_bytes": 1179,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    },
+    {
+      "attempt": "gemini-cli-paired-02",
+      "accepted_execution": 6,
+      "source_sha256": "396b76682e437122a5c54a35d1c1fed6af33e7d505d6bb32230554f20f550ba3",
+      "exit_code": 0,
+      "stdout_bytes": 1538,
+      "stderr_bytes": 249,
+      "execution_timed_out": false
+    }
+  ]
+}

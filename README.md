@@ -2,20 +2,32 @@
 
 A benchmark for evaluating whether coding-capable language models can translate real financial-modeling logic into correct, executable, and robust Python programs.
 
+## Benchmark results
+
+- [Benchmark summary](BENCHMARK_SUMMARY.md)
+- [Complete pilot report](analysis/pilot_report.md) — methodology, every recorded attempt, diagnostics, and conclusions.
+- [Model comparison](analysis/model_comparison.md) — where Gemini or Mistral did better in the observed runs, and why the evidence does not establish an overall winner.
+- [Research-backed benchmark assessment](analysis/benchmark_design.md) — design principles, evidence gaps, and proposed next steps.
+- [Reproducible evidence pack](results/damodaran_fcff2st/pilot-2026-10-04/README.md) — frozen submissions, per-case grades, CSV/JSON ledger, hashes, and offline commands.
+
+The recorded campaign contains **nine finance attempts: three graded submissions scoring 100, 0, and 100; six attempts without a graded submission**. This is one independent workbook task, not a model leaderboard. All three frozen submissions reproduced their historical grades; seven local regressions and the harness/test type check passed. See the evidence pack for actual outputs and limitations.
+
+**Observed comparison:** Gemini performed better in the initial native pilot (100 versus 0). Both models later had a 100/100 submission; Mistral's successful run had lower elapsed time, while Gemini's used one fewer Python execution. Mistral completed the concurrent paired attempt, while Gemini was interrupted by service/quota failures. These are different advantages under different conditions, not a controlled model ranking.
+
 ## Current scope
 
-The first benchmark task reproduces Aswath Damodaran's two-stage FCFF valuation spreadsheet (`fcff2st.xls`) in Python.
+Task 001 reproduces Aswath Damodaran's two-stage FCFF valuation spreadsheet (`fcff2st.xls`) in Python.
 
-The benchmark is designed to test more than whether a model can match one final valuation. A strong submission should:
+The benchmark tests more than whether a model can match one final valuation. A strong submission must:
 
-1. implement the valuation logic correctly;
-2. produce the expected intermediate and final outputs;
-3. remain correct when valuation assumptions are changed in hidden tests;
-4. avoid hard-coding spreadsheet outputs;
-5. fail cleanly on invalid inputs;
-6. be understandable enough to inspect for systematic model failures.
+1. derive the workbook's intermediate calculations correctly;
+2. forecast FCFF across a variable high-growth horizon;
+3. implement Damodaran-consistent terminal reinvestment and terminal value logic;
+4. remain correct when assumptions change in hidden tests;
+5. avoid hard-coding public outputs;
+6. execute as a one-file program under a constrained runner.
 
-## Benchmark structure
+## Repository structure
 
 ```text
 .
@@ -24,65 +36,102 @@ The benchmark is designed to test more than whether a model can match one final 
 │   └── damodaran_fcff2st/
 │       ├── task.md
 │       ├── metadata.json
-│       ├── inputs/
-│       └── public_tests/
+│       └── inputs/
+│           └── base_case.json
 ├── evaluator/
 │   ├── grader.py
+│   ├── hidden_cases.py
+│   ├── run_grader.py
 │   └── schemas.py
 ├── reference/
 │   └── damodaran_fcff2st/
 │       ├── reference.py
-│       └── expected_outputs.json
-├── runs/
-│   ├── luna/
-│   ├── mistral_medium_3_5/
-│   └── gemini_3_8_flash/
+│       ├── expected_outputs.json
+│       └── SOURCES.md
+├── harness/
+├── tests/
+├── requirements.txt
+├── BENCHMARK_SUMMARY.md
+├── results/
+│   └── damodaran_fcff2st/pilot-2026-10-04/
 └── analysis/
+    ├── pilot_report.md
+    ├── model_comparison.md
+    ├── benchmark_design.md
     └── failure_taxonomy.md
 ```
 
 ## Task 001: Damodaran FCFF two-stage valuation
 
-The model will be given the source workbook and a task specification. It must write executable Python that reproduces the spreadsheet's valuation methodology.
+The candidate writes one `solution.py` file. For each evaluation case, the runner sends one JSON input object over stdin and expects one JSON output object on stdout.
 
-The evaluator will score the submission on both base-case correctness and hidden scenario generalization. Hidden tests will change selected assumptions so that solutions that merely hard-code known spreadsheet outputs fail.
+The public base case reproduces the supplied `fcff2st.xlsx` workbook. The independent Python reference implementation matches the workbook's base-case calculations to floating-point precision.
 
-### Planned outputs
+### Scoring
 
-The exact output schema will be finalized after the workbook has been inspected, but is expected to include inputs, intermediate valuation quantities, terminal-value calculations, enterprise/equity value, and implied value per share where applicable.
+Each case is scored across five blocks:
 
-## Models
+- discount rate mechanics — 15%;
+- growth and reinvestment — 15%;
+- high-growth FCFF forecast — 25%;
+- terminal value — 20%;
+- enterprise-to-equity bridge — 25%.
 
-Initial benchmark set:
+The public base case contributes 20% of the overall score and hidden scenarios contribute 80%.
 
-- Luna
-- Mistral Medium 3.5
-- Gemini 3.8 Flash
+### Hidden evaluation
 
-Model-provider wiring will be added only after the benchmark task and evaluator are validated locally.
+The current suite contains 13 hidden scenarios:
 
-## Evaluation philosophy
+- targeted discount-rate stress;
+- short and long high-growth horizons;
+- mixed historical / outside / fundamental growth weights;
+- reinvestment and working-capital changes;
+- capital-structure changes;
+- equity-bridge changes;
+- interest-expense invariance;
+- scale invariance;
+- four deterministic seeded random cases.
 
-The project is intended to produce useful coding-evaluation data, not just a leaderboard number. In addition to aggregate scores, model trajectories and generated code should be reviewed to identify recurring failure modes such as:
+The random cases use a benchmark seed for deterministic reproduction. The disclosed v0.1 cases are now public regression material, not a fresh secret holdout for future model or prompt selection.
 
-- formula translation errors;
-- misuse of valuation assumptions;
-- incorrect terminal-value logic;
-- unit or percentage mistakes;
-- hard-coded outputs;
-- brittle handling of hidden scenarios;
-- structurally correct code with financially incorrect reasoning.
+## Ground truth
 
-## Development status
+The benchmark is based on Damodaran's own methodology rather than a generic DCF approximation:
+
+- the supplied `fcff2st.xlsx` workbook is the base-case numerical oracle;
+- `reference.py` independently reproduces the active spreadsheet formulas;
+- Damodaran's Stern valuation materials are used to cross-check the growth, reinvestment and terminal-value relationships;
+- held-out expected outputs are generated by the base-case-reconciled reference implementation; independent changed-input workbook recalculation remains a documented gap.
+
+See `reference/damodaran_fcff2st/SOURCES.md` for source links.
+
+## Planned targets and observed conditions
+
+- OpenAI/Luna label — unrun; actual model identity and access still need verification.
+- Mistral Medium 3.5 — completed Vibe attempts; direct API attempts were quota-blocked.
+- Gemini 3.8 Flash — one completed CLI attempt plus interrupted paired/recovery attempts.
+
+Mistral's direct API runner and official Mistral/Gemini terminal runners use the same macOS Python execution sandbox; see [harness/README.md](harness/README.md) for setup, authentication, trial commands, and independent grading. Record the actual client, selected/configured model, authentication route, and generation settings: these are model-plus-agent pilots, not a controlled model-only ranking. Available model labels do not establish inference entitlement.
+
+## Validation status
 
 - [x] Repository architecture defined
-- [x] Initial task specification scaffolded
-- [ ] Add `fcff2st.xls`
-- [ ] Inspect workbook formulas and dependencies
-- [ ] Build verified Python reference implementation
-- [ ] Freeze output schema
-- [ ] Implement public and hidden tests
-- [ ] Validate evaluator locally
-- [ ] Add model runner interfaces
-- [ ] Run initial model set
-- [ ] Analyze trajectories and publish failure taxonomy
+- [x] Source workbook inspected
+- [x] Workbook formulas and dependencies mapped
+- [x] Independent Python reference implementation built
+- [x] Base case matched to workbook outputs
+- [x] Input/output schema frozen for v0.1
+- [x] Weighted grader implemented
+- [x] Targeted hidden tests implemented
+- [x] Seeded random hidden tests implemented
+- [x] Subprocess runner implemented
+- [x] Correct reference solution scores 100/100 locally
+- [x] Hard-coded base-case solution is strongly penalized by hidden tests
+- [x] Add Mistral API runner with public-only tool feedback and saved trajectories
+- [x] Sandbox development and per-case grading without network or hidden-file access
+- [x] Add official Mistral/Gemini terminal runners with a public-only MCP execution tool
+- [x] Run and independently grade initial Gemini CLI and Mistral Vibe pilots
+- [ ] Run the OpenAI/Luna target after verifying its actual model identity and access
+- [x] Record initial terminal-pilot failure analysis in `analysis/failure_taxonomy.md`
+- [ ] Collect repeated trials before drawing comparative conclusions

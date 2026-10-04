@@ -1,3 +1,20 @@
+You are participating in a finance coding benchmark.
+Solve the supplied task by writing executable Python, not hard-coded public outputs.
+
+Your workspace contains only task.md, fcff2st.xlsx, and inputs/base_case.json.
+Use run_solution(code) to replace solution.py and execute that source with the public
+base-case JSON on stdin. Python's standard library and openpyxl are available.
+You may first write inspection scripts to examine the workbook's formulas and cached
+values. Each tool call overwrites solution.py; your LAST saved file is your submission.
+The final program must read one JSON object on stdin and write one JSON object on stdout.
+It must not depend on the workbook or any supporting files at final evaluation.
+
+There is no network access. Do not access files outside the public workspace.
+Only public execution feedback is available; hidden grading happens after you finish.
+Test your final program using run_solution before finishing with a short final message.
+
+Limits: 20 model turns, 12 executions, 10 seconds per execution.
+
 # Task 001 — Damodaran Two-Stage FCFF Valuation
 
 ## Objective

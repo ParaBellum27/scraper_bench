@@ -1,0 +1,30 @@
+{
+  "matching_input_and_prompt_scope": [
+    "gemini-cli-pilot-01",
+    "mistral-cli-pilot-01",
+    "mistral-cli-paired-02",
+    "gemini-cli-paired-02"
+  ],
+  "original_public_sha256": {
+    "task.md": "6cdd49d0dfb03788f3229e04bab4c6b43f4c69e6095dcfd2a40b1dfaad824eff",
+    "inputs/base_case.json": "d8bcc87f13c3fdef138072b1c5a2caa8aac8ecbe8344f10544c5de0dd766fe06",
+    "fcff2st.xlsx": "0f329a49478cfa8072286b26edd2d365c1016a77de31e82d06365caca0fb3789"
+  },
+  "common_prompt_sha256": "2c9468b88285f9ee82e700cc8ee5c5e445900266a2a41986ab61d63389ad21b2",
+  "identical_limits": {
+    "max_steps": 20,
+    "max_run_calls": 12,
+    "execution_timeout": 10,
+    "wall_timeout": 900
+  },
+  "paired_native_overlap_seconds": 118.927,
+  "native_overlap_evidence": "Historical native event timestamp analysis retained in private terminal-pilot-summary.json; raw native transcripts not republished",
+  "model_only_comparison": false,
+  "recovery": {
+    "id": "gemini-cli-recovery-03",
+    "same_workbook_as_prior": false,
+    "workbook_sha256": "f6696f4a2eaadad8ac4f7f05d696d0d37f1572dd67c5cba8c1ea2e5b479bacd3",
+    "accepted_executions": 0
+  },
+  "provenance_limit": "Published source is the verified current snapshot, not an immutable per-run harness-build attestation"
+}
