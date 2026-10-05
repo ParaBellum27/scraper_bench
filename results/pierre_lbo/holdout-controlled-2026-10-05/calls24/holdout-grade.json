@@ -1,0 +1,3050 @@
+{
+  "suite": "separate_qualified_holdout",
+  "official_scoreboard": false,
+  "primary_metric": "holdout_cases_fully_correct",
+  "cases_sha256": "a451fc01a6c331cad4bcf972f985417023646e2447beb2a9d2ccc71fc7cc617c",
+  "submission_sha256": "1802931df82cd891eb3e866bdd0a659923c6253dff8fd4adf3aa4312a7855991",
+  "source_unchanged": true,
+  "cases_fully_correct": 22,
+  "cases_total": 22,
+  "all_cases_correct": true,
+  "grading_timeout_seconds": 5,
+  "score_role": "weighted_partial_credit_diagnostic",
+  "score": 100,
+  "cases": [
+    {
+      "name": "holdout_liquidity_inside_small",
+      "family": "liquidity_neighborhood",
+      "actual": {
+        "status": "ok",
+        "failure_period": null,
+        "funding_shortfall": 0,
+        "dates": [
+          "2027-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028
+        ],
+        "exit_date": "2027-06-30",
+        "holding_period_years": 0.9972602739726028,
+        "entry_ebitda": 0.05120000000000001,
+        "entry_ev": 0.10240000000000002,
+        "entry_equity": 0.08960000000000001,
+        "ordinary_equity": 0.044800000000000006,
+        "preferred_equity": 0.044800000000000006,
+        "sponsor_investment": 0.07616,
+        "management_investment": 0.013440000000000002,
+        "revenue": [
+          0.2048
+        ],
+        "gross_profit": [
+          0.07680000000000001
+        ],
+        "opex": [
+          0.0256
+        ],
+        "ebitda": [
+          0.05120000000000001
+        ],
+        "ebitda_margin": [
+          0.25
+        ],
+        "working_capital": [
+          0.003200000000010212
+        ],
+        "change_working_capital": [
+          0.003200000000010212
+        ],
+        "cash_capex": [
+          0.051059726027397265
+        ],
+        "cash_ebitda": [
+          0.05105972602739727
+        ],
+        "cash_interest": [
+          0
+        ],
+        "tlb_interest": [
+          0
+        ],
+        "rcf_interest": [
+          0
+        ],
+        "cash_taxes": [
+          0
+        ],
+        "pre_financing_cash_flow": [
+          -0.003200000000010205
+        ],
+        "tlb_pik": [
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0
+        ],
+        "rcf_draw": [
+          0.0032
+        ],
+        "rcf_repayment": [
+          0
+        ],
+        "tlb_sweep": [
+          0
+        ],
+        "tlb_balance": [
+          0.0128
+        ],
+        "rcf_balance": [
+          0.0032
+        ],
+        "cash_balance": [
+          0
+        ],
+        "exit_ev": 0.10240000000000002,
+        "exit_fees": 0,
+        "exit_debt": 0.016,
+        "exit_cash": 0,
+        "equity_value_before_floor": 0.08640000000000002,
+        "equity_proceeds": 0.08640000000000002,
+        "preferred_accrued": 0.044800000000000006,
+        "preferred_payout": 0.044800000000000006,
+        "ordinary_payout": 0.04160000000000001,
+        "sponsor_proceeds": 0.07392000000000001,
+        "management_proceeds": 0.012480000000000003,
+        "deal_mom": 0.9642857142857143,
+        "sponsor_mom": 0.9705882352941178,
+        "management_mom": 0.9285714285714286,
+        "deal_irr": -0.03581062375800326,
+        "sponsor_irr": -0.029491362911059027,
+        "management_irr": -0.07161760313449295
+      },
+      "grade": {
+        "name": "holdout_liquidity_inside_small",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_liquidity_outside_small",
+      "family": "liquidity_neighborhood",
+      "actual": {
+        "status": "liquidity_shortfall",
+        "failure_period": 1,
+        "funding_shortfall": 2.552918813847338e-13,
+        "dates": [
+          "2027-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028
+        ],
+        "exit_date": "2027-06-30",
+        "holding_period_years": 0.9972602739726028,
+        "entry_ebitda": 0.05120000000000001,
+        "entry_ev": 0.10240000000000002,
+        "entry_equity": 0.08960000000000001,
+        "ordinary_equity": 0.044800000000000006,
+        "preferred_equity": 0.044800000000000006,
+        "sponsor_investment": 0.07616,
+        "management_investment": 0.013440000000000002,
+        "revenue": [
+          0.2048
+        ],
+        "gross_profit": [
+          0.07680000000000001
+        ],
+        "opex": [
+          0.0256
+        ],
+        "ebitda": [
+          0.05120000000000001
+        ],
+        "ebitda_margin": [
+          0.25
+        ],
+        "working_capital": [
+          0.003200000000255299
+        ],
+        "change_working_capital": [
+          0.003200000000255299
+        ],
+        "cash_capex": [
+          0.051059726027397265
+        ],
+        "cash_ebitda": [
+          0.05105972602739727
+        ],
+        "cash_interest": [],
+        "tlb_interest": [],
+        "rcf_interest": [],
+        "cash_taxes": [],
+        "pre_financing_cash_flow": [],
+        "tlb_pik": [],
+        "mandatory_tlb_repayment": [],
+        "mandatory_rcf_repayment": [],
+        "rcf_draw": [],
+        "rcf_repayment": [],
+        "tlb_sweep": [],
+        "tlb_balance": [],
+        "rcf_balance": [],
+        "cash_balance": [],
+        "exit_ev": null,
+        "exit_fees": null,
+        "exit_debt": null,
+        "exit_cash": null,
+        "equity_value_before_floor": null,
+        "equity_proceeds": null,
+        "preferred_accrued": null,
+        "preferred_payout": null,
+        "ordinary_payout": null,
+        "sponsor_proceeds": null,
+        "management_proceeds": null,
+        "deal_mom": null,
+        "sponsor_mom": null,
+        "management_mom": null,
+        "deal_irr": null,
+        "sponsor_irr": null,
+        "management_irr": null
+      },
+      "grade": {
+        "name": "holdout_liquidity_outside_small",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_preferred_below_small",
+      "family": "preferred_hurdle",
+      "actual": {
+        "status": "ok",
+        "failure_period": null,
+        "funding_shortfall": 0,
+        "dates": [
+          "2027-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028
+        ],
+        "exit_date": "2027-06-30",
+        "holding_period_years": 0.9972602739726028,
+        "entry_ebitda": 0.05120000000000001,
+        "entry_ev": 0.10240000000000002,
+        "entry_equity": 0.08960000000000001,
+        "ordinary_equity": 0.044800000000000006,
+        "preferred_equity": 0.044800000000000006,
+        "sponsor_investment": 0.07616,
+        "management_investment": 0.013440000000000002,
+        "revenue": [
+          0.2048
+        ],
+        "gross_profit": [
+          0.07680000000000001
+        ],
+        "opex": [
+          0.0256
+        ],
+        "ebitda": [
+          0.05120000000000001
+        ],
+        "ebitda_margin": [
+          0.25
+        ],
+        "working_capital": [
+          0
+        ],
+        "change_working_capital": [
+          0
+        ],
+        "cash_capex": [
+          0.051059726027397265
+        ],
+        "cash_ebitda": [
+          0.05105972602739727
+        ],
+        "cash_interest": [
+          0
+        ],
+        "tlb_interest": [
+          0
+        ],
+        "rcf_interest": [
+          0
+        ],
+        "cash_taxes": [
+          0
+        ],
+        "pre_financing_cash_flow": [
+          6.938893903907228e-18
+        ],
+        "tlb_pik": [
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0
+        ],
+        "rcf_draw": [
+          0
+        ],
+        "rcf_repayment": [
+          0
+        ],
+        "tlb_sweep": [
+          0
+        ],
+        "tlb_balance": [
+          0.0128
+        ],
+        "rcf_balance": [
+          0
+        ],
+        "cash_balance": [
+          6.938893903907228e-18
+        ],
+        "exit_ev": 0.057400000000000014,
+        "exit_fees": 0,
+        "exit_debt": 0.0128,
+        "exit_cash": 6.938893903907228e-18,
+        "equity_value_before_floor": 0.04460000000000002,
+        "equity_proceeds": 0.04460000000000002,
+        "preferred_accrued": 0.044800000000000006,
+        "preferred_payout": 0.04460000000000002,
+        "ordinary_payout": 0,
+        "sponsor_proceeds": 0.04460000000000002,
+        "management_proceeds": 0,
+        "deal_mom": 0.4977678571428573,
+        "sponsor_mom": 0.5856092436974792,
+        "management_mom": 0,
+        "deal_irr": -0.5031852224975827,
+        "sponsor_irr": -0.4152510056749026,
+        "management_irr": null
+      },
+      "grade": {
+        "name": "holdout_preferred_below_small",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_preferred_equal_small",
+      "family": "preferred_hurdle",
+      "actual": {
+        "status": "ok",
+        "failure_period": null,
+        "funding_shortfall": 0,
+        "dates": [
+          "2027-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028
+        ],
+        "exit_date": "2027-06-30",
+        "holding_period_years": 0.9972602739726028,
+        "entry_ebitda": 0.05120000000000001,
+        "entry_ev": 0.10240000000000002,
+        "entry_equity": 0.08960000000000001,
+        "ordinary_equity": 0.044800000000000006,
+        "preferred_equity": 0.044800000000000006,
+        "sponsor_investment": 0.07616,
+        "management_investment": 0.013440000000000002,
+        "revenue": [
+          0.2048
+        ],
+        "gross_profit": [
+          0.07680000000000001
+        ],
+        "opex": [
+          0.0256
+        ],
+        "ebitda": [
+          0.05120000000000001
+        ],
+        "ebitda_margin": [
+          0.25
+        ],
+        "working_capital": [
+          0
+        ],
+        "change_working_capital": [
+          0
+        ],
+        "cash_capex": [
+          0.051059726027397265
+        ],
+        "cash_ebitda": [
+          0.05105972602739727
+        ],
+        "cash_interest": [
+          0
+        ],
+        "tlb_interest": [
+          0
+        ],
+        "rcf_interest": [
+          0
+        ],
+        "cash_taxes": [
+          0
+        ],
+        "pre_financing_cash_flow": [
+          6.938893903907228e-18
+        ],
+        "tlb_pik": [
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0
+        ],
+        "rcf_draw": [
+          0
+        ],
+        "rcf_repayment": [
+          0
+        ],
+        "tlb_sweep": [
+          0
+        ],
+        "tlb_balance": [
+          0.0128
+        ],
+        "rcf_balance": [
+          0
+        ],
+        "cash_balance": [
+          6.938893903907228e-18
+        ],
+        "exit_ev": 0.05760000000000001,
+        "exit_fees": 0,
+        "exit_debt": 0.0128,
+        "exit_cash": 6.938893903907228e-18,
+        "equity_value_before_floor": 0.04480000000000002,
+        "equity_proceeds": 0.04480000000000002,
+        "preferred_accrued": 0.044800000000000006,
+        "preferred_payout": 0.04480000000000002,
+        "ordinary_payout": 0,
+        "sponsor_proceeds": 0.04480000000000002,
+        "management_proceeds": 0,
+        "deal_mom": 0.5000000000000001,
+        "sponsor_mom": 0.5882352941176473,
+        "management_mom": 0,
+        "deal_irr": -0.500951219280688,
+        "sponsor_irr": -0.41262159287650446,
+        "management_irr": null
+      },
+      "grade": {
+        "name": "holdout_preferred_equal_small",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_preferred_above_small",
+      "family": "preferred_hurdle",
+      "actual": {
+        "status": "ok",
+        "failure_period": null,
+        "funding_shortfall": 0,
+        "dates": [
+          "2027-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028
+        ],
+        "exit_date": "2027-06-30",
+        "holding_period_years": 0.9972602739726028,
+        "entry_ebitda": 0.05120000000000001,
+        "entry_ev": 0.10240000000000002,
+        "entry_equity": 0.08960000000000001,
+        "ordinary_equity": 0.044800000000000006,
+        "preferred_equity": 0.044800000000000006,
+        "sponsor_investment": 0.07616,
+        "management_investment": 0.013440000000000002,
+        "revenue": [
+          0.2048
+        ],
+        "gross_profit": [
+          0.07680000000000001
+        ],
+        "opex": [
+          0.0256
+        ],
+        "ebitda": [
+          0.05120000000000001
+        ],
+        "ebitda_margin": [
+          0.25
+        ],
+        "working_capital": [
+          0
+        ],
+        "change_working_capital": [
+          0
+        ],
+        "cash_capex": [
+          0.051059726027397265
+        ],
+        "cash_ebitda": [
+          0.05105972602739727
+        ],
+        "cash_interest": [
+          0
+        ],
+        "tlb_interest": [
+          0
+        ],
+        "rcf_interest": [
+          0
+        ],
+        "cash_taxes": [
+          0
+        ],
+        "pre_financing_cash_flow": [
+          6.938893903907228e-18
+        ],
+        "tlb_pik": [
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0
+        ],
+        "rcf_draw": [
+          0
+        ],
+        "rcf_repayment": [
+          0
+        ],
+        "tlb_sweep": [
+          0
+        ],
+        "tlb_balance": [
+          0.0128
+        ],
+        "rcf_balance": [
+          0
+        ],
+        "cash_balance": [
+          6.938893903907228e-18
+        ],
+        "exit_ev": 0.05780000000000001,
+        "exit_fees": 0,
+        "exit_debt": 0.0128,
+        "exit_cash": 6.938893903907228e-18,
+        "equity_value_before_floor": 0.04500000000000002,
+        "equity_proceeds": 0.04500000000000002,
+        "preferred_accrued": 0.044800000000000006,
+        "preferred_payout": 0.044800000000000006,
+        "ordinary_payout": 0.00020000000000001267,
+        "sponsor_proceeds": 0.044940000000000015,
+        "management_proceeds": 0.000060000000000003796,
+        "deal_mom": 0.502232142857143,
+        "sponsor_mom": 0.5900735294117648,
+        "management_mom": 0.004464285714285996,
+        "deal_irr": -0.4987171886645546,
+        "sponsor_irr": -0.4107809847210643,
+        "management_irr": -0.9956015945934166
+      },
+      "grade": {
+        "name": "holdout_preferred_above_small",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_liquidity_inside_unit",
+      "family": "liquidity_neighborhood",
+      "actual": {
+        "status": "ok",
+        "failure_period": null,
+        "funding_shortfall": 0,
+        "dates": [
+          "2027-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028
+        ],
+        "exit_date": "2027-06-30",
+        "holding_period_years": 0.9972602739726028,
+        "entry_ebitda": 512,
+        "entry_ev": 1024,
+        "entry_equity": 896,
+        "ordinary_equity": 448,
+        "preferred_equity": 448,
+        "sponsor_investment": 761.6,
+        "management_investment": 134.4,
+        "revenue": [
+          2048
+        ],
+        "gross_profit": [
+          768
+        ],
+        "opex": [
+          256
+        ],
+        "ebitda": [
+          512
+        ],
+        "ebitda_margin": [
+          0.25
+        ],
+        "working_capital": [
+          32.00000000010212
+        ],
+        "change_working_capital": [
+          32.00000000010212
+        ],
+        "cash_capex": [
+          510.5972602739726
+        ],
+        "cash_ebitda": [
+          510.5972602739726
+        ],
+        "cash_interest": [
+          0
+        ],
+        "tlb_interest": [
+          0
+        ],
+        "rcf_interest": [
+          0
+        ],
+        "cash_taxes": [
+          0
+        ],
+        "pre_financing_cash_flow": [
+          -32.00000000010212
+        ],
+        "tlb_pik": [
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0
+        ],
+        "rcf_draw": [
+          32
+        ],
+        "rcf_repayment": [
+          0
+        ],
+        "tlb_sweep": [
+          0
+        ],
+        "tlb_balance": [
+          128
+        ],
+        "rcf_balance": [
+          32
+        ],
+        "cash_balance": [
+          0
+        ],
+        "exit_ev": 1024,
+        "exit_fees": 0,
+        "exit_debt": 160,
+        "exit_cash": 0,
+        "equity_value_before_floor": 864,
+        "equity_proceeds": 864,
+        "preferred_accrued": 448,
+        "preferred_payout": 448,
+        "ordinary_payout": 416,
+        "sponsor_proceeds": 739.2,
+        "management_proceeds": 124.8,
+        "deal_mom": 0.9642857142857143,
+        "sponsor_mom": 0.9705882352941176,
+        "management_mom": 0.9285714285714285,
+        "deal_irr": -0.03581062375800326,
+        "sponsor_irr": -0.029491362911059138,
+        "management_irr": -0.07161760313449306
+      },
+      "grade": {
+        "name": "holdout_liquidity_inside_unit",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_liquidity_outside_unit",
+      "family": "liquidity_neighborhood",
+      "actual": {
+        "status": "liquidity_shortfall",
+        "failure_period": 1,
+        "funding_shortfall": 2.5529871550133976e-9,
+        "dates": [
+          "2027-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028
+        ],
+        "exit_date": "2027-06-30",
+        "holding_period_years": 0.9972602739726028,
+        "entry_ebitda": 512,
+        "entry_ev": 1024,
+        "entry_equity": 896,
+        "ordinary_equity": 448,
+        "preferred_equity": 448,
+        "sponsor_investment": 761.6,
+        "management_investment": 134.4,
+        "revenue": [
+          2048
+        ],
+        "gross_profit": [
+          768
+        ],
+        "opex": [
+          256
+        ],
+        "ebitda": [
+          512
+        ],
+        "ebitda_margin": [
+          0.25
+        ],
+        "working_capital": [
+          32.00000000255299
+        ],
+        "change_working_capital": [
+          32.00000000255299
+        ],
+        "cash_capex": [
+          510.5972602739726
+        ],
+        "cash_ebitda": [
+          510.5972602739726
+        ],
+        "cash_interest": [],
+        "tlb_interest": [],
+        "rcf_interest": [],
+        "cash_taxes": [],
+        "pre_financing_cash_flow": [],
+        "tlb_pik": [],
+        "mandatory_tlb_repayment": [],
+        "mandatory_rcf_repayment": [],
+        "rcf_draw": [],
+        "rcf_repayment": [],
+        "tlb_sweep": [],
+        "tlb_balance": [],
+        "rcf_balance": [],
+        "cash_balance": [],
+        "exit_ev": null,
+        "exit_fees": null,
+        "exit_debt": null,
+        "exit_cash": null,
+        "equity_value_before_floor": null,
+        "equity_proceeds": null,
+        "preferred_accrued": null,
+        "preferred_payout": null,
+        "ordinary_payout": null,
+        "sponsor_proceeds": null,
+        "management_proceeds": null,
+        "deal_mom": null,
+        "sponsor_mom": null,
+        "management_mom": null,
+        "deal_irr": null,
+        "sponsor_irr": null,
+        "management_irr": null
+      },
+      "grade": {
+        "name": "holdout_liquidity_outside_unit",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_preferred_below_unit",
+      "family": "preferred_hurdle",
+      "actual": {
+        "status": "ok",
+        "failure_period": null,
+        "funding_shortfall": 0,
+        "dates": [
+          "2027-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028
+        ],
+        "exit_date": "2027-06-30",
+        "holding_period_years": 0.9972602739726028,
+        "entry_ebitda": 512,
+        "entry_ev": 1024,
+        "entry_equity": 896,
+        "ordinary_equity": 448,
+        "preferred_equity": 448,
+        "sponsor_investment": 761.6,
+        "management_investment": 134.4,
+        "revenue": [
+          2048
+        ],
+        "gross_profit": [
+          768
+        ],
+        "opex": [
+          256
+        ],
+        "ebitda": [
+          512
+        ],
+        "ebitda_margin": [
+          0.25
+        ],
+        "working_capital": [
+          0
+        ],
+        "change_working_capital": [
+          0
+        ],
+        "cash_capex": [
+          510.5972602739726
+        ],
+        "cash_ebitda": [
+          510.5972602739726
+        ],
+        "cash_interest": [
+          0
+        ],
+        "tlb_interest": [
+          0
+        ],
+        "rcf_interest": [
+          0
+        ],
+        "cash_taxes": [
+          0
+        ],
+        "pre_financing_cash_flow": [
+          0
+        ],
+        "tlb_pik": [
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0
+        ],
+        "rcf_draw": [
+          0
+        ],
+        "rcf_repayment": [
+          0
+        ],
+        "tlb_sweep": [
+          0
+        ],
+        "tlb_balance": [
+          128
+        ],
+        "rcf_balance": [
+          0
+        ],
+        "cash_balance": [
+          0
+        ],
+        "exit_ev": 574,
+        "exit_fees": 0,
+        "exit_debt": 128,
+        "exit_cash": 0,
+        "equity_value_before_floor": 446,
+        "equity_proceeds": 446,
+        "preferred_accrued": 448,
+        "preferred_payout": 446,
+        "ordinary_payout": 0,
+        "sponsor_proceeds": 446,
+        "management_proceeds": 0,
+        "deal_mom": 0.49776785714285715,
+        "sponsor_mom": 0.585609243697479,
+        "management_mom": 0,
+        "deal_irr": -0.5031852224975828,
+        "sponsor_irr": -0.4152510056749028,
+        "management_irr": null
+      },
+      "grade": {
+        "name": "holdout_preferred_below_unit",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_preferred_equal_unit",
+      "family": "preferred_hurdle",
+      "actual": {
+        "status": "ok",
+        "failure_period": null,
+        "funding_shortfall": 0,
+        "dates": [
+          "2027-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028
+        ],
+        "exit_date": "2027-06-30",
+        "holding_period_years": 0.9972602739726028,
+        "entry_ebitda": 512,
+        "entry_ev": 1024,
+        "entry_equity": 896,
+        "ordinary_equity": 448,
+        "preferred_equity": 448,
+        "sponsor_investment": 761.6,
+        "management_investment": 134.4,
+        "revenue": [
+          2048
+        ],
+        "gross_profit": [
+          768
+        ],
+        "opex": [
+          256
+        ],
+        "ebitda": [
+          512
+        ],
+        "ebitda_margin": [
+          0.25
+        ],
+        "working_capital": [
+          0
+        ],
+        "change_working_capital": [
+          0
+        ],
+        "cash_capex": [
+          510.5972602739726
+        ],
+        "cash_ebitda": [
+          510.5972602739726
+        ],
+        "cash_interest": [
+          0
+        ],
+        "tlb_interest": [
+          0
+        ],
+        "rcf_interest": [
+          0
+        ],
+        "cash_taxes": [
+          0
+        ],
+        "pre_financing_cash_flow": [
+          0
+        ],
+        "tlb_pik": [
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0
+        ],
+        "rcf_draw": [
+          0
+        ],
+        "rcf_repayment": [
+          0
+        ],
+        "tlb_sweep": [
+          0
+        ],
+        "tlb_balance": [
+          128
+        ],
+        "rcf_balance": [
+          0
+        ],
+        "cash_balance": [
+          0
+        ],
+        "exit_ev": 576,
+        "exit_fees": 0,
+        "exit_debt": 128,
+        "exit_cash": 0,
+        "equity_value_before_floor": 448,
+        "equity_proceeds": 448,
+        "preferred_accrued": 448,
+        "preferred_payout": 448,
+        "ordinary_payout": 0,
+        "sponsor_proceeds": 448,
+        "management_proceeds": 0,
+        "deal_mom": 0.5,
+        "sponsor_mom": 0.5882352941176471,
+        "management_mom": 0,
+        "deal_irr": -0.5009512192806882,
+        "sponsor_irr": -0.4126215928765047,
+        "management_irr": null
+      },
+      "grade": {
+        "name": "holdout_preferred_equal_unit",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_preferred_above_unit",
+      "family": "preferred_hurdle",
+      "actual": {
+        "status": "ok",
+        "failure_period": null,
+        "funding_shortfall": 0,
+        "dates": [
+          "2027-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028
+        ],
+        "exit_date": "2027-06-30",
+        "holding_period_years": 0.9972602739726028,
+        "entry_ebitda": 512,
+        "entry_ev": 1024,
+        "entry_equity": 896,
+        "ordinary_equity": 448,
+        "preferred_equity": 448,
+        "sponsor_investment": 761.6,
+        "management_investment": 134.4,
+        "revenue": [
+          2048
+        ],
+        "gross_profit": [
+          768
+        ],
+        "opex": [
+          256
+        ],
+        "ebitda": [
+          512
+        ],
+        "ebitda_margin": [
+          0.25
+        ],
+        "working_capital": [
+          0
+        ],
+        "change_working_capital": [
+          0
+        ],
+        "cash_capex": [
+          510.5972602739726
+        ],
+        "cash_ebitda": [
+          510.5972602739726
+        ],
+        "cash_interest": [
+          0
+        ],
+        "tlb_interest": [
+          0
+        ],
+        "rcf_interest": [
+          0
+        ],
+        "cash_taxes": [
+          0
+        ],
+        "pre_financing_cash_flow": [
+          0
+        ],
+        "tlb_pik": [
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0
+        ],
+        "rcf_draw": [
+          0
+        ],
+        "rcf_repayment": [
+          0
+        ],
+        "tlb_sweep": [
+          0
+        ],
+        "tlb_balance": [
+          128
+        ],
+        "rcf_balance": [
+          0
+        ],
+        "cash_balance": [
+          0
+        ],
+        "exit_ev": 578,
+        "exit_fees": 0,
+        "exit_debt": 128,
+        "exit_cash": 0,
+        "equity_value_before_floor": 450,
+        "equity_proceeds": 450,
+        "preferred_accrued": 448,
+        "preferred_payout": 448,
+        "ordinary_payout": 2,
+        "sponsor_proceeds": 449.4,
+        "management_proceeds": 0.6,
+        "deal_mom": 0.5022321428571429,
+        "sponsor_mom": 0.5900735294117646,
+        "management_mom": 0.004464285714285714,
+        "deal_irr": -0.4987171886645547,
+        "sponsor_irr": -0.4107809847210645,
+        "management_irr": -0.9956015945934168
+      },
+      "grade": {
+        "name": "holdout_preferred_above_unit",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_liquidity_inside_large",
+      "family": "liquidity_neighborhood",
+      "actual": {
+        "status": "ok",
+        "failure_period": null,
+        "funding_shortfall": 0,
+        "dates": [
+          "2027-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028
+        ],
+        "exit_date": "2027-06-30",
+        "holding_period_years": 0.9972602739726028,
+        "entry_ebitda": 5120000,
+        "entry_ev": 10240000,
+        "entry_equity": 8960000,
+        "ordinary_equity": 4480000,
+        "preferred_equity": 4480000,
+        "sponsor_investment": 7616000,
+        "management_investment": 1344000,
+        "revenue": [
+          20480000
+        ],
+        "gross_profit": [
+          7680000
+        ],
+        "opex": [
+          2560000
+        ],
+        "ebitda": [
+          5120000
+        ],
+        "ebitda_margin": [
+          0.25
+        ],
+        "working_capital": [
+          320000.0000010212
+        ],
+        "change_working_capital": [
+          320000.0000010212
+        ],
+        "cash_capex": [
+          5105972.602739726
+        ],
+        "cash_ebitda": [
+          5105972.602739726
+        ],
+        "cash_interest": [
+          0
+        ],
+        "tlb_interest": [
+          0
+        ],
+        "rcf_interest": [
+          0
+        ],
+        "cash_taxes": [
+          0
+        ],
+        "pre_financing_cash_flow": [
+          -320000.0000010212
+        ],
+        "tlb_pik": [
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0
+        ],
+        "rcf_draw": [
+          320000
+        ],
+        "rcf_repayment": [
+          0
+        ],
+        "tlb_sweep": [
+          0
+        ],
+        "tlb_balance": [
+          1280000
+        ],
+        "rcf_balance": [
+          320000
+        ],
+        "cash_balance": [
+          0
+        ],
+        "exit_ev": 10240000,
+        "exit_fees": 0,
+        "exit_debt": 1600000,
+        "exit_cash": 0,
+        "equity_value_before_floor": 8640000,
+        "equity_proceeds": 8640000,
+        "preferred_accrued": 4480000,
+        "preferred_payout": 4480000,
+        "ordinary_payout": 4160000,
+        "sponsor_proceeds": 7392000,
+        "management_proceeds": 1248000,
+        "deal_mom": 0.9642857142857143,
+        "sponsor_mom": 0.9705882352941176,
+        "management_mom": 0.9285714285714286,
+        "deal_irr": -0.03581062375800326,
+        "sponsor_irr": -0.029491362911059138,
+        "management_irr": -0.07161760313449295
+      },
+      "grade": {
+        "name": "holdout_liquidity_inside_large",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_liquidity_outside_large",
+      "family": "liquidity_neighborhood",
+      "actual": {
+        "status": "liquidity_shortfall",
+        "failure_period": 1,
+        "funding_shortfall": 0.000025529880076646805,
+        "dates": [
+          "2027-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028
+        ],
+        "exit_date": "2027-06-30",
+        "holding_period_years": 0.9972602739726028,
+        "entry_ebitda": 5120000,
+        "entry_ev": 10240000,
+        "entry_equity": 8960000,
+        "ordinary_equity": 4480000,
+        "preferred_equity": 4480000,
+        "sponsor_investment": 7616000,
+        "management_investment": 1344000,
+        "revenue": [
+          20480000
+        ],
+        "gross_profit": [
+          7680000
+        ],
+        "opex": [
+          2560000
+        ],
+        "ebitda": [
+          5120000
+        ],
+        "ebitda_margin": [
+          0.25
+        ],
+        "working_capital": [
+          320000.0000255299
+        ],
+        "change_working_capital": [
+          320000.0000255299
+        ],
+        "cash_capex": [
+          5105972.602739726
+        ],
+        "cash_ebitda": [
+          5105972.602739726
+        ],
+        "cash_interest": [],
+        "tlb_interest": [],
+        "rcf_interest": [],
+        "cash_taxes": [],
+        "pre_financing_cash_flow": [],
+        "tlb_pik": [],
+        "mandatory_tlb_repayment": [],
+        "mandatory_rcf_repayment": [],
+        "rcf_draw": [],
+        "rcf_repayment": [],
+        "tlb_sweep": [],
+        "tlb_balance": [],
+        "rcf_balance": [],
+        "cash_balance": [],
+        "exit_ev": null,
+        "exit_fees": null,
+        "exit_debt": null,
+        "exit_cash": null,
+        "equity_value_before_floor": null,
+        "equity_proceeds": null,
+        "preferred_accrued": null,
+        "preferred_payout": null,
+        "ordinary_payout": null,
+        "sponsor_proceeds": null,
+        "management_proceeds": null,
+        "deal_mom": null,
+        "sponsor_mom": null,
+        "management_mom": null,
+        "deal_irr": null,
+        "sponsor_irr": null,
+        "management_irr": null
+      },
+      "grade": {
+        "name": "holdout_liquidity_outside_large",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_preferred_below_large",
+      "family": "preferred_hurdle",
+      "actual": {
+        "status": "ok",
+        "failure_period": null,
+        "funding_shortfall": 0,
+        "dates": [
+          "2027-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028
+        ],
+        "exit_date": "2027-06-30",
+        "holding_period_years": 0.9972602739726028,
+        "entry_ebitda": 5120000,
+        "entry_ev": 10240000,
+        "entry_equity": 8960000,
+        "ordinary_equity": 4480000,
+        "preferred_equity": 4480000,
+        "sponsor_investment": 7616000,
+        "management_investment": 1344000,
+        "revenue": [
+          20480000
+        ],
+        "gross_profit": [
+          7680000
+        ],
+        "opex": [
+          2560000
+        ],
+        "ebitda": [
+          5120000
+        ],
+        "ebitda_margin": [
+          0.25
+        ],
+        "working_capital": [
+          0
+        ],
+        "change_working_capital": [
+          0
+        ],
+        "cash_capex": [
+          5105972.602739726
+        ],
+        "cash_ebitda": [
+          5105972.602739726
+        ],
+        "cash_interest": [
+          0
+        ],
+        "tlb_interest": [
+          0
+        ],
+        "rcf_interest": [
+          0
+        ],
+        "cash_taxes": [
+          0
+        ],
+        "pre_financing_cash_flow": [
+          0
+        ],
+        "tlb_pik": [
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0
+        ],
+        "rcf_draw": [
+          0
+        ],
+        "rcf_repayment": [
+          0
+        ],
+        "tlb_sweep": [
+          0
+        ],
+        "tlb_balance": [
+          1280000
+        ],
+        "rcf_balance": [
+          0
+        ],
+        "cash_balance": [
+          0
+        ],
+        "exit_ev": 5740000,
+        "exit_fees": 0,
+        "exit_debt": 1280000,
+        "exit_cash": 0,
+        "equity_value_before_floor": 4460000,
+        "equity_proceeds": 4460000,
+        "preferred_accrued": 4480000,
+        "preferred_payout": 4460000,
+        "ordinary_payout": 0,
+        "sponsor_proceeds": 4460000,
+        "management_proceeds": 0,
+        "deal_mom": 0.49776785714285715,
+        "sponsor_mom": 0.585609243697479,
+        "management_mom": 0,
+        "deal_irr": -0.5031852224975828,
+        "sponsor_irr": -0.4152510056749028,
+        "management_irr": null
+      },
+      "grade": {
+        "name": "holdout_preferred_below_large",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_preferred_equal_large",
+      "family": "preferred_hurdle",
+      "actual": {
+        "status": "ok",
+        "failure_period": null,
+        "funding_shortfall": 0,
+        "dates": [
+          "2027-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028
+        ],
+        "exit_date": "2027-06-30",
+        "holding_period_years": 0.9972602739726028,
+        "entry_ebitda": 5120000,
+        "entry_ev": 10240000,
+        "entry_equity": 8960000,
+        "ordinary_equity": 4480000,
+        "preferred_equity": 4480000,
+        "sponsor_investment": 7616000,
+        "management_investment": 1344000,
+        "revenue": [
+          20480000
+        ],
+        "gross_profit": [
+          7680000
+        ],
+        "opex": [
+          2560000
+        ],
+        "ebitda": [
+          5120000
+        ],
+        "ebitda_margin": [
+          0.25
+        ],
+        "working_capital": [
+          0
+        ],
+        "change_working_capital": [
+          0
+        ],
+        "cash_capex": [
+          5105972.602739726
+        ],
+        "cash_ebitda": [
+          5105972.602739726
+        ],
+        "cash_interest": [
+          0
+        ],
+        "tlb_interest": [
+          0
+        ],
+        "rcf_interest": [
+          0
+        ],
+        "cash_taxes": [
+          0
+        ],
+        "pre_financing_cash_flow": [
+          0
+        ],
+        "tlb_pik": [
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0
+        ],
+        "rcf_draw": [
+          0
+        ],
+        "rcf_repayment": [
+          0
+        ],
+        "tlb_sweep": [
+          0
+        ],
+        "tlb_balance": [
+          1280000
+        ],
+        "rcf_balance": [
+          0
+        ],
+        "cash_balance": [
+          0
+        ],
+        "exit_ev": 5760000,
+        "exit_fees": 0,
+        "exit_debt": 1280000,
+        "exit_cash": 0,
+        "equity_value_before_floor": 4480000,
+        "equity_proceeds": 4480000,
+        "preferred_accrued": 4480000,
+        "preferred_payout": 4480000,
+        "ordinary_payout": 0,
+        "sponsor_proceeds": 4480000,
+        "management_proceeds": 0,
+        "deal_mom": 0.5,
+        "sponsor_mom": 0.5882352941176471,
+        "management_mom": 0,
+        "deal_irr": -0.5009512192806882,
+        "sponsor_irr": -0.4126215928765047,
+        "management_irr": null
+      },
+      "grade": {
+        "name": "holdout_preferred_equal_large",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_preferred_above_large",
+      "family": "preferred_hurdle",
+      "actual": {
+        "status": "ok",
+        "failure_period": null,
+        "funding_shortfall": 0,
+        "dates": [
+          "2027-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028
+        ],
+        "exit_date": "2027-06-30",
+        "holding_period_years": 0.9972602739726028,
+        "entry_ebitda": 5120000,
+        "entry_ev": 10240000,
+        "entry_equity": 8960000,
+        "ordinary_equity": 4480000,
+        "preferred_equity": 4480000,
+        "sponsor_investment": 7616000,
+        "management_investment": 1344000,
+        "revenue": [
+          20480000
+        ],
+        "gross_profit": [
+          7680000
+        ],
+        "opex": [
+          2560000
+        ],
+        "ebitda": [
+          5120000
+        ],
+        "ebitda_margin": [
+          0.25
+        ],
+        "working_capital": [
+          0
+        ],
+        "change_working_capital": [
+          0
+        ],
+        "cash_capex": [
+          5105972.602739726
+        ],
+        "cash_ebitda": [
+          5105972.602739726
+        ],
+        "cash_interest": [
+          0
+        ],
+        "tlb_interest": [
+          0
+        ],
+        "rcf_interest": [
+          0
+        ],
+        "cash_taxes": [
+          0
+        ],
+        "pre_financing_cash_flow": [
+          0
+        ],
+        "tlb_pik": [
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0
+        ],
+        "rcf_draw": [
+          0
+        ],
+        "rcf_repayment": [
+          0
+        ],
+        "tlb_sweep": [
+          0
+        ],
+        "tlb_balance": [
+          1280000
+        ],
+        "rcf_balance": [
+          0
+        ],
+        "cash_balance": [
+          0
+        ],
+        "exit_ev": 5780000,
+        "exit_fees": 0,
+        "exit_debt": 1280000,
+        "exit_cash": 0,
+        "equity_value_before_floor": 4500000,
+        "equity_proceeds": 4500000,
+        "preferred_accrued": 4480000,
+        "preferred_payout": 4480000,
+        "ordinary_payout": 20000,
+        "sponsor_proceeds": 4494000,
+        "management_proceeds": 6000,
+        "deal_mom": 0.5022321428571429,
+        "sponsor_mom": 0.5900735294117647,
+        "management_mom": 0.004464285714285714,
+        "deal_irr": -0.4987171886645547,
+        "sponsor_irr": -0.4107809847210644,
+        "management_irr": -0.9956015945934168
+      },
+      "grade": {
+        "name": "holdout_preferred_above_large",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_term_maturity_funded",
+      "family": "mandatory_maturity",
+      "actual": {
+        "status": "ok",
+        "failure_period": null,
+        "funding_shortfall": 0,
+        "dates": [
+          "2027-06-30",
+          "2028-06-30",
+          "2029-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028,
+          1,
+          1
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028,
+          1.0027397260273974,
+          1
+        ],
+        "exit_date": "2029-06-30",
+        "holding_period_years": 3,
+        "entry_ebitda": 512,
+        "entry_ev": 1024,
+        "entry_equity": 896,
+        "ordinary_equity": 448,
+        "preferred_equity": 448,
+        "sponsor_investment": 761.6,
+        "management_investment": 134.4,
+        "revenue": [
+          2048,
+          2048,
+          2048
+        ],
+        "gross_profit": [
+          768,
+          768,
+          768
+        ],
+        "opex": [
+          256,
+          256,
+          256
+        ],
+        "ebitda": [
+          512,
+          512,
+          512
+        ],
+        "ebitda_margin": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "working_capital": [
+          0,
+          0,
+          0
+        ],
+        "change_working_capital": [
+          0,
+          0,
+          0
+        ],
+        "cash_capex": [
+          510.5972602739726,
+          512,
+          512
+        ],
+        "cash_ebitda": [
+          510.5972602739726,
+          512,
+          512
+        ],
+        "cash_interest": [
+          0,
+          0,
+          0
+        ],
+        "tlb_interest": [
+          0,
+          0,
+          0
+        ],
+        "rcf_interest": [
+          0,
+          0,
+          0
+        ],
+        "cash_taxes": [
+          0,
+          0,
+          0
+        ],
+        "pre_financing_cash_flow": [
+          0,
+          0,
+          0
+        ],
+        "tlb_pik": [
+          0,
+          0,
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0,
+          128,
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0,
+          0,
+          0
+        ],
+        "rcf_draw": [
+          0,
+          128,
+          0
+        ],
+        "rcf_repayment": [
+          0,
+          0,
+          0
+        ],
+        "tlb_sweep": [
+          0,
+          0,
+          0
+        ],
+        "tlb_balance": [
+          128,
+          0,
+          0
+        ],
+        "rcf_balance": [
+          0,
+          128,
+          128
+        ],
+        "cash_balance": [
+          0,
+          0,
+          0
+        ],
+        "exit_ev": 1024,
+        "exit_fees": 0,
+        "exit_debt": 128,
+        "exit_cash": 0,
+        "equity_value_before_floor": 896,
+        "equity_proceeds": 896,
+        "preferred_accrued": 448,
+        "preferred_payout": 448,
+        "ordinary_payout": 448,
+        "sponsor_proceeds": 761.5999999999999,
+        "management_proceeds": 134.4,
+        "deal_mom": 1,
+        "sponsor_mom": 0.9999999999999999,
+        "management_mom": 1,
+        "deal_irr": 0,
+        "sponsor_irr": 0,
+        "management_irr": 0
+      },
+      "grade": {
+        "name": "holdout_term_maturity_funded",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_term_maturity_retained_prefix",
+      "family": "mandatory_maturity",
+      "actual": {
+        "status": "liquidity_shortfall",
+        "failure_period": 3,
+        "funding_shortfall": 64,
+        "dates": [
+          "2027-06-30",
+          "2028-06-30",
+          "2029-06-30",
+          "2030-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028,
+          1,
+          1,
+          1
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028,
+          1.0027397260273974,
+          1,
+          1
+        ],
+        "exit_date": "2030-06-30",
+        "holding_period_years": 4,
+        "entry_ebitda": 512,
+        "entry_ev": 1024,
+        "entry_equity": 896,
+        "ordinary_equity": 448,
+        "preferred_equity": 448,
+        "sponsor_investment": 761.6,
+        "management_investment": 134.4,
+        "revenue": [
+          2048,
+          2048,
+          2048,
+          2048
+        ],
+        "gross_profit": [
+          768,
+          768,
+          768,
+          768
+        ],
+        "opex": [
+          256,
+          256,
+          256,
+          256
+        ],
+        "ebitda": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "ebitda_margin": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "working_capital": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "change_working_capital": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cash_capex": [
+          510.5972602739726,
+          512,
+          512,
+          512
+        ],
+        "cash_ebitda": [
+          510.5972602739726,
+          512,
+          512,
+          512
+        ],
+        "cash_interest": [
+          0,
+          0
+        ],
+        "tlb_interest": [
+          0,
+          0
+        ],
+        "rcf_interest": [
+          0,
+          0
+        ],
+        "cash_taxes": [
+          0,
+          0
+        ],
+        "pre_financing_cash_flow": [
+          0,
+          0
+        ],
+        "tlb_pik": [
+          0,
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0,
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0,
+          0
+        ],
+        "rcf_draw": [
+          0,
+          0
+        ],
+        "rcf_repayment": [
+          0,
+          0
+        ],
+        "tlb_sweep": [
+          0,
+          0
+        ],
+        "tlb_balance": [
+          128,
+          128
+        ],
+        "rcf_balance": [
+          0,
+          0
+        ],
+        "cash_balance": [
+          0,
+          0
+        ],
+        "exit_ev": null,
+        "exit_fees": null,
+        "exit_debt": null,
+        "exit_cash": null,
+        "equity_value_before_floor": null,
+        "equity_proceeds": null,
+        "preferred_accrued": null,
+        "preferred_payout": null,
+        "ordinary_payout": null,
+        "sponsor_proceeds": null,
+        "management_proceeds": null,
+        "deal_mom": null,
+        "sponsor_mom": null,
+        "management_mom": null,
+        "deal_irr": null,
+        "sponsor_irr": null,
+        "management_irr": null
+      },
+      "grade": {
+        "name": "holdout_term_maturity_retained_prefix",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_revolver_no_redraw_failure",
+      "family": "revolver_no_redraw",
+      "actual": {
+        "status": "liquidity_shortfall",
+        "failure_period": 2,
+        "funding_shortfall": 127.6493150684932,
+        "dates": [
+          "2027-06-30",
+          "2028-06-30",
+          "2029-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028,
+          1,
+          1
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028,
+          1.0027397260273974,
+          1
+        ],
+        "exit_date": "2029-06-30",
+        "holding_period_years": 3,
+        "entry_ebitda": 512,
+        "entry_ev": 1024,
+        "entry_equity": 896,
+        "ordinary_equity": 448,
+        "preferred_equity": 448,
+        "sponsor_investment": 761.6,
+        "management_investment": 134.4,
+        "revenue": [
+          2048,
+          2048,
+          2048
+        ],
+        "gross_profit": [
+          768,
+          768,
+          768
+        ],
+        "opex": [
+          256,
+          256,
+          256
+        ],
+        "ebitda": [
+          512,
+          512,
+          512
+        ],
+        "ebitda_margin": [
+          0.25,
+          0.25,
+          0.25
+        ],
+        "working_capital": [
+          0,
+          0,
+          0
+        ],
+        "change_working_capital": [
+          0,
+          0,
+          0
+        ],
+        "cash_capex": [
+          638.2465753424658,
+          512,
+          512
+        ],
+        "cash_ebitda": [
+          510.5972602739726,
+          512,
+          512
+        ],
+        "cash_interest": [
+          0
+        ],
+        "tlb_interest": [
+          0
+        ],
+        "rcf_interest": [
+          0
+        ],
+        "cash_taxes": [
+          0
+        ],
+        "pre_financing_cash_flow": [
+          -127.6493150684932
+        ],
+        "tlb_pik": [
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0
+        ],
+        "rcf_draw": [
+          127.6493150684932
+        ],
+        "rcf_repayment": [
+          0
+        ],
+        "tlb_sweep": [
+          0
+        ],
+        "tlb_balance": [
+          128
+        ],
+        "rcf_balance": [
+          127.6493150684932
+        ],
+        "cash_balance": [
+          0
+        ],
+        "exit_ev": null,
+        "exit_fees": null,
+        "exit_debt": null,
+        "exit_cash": null,
+        "equity_value_before_floor": null,
+        "equity_proceeds": null,
+        "preferred_accrued": null,
+        "preferred_payout": null,
+        "ordinary_payout": null,
+        "sponsor_proceeds": null,
+        "management_proceeds": null,
+        "deal_mom": null,
+        "sponsor_mom": null,
+        "management_mom": null,
+        "deal_irr": null,
+        "sponsor_irr": null,
+        "management_irr": null
+      },
+      "grade": {
+        "name": "holdout_revolver_no_redraw_failure",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_revolver_repaid_then_no_redraw",
+      "family": "revolver_no_redraw",
+      "actual": {
+        "status": "liquidity_shortfall",
+        "failure_period": 3,
+        "funding_shortfall": 203.6493150684932,
+        "dates": [
+          "2027-06-30",
+          "2028-06-30",
+          "2029-06-30",
+          "2030-06-30"
+        ],
+        "operating_fractions": [
+          0.9972602739726028,
+          1,
+          1,
+          1
+        ],
+        "interest_year_fractions": [
+          0.9972602739726028,
+          1.0027397260273974,
+          1,
+          1
+        ],
+        "exit_date": "2030-06-30",
+        "holding_period_years": 4,
+        "entry_ebitda": 512,
+        "entry_ev": 1024,
+        "entry_equity": 896,
+        "ordinary_equity": 448,
+        "preferred_equity": 448,
+        "sponsor_investment": 761.6,
+        "management_investment": 134.4,
+        "revenue": [
+          2048,
+          2048,
+          2048,
+          2048
+        ],
+        "gross_profit": [
+          768,
+          768,
+          768,
+          768
+        ],
+        "opex": [
+          256,
+          256,
+          256,
+          256
+        ],
+        "ebitda": [
+          512,
+          512,
+          512,
+          512
+        ],
+        "ebitda_margin": [
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "working_capital": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "change_working_capital": [
+          0,
+          0,
+          0,
+          0
+        ],
+        "cash_capex": [
+          638.2465753424658,
+          0,
+          1100,
+          512
+        ],
+        "cash_ebitda": [
+          510.5972602739726,
+          512,
+          512,
+          512
+        ],
+        "cash_interest": [
+          0,
+          0
+        ],
+        "tlb_interest": [
+          0,
+          0
+        ],
+        "rcf_interest": [
+          0,
+          0
+        ],
+        "cash_taxes": [
+          0,
+          0
+        ],
+        "pre_financing_cash_flow": [
+          -127.6493150684932,
+          512
+        ],
+        "tlb_pik": [
+          0,
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0,
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0,
+          127.6493150684932
+        ],
+        "rcf_draw": [
+          127.6493150684932,
+          0
+        ],
+        "rcf_repayment": [
+          0,
+          127.6493150684932
+        ],
+        "tlb_sweep": [
+          0,
+          0
+        ],
+        "tlb_balance": [
+          128,
+          128
+        ],
+        "rcf_balance": [
+          127.6493150684932,
+          0
+        ],
+        "cash_balance": [
+          0,
+          384.3506849315068
+        ],
+        "exit_ev": null,
+        "exit_fees": null,
+        "exit_debt": null,
+        "exit_cash": null,
+        "equity_value_before_floor": null,
+        "equity_proceeds": null,
+        "preferred_accrued": null,
+        "preferred_payout": null,
+        "ordinary_payout": null,
+        "sponsor_proceeds": null,
+        "management_proceeds": null,
+        "deal_mom": null,
+        "sponsor_mom": null,
+        "management_mom": null,
+        "deal_irr": null,
+        "sponsor_irr": null,
+        "management_irr": null
+      },
+      "grade": {
+        "name": "holdout_revolver_repaid_then_no_redraw",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_sequential_leap_clamp",
+      "family": "fiscal_dates",
+      "actual": {
+        "status": "ok",
+        "failure_period": null,
+        "funding_shortfall": 0,
+        "dates": [
+          "2025-02-28",
+          "2026-02-28",
+          "2027-02-28",
+          "2028-02-28",
+          "2029-02-28"
+        ],
+        "operating_fractions": [
+          0.3726027397260274,
+          1,
+          1,
+          1,
+          1
+        ],
+        "interest_year_fractions": [
+          0.3726027397260274,
+          1,
+          1,
+          1,
+          1.0027397260273974
+        ],
+        "exit_date": "2029-02-28",
+        "holding_period_years": 4.375342465753425,
+        "entry_ebitda": 512,
+        "entry_ev": 1024,
+        "entry_equity": 896,
+        "ordinary_equity": 448,
+        "preferred_equity": 448,
+        "sponsor_investment": 761.6,
+        "management_investment": 134.4,
+        "revenue": [
+          2048,
+          2048,
+          2048,
+          2048,
+          2048
+        ],
+        "gross_profit": [
+          768,
+          768,
+          768,
+          768,
+          768
+        ],
+        "opex": [
+          256,
+          256,
+          256,
+          256,
+          256
+        ],
+        "ebitda": [
+          512,
+          512,
+          512,
+          512,
+          512
+        ],
+        "ebitda_margin": [
+          0.25,
+          0.25,
+          0.25,
+          0.25,
+          0.25
+        ],
+        "working_capital": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "change_working_capital": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cash_capex": [
+          190.77260273972604,
+          512,
+          512,
+          512,
+          512
+        ],
+        "cash_ebitda": [
+          190.77260273972604,
+          512,
+          512,
+          512,
+          512
+        ],
+        "cash_interest": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "tlb_interest": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rcf_interest": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cash_taxes": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "pre_financing_cash_flow": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "tlb_pik": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rcf_draw": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "rcf_repayment": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "tlb_sweep": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "tlb_balance": [
+          128,
+          128,
+          128,
+          128,
+          128
+        ],
+        "rcf_balance": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "cash_balance": [
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "exit_ev": 1024,
+        "exit_fees": 0,
+        "exit_debt": 128,
+        "exit_cash": 0,
+        "equity_value_before_floor": 896,
+        "equity_proceeds": 896,
+        "preferred_accrued": 448,
+        "preferred_payout": 448,
+        "ordinary_payout": 448,
+        "sponsor_proceeds": 761.5999999999999,
+        "management_proceeds": 134.4,
+        "deal_mom": 1,
+        "sponsor_mom": 0.9999999999999999,
+        "management_mom": 1,
+        "deal_irr": 0,
+        "sponsor_irr": 0,
+        "management_irr": 0
+      },
+      "grade": {
+        "name": "holdout_sequential_leap_clamp",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_one_day_stub_full_working_capital",
+      "family": "fiscal_dates",
+      "actual": {
+        "status": "ok",
+        "failure_period": null,
+        "funding_shortfall": 0,
+        "dates": [
+          "2028-06-30"
+        ],
+        "operating_fractions": [
+          0.00273224043715847
+        ],
+        "interest_year_fractions": [
+          0.0027397260273972603
+        ],
+        "exit_date": "2028-06-30",
+        "holding_period_years": 0.0027397260273972603,
+        "entry_ebitda": 512,
+        "entry_ev": 1024,
+        "entry_equity": 896,
+        "ordinary_equity": 448,
+        "preferred_equity": 448,
+        "sponsor_investment": 761.6,
+        "management_investment": 134.4,
+        "revenue": [
+          2048
+        ],
+        "gross_profit": [
+          768
+        ],
+        "opex": [
+          256
+        ],
+        "ebitda": [
+          512
+        ],
+        "ebitda_margin": [
+          0.25
+        ],
+        "working_capital": [
+          128
+        ],
+        "change_working_capital": [
+          128
+        ],
+        "cash_capex": [
+          1.3989071038251366
+        ],
+        "cash_ebitda": [
+          1.3989071038251366
+        ],
+        "cash_interest": [
+          0
+        ],
+        "tlb_interest": [
+          0
+        ],
+        "rcf_interest": [
+          0
+        ],
+        "cash_taxes": [
+          0
+        ],
+        "pre_financing_cash_flow": [
+          -128
+        ],
+        "tlb_pik": [
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0
+        ],
+        "rcf_draw": [
+          128
+        ],
+        "rcf_repayment": [
+          0
+        ],
+        "tlb_sweep": [
+          0
+        ],
+        "tlb_balance": [
+          128
+        ],
+        "rcf_balance": [
+          128
+        ],
+        "cash_balance": [
+          0
+        ],
+        "exit_ev": 1152,
+        "exit_fees": 0,
+        "exit_debt": 256,
+        "exit_cash": 0,
+        "equity_value_before_floor": 896,
+        "equity_proceeds": 896,
+        "preferred_accrued": 448,
+        "preferred_payout": 448,
+        "ordinary_payout": 448,
+        "sponsor_proceeds": 761.5999999999999,
+        "management_proceeds": 134.4,
+        "deal_mom": 1,
+        "sponsor_mom": 0.9999999999999999,
+        "management_mom": 1,
+        "deal_irr": 0,
+        "sponsor_irr": -4.0523140398818214e-14,
+        "management_irr": 0
+      },
+      "grade": {
+        "name": "holdout_one_day_stub_full_working_capital",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    },
+    {
+      "name": "holdout_leap_close_dated_returns",
+      "family": "dated_returns",
+      "actual": {
+        "status": "ok",
+        "failure_period": null,
+        "funding_shortfall": 0,
+        "dates": [
+          "2032-09-30"
+        ],
+        "operating_fractions": [
+          0.5846994535519126
+        ],
+        "interest_year_fractions": [
+          0.5863013698630137
+        ],
+        "exit_date": "2032-09-30",
+        "holding_period_years": 0.5863013698630137,
+        "entry_ebitda": 512,
+        "entry_ev": 1024,
+        "entry_equity": 896,
+        "ordinary_equity": 448,
+        "preferred_equity": 448,
+        "sponsor_investment": 761.6,
+        "management_investment": 134.4,
+        "revenue": [
+          2048
+        ],
+        "gross_profit": [
+          768
+        ],
+        "opex": [
+          256
+        ],
+        "ebitda": [
+          512
+        ],
+        "ebitda_margin": [
+          0.25
+        ],
+        "working_capital": [
+          0
+        ],
+        "change_working_capital": [
+          0
+        ],
+        "cash_capex": [
+          299.3661202185792
+        ],
+        "cash_ebitda": [
+          299.3661202185792
+        ],
+        "cash_interest": [
+          0
+        ],
+        "tlb_interest": [
+          0
+        ],
+        "rcf_interest": [
+          0
+        ],
+        "cash_taxes": [
+          0
+        ],
+        "pre_financing_cash_flow": [
+          0
+        ],
+        "tlb_pik": [
+          0
+        ],
+        "mandatory_tlb_repayment": [
+          0
+        ],
+        "mandatory_rcf_repayment": [
+          0
+        ],
+        "rcf_draw": [
+          0
+        ],
+        "rcf_repayment": [
+          0
+        ],
+        "tlb_sweep": [
+          0
+        ],
+        "tlb_balance": [
+          128
+        ],
+        "rcf_balance": [
+          0
+        ],
+        "cash_balance": [
+          0
+        ],
+        "exit_ev": 1536,
+        "exit_fees": 0,
+        "exit_debt": 128,
+        "exit_cash": 0,
+        "equity_value_before_floor": 1408,
+        "equity_proceeds": 1408,
+        "preferred_accrued": 448,
+        "preferred_payout": 448,
+        "ordinary_payout": 960,
+        "sponsor_proceeds": 1120,
+        "management_proceeds": 288,
+        "deal_mom": 1.5714285714285714,
+        "sponsor_mom": 1.4705882352941175,
+        "management_mom": 2.142857142857143,
+        "deal_irr": 1.16173082001395,
+        "sponsor_irr": 0.9305188688157511,
+        "management_irr": 2.6689729435781384
+      },
+      "grade": {
+        "name": "holdout_leap_close_dated_returns",
+        "score": 100,
+        "group_scores": {
+          "status_and_timing": 1,
+          "entry_funding": 1,
+          "operating_forecast": 1,
+          "debt_and_cash": 1,
+          "exit_bridge": 1,
+          "waterfall_and_returns": 1
+        },
+        "missing_fields": [],
+        "mismatches": {},
+        "execution_error": null
+      },
+      "fully_correct": true
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "command": "python -m harness.run_benchmark --provider gemini --condition calls24 --execute",
+  "candidate_release": "closed while expected holdout qualification pending",
+  "observed_exit_code": 2,
+  "observed_blockers": [
+    "Candidate condition not authorized",
+    "Candidate trials not authorized"
+  ],
+  "selected_condition": "calls24",
+  "effective_config_sha256": "ec064712554c063c8d7866ccd3007e9b06942853dc3ca8c6568fa8075d3318d3",
+  "provider_requests": 0
+}

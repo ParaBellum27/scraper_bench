@@ -1,0 +1,67 @@
+{
+  "public_workbook": {
+    "sheets": [
+      "Inputs",
+      "Scenarios",
+      "Forecast",
+      "Debt",
+      "Returns"
+    ],
+    "formula_cells": 405,
+    "hidden_sheets": [],
+    "external_links": [],
+    "macro_parts": [],
+    "contains_original_filename": false,
+    "contains_absolute_user_path": false,
+    "output_fields": 55
+  },
+  "original_sha256_unchanged": "7958823b280bdb326998f06884a6feb73cf6e7301a4f9410b10133689075397a",
+  "public_hashes_and_private_copy_match": true,
+  "runtime": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "executable": "/Users/Pierre/.local/share/scraper-bench/runtime/bin/python",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "architecture": "arm64",
+    "packages": {
+      "openpyxl": "3.1.5",
+      "et_xmlfile": "2.0.0",
+      "mcp": "1.30.0",
+      "pydantic": "2.13.5",
+      "python-dotenv": "1.2.4"
+    }
+  },
+  "qualification": {
+    "engine": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+    "scored_passed": 46,
+    "scored_total": 46,
+    "hand_diagnostics_passed": 9,
+    "hand_diagnostics_total": 9,
+    "fields_compared_each": 55
+  },
+  "observed_test_runs": [
+    {
+      "command": "/Users/Pierre/.local/share/scraper-bench/runtime/bin/python -m unittest discover -s tests -v",
+      "tests": 54,
+      "failures": 0,
+      "errors": 0,
+      "exit_code": 0
+    },
+    {
+      "command": "/Users/Pierre/.local/share/scraper-bench/runtime/bin/python -m unittest discover -s tests -p test_executor.py -v",
+      "tests": 8,
+      "failures": 0,
+      "errors": 0,
+      "exit_code": 0,
+      "reason": "after final fail-closed runtime discovery guards"
+    }
+  ],
+  "type_check": {
+    "command": "ty check --python /Users/Pierre/.local/share/scraper-bench/runtime/bin/python --output-format concise harness evaluator reference tests results/pierre_lbo/audit-2026-10-05/mcp-workbook-smoke.py",
+    "exit_code": 0,
+    "result": "All checks passed!"
+  },
+  "provider_requests": 0,
+  "candidate_trials": 0,
+  "native_excel_verified": false,
+  "visual_formatting_verified": false
+}

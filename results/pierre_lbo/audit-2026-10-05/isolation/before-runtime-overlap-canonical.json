@@ -1,0 +1,5 @@
+{
+  "returncode": 0,
+  "stdout": "{\"exit_code\": 0, \"stdout\": \"True\\nTrue\\n\", \"stderr\": \"\", \"run_call\": 1, \"remaining\": 0, \"submitted\": true, \"submission\": {\"run_call\": 1, \"sha256\": \"572d540a7b36f8df5d371b1e2a56cea16520bd78120a0e2b070f9c0826a5f495\"}}\n",
+  "stderr": ""
+}

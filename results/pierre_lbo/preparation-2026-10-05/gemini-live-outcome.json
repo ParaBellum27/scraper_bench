@@ -1,0 +1,120 @@
+{
+  "provider": "gemini",
+  "requested_model": "gemini-3.8-flash",
+  "returned_model": "gemini-3.8-flash",
+  "access_probe_succeeded": true,
+  "real_provider_requests": 7,
+  "candidate_started": true,
+  "successful_candidate_responses": 5,
+  "tool_executions": 5,
+  "tool_exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "explicit_submission": null,
+  "grade": null,
+  "status": "candidate_failed",
+  "error_category": "truncation",
+  "stop_reason": "provider_truncation",
+  "final_response_finish_reason": "MAX_TOKENS",
+  "final_response_usage": {
+    "promptTokenCount": 32557,
+    "candidatesTokenCount": 163,
+    "totalTokenCount": 36649,
+    "cachedContentTokenCount": 28592,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 32557
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 28592
+      }
+    ],
+    "thoughtsTokenCount": 3929,
+    "serviceTier": "standard"
+  },
+  "output_token_cap": 4096,
+  "accounting": {
+    "provider": "gemini",
+    "money_unit": "USD/10^12",
+    "attempts": 7,
+    "run_attempts": 7,
+    "consumed_units": 130302750000,
+    "consumed_usd": "0.13030275",
+    "reserved_units": 0,
+    "reserved_usd": "0",
+    "committed_units": 130302750000,
+    "committed_usd": "0.13030275",
+    "spend_cap_units": 2000000000000,
+    "spend_cap_usd": "2",
+    "remaining_units": 1869697250000,
+    "remaining_usd": "1.86969725"
+  },
+  "accounting_note": "Conservative standard token-price estimate includes prompt tokens at full input rate; observed cached tokens are not discounted in guard. This is not an independently verified invoice.",
+  "original_run_directory": "runs/private/pierre_lbo/direct-api/gemini-20261005T051654799451Z",
+  "evidence": [
+    {
+      "path": "gemini-trial/metadata.json",
+      "bytes": 3135,
+      "sha256": "75d01d68dd26745913b5c37571a673732d49d95c3c7284132f9fe805f02738e2"
+    },
+    {
+      "path": "gemini-trial/access-check.json",
+      "bytes": 1558,
+      "sha256": "df2200cc5c7b771220d5744ddccccc2172bb189e3ed317c98cd74fdaa20d9294"
+    },
+    {
+      "path": "gemini-trial/trajectory.json",
+      "bytes": 199595,
+      "sha256": "1c98e0d98dfb76330fa10830b28e04d7b1748b74329a40ab841e2e4d1b9cac85"
+    },
+    {
+      "path": "gemini-trial/provider-error.json",
+      "bytes": 16242,
+      "sha256": "a99e7dde856262c9d6186567987c9817ee46ae3e73ce95217e5359d27f840aae"
+    },
+    {
+      "path": "gemini-trial/execution-state.json",
+      "bytes": 16,
+      "sha256": "caac0f43b90f878ac94609dcbb3135b1613422fd98f25a42d3b10eeed340865f"
+    },
+    {
+      "path": "gemini-trial/executions.jsonl",
+      "bytes": 43513,
+      "sha256": "24522221e54336b4635e4cc41ce07c7329f0008c4197537ac0a04cb7fcf8a988"
+    },
+    {
+      "path": "gemini-trial/step-01.py",
+      "bytes": 614,
+      "sha256": "841ca9f417c46900730589619eb71e0e282717f049c50ae2507c132d47a0fbaa"
+    },
+    {
+      "path": "gemini-trial/step-02.py",
+      "bytes": 733,
+      "sha256": "d8055b5f673460dddb3dd7af5a3943b6572fed955dbc85116b86937181c0c17f"
+    },
+    {
+      "path": "gemini-trial/step-03.py",
+      "bytes": 590,
+      "sha256": "5a5c82d2ef1bff3d7b61f8455f7f387497c8cb735a6fb5fd62a41cf59bb60f45"
+    },
+    {
+      "path": "gemini-trial/step-04.py",
+      "bytes": 454,
+      "sha256": "08162148d321c17f6cb26d05be667f1b685c780e772c5abaf4e6c3c3fb1a136d"
+    },
+    {
+      "path": "gemini-trial/step-05.py",
+      "bytes": 364,
+      "sha256": "ea4d2814aadaa88d19a07d660c38d13744f21da41cf6d8967b7bab1e097fd85f"
+    }
+  ],
+  "next_decision": "A larger per-response cap requires a separately recorded condition and explicit authorization for another exploratory attempt. Do not grade inspection snapshots or reset the trial claim."
+}

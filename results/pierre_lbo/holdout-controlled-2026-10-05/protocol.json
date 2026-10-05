@@ -1,0 +1,66 @@
+{
+  "created_at": "2026-10-05T06:11:44.515Z",
+  "purpose": "Separate financial generalization stress-check and exploratory controlled execution-allowance comparison",
+  "official_benchmark_unchanged": true,
+  "holdout": {
+    "candidate": "results/pierre_lbo/gemini-relaxed-2026-10-05/trial/solution.py",
+    "candidate_sha256": "6966f0c0788aeccbdd55cc9d5c5a21022d1a9669092ea0b0fb25e02b4fb3cd36",
+    "design": "fresh deterministic within public specification; designed without inspecting candidate source/outcomes; freeze before evaluation",
+    "qualification": "all55 Python reference outputs compared to independently recalculated spreadsheet outputs plus predeclared feature witnesses",
+    "scoreboard": "separate holdout result, not replacing original45",
+    "model_calls": 0
+  },
+  "comparison": {
+    "conditions": [
+      "calls12",
+      "calls24"
+    ],
+    "randomized_order": [
+      "calls24",
+      "calls12"
+    ],
+    "order_seed": 2026100501,
+    "only_manipulated_budget": "maximum accepted Python executions,12vs24",
+    "common": {
+      "model": "gemini-3.8-flash",
+      "transport": "native-generateContent",
+      "max_turns": 32,
+      "wall_seconds": 1800,
+      "execution_seconds": 10,
+      "response_cap": 65536,
+      "grading_case_seconds": 5,
+      "temperature": "provider_default_override_omitted",
+      "thinking": "provider_default_override_omitted",
+      "workflow": "identical generic submit-early/reserve-three-calls instruction",
+      "public_task": "v0.2 unchanged",
+      "original_grade_seed": 20261004,
+      "fresh_conversation_each": true,
+      "hidden_or_holdout_feedback": false
+    },
+    "runs_per_condition": 1,
+    "primary_outcomes": [
+      "executable_explicit_submission",
+      "hidden_cases_fully_correct_out_of45",
+      "all_cases_correct"
+    ],
+    "secondary": [
+      "separate_holdout_fully_correct",
+      "error_category",
+      "execution_count",
+      "turn_count",
+      "elapsed_seconds",
+      "conservative_cost"
+    ]
+  },
+  "spending": {
+    "cumulative_cap_usd": "4",
+    "cumulative_gemini_usd_before": "1.54151625",
+    "remaining_before_usd": "2.45848375",
+    "same_ledger": true,
+    "all_access_checks_retries_count": true,
+    "no_guarantee_both_fit": true,
+    "stop_if_next_hard_reservation_not_affordable": true
+  },
+  "execution_gate": "Do not dispatch until holdout expected results fully qualify; candidate holdout errors are reportable results, not oracle failure. Do not modify frozen candidate or feed results back.",
+  "interpretation_limit": "One randomized pair remains exploratory, not a reliable success-rate estimate or isolated causal proof across repeated generations."
+}

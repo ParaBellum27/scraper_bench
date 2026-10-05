@@ -1,0 +1,178 @@
+{
+  "complete": true,
+  "randomized_order": [
+    "calls24",
+    "calls12"
+  ],
+  "only_manipulated_setting": "max_run_calls12vs24",
+  "holdout_original_source": {
+    "qualified": true,
+    "independently_recalculated_cases": 22,
+    "fields_per_case": 55,
+    "predeclared_witnesses_passed": true,
+    "frozen_submission_sha256": "6966f0c0788aeccbdd55cc9d5c5a21022d1a9669092ea0b0fb25e02b4fb3cd36",
+    "fully_correct": 22,
+    "total": 22,
+    "weighted_diagnostic": 100,
+    "source_unchanged": true,
+    "api_calls": 0,
+    "original_score_unchanged": "45/45",
+    "cases_sha256": "a451fc01a6c331cad4bcf972f985417023646e2447beb2a9d2ccc71fc7cc617c"
+  },
+  "conditions": [
+    {
+      "condition": "calls24",
+      "limits": {
+        "max_steps": 32,
+        "max_run_calls": 24,
+        "execution_timeout_seconds": 10,
+        "wall_timeout_seconds": 1800,
+        "max_output_tokens": 65536,
+        "access_check_output_tokens": 512
+      },
+      "effective_config_sha256": "ec064712554c063c8d7866ccd3007e9b06942853dc3ca8c6568fa8075d3318d3",
+      "provider_model": "gemini-3.8-flash",
+      "returned_models": [
+        "gemini-3.8-flash"
+      ],
+      "status": "frozen",
+      "stop_reason": "stop",
+      "explicit_submission_calls": [
+        19
+      ],
+      "submission_run_call": 19,
+      "source_sha256": "1802931df82cd891eb3e866bdd0a659923c6253dff8fd4adf3aa4312a7855991",
+      "run_calls": 19,
+      "remaining_executions": 5,
+      "model_turns": 20,
+      "request_count": 21,
+      "inspection_errors": [
+        {
+          "run_call": 9,
+          "submit": false,
+          "exit_code": 1,
+          "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/pierre-candidate-27hadof5/solution.py\", line 1, in <module>\n    wb = openpyxl.load_workbook('pierre_lbo_one.xlsx', data_only=False)\n         ^^^^^^^^\nNameError: name 'openpyxl' is not defined\n"
+        },
+        {
+          "run_call": 14,
+          "submit": false,
+          "exit_code": 1,
+          "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/pierre-candidate-27hadof5/solution.py\", line 14, in <module>\n    from solution_test import solve # Wait, we haven't saved it to solution_test.py, let's execute in-line\n    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nModuleNotFoundError: No module named 'solution_test'\n"
+        },
+        {
+          "run_call": 16,
+          "submit": false,
+          "exit_code": 1,
+          "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/pierre-candidate-27hadof5/solution.py\", line 6, in <module>\n    res_proc = subprocess.run(['python3', 'solution.py'], input=inp_text, text=True, capture_output=True)\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/subprocess.py\", line 554, in run\n    with Popen(*popenargs, **kwargs) as process:\n         ~~~~~^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/subprocess.py\", line 1039, in __init__\n    self._execute_child(args, executable, preexec_fn, close_fds,\n    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n                        pass_fds, cwd, env,\n                        ^^^^^^^^^^^^^^^^^^^\n    ...<5 lines>...\n                        gid, gids, uid, umask,\n                        ^^^^^^^^^^^^^^^^^^^^^^\n                        start_new_session, process_group)\n                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n  File \"/opt/homebrew/Cellar/python@3.13/3.13.5/Frameworks/Python.framework/Versions/3.13/lib/python3.13/subprocess.py\", line 1902, in _execute_child\n    self.pid = _fork_exec(\n               ~~~~~~~~~~^\n            args, executable_list,\n            ^^^^^^^^^^^^^^^^^^^^^^\n    ...<6 lines>...\n            process_group, gid, gids, uid, umask,\n            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\n            preexec_fn, _USE_VFORK)\n            ^^^^^^^^^^^^^^^^^^^^^^^\nPermissionError: [Errno 1] Operation not permitted\n"
+        },
+        {
+          "run_call": 18,
+          "submit": false,
+          "exit_code": 1,
+          "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/pierre-candidate-27hadof5/solution.py\", line 17, in <module>\n    import solution\nModuleNotFoundError: No module named 'solution'\n"
+        }
+      ],
+      "elapsed_seconds": 148.64920370800246,
+      "cost_usd": "0.77267925",
+      "base_fully_correct": true,
+      "hidden_fully_correct": 45,
+      "hidden_total": 45,
+      "all_original_cases_correct": true,
+      "original_weighted_diagnostic": 100,
+      "holdout_fully_correct": 22,
+      "holdout_total": 22,
+      "all_holdout_cases_correct": true,
+      "source_unchanged": true,
+      "temperature": "provider_default_override_omitted",
+      "thinking": "provider_default_override_omitted",
+      "no_hidden_or_holdout_feedback": true
+    },
+    {
+      "condition": "calls12",
+      "limits": {
+        "max_steps": 32,
+        "max_run_calls": 12,
+        "execution_timeout_seconds": 10,
+        "wall_timeout_seconds": 1800,
+        "max_output_tokens": 65536,
+        "access_check_output_tokens": 512
+      },
+      "effective_config_sha256": "f91d338b77040e8e0cc9653576260f619cb397e59ca0c5d5e51c2bacfcbce07a",
+      "provider_model": "gemini-3.8-flash",
+      "returned_models": [
+        "gemini-3.8-flash"
+      ],
+      "status": "frozen",
+      "stop_reason": "max_run_calls",
+      "explicit_submission_calls": [
+        12
+      ],
+      "submission_run_call": 12,
+      "source_sha256": "0b64686446e6981bb208451ff5d842c5d273527a64c98b3e9922958ebddd7dd6",
+      "run_calls": 12,
+      "remaining_executions": 0,
+      "model_turns": 12,
+      "request_count": 13,
+      "inspection_errors": [
+        {
+          "run_call": 11,
+          "submit": false,
+          "exit_code": 1,
+          "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/pierre-candidate-96rdwpcz/solution.py\", line 22, in <module>\n    arr = res[k]\n          ^^^\nNameError: name 'res' is not defined\n"
+        }
+      ],
+      "elapsed_seconds": 83.20895116699103,
+      "cost_usd": "0.34812975",
+      "base_fully_correct": true,
+      "hidden_fully_correct": 45,
+      "hidden_total": 45,
+      "all_original_cases_correct": true,
+      "original_weighted_diagnostic": 100,
+      "holdout_fully_correct": 22,
+      "holdout_total": 22,
+      "all_holdout_cases_correct": true,
+      "source_unchanged": true,
+      "temperature": "provider_default_override_omitted",
+      "thinking": "provider_default_override_omitted",
+      "no_hidden_or_holdout_feedback": true
+    }
+  ],
+  "accounting": {
+    "prior_usd": "1.54151625",
+    "calls24_usd": "0.77267925",
+    "calls12_usd": "0.34812975",
+    "pair_usd": "1.12080900",
+    "cumulative_usd": "2.66232525",
+    "cap_usd": "4",
+    "remaining_usd": "1.33767475",
+    "uncertain_gemini_hold_usd": "0",
+    "total_gemini_requests": 86,
+    "new_requests": 34,
+    "preserved_claims": [
+      "gemini-trial-claim-02.json",
+      "gemini-trial-claim-03.json",
+      "gemini-trial-claim-04.json",
+      "gemini-trial-claim-05.json",
+      "gemini-trial-claim-06.json",
+      "gemini-trial-claim.json"
+    ]
+  },
+  "dispatch_closed": true,
+  "verification": {
+    "unit_tests": 111,
+    "types": "pass",
+    "independent_spreadsheet_holdout_cases": 22,
+    "fields_per_workbook": 55,
+    "original_grader_runs": 2,
+    "separate_holdout_evaluations": 3
+  },
+  "conclusion": "Both fresh matched conditions passed the public base,45/45hidden cases and22/22separate holdout cases.12 executions sufficed in this run;24 condition used19 and retained5calls. No observed accuracy advantage here, not proof budgets do not affect reliability.",
+  "limits": [
+    "One fresh model run per condition, not repeated-generation success probabilities.",
+    "22 deterministic stress cases include related scaled cases, not independent model trials.",
+    "No provider sampling seed forced; temperature/thinking and backend revision not exposed.",
+    "Matched pair cannot establish the cause of earlier standard/relaxed difference because earlier runs changed several settings.",
+    "LibreOffice qualification, not native Excel; covered examples do not exhaust public domain.",
+    "Conservative token-price accounting, not independently verified invoice or unrelated account usage."
+  ]
+}

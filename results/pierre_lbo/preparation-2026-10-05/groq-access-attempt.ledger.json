@@ -1,0 +1,52 @@
+{
+  "money_unit": "USD/10^12",
+  "providers": {
+    "groq": {
+      "attempts": [
+        {
+          "billable_output_tokens": 512,
+          "charged_units": 0,
+          "error_category": "access",
+          "estimated_input_tokens": 697,
+          "estimator": "o200k_harmony-full-json+512",
+          "http_status": 403,
+          "id": 1,
+          "quota_input_tokens": 697,
+          "quota_output_tokens": 512,
+          "requested_output_tokens": 512,
+          "reserved_units": 0,
+          "run_id": "groq-20261005T051105621785Z",
+          "started_at": 1791177066.283339,
+          "state": "uncertain"
+        }
+      ],
+      "consumed_units": 0,
+      "fingerprint": "7fba23f3eac4bb938d405c585febc9d148db8212c5bf07ca8874fde108171dfb",
+      "not_before": 0,
+      "policy": {
+        "billable_output_limit": null,
+        "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+        "input_limit": 131072,
+        "input_usd_per_million": "0",
+        "max_retries": 2,
+        "min_interval_seconds": 2,
+        "model": "openai/gpt-oss-120b",
+        "output_limit": 65536,
+        "output_usd_per_million": "0",
+        "provider": "groq",
+        "quota_estimator": "o200k_harmony-full-json+512",
+        "request_timeout_seconds": 180,
+        "rpd": 1000,
+        "rpm": 30,
+        "spend_cap_usd": "0",
+        "test_only_localhost": false,
+        "tpd": 200000,
+        "tpm": 8000,
+        "tpm_scope": "combined"
+      },
+      "reserved_units": 0,
+      "spend_cap_units": 0
+    }
+  },
+  "version": 1
+}

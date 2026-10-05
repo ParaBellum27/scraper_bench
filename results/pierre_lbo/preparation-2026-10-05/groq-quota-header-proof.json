@@ -1,0 +1,13 @@
+{
+  "before": {
+    "real_provider_requests": 0,
+    "local_attempts": 2,
+    "outcome": "retried_after_daily_exhaustion_header"
+  },
+  "after": {
+    "real_provider_requests": 0,
+    "local_attempts": 1,
+    "outcome": "quota"
+  },
+  "corrective_attempts": 1
+}

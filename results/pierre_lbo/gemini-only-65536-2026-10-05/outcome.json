@@ -1,0 +1,158 @@
+{
+  "provider": "gemini",
+  "requested_model": "gemini-3.8-flash",
+  "returned_models": [
+    "gemini-3.8-flash"
+  ],
+  "response_token_cap": 65536,
+  "attempt_number": 3,
+  "api_access_successful": true,
+  "candidate_started": true,
+  "provider_requests_this_attempt": 13,
+  "model_turns": 12,
+  "tool_executions": 12,
+  "stop_reason": "max_run_calls",
+  "explicit_submission_call": 12,
+  "submission_sha256": "d7c008b17c07b10e8885f9d2bab20aaea011849f391f8963164e5b3f0325edbe",
+  "submission_file": "trial/solution.py",
+  "grading_file": "grade.json",
+  "primary_metric": "hidden_cases_fully_correct",
+  "hidden_cases_fully_correct": 0,
+  "hidden_cases_total": 45,
+  "base_case_fully_correct": false,
+  "all_hidden_cases_correct": false,
+  "all_cases_correct": false,
+  "weighted_diagnostic_score": 0,
+  "execution_errors": {
+    "base": true,
+    "hidden": 45,
+    "kinds": {
+      "NameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?": 46
+    }
+  },
+  "candidate_edited_by_human": false,
+  "hidden_feedback_sent_to_provider": false,
+  "accounting": {
+    "provider": "gemini",
+    "money_unit": "USD/10^12",
+    "attempts": 33,
+    "run_attempts": 13,
+    "consumed_units": 744057000000,
+    "consumed_usd": "0.744057",
+    "reserved_units": 0,
+    "reserved_usd": "0",
+    "committed_units": 744057000000,
+    "committed_usd": "0.744057",
+    "spend_cap_units": 2000000000000,
+    "spend_cap_usd": "2",
+    "remaining_units": 1255943000000,
+    "remaining_usd": "1.255943"
+  },
+  "conservative_cost_this_attempt_usd": "0.26899275",
+  "cumulative_user_authorized_gemini_cap_usd": "4",
+  "enforced_cap_used_for_all_observed_attempts_usd": "2",
+  "accounting_note": "Conservative full-input-rate usage estimate, not an independently verified invoice. New $4 permission was not needed; stricter $2 guard remained in force.",
+  "prior_attempts": [
+    {
+      "response_cap": 4096,
+      "outcome": "provider_truncation_no_submission"
+    },
+    {
+      "response_cap": 8192,
+      "outcome": "provider_truncation_no_submission"
+    }
+  ],
+  "original_run_directory": "runs/private/pierre_lbo/direct-api/gemini-20261005T052605871341Z",
+  "evidence": [
+    {
+      "path": "trial/metadata.json",
+      "bytes": 3243,
+      "sha256": "9af51b2dd76aecd96fd00ee49118125799cd023b769138068281eaaeb4db5786"
+    },
+    {
+      "path": "trial/access-check.json",
+      "bytes": 1904,
+      "sha256": "e121bd316280cb1da5d4d3c54c26ff64677f2e1f2ae3167e713d1fc1c34d24a4"
+    },
+    {
+      "path": "trial/trajectory.json",
+      "bytes": 406659,
+      "sha256": "ddaa9dafc6e20b47abdc3f951107d375a5499b92cd938321895fa722fc03b6ac"
+    },
+    {
+      "path": "trial/execution-state.json",
+      "bytes": 127,
+      "sha256": "1043aa0fa350cbfb2f7a2a6d33b1aeb6f3a43d07f495cac032dd1d2e2a3907c7"
+    },
+    {
+      "path": "trial/executions.jsonl",
+      "bytes": 38167,
+      "sha256": "9cae099f5168e83199b63accac2f45b7c4837ebabafbfaf7cafb7f8072c5d2a6"
+    },
+    {
+      "path": "trial/solution.py",
+      "bytes": 11313,
+      "sha256": "d7c008b17c07b10e8885f9d2bab20aaea011849f391f8963164e5b3f0325edbe"
+    },
+    {
+      "path": "trial/step-01.py",
+      "bytes": 380,
+      "sha256": "495e84fbb071669b46c8432397ffe32fd4acd37e57615354b0536698f18b35f3"
+    },
+    {
+      "path": "trial/step-02.py",
+      "bytes": 1161,
+      "sha256": "6d37d601d474d6e7837645a5f6d829d816c386fc6a132d6b0123669266dbdd11"
+    },
+    {
+      "path": "trial/step-03.py",
+      "bytes": 642,
+      "sha256": "317d61bf1e1257c09f6664ce79f1f514d77a850b12653cd616cc7c3ad2e64982"
+    },
+    {
+      "path": "trial/step-04.py",
+      "bytes": 269,
+      "sha256": "b94b04bd76a0d6098ef25157ca5b333285187a1affbcef3854da3beaccb0842f"
+    },
+    {
+      "path": "trial/step-05.py",
+      "bytes": 516,
+      "sha256": "eeaeb645c10de3e20e7e7101523d6e09a164c34a81920852868d4756b1d55b4d"
+    },
+    {
+      "path": "trial/step-06.py",
+      "bytes": 85,
+      "sha256": "41a34047a312846fb1dee567813ab5bd68f8f8f8ccbe7e3799e671179894a43e"
+    },
+    {
+      "path": "trial/step-07.py",
+      "bytes": 1409,
+      "sha256": "e26a602d4085363adfa0d4c222b15d9e57d28609d2dd278b71476a388cb70700"
+    },
+    {
+      "path": "trial/step-08.py",
+      "bytes": 676,
+      "sha256": "978f31d5a7c75079e3751231719f75cc493a42349ca18a2b22c566148f5a051d"
+    },
+    {
+      "path": "trial/step-09.py",
+      "bytes": 919,
+      "sha256": "b5c090def74212f02497e592412f7f9698a0d33f17d3b13491199ddfa96e0756"
+    },
+    {
+      "path": "trial/step-10.py",
+      "bytes": 8147,
+      "sha256": "a34ed0637839256c0a5ebc292d1ea03b552364003707467b646e7893325fab3c"
+    },
+    {
+      "path": "trial/step-11.py",
+      "bytes": 1112,
+      "sha256": "7f5f5fd7b88ced60ec4a8ff6395762d58cc51955519c7459202368c32d51d6f1"
+    },
+    {
+      "path": "trial/step-12.py",
+      "bytes": 11313,
+      "sha256": "d7c008b17c07b10e8885f9d2bab20aaea011849f391f8963164e5b3f0325edbe"
+    }
+  ]
+}

@@ -1,0 +1,2 @@
+ty check --python /Users/Pierre/.local/share/scraper-bench/runtime/bin/python --output-format concise harness evaluator reference tests
+All checks passed!

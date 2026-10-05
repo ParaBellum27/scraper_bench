@@ -1,0 +1,26 @@
+[
+  {
+    "submission": "gemini-cli-pilot-01",
+    "historical_scores_unchanged": true,
+    "score": 100.0,
+    "fully_correct_hidden": 13,
+    "total_hidden": 13,
+    "source_sha256": "77bbd60ae191b8e49d27990bb1f3190917d729b93291c0188c43d91d45771f91"
+  },
+  {
+    "submission": "mistral-cli-pilot-01",
+    "historical_scores_unchanged": true,
+    "score": 0.0,
+    "fully_correct_hidden": 0,
+    "total_hidden": 13,
+    "source_sha256": "026fd38bfaf02177f8993233bff7359596da4a668a548e2169f4b568d2cc2eed"
+  },
+  {
+    "submission": "mistral-cli-paired-02",
+    "historical_scores_unchanged": true,
+    "score": 100.0,
+    "fully_correct_hidden": 13,
+    "total_hidden": 13,
+    "source_sha256": "0bc6c8224000dda253e661e0778ea1c57d79c9e9eae4dd5da20e8dd0a700efc4"
+  }
+]

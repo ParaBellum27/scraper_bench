@@ -1,0 +1,14 @@
+{
+  "policy_sha256": "bc2bb059ac1d4abff94a7fa35c4eef9cd49ce3c4cd421d236d6c1a57481ed023",
+  "access_checks_authorized": false,
+  "candidate_trials_authorized": false,
+  "authorization_scope": "User-approved no-API qualified22-case holdout and randomized calls24/calls12 Gemini pair completed. All6historical+newclaims retained. Cumulative conservativeGemini$2.66232525 under unchanged$4 cap. Close both paid access and candidate gates; no seventh trial or further provider request authorized.",
+  "candidate_providers": [],
+  "maximum_authorized_gemini_usd": "4",
+  "candidate_conditions": [],
+  "authorized_condition_sha256": {
+    "calls12": "f91d338b77040e8e0cc9653576260f619cb397e59ca0c5d5e51c2bacfcbce07a",
+    "calls24": "ec064712554c063c8d7866ccd3007e9b06942853dc3ca8c6568fa8075d3318d3"
+  },
+  "maximum_authorized_gemini_trials": 6
+}

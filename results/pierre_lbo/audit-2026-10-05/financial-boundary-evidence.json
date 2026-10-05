@@ -1,0 +1,440 @@
+{
+  "historical_artifact_inspection": {
+    "rows": [
+      {
+        "name": "base_case",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "original_profile_2",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "original_profile_3",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "original_profile_4",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "entry_multiple_shock",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "exit_multiple_shock",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "exit_fee_shock",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "tax_shock",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "preferred_accretion_shock",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "ordinary_split_shock",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "management_share_shock",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "early_exit",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "full_horizon",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "cash_interest_shock",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "pik_interest_shock",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "scheduled_amortization",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "cash_sweep",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "term_maturity",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "entry_leverage_shock",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "interacting_finance_shocks",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "revolver_draw_then_priority_repayment",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "first_period_liquidity_shortfall",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "later_period_liquidity_shortfall",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "term_maturity_refinanced_by_revolver",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "revolver_maturity_no_redraw",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "revolver_maturity_funded",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "capped_sweep_and_amortization",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "preferred_waterfall_below_boundary",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "preferred_waterfall_at_boundary",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "preferred_waterfall_above_boundary",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "no_management_investment",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "no_ordinary_equity",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "no_preferred_equity",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "zero_sponsor_investment",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "underwater_exit",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "negative_exit_ebitda_no_negative_fees",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "full_working_capital_in_short_stub",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "one_day_december_stub",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "leap_day_sequential_clamp",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "leap_day_close",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "currency_scale_small",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "currency_scale_large",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "seeded_operating_finance_mix_1",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "seeded_operating_finance_mix_2",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "seeded_operating_finance_mix_3",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      },
+      {
+        "name": "seeded_operating_finance_mix_4",
+        "input_matches": true,
+        "sha256_matches": true,
+        "cached_outputs_match": true,
+        "required_fields_complete": true,
+        "no_missing_or_mismatches": true
+      }
+    ],
+    "fields": 55,
+    "source_hash_matches": {
+      "reference/pierre_lbo/reference.py": true,
+      "reference/pierre_lbo/workbook.py": true,
+      "reference/pierre_lbo/qualify.py": true,
+      "evaluator/pierre_lbo_cases.py": false,
+      "evaluator/grader.py": false,
+      "evaluator/benchmarks.py": false
+    }
+  },
+  "liquidity_before_after": [
+    {
+      "scale": 0.001,
+      "before_status": "ok",
+      "after_status": "liquidity_shortfall",
+      "hand_shortfall": 5.0000000000000005e-12,
+      "computed_shortfall": 5.000000413701855e-12
+    },
+    {
+      "scale": 1,
+      "before_status": "ok",
+      "after_status": "liquidity_shortfall",
+      "hand_shortfall": 5e-09,
+      "computed_shortfall": 5.000000413701855e-09
+    },
+    {
+      "scale": 1000,
+      "before_status": "liquidity_shortfall",
+      "after_status": "liquidity_shortfall",
+      "hand_shortfall": 5e-06,
+      "computed_shortfall": 4.999999873689376e-06
+    }
+  ],
+  "liquidity_adjacent_binary64_guard": [
+    {
+      "rate": 9.999999999999998e-13,
+      "required": 3.6499999999999993e-10,
+      "guard": 3.65e-10,
+      "status": "ok"
+    },
+    {
+      "rate": 1e-12,
+      "required": 3.65e-10,
+      "guard": 3.65e-10,
+      "status": "ok"
+    },
+    {
+      "rate": 1.0000000000000002e-12,
+      "required": 3.650000000000001e-10,
+      "guard": 3.65e-10,
+      "status": "liquidity_shortfall"
+    }
+  ],
+  "public_domain_repro": [
+    {
+      "kind": "overflow",
+      "error": "OverflowError: (34, 'Result too large')"
+    },
+    {
+      "kind": "calendar",
+      "error": "ValueError: forecast dates exceed the supported calendar"
+    }
+  ],
+  "notes": [
+    "Historical source hash differences for evaluator files were observed while parent was editing those files.",
+    "No full qualification, test suite, provider call, or public workbook regeneration performed in this worker."
+  ]
+}

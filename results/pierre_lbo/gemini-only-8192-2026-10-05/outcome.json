@@ -1,0 +1,134 @@
+{
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "response_cap": 8192,
+  "access_successful": true,
+  "candidate_started": true,
+  "provider_requests_this_attempt": 13,
+  "tool_executions": 11,
+  "exit_codes": [
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    1,
+    1,
+    0,
+    0,
+    0
+  ],
+  "explicit_submission": null,
+  "grade": null,
+  "termination": "provider_truncation",
+  "final_finish_reason": "MAX_TOKENS",
+  "final_usage": {
+    "promptTokenCount": 47500,
+    "candidatesTokenCount": 4243,
+    "totalTokenCount": 52524,
+    "cachedContentTokenCount": 44186,
+    "promptTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 47500
+      }
+    ],
+    "cacheTokensDetails": [
+      {
+        "modality": "TEXT",
+        "tokenCount": 44186
+      }
+    ],
+    "thoughtsTokenCount": 781,
+    "serviceTier": "standard"
+  },
+  "accounting": {
+    "provider": "gemini",
+    "money_unit": "USD/10^12",
+    "attempts": 20,
+    "run_attempts": 13,
+    "consumed_units": 475064250000,
+    "consumed_usd": "0.47506425",
+    "reserved_units": 0,
+    "reserved_usd": "0",
+    "committed_units": 475064250000,
+    "committed_usd": "0.47506425",
+    "spend_cap_units": 2000000000000,
+    "spend_cap_usd": "2",
+    "remaining_units": 1524935750000,
+    "remaining_usd": "1.52493575"
+  },
+  "attempt_conservative_cost_usd": "0.34476150",
+  "diagnosis": "MAX_TOKENS despite returned thinking+visible counts totaling 5024 under requested8192; precise limiting mechanism not established.",
+  "evidence": [
+    {
+      "path": "trial/metadata.json",
+      "sha256": "cadb16dd9849906abe488ae79015db9240e66910a35af143009ffefc7f32fa53"
+    },
+    {
+      "path": "trial/access-check.json",
+      "sha256": "fb33fa4f6c6e0b0bf8f309075d03d4dbb64828eacf767cbb9f6e49e3bfcb5e2e"
+    },
+    {
+      "path": "trial/trajectory.json",
+      "sha256": "a5252c1f97354872d3af086d2a294878aa7b0f7718bcfdef9f81f859c23d2671"
+    },
+    {
+      "path": "trial/provider-error.json",
+      "sha256": "75d8334d5be41b1b5c3fdf98abeb84bfe426120fe4eb1b68ce61fd71b3263042"
+    },
+    {
+      "path": "trial/execution-state.json",
+      "sha256": "75e6d97d65b04eaa5c4077a5403de233fc2bc09de4066da92b10896f54f718ab"
+    },
+    {
+      "path": "trial/executions.jsonl",
+      "sha256": "91f9f4429ed85df34a58c5281af7cf5d7bb5d389c8b3f1940647737e12d599d5"
+    },
+    {
+      "path": "trial/step-01.py",
+      "sha256": "ac186e13e7413b7c55bfe2ebb98f6cd1104d12c2c7b5fcd5147a97cff276fd0f"
+    },
+    {
+      "path": "trial/step-02.py",
+      "sha256": "408f16c042fddd63772cabdbb7e8657699b2e8f202b14e3f25a3de57c54d35e2"
+    },
+    {
+      "path": "trial/step-03.py",
+      "sha256": "db265dc7d767a37519f531a907fce552a09570cc6a80e6589ac7de247cab601a"
+    },
+    {
+      "path": "trial/step-04.py",
+      "sha256": "29cc4ce44c5a02ab0f87e72d5854d094c9c234167fc6b0dd4ea3b8950ecdd620"
+    },
+    {
+      "path": "trial/step-05.py",
+      "sha256": "ccee223c7cf3aa9cdbe6fdfb200211e8658d9137c9481d8c42138804024cc6fe"
+    },
+    {
+      "path": "trial/step-06.py",
+      "sha256": "1704f80e417f7d6ac8a01963400ae2246766b8ef943a0a1267c70d3695657e77"
+    },
+    {
+      "path": "trial/step-07.py",
+      "sha256": "3831aacbb96974cf0ce7c874e568e43686801e065f63e0c239f71f0a59af3032"
+    },
+    {
+      "path": "trial/step-08.py",
+      "sha256": "ef3aade90576dd669b6a42ee5184ccffd339e80cb21d8ddec7f214081ef7df08"
+    },
+    {
+      "path": "trial/step-09.py",
+      "sha256": "292137a18c610764e9a60dcbe8f230a05560b149e4d3e37c72fe5234bfb9bf79"
+    },
+    {
+      "path": "trial/step-10.py",
+      "sha256": "a94c24acddf30cf84d019346961f26fc802a7a7a7e51ba85f2e61b065ce69d31"
+    },
+    {
+      "path": "trial/step-11.py",
+      "sha256": "83d4a502bdf61719f45b5b21df9bd218d6bdfc6b3c4a8a12329085f49c68361e"
+    }
+  ]
+}

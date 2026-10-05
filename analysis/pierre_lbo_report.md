@@ -1,5 +1,9 @@
 # Pierre LBO One — qualification and next trial protocol
 
+The [2026-10-05 pretrial audit](pierre_lbo_audit.md) supersedes the task/tool contract and future-trial instructions below. Current version 0.2 uses explicit protected submission, scale-relative liquidity classification, strict primary correctness, and the user's newly specified direct-API targets. The original qualification/control evidence below is retained as historical evidence.
+
+Completed model outcomes and the later fresh stress test are analyzed in [Pierre LBO: holdout generalization and execution-budget analysis](pierre_lbo_holdout_comparison.md). Both matched Gemini conditions passed the public base, 45/45 original hidden cases and 22/22 separate holdout cases; paid dispatch is now closed. The readiness and next-trial statements below describe the earlier qualification stage, not current authorization.
+
 ## Decision and status
 
 A separate `pierre-lbo` branch prepares the author's LBO as a second benchmark task. It evaluates replication of a **specified, corrected derivative**, not replication of faulty original caches and not an open-ended repair exercise.
@@ -71,7 +75,7 @@ These are synthetic validation programs, **not model submissions**. Each ran thr
 
 The integer-year IRR control scored at least 95 in **every** hidden case while producing incorrect outputs in 26. The cash-sweep control matched the zero-sweep base case but failed eight changed-input cases.
 
-The grader now reports `base_case_fully_correct` and `hidden_cases_fully_correct` separately from the existing partial-credit score and `hidden_cases_passed_95`. “Fully correct” means every required field matches within its specified tolerance, with no missing fields or execution error. It does not mean mathematically exact binary equality. Scoring weights were not manipulated to force larger penalties after observing these controls. Future analysis must show incorrect field groups and fully correct cases, not treat a 95-point threshold as financial correctness.
+The original grader reported fully correct cases alongside a 95-point partial-credit count. The pretrial audit now makes `hidden_cases_fully_correct` primary, adds `all_hidden_cases_correct` and `all_cases_correct`, and removes the misleading 95-point count from current reports. “Fully correct” means every required field matches within its specified tolerance, with no missing fields or execution error—not exact binary equality. Historical evidence is unchanged; weighted scores remain diagnostic.
 
 Control summaries are in [controls.json](../results/pierre_lbo/qualification-2026-10-04/controls.json). The exact synthetic scripts and per-case grades are retained locally under `runs/private/pierre_lbo/controls-qualified/`.
 
@@ -93,12 +97,12 @@ This is **independent spreadsheet-engine qualification**, not a claim of native 
 
 ## Next model-test procedure
 
-1. Use the frozen three-file public bundle without editing assumptions or instructions between competitors. Artifact hashes are in the task metadata and evidence manifest.
-2. Start with one prespecified trial per target under the existing 20-turn, 12-execution, 10-second execution and 900-second wall limits. Preserve actual client/model/authentication/generation settings; these are model-plus-agent trials, not a controlled model-only comparison.
-3. Keep hidden cases, reference code, and all grading feedback outside the generation workspace. Freeze the last submitted program before grading. Never repair a candidate manually or return hidden failures to that attempt.
-4. Grade with `--benchmark pierre_lbo`; report weighted score, fully correct cases, incorrect groups, execution failures, tool usage, elapsed time, and available token/cost data.
-5. Distinguish source-model defects, financial-logic errors, implementation errors, and harness/provider failures. A provider failure without a frozen candidate is ungraded, not a model score of zero.
-6. Gemini's last recorded API condition exhausted its daily quota and requested a retry around **2026-10-05T00:00:00Z**. That reset has not been rechecked. Do not silently substitute an account/client/model or compare an unpaired Mistral run as a controlled paired result.
-7. Once both targets are available, repeat paired trials before drawing comparative conclusions. Treat these repository-disclosed scenarios as development/regression material; reserve fresh scenario families for later validation rather than tuning prompts on the same revealed failures.
+1. Use the version 0.2 public bundle, recorded in `tasks/pierre_lbo/metadata.json`, without changing it between competitors.
+2. Use the [current direct-API trial plan](../results/pierre_lbo/audit-2026-10-05/trial-plan.json): Groq `openai/gpt-oss-120b`, Gemini `gemini-3.8-flash`, Mistral `mistral-medium-latest`, one exploratory trial each. Earlier CLI/auth/quota observations do not establish these new conditions.
+3. Keep hidden cases, reference code and grading feedback outside the generation workspace. Only the last explicit `run_solution(code, submit=True)` selects a host-owned immutable source snapshot; inspection and candidate filesystem writes never select the final source.
+4. Grade with `--benchmark pierre_lbo`; prioritize fully correct hidden cases out of 45 and the all-pass flags. Show weighted score, field mismatches, actual exercised features, execution failures, tool usage, elapsed time and available token/cost evidence separately.
+5. Provider failures without a submitted candidate are ungraded, not financial scores of zero. No manual candidate repair or hidden-feedback retry.
+6. Candidate execution remains gated on user approval, verified updated Gemini key/project association, missing direct provider integrations, common deadline/rate/retry controls, authoritative updated credentials, and hard cumulative spend/allowance enforcement. No provider access checks or candidate trials occurred during this audit.
+7. One trial per target is exploratory. These repository-disclosed scenarios are development/regression material; reserve fresh scenario families for later validation rather than tuning prompts on revealed failures.
 
 See [harness commands](../harness/README.md#pierre-lbo-one) and the [public task](../tasks/pierre_lbo/task.md).

@@ -1,0 +1,854 @@
+{
+  "benchmark": "pierre_lbo",
+  "version": "0.2",
+  "frozen_at": "2026-10-05T04:11:18.693Z",
+  "status": "audited_and_qualified_candidate_execution_blocked",
+  "provider_requests": 0,
+  "candidate_trials": 0,
+  "public_sha256": {
+    "task.md": "522eb5fb1b719374f03fa9a53b0b452ba503868b3a62479b0947c8507c897b07",
+    "inputs/base_case.json": "b61f95e9cc376eafd9db632f9b457cc787c66057b4898890fcc6a83a339d9771",
+    "pierre_lbo_one.xlsx": "d6bc5b024392448dbb9d17dada181947ac8598b217a000a738ef7b6124967e96"
+  },
+  "original_workbook_sha256": "7958823b280bdb326998f06884a6feb73cf6e7301a4f9410b10133689075397a",
+  "runtime": {
+    "python": "3.13.5 (main, Jun 11 2025, 15:36:57) [Clang 17.0.0 (clang-1700.0.13.3)]",
+    "executable": "/Users/Pierre/.local/share/scraper-bench/runtime/bin/python",
+    "platform": "macOS-26.6.2-arm64-arm-64bit-Mach-O",
+    "architecture": "arm64",
+    "packages": {
+      "openpyxl": "3.1.5",
+      "et_xmlfile": "2.0.0",
+      "mcp": "1.30.0",
+      "pydantic": "2.13.5",
+      "python-dotenv": "1.2.4"
+    },
+    "spreadsheet_engine": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+    "type_checker": "ty 0.0.65"
+  },
+  "trial_plan": {
+    "benchmark": "pierre_lbo",
+    "plan_status": "recorded_requirements_not_authorization_to_run",
+    "candidate_trials_started": 0,
+    "provider_requests_during_audit": 0,
+    "public_files": [
+      "task.md",
+      "inputs/base_case.json",
+      "pierre_lbo_one.xlsx"
+    ],
+    "hidden_seed": 20261004,
+    "hidden_case_count": 45,
+    "primary_metric": "hidden_cases_fully_correct",
+    "full_pass_requires": "public base and every one of the 45 hidden scenarios fully correct",
+    "diagnostic_metric": "20% public score + 80% mean hidden weighted partial-credit score",
+    "shared_requested_budgets": {
+      "exploratory_trials_per_target": 1,
+      "concurrent_requests": 1,
+      "model_turns": 20,
+      "accepted_tool_executions_including_submissions": 12,
+      "seconds_per_tool_execution": 10,
+      "seconds_per_grading_case": 5,
+      "seconds_per_full_trial_including_retry_delays": 900,
+      "stdout_bytes_per_execution": 65536,
+      "stderr_bytes_per_execution": 65536
+    },
+    "submission": {
+      "tool": "run_solution(code, submit=False)",
+      "inspection_is_submission": false,
+      "selection": "last explicit submit=True selects exact host-owned source before execution",
+      "execution_error_reverts_submission": false,
+      "no_explicit_submission": "ungraded",
+      "hidden_feedback_during_generation": false
+    },
+    "generation_policy": {
+      "temperature": "provider default; omit override",
+      "reasoning_or_thinking": "provider default; omit override",
+      "record_requested_and_returned_model_ids": true,
+      "record_resolved_version_when_exposed": true,
+      "unexposed_effective_defaults_or_backend_revision": "record unavailable; do not guess",
+      "record_output_token_limit_and_usage": true,
+      "output_token_limit_status": "not frozen across providers; must be selected and recorded within context, quota, and worst-case cost bounds before access checks",
+      "paid_or_model_fallback": false
+    },
+    "targets": [
+      {
+        "provider": "groq",
+        "model": "openai/gpt-oss-120b",
+        "access": "direct_api",
+        "base_url": "https://api.groq.com/openai/v1",
+        "credential_env": "GROQ_API_KEY",
+        "credential_source": "current local .env; no credential values in artifacts",
+        "rpm": 30,
+        "combined_tpm": 8000,
+        "rpd": 1000,
+        "tpd": 200000,
+        "limit_source": "user-supplied published free plan; account-specific limits take precedence",
+        "out_of_pocket_usd_cap": 0,
+        "allowance": "free usage only",
+        "adapter_status": "not implemented in current direct-API runner"
+      },
+      {
+        "provider": "gemini",
+        "model": "gemini-3.8-flash",
+        "access": "direct_api",
+        "base_url": "https://generativelanguage.googleapis.com",
+        "credential_env": "GEMINI_API_KEY",
+        "credential_source": "updated local .env; no previous exported/cached credential may silently take precedence",
+        "project_display_name": "Default Gemini Project",
+        "tier": "Tier 1",
+        "key_to_project_association": "unverified; do not apply these limits until verified",
+        "rpm": 1000,
+        "input_tpm": 2000000,
+        "rpd": 10000,
+        "limit_source": "user-confirmed project dashboard",
+        "total_usd_cap_across_all_gemini_trials_including_access_checks_and_retries": 2,
+        "adapter_status": "not implemented in current direct-API runner"
+      },
+      {
+        "provider": "mistral",
+        "model": "mistral-medium-latest",
+        "access": "direct_api",
+        "base_url": "https://api.mistral.ai/v1",
+        "credential_env": "MISTRAL_API_KEY",
+        "credential_source": "updated local .env; no account-auth CLI substitution",
+        "requests_per_second": 1,
+        "combined_tpm": 20000,
+        "daily_quota": "not shown; not assumed unlimited",
+        "limit_source": "user-supplied account observations",
+        "out_of_pocket_usd_cap": 0,
+        "maximum_included_allowance_usd": 10,
+        "allowance": "remaining included API/Studio usage only, shared usage reduces availability",
+        "allowance_reset": "first calendar day of each month, as supplied by user",
+        "adapter_status": "existing direct API adapter; temperature override removed",
+        "current_adapter_output_token_cap": 8192,
+        "current_request_timeout_seconds": 180
+      }
+    ],
+    "execution_release_blockers": [
+      "Explicit user approval after audit review.",
+      "Verify updated Gemini key-to-project association without exposing credentials.",
+      "Implement and locally verify Groq and Gemini direct-API adapters; no terminal or model substitution.",
+      "Ensure current .env keys are authoritative; existing runners can prefer exported credentials.",
+      "Enforce a common 900-second direct-API wall deadline, rate pacing and bounded retry delays.",
+      "Implement persistent cumulative spend/included-allowance accounting that reserves the maximum next-request cost before dispatch, including access checks and retries; stop if cost or remaining allowance cannot be bounded.",
+      "Freeze output-token caps, provider pricing and generation provenance before the first access check; effective backend defaults and resolved aliases remain unavailable until actually exposed.",
+      "Separate provider/access/quota/truncation termination from candidate execution/finance errors in direct-API run reports."
+    ]
+  },
+  "qualification": {
+    "scored_cases": 46,
+    "hand_diagnostics": 9,
+    "fields_per_case": 55,
+    "source_hashes_match": true
+  },
+  "files": [
+    {
+      "path": "README.md",
+      "bytes": 10619,
+      "sha256": "bd9d91d908081dd9da2e70f4d006e54a85b49254d030db824aa064a6b657ddb0"
+    },
+    {
+      "path": "analysis/pierre_lbo_audit.md",
+      "bytes": 10602,
+      "sha256": "cefe73febd6c18f5d0e7e466663ae320df9558d10984d16c2cd7596d720fbe40"
+    },
+    {
+      "path": "analysis/pierre_lbo_report.md",
+      "bytes": 11718,
+      "sha256": "95dc61b648290c1f882b3d73e48c1fb33068a056f40e85ea97324a9901241154"
+    },
+    {
+      "path": "evaluator/benchmarks.py",
+      "bytes": 2483,
+      "sha256": "6d5f88cd156156ad8b0d396d6f267fb6f129f4a8d9dc6c67a845e561c78fbf27"
+    },
+    {
+      "path": "evaluator/grader.py",
+      "bytes": 5262,
+      "sha256": "9fb98dcc5ffaea817b37c6b2019bafebfea7a0e9bb3f526c41dd0111aa32be47"
+    },
+    {
+      "path": "evaluator/hidden_cases.py",
+      "bytes": 5709,
+      "sha256": "2273791fae8595a1fd71d153ae90f5222ad9c74bb288970522259b59e76c4949"
+    },
+    {
+      "path": "evaluator/pierre_lbo_cases.py",
+      "bytes": 10895,
+      "sha256": "f0791e839dc0c36ee160dd70f868bf33c75d7d9a89fc3f3c270f0cb64294d994"
+    },
+    {
+      "path": "evaluator/run_grader.py",
+      "bytes": 5530,
+      "sha256": "84ff8619b7455faaf0967d4f2a8ef44a01b0e69c19dfffd7d934c8a2e66edce2"
+    },
+    {
+      "path": "evaluator/schemas.py",
+      "bytes": 1033,
+      "sha256": "5e2500628a81cc53f89022d9c2adf3626606c83f9f31d15aed2ad3d7b956f321"
+    },
+    {
+      "path": "harness/README.md",
+      "bytes": 15695,
+      "sha256": "bea865d919149f39719b398d277a3e65a073b6f1798297283c84110dedd8d4c8"
+    },
+    {
+      "path": "harness/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "harness/agent.py",
+      "bytes": 4849,
+      "sha256": "b8b33685f758571ca7d4c7b6a573a3e49368eaa47e5510d018a48e56a45c79f1"
+    },
+    {
+      "path": "harness/config.py",
+      "bytes": 1094,
+      "sha256": "383bb0b9dec7e194638edc160939f356db33e0723cad3ec3963d62ed6e998807"
+    },
+    {
+      "path": "harness/executor.py",
+      "bytes": 11596,
+      "sha256": "36c763a1b96a9f4f587e1e6eb09b2282de8a217cbcb52e23258a09e0c65c5583"
+    },
+    {
+      "path": "harness/mcp_server.py",
+      "bytes": 2732,
+      "sha256": "eaa9049603707409ac20c27c257b74f0e0e3f596dbbc6deaf4d27a5d8fc48daf"
+    },
+    {
+      "path": "harness/protocol.py",
+      "bytes": 285,
+      "sha256": "19e3fafd9dd6916c3cf57f9f1c4c7ea4f950214bc8f0ac99d1619529f83be1cb"
+    },
+    {
+      "path": "harness/providers/__init__.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "harness/providers/anthropic.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "harness/providers/gemini.py",
+      "bytes": 0,
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "harness/providers/gemini_cli.py",
+      "bytes": 4098,
+      "sha256": "bfabf393647f6b708dbdb86e1343cdd7af476eb5622805db2aa91a65a65039cd"
+    },
+    {
+      "path": "harness/providers/mistral.py",
+      "bytes": 3260,
+      "sha256": "8ca22476e558acdef2e8411ceee5d90e475907251aad129a0be65a14b09c57f4"
+    },
+    {
+      "path": "harness/providers/mistral_cli.py",
+      "bytes": 3888,
+      "sha256": "c561e13a6032ec3ded764d8ce42b2b211b46bb265e2650ea585e73bdfe17e1ad"
+    },
+    {
+      "path": "harness/run_benchmark.py",
+      "bytes": 4752,
+      "sha256": "563c3b7ee7790bc580f4ebbd2c785b9379503b6fdb95d749d13a29e9671e1036"
+    },
+    {
+      "path": "harness/run_terminal.py",
+      "bytes": 11020,
+      "sha256": "118ef5c7d4222d6bbe072fa60694117a8f24785f87da7724d7b76f15352561a5"
+    },
+    {
+      "path": "harness/submission.py",
+      "bytes": 4742,
+      "sha256": "cf5289925cb73f54ba6686460601548a23f71b5ccd8f521fab86040fe4c58a70"
+    },
+    {
+      "path": "reference/pierre_lbo/HAND_EXAMPLES.md",
+      "bytes": 9314,
+      "sha256": "c430f38b44967d9c7a0f6469b53c3be24a8e1db36cc6311d7296fde0d4977228"
+    },
+    {
+      "path": "reference/pierre_lbo/SOURCES.md",
+      "bytes": 10188,
+      "sha256": "b8bfe2581dd19e2db09727c2987ac9f92d580f84ed2e8eef534f6adfa2f82b62"
+    },
+    {
+      "path": "reference/pierre_lbo/controls.py",
+      "bytes": 4243,
+      "sha256": "8d0ab096fc1f8415b7524196e1ac51a0241c40a93e6632cd7ff6067840e420ed"
+    },
+    {
+      "path": "reference/pierre_lbo/hand_examples.json",
+      "bytes": 41177,
+      "sha256": "6461bd6a3cb1967fe240a62f0a5c59e50fbcb759d57f9354a8d96b8e76d74053"
+    },
+    {
+      "path": "reference/pierre_lbo/qualify.py",
+      "bytes": 9980,
+      "sha256": "90754f30b7b7341c3ead47012aaf4de923a99dcf9fefd82f595bab03238dcaf3"
+    },
+    {
+      "path": "reference/pierre_lbo/reference.py",
+      "bytes": 11850,
+      "sha256": "3b31ee3adc7e17e4190ae5a0d37fc3f775ce01ea04d70a753e672c1c0857b096"
+    },
+    {
+      "path": "reference/pierre_lbo/workbook.py",
+      "bytes": 30342,
+      "sha256": "fa147736b271c9b8df20b89a58813e672368508c9fa3e1cf11b74a4a093af45f"
+    },
+    {
+      "path": "requirements.txt",
+      "bytes": 813,
+      "sha256": "0b9a1b66ccc5f7615151c82e2bf106dec0cdd2d369e9da193ca90a16c1c01ede"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/controls.json",
+      "bytes": 4493,
+      "sha256": "da7e6a80e3208081bf4bea0ddd5ca844ac3d24c02bbcce834060ea813b7565dd"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/controls/constant_base.grade.json",
+      "bytes": 298146,
+      "sha256": "2a1f60534d134bc6f4b60c300dbe3c88a7e5e0e0825edd3c34ae06b5d490af9e"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/controls/constant_base.py",
+      "bytes": 2862,
+      "sha256": "6f6fda21b24407eebe7c0efde791cc9bc43cb69a9f57f1e42e18e4c6799b20cc"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/controls/ignore_cash_interest.grade.json",
+      "bytes": 181885,
+      "sha256": "65d053e58b179446f672189403920862ac3898fdd0ed82dae376c3f557cf2a75"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/controls/ignore_cash_interest.py",
+      "bytes": 11269,
+      "sha256": "2ab05d3c8350e1a0256baa471eb38884e076648cb03463fb6efe5d57d7ce3e1a"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/controls/ignore_cash_sweep.grade.json",
+      "bytes": 131853,
+      "sha256": "c5e9bfe0b464d5253ba353d7297ee88ae7d98a85d53671936c95cd14bbfffc9f"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/controls/ignore_cash_sweep.py",
+      "bytes": 11297,
+      "sha256": "bd0ff94bf596f8b69f14af36a5e96175b5848aee00bc76d3b04b4bfad10d530e"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/controls/ignore_preferred_priority.grade.json",
+      "bytes": 150519,
+      "sha256": "25c884d14e2df580e355bf85325c9f39422e878e249fe079bc8997b034823e6d"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/controls/ignore_preferred_priority.py",
+      "bytes": 11193,
+      "sha256": "b48e83e8e96e0fc5060c53848f80b97ef7170b7215385d6bcd0aa7a8010ba4e1"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/controls/integer_year_irr.grade.json",
+      "bytes": 125558,
+      "sha256": "8dd3de73c598b1ee85411a92d9fd4383d416ec12029905c8572818248da3ddd0"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/controls/integer_year_irr.py",
+      "bytes": 11323,
+      "sha256": "80358cd7e3ce2cfa9b4dc9e921e2059bdbfa1ba99f1517ab66a83698cd79dd9d"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/controls/reference.grade.json",
+      "bytes": 115427,
+      "sha256": "9775a943fe884dcd706d5fa014c93eda912c4b3441e873215117ed37649a36ab"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/controls/reference.py",
+      "bytes": 11850,
+      "sha256": "3b31ee3adc7e17e4190ae5a0d37fc3f775ce01ea04d70a753e672c1c0857b096"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/fcff-regression.json",
+      "bytes": 768,
+      "sha256": "5c25fa85d2b595d9aab4cc53742478fceff41fec92506a12b3e6e3687696ec2d"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/financial-boundary-evidence.json",
+      "bytes": 13163,
+      "sha256": "820aa14cc7796e4cc282f1f0d07d5755a3005108283bfa87530a4478dce8fd52"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/isolation-smoke.json",
+      "bytes": 1848,
+      "sha256": "b359afe2491e7f826283e74d262f394a65b97c87cead02b1d50b1d20277e7825"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/isolation/after-prefix.json",
+      "bytes": 1533,
+      "sha256": "af9d8f291c799c8ffa6927b33746cf7540d153141683c0c6c7a5bf0e1b9f76b7"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/isolation/after-runtime-components-smoke.json",
+      "bytes": 2064,
+      "sha256": "b73300322a80ca7506948dd9e1cbed259163142fafc6edf3f1ed96b676e3fddd"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/isolation/after-runtime-overlap.json",
+      "bytes": 132,
+      "sha256": "0008416addfd8f9c0b4e502728a32c9304276fb3ba5c219c79bb4950f7f3dd52"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/isolation/after-stdlib-injected-directory-fixed.json",
+      "bytes": 125,
+      "sha256": "2e5f3ec0b6a09c61f603280236332407b3747b43b413f2a3068d18dc4eff8244"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/isolation/before-runtime-overlap-canonical.json",
+      "bytes": 296,
+      "sha256": "df216300b5eb28dafa83bbf0e3b2484c9befdd1170a66cce32b7e919cafdb3ab"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/isolation/before.json",
+      "bytes": 189,
+      "sha256": "677f6c0697d4e131c34c2dd67273bfb972776511852d330a947be810eaddad34"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/isolation/prefix-repro.py",
+      "bytes": 890,
+      "sha256": "ca13b496a65e1c88ff93e1ea0299589a1f8daf4d251079cba3281d54cf0bcd19"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/isolation/runtime-overlap-canonical-probe.py",
+      "bytes": 982,
+      "sha256": "7417acca10e3fff99958ca5d11525f85e951f722be9d924b3bcd90d3d4cab642"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/isolation/smoke.py",
+      "bytes": 3805,
+      "sha256": "71cf934fafcd63586ebc9d38db620d4eae696190d40580ec1a5555a36ab10e89"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/isolation/stdlib-injection-probe.py",
+      "bytes": 639,
+      "sha256": "8cbfe5b113dcfc2054047d53fc601956b8ad79d8160975206b4a069e2dfeeff8"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/mcp-workbook-smoke.json",
+      "bytes": 606,
+      "sha256": "b0e2013a456e5aa7ced77de7214f6c920c2c88c2f560345c3c31a6a7816fa97b"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/mcp-workbook-smoke.py",
+      "bytes": 4133,
+      "sha256": "2eef09d14eddd0c49b0a411f77bbcecfc0335ec03be41d6159455049fed80e15"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/qualification.json",
+      "bytes": 717934,
+      "sha256": "f1555e295dc92965463fad992fe3e2473c4ebfb2dae3458cc51ea06df4cd1c7e"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/scenario-feature-map.json",
+      "bytes": 117763,
+      "sha256": "6e33fd74786e4927f90bf2a64d5fce08cf74e8c16d79a0635aa19d183aa6bc06"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/trial-plan.json",
+      "bytes": 5225,
+      "sha256": "b14076969103855bc22651a6a9b18ab68ade48153c9dcc84dcb299006ecf9521"
+    },
+    {
+      "path": "results/pierre_lbo/audit-2026-10-05/verification.json",
+      "bytes": 2122,
+      "sha256": "fbb17bfe42d8f4187454d474a2d6a789eb797485bed256a19c501e1856d43cdf"
+    },
+    {
+      "path": "tasks/pierre_lbo/inputs/base_case.json",
+      "bytes": 4586,
+      "sha256": "b61f95e9cc376eafd9db632f9b457cc787c66057b4898890fcc6a83a339d9771"
+    },
+    {
+      "path": "tasks/pierre_lbo/metadata.json",
+      "bytes": 1852,
+      "sha256": "cb5a26f214a38b9c997bd14b91ab81e844751370778ec0ee1a6bb69a869b48e1"
+    },
+    {
+      "path": "tasks/pierre_lbo/pierre_lbo_one.xlsx",
+      "bytes": 23982,
+      "sha256": "d6bc5b024392448dbb9d17dada181947ac8598b217a000a738ef7b6124967e96"
+    },
+    {
+      "path": "tasks/pierre_lbo/task.md",
+      "bytes": 11282,
+      "sha256": "522eb5fb1b719374f03fa9a53b0b452ba503868b3a62479b0947c8507c897b07"
+    },
+    {
+      "path": "tests/test_executor.py",
+      "bytes": 7712,
+      "sha256": "4c24bcca5c5baee05b6c57d6c0edfb849dcf688cb80254614170f530e4e98a08"
+    },
+    {
+      "path": "tests/test_grader.py",
+      "bytes": 5544,
+      "sha256": "3acc8300c3b4267401574d928f9b0c02f808545e026c25f4b3e2c64d1bfcc321"
+    },
+    {
+      "path": "tests/test_mcp_server.py",
+      "bytes": 4987,
+      "sha256": "898ebe982f56a64221a210eb16b401d9308aafb8390fe4a5f275416d9cd4bf52"
+    },
+    {
+      "path": "tests/test_pierre_lbo.py",
+      "bytes": 25399,
+      "sha256": "c71ce32dd3744ccfce579ed9331d07217bb1659fa4391a324ef20318c39defee"
+    },
+    {
+      "path": "tests/test_submission.py",
+      "bytes": 5044,
+      "sha256": "ca678f5c4b98b769099cc43ba66128932d4d953a67a19a3b70866b0757f2d9f7"
+    },
+    {
+      "path": "tests/test_terminal.py",
+      "bytes": 1423,
+      "sha256": "f444b4c3dcf483f6616ce7152e53ee44df8cefd703ce82b7c1e2f05da6cd14db"
+    }
+  ],
+  "private_recalculated_workbooks": [
+    {
+      "case": "base_case",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/base_case.xlsx",
+      "bytes": 23982,
+      "sha256": "d6bc5b024392448dbb9d17dada181947ac8598b217a000a738ef7b6124967e96"
+    },
+    {
+      "case": "original_profile_2",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/original_profile_2.xlsx",
+      "bytes": 24288,
+      "sha256": "c1cb3c863517274462119d5b868fbee1ba36ab653a7d6fb4b31f12108b045e68"
+    },
+    {
+      "case": "original_profile_3",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/original_profile_3.xlsx",
+      "bytes": 24282,
+      "sha256": "73508dcc693bcc34bcce3baf4dd311fab230edadc7aff235788e656dbf7f5c37"
+    },
+    {
+      "case": "original_profile_4",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/original_profile_4.xlsx",
+      "bytes": 24280,
+      "sha256": "2605e39ef88f69abb5a6e9f87e63aafa060b72a3fd832f95236e238b5a62c09b"
+    },
+    {
+      "case": "entry_multiple_shock",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/entry_multiple_shock.xlsx",
+      "bytes": 23992,
+      "sha256": "1534fcd459f55eee29897e3e0e60a9b6fc427ce14f5517e5fa3a3a269eb117db"
+    },
+    {
+      "case": "exit_multiple_shock",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/exit_multiple_shock.xlsx",
+      "bytes": 23985,
+      "sha256": "adf40261d1b038a483dd97b6b735b9ccae7baa60d1e7447ab81fc9f4d89eb44f"
+    },
+    {
+      "case": "exit_fee_shock",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/exit_fee_shock.xlsx",
+      "bytes": 23986,
+      "sha256": "b1a455a04ab8c3ab91eb8159bb97f6efdf221fdc20ffc16efa463f929c9342d5"
+    },
+    {
+      "case": "tax_shock",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/tax_shock.xlsx",
+      "bytes": 23971,
+      "sha256": "69e2a6b4cbb92aa9c89ec8e9a4ef8759ceeb33885ffba7f0948c273270eaf060"
+    },
+    {
+      "case": "preferred_accretion_shock",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/preferred_accretion_shock.xlsx",
+      "bytes": 23980,
+      "sha256": "e01bcfc9bcb5ef6439bd2f0c00a6fd951d07bcedd622929be13765dc49356203"
+    },
+    {
+      "case": "ordinary_split_shock",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/ordinary_split_shock.xlsx",
+      "bytes": 23989,
+      "sha256": "4a13ec6a0b15ff72a88103a373146b8e4f99f771247a8b17746a39da862b3dd1"
+    },
+    {
+      "case": "management_share_shock",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/management_share_shock.xlsx",
+      "bytes": 23996,
+      "sha256": "0350894aa24e8128ed10a24024a2dd88e9d17f126711ce1a7882dc63b2810660"
+    },
+    {
+      "case": "early_exit",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/early_exit.xlsx",
+      "bytes": 23785,
+      "sha256": "5e2fd134cf923ac6e0c4750e6c304e96c4ec6fbb3373cfe2a32b6aa26c043bf2"
+    },
+    {
+      "case": "full_horizon",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/full_horizon.xlsx",
+      "bytes": 24146,
+      "sha256": "da7ab8dd8b13ab3621c507cc12fe1cbc2d7f4d834ace80b83b8960408b9b2f14"
+    },
+    {
+      "case": "cash_interest_shock",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/cash_interest_shock.xlsx",
+      "bytes": 24049,
+      "sha256": "36d9e2cc0a77e09c7ed87a37523b81a48019ef18d465ffccf9360d8ec72885a7"
+    },
+    {
+      "case": "pik_interest_shock",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/pik_interest_shock.xlsx",
+      "bytes": 24189,
+      "sha256": "4c309d6cbdc9c1e213c1a252c3778b9558f8fb8651b955fa37813dfdc99e8c5f"
+    },
+    {
+      "case": "scheduled_amortization",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/scheduled_amortization.xlsx",
+      "bytes": 24289,
+      "sha256": "98105508725a81dfd5b51b9848b00d56aaa639427178301e36e0b64d8ba37a0e"
+    },
+    {
+      "case": "cash_sweep",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/cash_sweep.xlsx",
+      "bytes": 24223,
+      "sha256": "f6f5341ba6ce7bf469d6e7b34c70c07a8f6e3d98372aafcf7327832225c94934"
+    },
+    {
+      "case": "term_maturity",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/term_maturity.xlsx",
+      "bytes": 23684,
+      "sha256": "0998b8809bd611bb21d37437d5872eca04fe20cf91006f68931efb0b66de0c56"
+    },
+    {
+      "case": "entry_leverage_shock",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/entry_leverage_shock.xlsx",
+      "bytes": 23974,
+      "sha256": "45495657f697cf1fcf0a446ebe06566aea6a73a6957e9f6917f79372fda14600"
+    },
+    {
+      "case": "interacting_finance_shocks",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/interacting_finance_shocks.xlsx",
+      "bytes": 24376,
+      "sha256": "4fa782b120b083167c35ba0c5661b6dd7d173d1667963995b25ee6445dcaa15c"
+    },
+    {
+      "case": "revolver_draw_then_priority_repayment",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/revolver_draw_then_priority_repayment.xlsx",
+      "bytes": 22601,
+      "sha256": "d441d50836cba2c843b8a7e6173356eebbbaf89599873ffedd0ef6a9363eb6e8"
+    },
+    {
+      "case": "first_period_liquidity_shortfall",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/first_period_liquidity_shortfall.xlsx",
+      "bytes": 22362,
+      "sha256": "17413145df6008f402e574fc6874db6db877e28f8a54120f3f11c26a2935fe08"
+    },
+    {
+      "case": "later_period_liquidity_shortfall",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/later_period_liquidity_shortfall.xlsx",
+      "bytes": 22354,
+      "sha256": "9c5ec899499b3f941f8d3709c0d1425f5bd4b90d9a365f21463d4f91bb16a150"
+    },
+    {
+      "case": "term_maturity_refinanced_by_revolver",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/term_maturity_refinanced_by_revolver.xlsx",
+      "bytes": 22438,
+      "sha256": "8fff4a26de9cac16cc156f1725299fc1e8fa9ae459fe1d4b2581c7cc9e69a776"
+    },
+    {
+      "case": "revolver_maturity_no_redraw",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/revolver_maturity_no_redraw.xlsx",
+      "bytes": 22406,
+      "sha256": "75f262e1331d10a9709ec3b6d05382610efd1b3f600455df101ce31b827efaca"
+    },
+    {
+      "case": "revolver_maturity_funded",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/revolver_maturity_funded.xlsx",
+      "bytes": 22585,
+      "sha256": "9f8111abceff469a1dc70aa742f84cef8cc51b513e42970cff3631a19fa47bef"
+    },
+    {
+      "case": "capped_sweep_and_amortization",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/capped_sweep_and_amortization.xlsx",
+      "bytes": 22549,
+      "sha256": "c8ac9d01f14fc21441fdf75d26db41ba5cf5418bbc82032f0014ab40c3ba97ee"
+    },
+    {
+      "case": "preferred_waterfall_below_boundary",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/preferred_waterfall_below_boundary.xlsx",
+      "bytes": 22410,
+      "sha256": "3e4187de427df59e47a33cea55aabd7e69b79411cf302ae9267b8d6fe858e355"
+    },
+    {
+      "case": "preferred_waterfall_at_boundary",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/preferred_waterfall_at_boundary.xlsx",
+      "bytes": 22371,
+      "sha256": "c7b9d1a79ce7c9879a59cf2e1bfdc0303dbbae13e65d3cadc1c3005985b9f3a1"
+    },
+    {
+      "case": "preferred_waterfall_above_boundary",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/preferred_waterfall_above_boundary.xlsx",
+      "bytes": 22448,
+      "sha256": "5c7e09a418e5eef0614b9c6c20eedcb866423d710173dbfd398c62cbd4f5ee85"
+    },
+    {
+      "case": "no_management_investment",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/no_management_investment.xlsx",
+      "bytes": 22336,
+      "sha256": "9cac3b283e8e8949713312832ecc5fbb5259e406d9ca19c0f250cb2fdd9ade0a"
+    },
+    {
+      "case": "no_ordinary_equity",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/no_ordinary_equity.xlsx",
+      "bytes": 22327,
+      "sha256": "79eea5c9a3fdb33499b4bdaeee4f66912ec077ea2c8fefeb38a0da102479a9ed"
+    },
+    {
+      "case": "no_preferred_equity",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/no_preferred_equity.xlsx",
+      "bytes": 22342,
+      "sha256": "8b6076e459da4d735d61960cffcf157277a1dc0d420bc4145923377c0c7af396"
+    },
+    {
+      "case": "zero_sponsor_investment",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/zero_sponsor_investment.xlsx",
+      "bytes": 22325,
+      "sha256": "11c90888f4eed2587832822eac9c74f5138733aca06a9ee945a8a378c45e378f"
+    },
+    {
+      "case": "underwater_exit",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/underwater_exit.xlsx",
+      "bytes": 22338,
+      "sha256": "beb6a74b859aa77a22e34b37c0d3db7f1689c1ba1802d6519ddbe386ebaaaf9b"
+    },
+    {
+      "case": "negative_exit_ebitda_no_negative_fees",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/negative_exit_ebitda_no_negative_fees.xlsx",
+      "bytes": 22385,
+      "sha256": "12dae7934e8117c46f239761dfe46988fb572d9173ebbe8058a50ed93e7d8f0b"
+    },
+    {
+      "case": "full_working_capital_in_short_stub",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/full_working_capital_in_short_stub.xlsx",
+      "bytes": 22416,
+      "sha256": "dac92f3a5ba97e33aa9b631ad054a296cb60c583d04d8f36e4a0dc5efbbce060"
+    },
+    {
+      "case": "one_day_december_stub",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/one_day_december_stub.xlsx",
+      "bytes": 24042,
+      "sha256": "36ed7d2e5f5566dbb2b4af31521bad6291129b0ace4faba8097c2c7a01d7bdba"
+    },
+    {
+      "case": "leap_day_sequential_clamp",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/leap_day_sequential_clamp.xlsx",
+      "bytes": 22596,
+      "sha256": "c9b993c42cd26cb6b3626c6ffb4d5ef639790266535447b4a55f7d67200c32de"
+    },
+    {
+      "case": "leap_day_close",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/leap_day_close.xlsx",
+      "bytes": 22366,
+      "sha256": "c799ecfd197de1754f36c3ffebbe2d87f1c7a3fccd9beb0124b4cba543979d2a"
+    },
+    {
+      "case": "currency_scale_small",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/currency_scale_small.xlsx",
+      "bytes": 23983,
+      "sha256": "afa1d3168b78aee19c56a152c4d43e69b77b03371447ec386aa1abdf4c438e42"
+    },
+    {
+      "case": "currency_scale_large",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/currency_scale_large.xlsx",
+      "bytes": 23989,
+      "sha256": "a611192999a700ad019a06df57d120f1ad844e64ee9b2fc5310a46c8fa544608"
+    },
+    {
+      "case": "seeded_operating_finance_mix_1",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/seeded_operating_finance_mix_1.xlsx",
+      "bytes": 24482,
+      "sha256": "7cb08a20078d54c818525b7325f3d60f4329f948127ec7e8c16b7d60769b7ec8"
+    },
+    {
+      "case": "seeded_operating_finance_mix_2",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/seeded_operating_finance_mix_2.xlsx",
+      "bytes": 24838,
+      "sha256": "0ed33a191d9807cae1f6b08d192107be7e37fddb2417f71b6e56317d2118c3ee"
+    },
+    {
+      "case": "seeded_operating_finance_mix_3",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/seeded_operating_finance_mix_3.xlsx",
+      "bytes": 24476,
+      "sha256": "4e41568b0bacd54cd985ec3818f880dee2c49c852cbb768a84543dbb7691cc29"
+    },
+    {
+      "case": "seeded_operating_finance_mix_4",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/seeded_operating_finance_mix_4.xlsx",
+      "bytes": 24983,
+      "sha256": "828a9a823267b683c5121708d452340a4f0dd3511bf270fde5439375f3294da6"
+    },
+    {
+      "case": "hand_repayment_priority",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/hand_repayment_priority.xlsx",
+      "bytes": 22591,
+      "sha256": "b424d619506e371e4f468777e29db99470f44c0f18309d3ca4c15397894df5d6"
+    },
+    {
+      "case": "hand_later_liquidity_prefix",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/hand_later_liquidity_prefix.xlsx",
+      "bytes": 22348,
+      "sha256": "92cf085ade4bf80b46d226a3843972d05710764048051cab2362475b73c39129"
+    },
+    {
+      "case": "hand_preferred_132",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/hand_preferred_132.xlsx",
+      "bytes": 22409,
+      "sha256": "3153cb7b86fee8d8f554d02e49e9efd2bcb7606d89ee0e28a28cdee5faf83c35"
+    },
+    {
+      "case": "hand_preferred_133",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/hand_preferred_133.xlsx",
+      "bytes": 22370,
+      "sha256": "a3ab9654ae051ce5366c507479ac7738b2ff725e826c31a4e52d7f065eba02c2"
+    },
+    {
+      "case": "hand_preferred_134",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/hand_preferred_134.xlsx",
+      "bytes": 22447,
+      "sha256": "95c9282c2222046d661d1e6f036e4cd0cc9d21e24a23525859f4f45244b35454"
+    },
+    {
+      "case": "hand_dated_return",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/hand_dated_return.xlsx",
+      "bytes": 22464,
+      "sha256": "7138fca39eaafd307165928568e92b32461bf6f0d6cd55df9c3712a029e147b7"
+    },
+    {
+      "case": "hand_scaled_real_shortfall_0_001",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/hand_scaled_real_shortfall_0_001.xlsx",
+      "bytes": 22369,
+      "sha256": "9fe9d09876eb5ab4f69f9caa5e9a3321edddd92c2de778a8fda8d124e145b912"
+    },
+    {
+      "case": "hand_scaled_real_shortfall_1",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/hand_scaled_real_shortfall_1.xlsx",
+      "bytes": 22375,
+      "sha256": "9d5ca677f601bcf135b8caf2bd745d5ca1a0d231ef3f78659971d9bacb165be7"
+    },
+    {
+      "case": "hand_scaled_real_shortfall_1000",
+      "path": "runs/private/pierre_lbo/qualification-audit-2026-10-05-final/calculated/hand_scaled_real_shortfall_1000.xlsx",
+      "bytes": 22373,
+      "sha256": "4ac069bb096aa1084a99fbc2785b134e806fbfb1959e91518afc6e262b6c47f8"
+    }
+  ],
+  "manifest_note": "This manifest excludes itself. Public-only v0.2 bundle and original preservation were verified; provider defaults/resolved aliases remain unknown until exposed. Source hashes, not an uncommitted Git identifier, identify this audit."
+}

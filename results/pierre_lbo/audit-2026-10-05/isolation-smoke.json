@@ -1,0 +1,75 @@
+{
+  "observed_by": "parent audit replay after final runtime guard integration",
+  "provider_requests": 0,
+  "sandbox": {
+    "exit_code": 0,
+    "stdout": "{\"env\": true, \"pythonpath\": true, \"openpyxl\": true, \"absolute\": true, \"symlink\": true, \"dotenv\": true, \"runtime\": true, \"import\": true, \"fork\": true, \"subprocess\": true, \"network\": true, \"fd\": true}\n",
+    "stderr": ""
+  },
+  "mcp_schema": {
+    "properties": {
+      "code": {
+        "title": "Code",
+        "type": "string"
+      },
+      "submit": {
+        "default": false,
+        "description": "Explicitly replace the final submission with these exact source bytes.",
+        "title": "Submit",
+        "type": "boolean"
+      }
+    },
+    "required": [
+      "code"
+    ],
+    "title": "executeArguments",
+    "type": "object"
+  },
+  "mcp_results": [
+    {
+      "exit_code": 0,
+      "stdout": "1\n",
+      "stderr": "",
+      "run_call": 1,
+      "remaining": 3,
+      "submitted": false,
+      "submission": null
+    },
+    {
+      "exit_code": 0,
+      "stdout": "42\n",
+      "stderr": "",
+      "run_call": 2,
+      "remaining": 2,
+      "submitted": true,
+      "submission": {
+        "run_call": 2,
+        "sha256": "1b4d96af94b6dfdddeda536ffa34169aba6000b0240da5cf0b507d46ebf29242"
+      }
+    },
+    {
+      "exit_code": 0,
+      "stdout": "3\n",
+      "stderr": "",
+      "run_call": 3,
+      "remaining": 1,
+      "submitted": false,
+      "submission": {
+        "run_call": 2,
+        "sha256": "1b4d96af94b6dfdddeda536ffa34169aba6000b0240da5cf0b507d46ebf29242"
+      }
+    }
+  ],
+  "frozen": {
+    "solution_sha256": "1b4d96af94b6dfdddeda536ffa34169aba6000b0240da5cf0b507d46ebf29242",
+    "submission_run_call": 2,
+    "run_calls": 3
+  },
+  "grading": {
+    "files": [
+      "solution.py"
+    ],
+    "env": true,
+    "private": true
+  }
+}

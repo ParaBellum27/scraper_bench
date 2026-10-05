@@ -1,0 +1,20 @@
+{
+  "provider": "gemini",
+  "model": "gemini-3.8-flash",
+  "ready": true,
+  "blockers": [],
+  "public_sha256": {
+    "task.md": "522eb5fb1b719374f03fa9a53b0b452ba503868b3a62479b0947c8507c897b07",
+    "inputs/base_case.json": "b61f95e9cc376eafd9db632f9b457cc787c66057b4898890fcc6a83a339d9771",
+    "pierre_lbo_one.xlsx": "d6bc5b024392448dbb9d17dada181947ac8598b217a000a738ef7b6124967e96"
+  },
+  "credential_source": "local .env only; exported credentials ignored",
+  "max_output_tokens": 65536,
+  "candidate_trials_authorized": true,
+  "selected_condition": "calls24",
+  "effective_config_sha256": "ec064712554c063c8d7866ccd3007e9b06942853dc3ca8c6568fa8075d3318d3",
+  "authorized_condition_sha256": {
+    "calls12": "f91d338b77040e8e0cc9653576260f619cb397e59ca0c5d5e51c2bacfcbce07a",
+    "calls24": "ec064712554c063c8d7866ccd3007e9b06942853dc3ca8c6568fa8075d3318d3"
+  }
+}

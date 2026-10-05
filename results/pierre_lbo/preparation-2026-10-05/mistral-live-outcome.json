@@ -1,0 +1,21 @@
+{
+  "provider": "mistral",
+  "model": "mistral-medium-latest",
+  "attempted_real_api_requests": 1,
+  "http_status": 429,
+  "status": "access_failed",
+  "category": "quota",
+  "candidate_started": false,
+  "submission": null,
+  "grade": null,
+  "automatic_retries": 0,
+  "model_fallback": false,
+  "sandbox_workbook_preflight_passed": true,
+  "reserved_uncertain_usd": "0.397056",
+  "settled_charge_usd": "0",
+  "actual_provider_charge": "unverified; reservation is not a charge",
+  "available_internal_allowance_usd": "9.602944",
+  "diagnosis": "HTTP429 confirms a rate/quota rejection; exact limiting window/reset unavailable in retained evidence. No inference completion returned.",
+  "original_run_directory": "runs/private/pierre_lbo/direct-api/mistral-20261005T051453473592Z",
+  "next_requirement": "Resolve account rate/quota availability and obtain a usable reset indication before retrying; do not reset persistent accounting or assign a model score."
+}

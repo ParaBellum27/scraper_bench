@@ -1,0 +1,234 @@
+{
+  "source_snapshots_verified": 47,
+  "expected_workbooks_verified": 44,
+  "conditions_differ_only_execution_allowance_and_host_label": true,
+  "exact_submissions_and_grades_verified": 2,
+  "local_document_links_verified": 56,
+  "all_dispatch_closed": true,
+  "links": [
+    {
+      "document": "README.md",
+      "target": "BENCHMARK_SUMMARY.md"
+    },
+    {
+      "document": "README.md",
+      "target": "analysis/pilot_report.md"
+    },
+    {
+      "document": "README.md",
+      "target": "analysis/model_comparison.md"
+    },
+    {
+      "document": "README.md",
+      "target": "analysis/benchmark_design.md"
+    },
+    {
+      "document": "README.md",
+      "target": "results/damodaran_fcff2st/pilot-2026-10-04/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "analysis/pierre_lbo_report.md"
+    },
+    {
+      "document": "README.md",
+      "target": "analysis/pierre_lbo_audit.md"
+    },
+    {
+      "document": "README.md",
+      "target": "tasks/pierre_lbo/"
+    },
+    {
+      "document": "README.md",
+      "target": "reference/pierre_lbo/SOURCES.md"
+    },
+    {
+      "document": "README.md",
+      "target": "tasks/pierre_lbo/task.md"
+    },
+    {
+      "document": "README.md",
+      "target": "analysis/pierre_lbo_audit.md"
+    },
+    {
+      "document": "README.md",
+      "target": "harness/README.md#guarded-direct-api-campaign"
+    },
+    {
+      "document": "README.md",
+      "target": "results/pierre_lbo/gemini-relaxed-2026-10-05/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md"
+    },
+    {
+      "document": "README.md",
+      "target": "harness/README.md"
+    },
+    {
+      "document": "harness/README.md",
+      "target": "direct_policy.json"
+    },
+    {
+      "document": "harness/README.md",
+      "target": "../results/pierre_lbo/gemini-relaxed-2026-10-05/README.md"
+    },
+    {
+      "document": "harness/README.md",
+      "target": "../results/pierre_lbo/gemini-only-65536-2026-10-05/README.md"
+    },
+    {
+      "document": "harness/README.md",
+      "target": "../results/pierre_lbo/preparation-2026-10-05/"
+    },
+    {
+      "document": "harness/README.md",
+      "target": "../results/pierre_lbo/holdout-controlled-2026-10-05/README.md"
+    },
+    {
+      "document": "harness/README.md",
+      "target": "../results/pierre_lbo/audit-2026-10-05/"
+    },
+    {
+      "document": "harness/README.md",
+      "target": "../results/pierre_lbo/audit-2026-10-05/trial-plan.json"
+    },
+    {
+      "document": "harness/README.md",
+      "target": "../reference/pierre_lbo/HAND_EXAMPLES.md"
+    },
+    {
+      "document": "harness/README.md",
+      "target": "../analysis/pierre_lbo_report.md"
+    },
+    {
+      "document": "reference/pierre_lbo/HAND_EXAMPLES.md",
+      "target": "../../results/pierre_lbo/audit-2026-10-05/"
+    },
+    {
+      "document": "reference/pierre_lbo/HAND_EXAMPLES.md",
+      "target": "../../results/pierre_lbo/holdout-controlled-2026-10-05/holdout/report.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "holdout/README.md"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "protocol.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "conditions.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "calls24/trial/solution.py"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "calls12/trial/solution.py"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "accounting.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "release-closed.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "outcome.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "protocol.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "policy.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "conditions.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "accounting.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "ledger-snapshot.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "holdout/report.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "holdout/cases.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "calls24/original-grade.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "calls24/holdout-grade.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "calls24/trial/metadata.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "calls12/original-grade.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "calls12/holdout-grade.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "calls12/trial/metadata.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "source-manifest.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "closed-gate-smoke.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "tests.txt"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "typecheck.txt"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/README.md",
+      "target": "holdout/README.md#reproduction"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/holdout/README.md",
+      "target": "cases.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/holdout/README.md",
+      "target": "report.json"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/holdout/README.md",
+      "target": "frozen_submission.py"
+    },
+    {
+      "document": "results/pierre_lbo/holdout-controlled-2026-10-05/holdout/README.md",
+      "target": "../protocol.json"
+    }
+  ]
+}

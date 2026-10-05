@@ -1,0 +1,188 @@
+{
+  "provider": "gemini",
+  "requested_model": "gemini-3.8-flash",
+  "returned_models": [
+    "gemini-3.8-flash"
+  ],
+  "condition": "fresh relaxed-budget Gemini-only run",
+  "limits": {
+    "max_steps": 32,
+    "max_run_calls": 24,
+    "execution_timeout_seconds": 10,
+    "wall_timeout_seconds": 1800,
+    "max_output_tokens": 65536,
+    "access_check_output_tokens": 512
+  },
+  "workflow_instruction": "Submit a working candidate early. Test the exact submitted source on the public base input, inspect the output and execution errors, and reserve at least three execution calls for correction and explicit resubmission. Do not wait until your last call to submit.",
+  "model_turns": 18,
+  "tool_executions": 17,
+  "provider_requests_this_attempt": 19,
+  "stop_reason": "stop",
+  "explicit_submission_call": 17,
+  "explicit_submissions": [
+    {
+      "turn": 17,
+      "call": 17,
+      "exit": 0,
+      "remaining": 7
+    }
+  ],
+  "public_execution_errors": [
+    {
+      "turn": 12,
+      "run_call": 12,
+      "exit_code": 1,
+      "stderr": "Traceback (most recent call last):\n  File \"/private/tmp/pierre-candidate-rue7s8ik/solution.py\", line 3, in <module>\n    bc = json.load(f)\n         ^^^^\nNameError: name 'json' is not defined. Did you forget to import 'json'?\n"
+    }
+  ],
+  "submission_sha256": "6966f0c0788aeccbdd55cc9d5c5a21022d1a9669092ea0b0fb25e02b4fb3cd36",
+  "submission_file": "trial/solution.py",
+  "primary_metric": "hidden_cases_fully_correct",
+  "hidden_cases_fully_correct": 45,
+  "hidden_cases_total": 45,
+  "base_case_fully_correct": true,
+  "all_hidden_cases_correct": true,
+  "all_cases_correct": true,
+  "weighted_diagnostic_score": 100,
+  "grading_file": "grade.json",
+  "candidate_human_edited": false,
+  "prior_bug_feedback_given": false,
+  "hidden_feedback_given": false,
+  "accounting": {
+    "provider": "gemini",
+    "money_unit": "USD/10^12",
+    "attempts": 52,
+    "run_attempts": 19,
+    "consumed_units": 1541516250000,
+    "consumed_usd": "1.54151625",
+    "reserved_units": 0,
+    "reserved_usd": "0",
+    "committed_units": 1541516250000,
+    "committed_usd": "1.54151625",
+    "spend_cap_units": 4000000000000,
+    "spend_cap_usd": "4",
+    "remaining_units": 2458483750000,
+    "remaining_usd": "2.45848375"
+  },
+  "conservative_cost_this_attempt_usd": "0.79745925",
+  "accounting_note": "Conservative full-input-rate usage estimate; reported cached input is not discounted. Not an independently verified invoice.",
+  "elapsed_seconds": 171.73028929100838,
+  "original_run_directory": "runs/private/pierre_lbo/direct-api/gemini-20261005T055046813233Z",
+  "evidence": [
+    {
+      "path": "trial/metadata.json",
+      "bytes": 3575,
+      "sha256": "371cab26fe30b21a0cb0efb39707db7441fcd7aeb2c00d13b4a95c13e70cd5a5"
+    },
+    {
+      "path": "trial/access-check.json",
+      "bytes": 1904,
+      "sha256": "7f9ff9976cff1cef27f96f68e60faeec8d8a37271ee2612b30396cca6aaebb3e"
+    },
+    {
+      "path": "trial/trajectory.json",
+      "bytes": 908385,
+      "sha256": "8b247c389c0746322571960a998d66716383f0810967f429b312d35f39f371a6"
+    },
+    {
+      "path": "trial/execution-state.json",
+      "bytes": 127,
+      "sha256": "97c1c5ea9a40fd1e3b1114d0d8e25e28cde4292c0b5d9f2bba2ed0db42d38fc3"
+    },
+    {
+      "path": "trial/executions.jsonl",
+      "bytes": 57815,
+      "sha256": "5b0fc1e0d0fbfa20b70041c4a07e0594bfa072744432bc93ee0e015b80605005"
+    },
+    {
+      "path": "trial/solution.py",
+      "bytes": 11266,
+      "sha256": "6966f0c0788aeccbdd55cc9d5c5a21022d1a9669092ea0b0fb25e02b4fb3cd36"
+    },
+    {
+      "path": "trial/step-01.py",
+      "bytes": 320,
+      "sha256": "fad6c7c0931eaa40059f9faf07fc048ff83e8567adecc6102db34c2b4ed74ad1"
+    },
+    {
+      "path": "trial/step-02.py",
+      "bytes": 811,
+      "sha256": "64842ebcb0289c202928b4f45f92d58592c3ca0f1e7a793679152a2232c5bf8c"
+    },
+    {
+      "path": "trial/step-03.py",
+      "bytes": 769,
+      "sha256": "f5281c28dd2d3a5cf120c281023ffece9048c4187a8474d460ea2c0f5247090c"
+    },
+    {
+      "path": "trial/step-04.py",
+      "bytes": 758,
+      "sha256": "b51869ffb18341c184e1bd4891bd37b762c8fa65aad728002872ca16c94169c9"
+    },
+    {
+      "path": "trial/step-05.py",
+      "bytes": 611,
+      "sha256": "786ef1507fc3247fec5b83bd2e011af5b758c0d1571aab4c0ebee3174e69bfcd"
+    },
+    {
+      "path": "trial/step-06.py",
+      "bytes": 491,
+      "sha256": "e5334d51256998d20d625d935537cea423f0ede98c00d4c2d834d1fbc91a90eb"
+    },
+    {
+      "path": "trial/step-07.py",
+      "bytes": 674,
+      "sha256": "3afd8043f397fdfe06ffb5a8f5dde0379a26707cb5ae6685c0cb5cf0730cbc88"
+    },
+    {
+      "path": "trial/step-08.py",
+      "bytes": 352,
+      "sha256": "efc9d4b6a7f12dce70cc1b54b6387723f378e3977801288618b08cee34fe3a2d"
+    },
+    {
+      "path": "trial/step-09.py",
+      "bytes": 4560,
+      "sha256": "eff89677ec1683e475b43ace64356990433e4ca89c6041b50ea512d5848b9359"
+    },
+    {
+      "path": "trial/step-10.py",
+      "bytes": 11698,
+      "sha256": "6d151415819189dfc6cac0c662c1d6db6a2a385c1c9865f96578eeb4c5d61fac"
+    },
+    {
+      "path": "trial/step-11.py",
+      "bytes": 15932,
+      "sha256": "18fdeb1b5c3278f20d6de9522237c2df90043d08f4ffe40411b100a9ee88bf6c"
+    },
+    {
+      "path": "trial/step-12.py",
+      "bytes": 332,
+      "sha256": "8482a839675f0ccea2786339af808eea3b56c8cef80650f6f0797dcea1e9b028"
+    },
+    {
+      "path": "trial/step-13.py",
+      "bytes": 297,
+      "sha256": "4cdd3c43c64a54c1cafcd6bee07ccbf98f619335a5ece4ab4a252be27ca2075e"
+    },
+    {
+      "path": "trial/step-14.py",
+      "bytes": 562,
+      "sha256": "6e2b0126fd8992fa7fe4dc382dc27f043e17b4d96b55c5341130a38f9235c2be"
+    },
+    {
+      "path": "trial/step-15.py",
+      "bytes": 1250,
+      "sha256": "7f68d0df0f90b6234a80126226069537a4e5ddf75d483754b707b3d5283314aa"
+    },
+    {
+      "path": "trial/step-16.py",
+      "bytes": 11266,
+      "sha256": "6966f0c0788aeccbdd55cc9d5c5a21022d1a9669092ea0b0fb25e02b4fb3cd36"
+    },
+    {
+      "path": "trial/step-17.py",
+      "bytes": 11266,
+      "sha256": "6966f0c0788aeccbdd55cc9d5c5a21022d1a9669092ea0b0fb25e02b4fb3cd36"
+    }
+  ]
+}

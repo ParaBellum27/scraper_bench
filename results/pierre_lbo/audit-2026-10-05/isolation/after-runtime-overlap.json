@@ -1,0 +1,5 @@
+{
+  "returncode": 0,
+  "stdout": "{\"rejected\": \"Directory overlaps the candidate-readable trusted runtime\"}\n",
+  "stderr": ""
+}

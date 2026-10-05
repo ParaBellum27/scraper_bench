@@ -1,0 +1,83 @@
+{
+  "provider": "gemini",
+  "requested_model": "gemini-3.8-flash",
+  "transport": "native-generateContent",
+  "started_at": "2026-10-05T05:22:50.593565+00:00",
+  "status": "candidate_failed",
+  "candidate_started": true,
+  "access_only": false,
+  "score": null,
+  "requested_temperature": "provider_default",
+  "requested_thinking": "provider_default",
+  "effective_temperature": null,
+  "effective_thinking": null,
+  "unexposed_defaults": "unavailable; no values inferred",
+  "limits": {
+    "max_steps": 20,
+    "max_run_calls": 12,
+    "execution_timeout_seconds": 10,
+    "wall_timeout_seconds": 900,
+    "max_output_tokens": 8192,
+    "access_check_output_tokens": 512
+  },
+  "public_sha256": {
+    "task.md": "522eb5fb1b719374f03fa9a53b0b452ba503868b3a62479b0947c8507c897b07",
+    "inputs/base_case.json": "b61f95e9cc376eafd9db632f9b457cc787c66057b4898890fcc6a83a339d9771",
+    "pierre_lbo_one.xlsx": "d6bc5b024392448dbb9d17dada181947ac8598b217a000a738ef7b6124967e96"
+  },
+  "policy_sha256": "86a2a48c3cf682769878691c7370085c92903808bf9ccad1367980ca7c0208aa",
+  "request_policy": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",
+    "credential_env": "GEMINI_API_KEY",
+    "rpm": 1000,
+    "tpm": 2000000,
+    "tpm_scope": "input",
+    "rpd": 10000,
+    "tpd": null,
+    "min_interval_seconds": 0.06,
+    "input_limit": 1048576,
+    "output_limit": 65536,
+    "billable_output_limit": 65536,
+    "input_usd_per_million": "0.75",
+    "output_usd_per_million": "3.75",
+    "spend_cap_usd": "2",
+    "request_timeout_seconds": 180,
+    "max_retries": 2,
+    "entitlement": "Default Gemini Project, Tier 1; cumulative $2 including checks/retries",
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash",
+      "https://ai.google.dev/gemini-api/docs/pricing",
+      "https://ai.google.dev/api/generate-content"
+    ],
+    "pricing_note": "Standard text, output includes thinking. Promotional rates through 2026-12-31; no grounding, paid built-in tools, explicit caching, batch, flex or priority. Reserve full model output ceiling conservatively."
+  },
+  "credential_source": "local .env only; no exported-key fallback",
+  "local_preflight": {
+    "exit_code": 0,
+    "stdout": "[\"Inputs\", \"Scenarios\", \"Forecast\", \"Debt\", \"Returns\"]\n",
+    "stderr": ""
+  },
+  "access_returned_model": "gemini-3.8-flash",
+  "accounting": {
+    "provider": "gemini",
+    "money_unit": "USD/10^12",
+    "attempts": 20,
+    "run_attempts": 13,
+    "consumed_units": 475064250000,
+    "consumed_usd": "0.47506425",
+    "reserved_units": 0,
+    "reserved_usd": "0",
+    "committed_units": 475064250000,
+    "committed_usd": "0.47506425",
+    "spend_cap_units": 2000000000000,
+    "spend_cap_usd": "2",
+    "remaining_units": 1524935750000,
+    "remaining_usd": "1.52493575"
+  },
+  "error_category": "truncation",
+  "error": "ResponseError: Provider output was truncated; no tool arguments executed",
+  "finished_at": "2026-10-05T05:24:27.102618+00:00",
+  "elapsed_seconds": 96.50908683300077
+}

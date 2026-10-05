@@ -10,6 +10,7 @@ A benchmark for evaluating whether coding-capable language models can translate 
 - [Research-backed benchmark assessment](analysis/benchmark_design.md) — design principles, evidence gaps, and proposed next steps.
 - [Reproducible evidence pack](results/damodaran_fcff2st/pilot-2026-10-04/README.md) — frozen submissions, per-case grades, CSV/JSON ledger, hashes, and offline commands.
 - [Pierre LBO One qualification](analysis/pierre_lbo_report.md) — corrected source model, independent spreadsheet reconciliation, and deliberate-error controls; no candidate-model runs yet.
+- [Pierre LBO pretrial audit](analysis/pierre_lbo_audit.md) — version 0.2 contract, explicit submission, tightened isolation, 46-case qualification plus nine hand-derived diagnostics, strict correctness reporting, and remaining execution gates.
 
 The recorded campaign contains **nine finance attempts: three graded submissions scoring 100, 0, and 100; six attempts without a graded submission**. This is one independent workbook task, not a model leaderboard. All three frozen submissions reproduced their historical grades; seven local regressions and the harness/test type check passed. See the evidence pack for actual outputs and limitations.
 
@@ -128,7 +129,7 @@ The author chose a corrected derivative, 1 December fiscal year-end, and cash fl
 
 It has 45 changed-input scenarios in addition to the public base. Each case weights timing/status 5%, funding 10%, operations 25%, debt/cash 30%, exit bridge 15%, and waterfall/returns 15%; base and hidden weights remain 20%/80%. Numeric tolerances are 1e-7 relative and absolute.
 
-**Report fully correct cases alongside the partial-credit score.** A deliberate integer-year IRR bug scored 97.34/100 while failing 26 scenarios. The new `base_case_fully_correct` and `hidden_cases_fully_correct` metrics distinguish this from genuine agreement on every required field; `hidden_cases_passed_95` remains only a score threshold.
+**Fully correct hidden cases are the primary measure:** report the count out of 45 and `all_hidden_cases_correct`; `all_cases_correct` additionally requires the public base to pass. The weighted `score` is a partial-credit diagnostic only. A deliberate integer-year IRR bug scored 97.34/100 while failing 26 scenarios. Current reports remove the misleading 95-point pass count and attach actual financial-feature witnesses to every case.
 
 ```bash
 PY="$HOME/.local/share/scraper-bench/runtime/bin/python"
@@ -136,17 +137,21 @@ PY="$HOME/.local/share/scraper-bench/runtime/bin/python"
   --benchmark pierre_lbo --summary-only
 ```
 
-The isolated reference control scored 100 with all 45 hidden cases fully correct. The independent formula workbook was recalculated with LibreOffice 26.8.0.3 across all 46 scenarios. Native Excel timed out; this limitation and a preferred-hurdle rounding defect found and fixed during qualification are recorded in the [qualification report](analysis/pierre_lbo_report.md).
+The version 0.2 reference control scored 100 with all 45 hidden cases fully correct. Independent LibreOffice 26.8.0.3 recalculation passed all 46 scored scenarios and nine separate hand-derived diagnostics, comparing all 55 fields per workbook. The audit repaired currency-dependent liquidity classification, qualification cache blind spots, implicit submission overwrites, and overbroad runtime access. The original workbook remains untouched; native Excel verification remains unavailable. See the [pretrial audit](analysis/pierre_lbo_audit.md).
 
-Use the [Pierre LBO harness commands](harness/README.md#pierre-lbo-one) for actual candidate trials. No Pierre LBO model requests or model scores are recorded yet.
+The [guarded direct campaign](harness/README.md#guarded-direct-api-campaign) implements direct adapters, current-key loading, deadlines, rate/retry controls and persistent spend reservations. Groq/Mistral access probes returned HTTP 403/429. Gemini's earlier standard-budget submission scored 0/45 due to a runtime naming error. The fresh [relaxed-budget Gemini benchmark](results/pierre_lbo/gemini-relaxed-2026-10-05/README.md), with 32 turns, 24 executions and a generic submit-early workflow, passed the public base and **45/45 hidden scenarios fully correct**; weighted diagnostic 100/100. Its exact unmodified submission, full grading and prior attempts remain preserved.
 
-## Planned targets and observed conditions
+The later [separate holdout and matched comparison](results/pierre_lbo/holdout-controlled-2026-10-05/README.md) independently qualified **22 fresh stress cases** against recalculated spreadsheets across all 55 fields. The frozen passing source passed **22/22** without edits or API calls; its original 45/45 score is unchanged. Two fresh Gemini runs, randomized 24-execution then 12-execution condition, both passed the public base, **45/45 hidden** and **22/22 holdout** cases. Only the execution allowance differed. The runs used 19/12 executions and cost $0.77267925/$0.34812975 conservatively. Cumulative Gemini accounting, including all six attempts/checks/retries, is **$2.66232525 under the enforced $4 cap**; all paid dispatch is closed. One pair shows 12 executions sufficed here, not equal reliability or why the earlier changed-condition attempts differed.
+
+See the [new-test analysis](analysis/pierre_lbo_holdout_comparison.md) for the holdout's financial coverage, observed cost/latency contrast, correction-margin tradeoff, earlier failure chronology and limits on reliability or causal claims.
+
+## Historical FCFF targets and observed conditions
 
 - OpenAI/Luna label — unrun; actual model identity and access still need verification.
 - Mistral Medium 3.5 — completed Vibe attempts; direct API attempts were quota-blocked.
 - Gemini 3.8 Flash — one completed CLI attempt plus interrupted paired/recovery attempts.
 
-Mistral's direct API runner and official Mistral/Gemini terminal runners use the same macOS Python execution sandbox; see [harness/README.md](harness/README.md) for setup, authentication, trial commands, and independent grading. Record the actual client, selected/configured model, authentication route, and generation settings: these are model-plus-agent pilots, not a controlled model-only ranking. Available model labels do not establish inference entitlement.
+The current direct campaign and historical terminal runners share the macOS Python sandbox; see [harness/README.md](harness/README.md). Terminal results are model-plus-agent pilots, not interchangeable with the guarded direct-API condition. Available model labels alone do not establish inference entitlement.
 
 ## Task 001 validation status
 

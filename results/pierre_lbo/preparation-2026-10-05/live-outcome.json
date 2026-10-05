@@ -1,0 +1,19 @@
+{
+  "provider": "groq",
+  "model": "openai/gpt-oss-120b",
+  "attempted_real_api_requests": 1,
+  "http_status": 403,
+  "status": "access_failed",
+  "category": "access",
+  "candidate_started": false,
+  "submission": null,
+  "grade": null,
+  "paid_spend_usd": "0",
+  "billing_basis": "User-confirmed Free plan; no independent billing-dashboard verification.",
+  "sandbox_workbook_preflight_passed": true,
+  "diagnosis": "HTTP403 only. Error body intentionally not retained; precise provider-side reason unavailable.",
+  "automatic_retries": 0,
+  "model_fallback": false,
+  "original_run_directory": "runs/private/pierre_lbo/direct-api/groq-20261005T051105621785Z",
+  "next_requirement": "Restore access to this exact model/account, or explicitly select a different trial target; do not treat access rejection as a model score."
+}

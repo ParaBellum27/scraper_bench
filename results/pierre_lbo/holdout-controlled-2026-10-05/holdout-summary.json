@@ -1,0 +1,14 @@
+{
+  "qualified": true,
+  "independently_recalculated_cases": 22,
+  "fields_per_case": 55,
+  "predeclared_witnesses_passed": true,
+  "frozen_submission_sha256": "6966f0c0788aeccbdd55cc9d5c5a21022d1a9669092ea0b0fb25e02b4fb3cd36",
+  "fully_correct": 22,
+  "total": 22,
+  "weighted_diagnostic": 100,
+  "source_unchanged": true,
+  "api_calls": 0,
+  "original_score_unchanged": "45/45",
+  "cases_sha256": "a451fc01a6c331cad4bcf972f985417023646e2447beb2a9d2ccc71fc7cc617c"
+}

@@ -1,0 +1,5 @@
+{
+  "returncode": 0,
+  "stdout": "{\"prefix_canary\": {\"exit_code\": 0, \"stdout\": \"synthetic-canary\\n\", \"stderr\": \"\"}, \"workspace_submission_mutated\": true}\n",
+  "stderr": ""
+}

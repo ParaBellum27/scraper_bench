@@ -1,0 +1,193 @@
+{
+  "created_at": "2026-10-05T06:18:25.080Z",
+  "files": [
+    {
+      "path": "requirements.txt",
+      "sha256": "54836f174749c66210f774eea4f1c70385cf7278d3c09cfd65d8dea24cef4e79"
+    },
+    {
+      "path": "harness/direct_policy.json",
+      "sha256": "bc2bb059ac1d4abff94a7fa35c4eef9cd49ce3c4cd421d236d6c1a57481ed023"
+    },
+    {
+      "path": "harness/direct_campaign.py",
+      "sha256": "711452203998c2e9d318e0c00f4594f6c442212c2aed1932231eb7884f583a41"
+    },
+    {
+      "path": "harness/run_benchmark.py",
+      "sha256": "72923ad689e1523ff3077570451efd13ad2805474b4da80512b9521d47b25584"
+    },
+    {
+      "path": "harness/agent.py",
+      "sha256": "f88157751983a1575f5a615057c6699246e56fa05f49b33398784fec9d035036"
+    },
+    {
+      "path": "harness/request_guard.py",
+      "sha256": "9efae4dec0f3dc591c9fa79712cbe8f9e8e0d24ac47e740cfba923afe822f9a6"
+    },
+    {
+      "path": "harness/protocol.py",
+      "sha256": "5b76e3beb5af0ff65d1cbfd45ccf4e617358583805e4d25e0c841b97635cbe98"
+    },
+    {
+      "path": "harness/submission.py",
+      "sha256": "cf5289925cb73f54ba6686460601548a23f71b5ccd8f521fab86040fe4c58a70"
+    },
+    {
+      "path": "harness/executor.py",
+      "sha256": "36c763a1b96a9f4f587e1e6eb09b2282de8a217cbcb52e23258a09e0c65c5583"
+    },
+    {
+      "path": "harness/run_terminal.py",
+      "sha256": "118ef5c7d4222d6bbe072fa60694117a8f24785f87da7724d7b76f15352561a5"
+    },
+    {
+      "path": "harness/mcp_server.py",
+      "sha256": "eaa9049603707409ac20c27c257b74f0e0e3f596dbbc6deaf4d27a5d8fc48daf"
+    },
+    {
+      "path": "harness/config.py",
+      "sha256": "383bb0b9dec7e194638edc160939f356db33e0723cad3ec3963d62ed6e998807"
+    },
+    {
+      "path": "harness/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "harness/providers/gemini.py",
+      "sha256": "20839045b73a14903db527423a31b9f86581ea00782175701fb0cc73b321ac33"
+    },
+    {
+      "path": "harness/providers/common.py",
+      "sha256": "d2699fb80c32df1cb4877fe53a305a5855f83d327aa02ac8eb8c4af36a8ac08c"
+    },
+    {
+      "path": "harness/providers/groq.py",
+      "sha256": "7527756d9b127c03ab365c82fac889b596cd012322add9f43d2428e9284c892f"
+    },
+    {
+      "path": "harness/providers/mistral.py",
+      "sha256": "bc44c17515c453f23c4586c3e9776c0d1748bec9c145469bbe4a3c38fe2ff6d8"
+    },
+    {
+      "path": "harness/providers/gemini_cli.py",
+      "sha256": "bfabf393647f6b708dbdb86e1343cdd7af476eb5622805db2aa91a65a65039cd"
+    },
+    {
+      "path": "harness/providers/mistral_cli.py",
+      "sha256": "c561e13a6032ec3ded764d8ce42b2b211b46bb265e2650ea585e73bdfe17e1ad"
+    },
+    {
+      "path": "harness/providers/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "harness/providers/anthropic.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "path": "evaluator/pierre_lbo_cases.py",
+      "sha256": "f0791e839dc0c36ee160dd70f868bf33c75d7d9a89fc3f3c270f0cb64294d994"
+    },
+    {
+      "path": "evaluator/run_grader.py",
+      "sha256": "84ff8619b7455faaf0967d4f2a8ef44a01b0e69c19dfffd7d934c8a2e66edce2"
+    },
+    {
+      "path": "evaluator/benchmarks.py",
+      "sha256": "6d5f88cd156156ad8b0d396d6f267fb6f129f4a8d9dc6c67a845e561c78fbf27"
+    },
+    {
+      "path": "evaluator/grader.py",
+      "sha256": "9fb98dcc5ffaea817b37c6b2019bafebfea7a0e9bb3f526c41dd0111aa32be47"
+    },
+    {
+      "path": "evaluator/hidden_cases.py",
+      "sha256": "2273791fae8595a1fd71d153ae90f5222ad9c74bb288970522259b59e76c4949"
+    },
+    {
+      "path": "evaluator/schemas.py",
+      "sha256": "5e2500628a81cc53f89022d9c2adf3626606c83f9f31d15aed2ad3d7b956f321"
+    },
+    {
+      "path": "reference/pierre_lbo/holdout.py",
+      "sha256": "b8e39ea4ee3df946ebc8cbe07d55eda160033e44725e1b2d7a4c74d59b7629b6"
+    },
+    {
+      "path": "reference/pierre_lbo/controls.py",
+      "sha256": "8d0ab096fc1f8415b7524196e1ac51a0241c40a93e6632cd7ff6067840e420ed"
+    },
+    {
+      "path": "reference/pierre_lbo/qualify.py",
+      "sha256": "90754f30b7b7341c3ead47012aaf4de923a99dcf9fefd82f595bab03238dcaf3"
+    },
+    {
+      "path": "reference/pierre_lbo/workbook.py",
+      "sha256": "fa147736b271c9b8df20b89a58813e672368508c9fa3e1cf11b74a4a093af45f"
+    },
+    {
+      "path": "reference/pierre_lbo/reference.py",
+      "sha256": "3b31ee3adc7e17e4190ae5a0d37fc3f775ce01ea04d70a753e672c1c0857b096"
+    },
+    {
+      "path": "reference/pierre_lbo/hand_examples.json",
+      "sha256": "6461bd6a3cb1967fe240a62f0a5c59e50fbcb759d57f9354a8d96b8e76d74053"
+    },
+    {
+      "path": "tests/test_pierre_holdout.py",
+      "sha256": "36e6351bf4eab1794f8b4e5118aea21e667709aa9df4c88e150de9086375501f"
+    },
+    {
+      "path": "tests/test_direct_campaign.py",
+      "sha256": "083eab7f3ddce5c371fc3966dbd297be87a6158cc710bca3684c6730bc4f1f6b"
+    },
+    {
+      "path": "tests/test_request_guard.py",
+      "sha256": "8b2fedd2e1ebe27972501509e625f61e110eb19d2ef31bfa457c65ca17d8edbe"
+    },
+    {
+      "path": "tests/test_direct_providers.py",
+      "sha256": "00750451738faf98e5cc5fbe7cd1c68d63f9065ad99602888e0b4ff8636b9938"
+    },
+    {
+      "path": "tests/test_submission.py",
+      "sha256": "ca678f5c4b98b769099cc43ba66128932d4d953a67a19a3b70866b0757f2d9f7"
+    },
+    {
+      "path": "tests/test_executor.py",
+      "sha256": "4c24bcca5c5baee05b6c57d6c0edfb849dcf688cb80254614170f530e4e98a08"
+    },
+    {
+      "path": "tests/test_pierre_lbo.py",
+      "sha256": "c71ce32dd3744ccfce579ed9331d07217bb1659fa4391a324ef20318c39defee"
+    },
+    {
+      "path": "tests/test_mcp_server.py",
+      "sha256": "898ebe982f56a64221a210eb16b401d9308aafb8390fe4a5f275416d9cd4bf52"
+    },
+    {
+      "path": "tests/test_grader.py",
+      "sha256": "3acc8300c3b4267401574d928f9b0c02f808545e026c25f4b3e2c64d1bfcc321"
+    },
+    {
+      "path": "tests/test_terminal.py",
+      "sha256": "f444b4c3dcf483f6616ce7152e53ee44df8cefd703ce82b7c1e2f05da6cd14db"
+    },
+    {
+      "path": "tasks/pierre_lbo/metadata.json",
+      "sha256": "cb5a26f214a38b9c997bd14b91ab81e844751370778ec0ee1a6bb69a869b48e1"
+    },
+    {
+      "path": "tasks/pierre_lbo/task.md",
+      "sha256": "522eb5fb1b719374f03fa9a53b0b452ba503868b3a62479b0947c8507c897b07"
+    },
+    {
+      "path": "tasks/pierre_lbo/inputs/base_case.json",
+      "sha256": "b61f95e9cc376eafd9db632f9b457cc787c66057b4898890fcc6a83a339d9771"
+    },
+    {
+      "path": "tasks/pierre_lbo/pierre_lbo_one.xlsx",
+      "sha256": "d6bc5b024392448dbb9d17dada181947ac8598b217a000a738ef7b6124967e96"
+    }
+  ]
+}

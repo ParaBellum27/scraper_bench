@@ -1,0 +1,81 @@
+{
+  "provider": "groq",
+  "requested_model": "openai/gpt-oss-120b",
+  "transport": "chat-completions",
+  "started_at": "2026-10-05T05:11:05.621785+00:00",
+  "status": "access_failed",
+  "candidate_started": false,
+  "access_only": false,
+  "score": null,
+  "requested_temperature": "provider_default",
+  "requested_thinking": "provider_default",
+  "effective_temperature": null,
+  "effective_thinking": null,
+  "unexposed_defaults": "unavailable; no values inferred",
+  "limits": {
+    "max_steps": 20,
+    "max_run_calls": 12,
+    "execution_timeout_seconds": 10,
+    "wall_timeout_seconds": 900,
+    "max_output_tokens": 4096,
+    "access_check_output_tokens": 512
+  },
+  "public_sha256": {
+    "task.md": "522eb5fb1b719374f03fa9a53b0b452ba503868b3a62479b0947c8507c897b07",
+    "inputs/base_case.json": "b61f95e9cc376eafd9db632f9b457cc787c66057b4898890fcc6a83a339d9771",
+    "pierre_lbo_one.xlsx": "d6bc5b024392448dbb9d17dada181947ac8598b217a000a738ef7b6124967e96"
+  },
+  "policy_sha256": "4cf741c80e3b9da93f10a8adebec632c68d09addb60b97a069d7040aa7e32dac",
+  "request_policy": {
+    "provider": "groq",
+    "model": "openai/gpt-oss-120b",
+    "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+    "credential_env": "GROQ_API_KEY",
+    "rpm": 30,
+    "tpm": 8000,
+    "tpm_scope": "combined",
+    "rpd": 1000,
+    "tpd": 200000,
+    "min_interval_seconds": 2,
+    "input_limit": 131072,
+    "output_limit": 65536,
+    "input_usd_per_million": "0",
+    "output_usd_per_million": "0",
+    "spend_cap_usd": "0",
+    "request_timeout_seconds": 180,
+    "max_retries": 2,
+    "entitlement": "verified free-only account; never substitute paid service",
+    "published_paid_input_usd_per_million": "0.15",
+    "published_paid_output_usd_per_million": "0.60",
+    "sources": [
+      "https://console.groq.com/docs/model/openai/gpt-oss-120b",
+      "https://console.groq.com/docs/rate-limits"
+    ]
+  },
+  "credential_source": "local .env only; no exported-key fallback",
+  "local_preflight": {
+    "exit_code": 0,
+    "stdout": "[\"Inputs\", \"Scenarios\", \"Forecast\", \"Debt\", \"Returns\"]\n",
+    "stderr": ""
+  },
+  "accounting": {
+    "provider": "groq",
+    "money_unit": "USD/10^12",
+    "attempts": 1,
+    "run_attempts": 1,
+    "consumed_units": 0,
+    "consumed_usd": "0",
+    "reserved_units": 0,
+    "reserved_usd": "0",
+    "committed_units": 0,
+    "committed_usd": "0",
+    "spend_cap_units": 0,
+    "spend_cap_usd": "0",
+    "remaining_units": 0,
+    "remaining_usd": "0"
+  },
+  "error_category": "access",
+  "error": "GuardError: Provider rejected the request (HTTP 403); full hold retained",
+  "finished_at": "2026-10-05T05:11:06.358133+00:00",
+  "elapsed_seconds": 0.7365933750115801
+}

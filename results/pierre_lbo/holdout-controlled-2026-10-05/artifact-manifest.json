@@ -1,0 +1,879 @@
+{
+  "files": [
+    {
+      "path": "README.md",
+      "sha256": "6bde992eafbe155a5908967bf9380679b46e9a1fb12ad7ec0ee7f974b35f2b01",
+      "bytes": 7984
+    },
+    {
+      "path": "accounting.json",
+      "sha256": "42c700841cf0aa63e05ba0c0cc21a4deef19d23340aea0b68d159216f13f4f3d",
+      "bytes": 525
+    },
+    {
+      "path": "calls12/holdout-grade.json",
+      "sha256": "f288630fb32cb2fdef48b113c784ef4e9f04690dcf04613f49cf4d37c8c38ddf",
+      "bytes": 70305
+    },
+    {
+      "path": "calls12/original-grade.json",
+      "sha256": "ead7f258bc9a28138d2e82f456051c6c44fc2c6a9b005e1e595ba15b5fcbfcbb",
+      "bytes": 113751
+    },
+    {
+      "path": "calls12/trial/access-check.json",
+      "sha256": "cc908c013dfd58d749c1ed6a4084a956e73190107b4980fb7eac0c284df77589",
+      "bytes": 1824
+    },
+    {
+      "path": "calls12/trial/execution-state.json",
+      "sha256": "4c9adcfc429e0a40d55d3c587d6a44af0bf06c0b9c70653289bd9c820b7e7678",
+      "bytes": 127
+    },
+    {
+      "path": "calls12/trial/executions.jsonl",
+      "sha256": "8ba3f07eb562bc32640af0fa1d8b9f6667a7569390ae24f2d51464471eb01f2e",
+      "bytes": 48557
+    },
+    {
+      "path": "calls12/trial/metadata.json",
+      "sha256": "f21122ecafecfb439cf59f679fc4abf8397e05e09921f7204dee967fc6cb6071",
+      "bytes": 3715
+    },
+    {
+      "path": "calls12/trial/public-base-input.json",
+      "sha256": "b61f95e9cc376eafd9db632f9b457cc787c66057b4898890fcc6a83a339d9771",
+      "bytes": 4586
+    },
+    {
+      "path": "calls12/trial/solution.py",
+      "sha256": "0b64686446e6981bb208451ff5d842c5d273527a64c98b3e9922958ebddd7dd6",
+      "bytes": 11084
+    },
+    {
+      "path": "calls12/trial/step-01.py",
+      "sha256": "171433cc10023fee37b40fa0bb276b57f06de9d21e6e719f3cadb2d45cce5469",
+      "bytes": 555
+    },
+    {
+      "path": "calls12/trial/step-02.py",
+      "sha256": "41e2289294c0394e321c802ac3894d923d908c4a7fe9f73ee5a5fcc9f71e591a",
+      "bytes": 475
+    },
+    {
+      "path": "calls12/trial/step-03.py",
+      "sha256": "0b0096744f5e337a7b2cde5f0696439e5879cd682ed2c2a21f41d4ab742ff151",
+      "bytes": 503
+    },
+    {
+      "path": "calls12/trial/step-04.py",
+      "sha256": "2a9c6359a6a3fda3723f7726ffe4050abd3f897d95c96722f6fe760fc4fcba3a",
+      "bytes": 301
+    },
+    {
+      "path": "calls12/trial/step-05.py",
+      "sha256": "155b3a0af2343c7da1cee67e2a95deb1b6f930d3038b5e35098fb8f1bfa6cc3a",
+      "bytes": 435
+    },
+    {
+      "path": "calls12/trial/step-06.py",
+      "sha256": "8a1160c7867bcf15709df78fb891334c227b67f5a8733f723016c77ea5225f5d",
+      "bytes": 1105
+    },
+    {
+      "path": "calls12/trial/step-07.py",
+      "sha256": "f2ad9dc2887ffb7f83e8e7d298c994357dda08c275e5c8aaef6dc596a0f388c9",
+      "bytes": 1046
+    },
+    {
+      "path": "calls12/trial/step-08.py",
+      "sha256": "dc6b461e129dc73033d15f5a82d1c21bb71cc1ce771554048cd5034e019eb7bf",
+      "bytes": 321
+    },
+    {
+      "path": "calls12/trial/step-09.py",
+      "sha256": "3115d4c4bc456e3515070169c6a4618156f474fc31444fc7a25eb3f12a52dfbb",
+      "bytes": 11212
+    },
+    {
+      "path": "calls12/trial/step-10.py",
+      "sha256": "733682d2f4da412c6aae5c8043f78b78cf4d68da063340f520ffa9ee88f79303",
+      "bytes": 12426
+    },
+    {
+      "path": "calls12/trial/step-11.py",
+      "sha256": "950230bbaa9715f0d77cfff1b028e59e6872427b64c38b78230fa6edffcdfb89",
+      "bytes": 1794
+    },
+    {
+      "path": "calls12/trial/step-12.py",
+      "sha256": "0b64686446e6981bb208451ff5d842c5d273527a64c98b3e9922958ebddd7dd6",
+      "bytes": 11084
+    },
+    {
+      "path": "calls12/trial/trajectory.json",
+      "sha256": "3a8006a19a1668402af08507f5a6b20206c7b249a18c11ba9385799b7cf2cb4b",
+      "bytes": 522912
+    },
+    {
+      "path": "calls12-readiness.json",
+      "sha256": "e6e6f1a92103a99dfc8204a4b6144a4dce30743888feee7d1511eb86d4912fc3",
+      "bytes": 871
+    },
+    {
+      "path": "calls24/holdout-grade.json",
+      "sha256": "1be02a7ec29984ef478cc8bf8d2bd18328c4f07cb490aa78ee86631c841abce1",
+      "bytes": 70305
+    },
+    {
+      "path": "calls24/original-grade.json",
+      "sha256": "6777f4a064aa9647a1c8418e83ddbc9ad3741eaf0d660a87c49a52ae70f1dfbf",
+      "bytes": 113751
+    },
+    {
+      "path": "calls24/trial/access-check.json",
+      "sha256": "4a08c90cadc4115feb6525869bc7cf07f358f75aa41f261dcee6d14e114e4c03",
+      "bytes": 1558
+    },
+    {
+      "path": "calls24/trial/execution-state.json",
+      "sha256": "36399c0fff81af5d05b27fdbc4aa96b3bf7d58aeb49fccbcb6827a0b2bcb8054",
+      "bytes": 127
+    },
+    {
+      "path": "calls24/trial/executions.jsonl",
+      "sha256": "54013f416d9db0bf82f431e23ae6eefe04813e56d28b99ab34dff160f18abcbc",
+      "bytes": 58320
+    },
+    {
+      "path": "calls24/trial/metadata.json",
+      "sha256": "a19911fa9ba2368da214f82611b98966038cef7fe39fc317f3baeca76fc77e10",
+      "bytes": 3704
+    },
+    {
+      "path": "calls24/trial/public-base-input.json",
+      "sha256": "b61f95e9cc376eafd9db632f9b457cc787c66057b4898890fcc6a83a339d9771",
+      "bytes": 4586
+    },
+    {
+      "path": "calls24/trial/solution.py",
+      "sha256": "1802931df82cd891eb3e866bdd0a659923c6253dff8fd4adf3aa4312a7855991",
+      "bytes": 11410
+    },
+    {
+      "path": "calls24/trial/step-01.py",
+      "sha256": "7e0d364a1f30cd5853269c9980d23c13517ca68f349ed67081f052b805253bd1",
+      "bytes": 298
+    },
+    {
+      "path": "calls24/trial/step-02.py",
+      "sha256": "7ff862241efb6d80a876f817fb50a8a4759185488a23fe5c29878a654b6e300a",
+      "bytes": 810
+    },
+    {
+      "path": "calls24/trial/step-03.py",
+      "sha256": "ac4c63c81c8850b35940a64be17e028737597e175f4ae6bf49b12b0303abd015",
+      "bytes": 1057
+    },
+    {
+      "path": "calls24/trial/step-04.py",
+      "sha256": "ba4e67df9d1d4725598cf8f5269f48f55782a7ec3f0f324598dc85d89e74ecc4",
+      "bytes": 436
+    },
+    {
+      "path": "calls24/trial/step-05.py",
+      "sha256": "c94984c6146e49d25b75d94654657ff724a663fe92100148361acbe41cad1df1",
+      "bytes": 51
+    },
+    {
+      "path": "calls24/trial/step-06.py",
+      "sha256": "318c780311686d90fa166b71316af5ec40d5937cb6477daf5dfd23cea5a1e9c3",
+      "bytes": 120
+    },
+    {
+      "path": "calls24/trial/step-07.py",
+      "sha256": "81059467b0bd067f62c5e90e7b75a1f9a1f67e5b1d7f49f6d05e9c49789e17a9",
+      "bytes": 1825
+    },
+    {
+      "path": "calls24/trial/step-08.py",
+      "sha256": "128db11527a1e1a917af8a68008ac9d053d1bfd9be8480e109e078b915759ffb",
+      "bytes": 1049
+    },
+    {
+      "path": "calls24/trial/step-09.py",
+      "sha256": "cea98a38f8e889f9be45e551586d14fa8fb1d998bd0e9d05cb5201a6ae68c22c",
+      "bytes": 357
+    },
+    {
+      "path": "calls24/trial/step-10.py",
+      "sha256": "996bd77df6c5fb04014e14228123d144ad36307833012c1a930dd871071dbf2c",
+      "bytes": 374
+    },
+    {
+      "path": "calls24/trial/step-11.py",
+      "sha256": "872a60950ddec648b4bb77b24b8937a3af8c9401dd4b3c6c5d9f7c66fbaf0f5b",
+      "bytes": 1048
+    },
+    {
+      "path": "calls24/trial/step-12.py",
+      "sha256": "7376b22300b71ab00ce7dfba38e1d81ebeef4c847068d439ba01d8397bd5480d",
+      "bytes": 599
+    },
+    {
+      "path": "calls24/trial/step-13.py",
+      "sha256": "c968eb81ed93c862c86b7682494a5a73e9aa398db7871ad4387f648675a212e0",
+      "bytes": 11467
+    },
+    {
+      "path": "calls24/trial/step-14.py",
+      "sha256": "980608c5764e0412119e27ec3bce5b61730615f069f2c05ee4074c2aa2a6c43b",
+      "bytes": 413
+    },
+    {
+      "path": "calls24/trial/step-15.py",
+      "sha256": "8b7ca32b97106bb0e3a30cdea977eadcb6e73cf02c48a70844222319881de610",
+      "bytes": 11510
+    },
+    {
+      "path": "calls24/trial/step-16.py",
+      "sha256": "48673ffdcffd092bd75bcfa1f5e7902d8f4aa1c0e595554244c8ce554e6acbaf",
+      "bytes": 4258
+    },
+    {
+      "path": "calls24/trial/step-17.py",
+      "sha256": "1802931df82cd891eb3e866bdd0a659923c6253dff8fd4adf3aa4312a7855991",
+      "bytes": 11410
+    },
+    {
+      "path": "calls24/trial/step-18.py",
+      "sha256": "f58006cd2dab712eb6d41d44f50c1b97408b44472043adcfe4b98f73ce45fa02",
+      "bytes": 5430
+    },
+    {
+      "path": "calls24/trial/step-19.py",
+      "sha256": "1802931df82cd891eb3e866bdd0a659923c6253dff8fd4adf3aa4312a7855991",
+      "bytes": 11410
+    },
+    {
+      "path": "calls24/trial/trajectory.json",
+      "sha256": "55a1e45ab3c6755a8fdad3fbea6a582ff0a5cbd47c33f43c080f9e4c1fc6c0ad",
+      "bytes": 776375
+    },
+    {
+      "path": "calls24-readiness.json",
+      "sha256": "79c26be6cc959fa8e4ffe31713104a31596fca906eb40b7acafaab1433adc08e",
+      "bytes": 871
+    },
+    {
+      "path": "closed-gate-smoke.json",
+      "sha256": "072b1124a1562cb68038019a456dde7e0ea8833f4e1b0038b7375eb03a40926c",
+      "bytes": 472
+    },
+    {
+      "path": "conditions.json",
+      "sha256": "9272e4c236e2606066f8a2437cf70d442c45e60ac6762ed7d76e08b4bca9989c",
+      "bytes": 10231
+    },
+    {
+      "path": "delivery-docs/README.md",
+      "sha256": "ef7bb66afc183bed0e7e5671b7095d9ec3dd6502a16903d65781e762142a5a6d",
+      "bytes": 11609
+    },
+    {
+      "path": "delivery-docs/harness/README.md",
+      "sha256": "2702bbf098724f34df21ab3d1b13caf8046059db98b6004ce7aa1233a1c62674",
+      "bytes": 22310
+    },
+    {
+      "path": "delivery-docs/reference/pierre_lbo/HAND_EXAMPLES.md",
+      "sha256": "550ed539ca71f5b0b91acff3ad952d6a21040178608962def11985c98f2171fc",
+      "bytes": 11084
+    },
+    {
+      "path": "delivery-verification.json",
+      "sha256": "deb5d9189614813f62652026d69b115fdec0ee576cb202524cfaf7adbd909ea8",
+      "bytes": 7003
+    },
+    {
+      "path": "final-closed-gate-smoke.json",
+      "sha256": "47cce93db8d005f56ef6711ff0332a749f63ff0850cc19959edc653f37c36960",
+      "bytes": 1194
+    },
+    {
+      "path": "holdout/README.md",
+      "sha256": "78bdefc5bd11be8e16eda5a732ae1ce47be87d1bf00a98ba0c76ef9429ac04e3",
+      "bytes": 2915
+    },
+    {
+      "path": "holdout/calculated/holdout_leap_close_dated_returns.xlsx",
+      "sha256": "8b1a6d30f83cc3669cd9cf6dfa3aff0dec3589f2a322592850621f4c6802e14c",
+      "bytes": 22483
+    },
+    {
+      "path": "holdout/calculated/holdout_liquidity_inside_large.xlsx",
+      "sha256": "57b888781e203d9bedf10e9a098d186c65cc7c0589bea68522d4f0dadbb2f2f5",
+      "bytes": 22537
+    },
+    {
+      "path": "holdout/calculated/holdout_liquidity_inside_small.xlsx",
+      "sha256": "dc032089e956b28b2f991e589d485bc0e9fcb69513161bfca9ead052d4201ee2",
+      "bytes": 22519
+    },
+    {
+      "path": "holdout/calculated/holdout_liquidity_inside_unit.xlsx",
+      "sha256": "77ce62f9477e9f396099747eb1a2cfd40680a21f2f37b20c03ae53bbf106e1d6",
+      "bytes": 22522
+    },
+    {
+      "path": "holdout/calculated/holdout_liquidity_outside_large.xlsx",
+      "sha256": "677ee435c8a4038a9641281388235bf41f47ca30c539b45a2cbbfcab0ca67a83",
+      "bytes": 22424
+    },
+    {
+      "path": "holdout/calculated/holdout_liquidity_outside_small.xlsx",
+      "sha256": "fb816e54d3d16dc246e5909752b90b3f3e212f1902a102814445b4ef2e6291e3",
+      "bytes": 22417
+    },
+    {
+      "path": "holdout/calculated/holdout_liquidity_outside_unit.xlsx",
+      "sha256": "d821e08019027e179228a0748750460fe0e8f4bf59e82b43f892b95bc2f3abb3",
+      "bytes": 22413
+    },
+    {
+      "path": "holdout/calculated/holdout_one_day_stub_full_working_capital.xlsx",
+      "sha256": "f74a92d93819db8b3b98e1b845f00cb686615b267e40fdc72d1ad53fa8882d68",
+      "bytes": 22433
+    },
+    {
+      "path": "holdout/calculated/holdout_preferred_above_large.xlsx",
+      "sha256": "3eb907ad6c5984d047a2b961e076428519ab1dc09aa79c6f4d856b711d069e6a",
+      "bytes": 22495
+    },
+    {
+      "path": "holdout/calculated/holdout_preferred_above_small.xlsx",
+      "sha256": "2cf2f67e5db9366ab024de17584ba6a7739aae0c18b87b5453b71cde76ebdbb1",
+      "bytes": 22495
+    },
+    {
+      "path": "holdout/calculated/holdout_preferred_above_unit.xlsx",
+      "sha256": "80a7603ede4655703fb61b7fbd6fd3691b5c9a55320f2e2ec1862b1f24177f6c",
+      "bytes": 22479
+    },
+    {
+      "path": "holdout/calculated/holdout_preferred_below_large.xlsx",
+      "sha256": "aba2fcca12c590c63c85a5436340b7f6fd27eb91baf1772cb1b671aa8438c4e0",
+      "bytes": 22466
+    },
+    {
+      "path": "holdout/calculated/holdout_preferred_below_small.xlsx",
+      "sha256": "1c1244121f1ce3a910d8a1a5eb42ed97f5450553373638b46f04584a7250509a",
+      "bytes": 22453
+    },
+    {
+      "path": "holdout/calculated/holdout_preferred_below_unit.xlsx",
+      "sha256": "ff1decdfe6fefa90b1e23965b80852ca0c12f65b74d8f26265833963af807959",
+      "bytes": 22451
+    },
+    {
+      "path": "holdout/calculated/holdout_preferred_equal_large.xlsx",
+      "sha256": "85a026e9d02ff822c17f8e496d30edb85d75a7a6cea2b09afc7d01a8bbf8f6ab",
+      "bytes": 22446
+    },
+    {
+      "path": "holdout/calculated/holdout_preferred_equal_small.xlsx",
+      "sha256": "4e4547897f45dccf47cc5a16a2f1bce1d5beaa339c166ad76b5c9e31130b294d",
+      "bytes": 22434
+    },
+    {
+      "path": "holdout/calculated/holdout_preferred_equal_unit.xlsx",
+      "sha256": "4809888adc5272caadbfef2693e3c1081de08339a00b80e4a10b4115812c3194",
+      "bytes": 22431
+    },
+    {
+      "path": "holdout/calculated/holdout_revolver_no_redraw_failure.xlsx",
+      "sha256": "3d5f9bbd453458141b9ee1537a57f07ba4fcb82d22e9a2efb0173be5e44fa53d",
+      "bytes": 22423
+    },
+    {
+      "path": "holdout/calculated/holdout_revolver_repaid_then_no_redraw.xlsx",
+      "sha256": "4e40b1b5bb3284b60cea576a64c45476ca84137ddaf13d6d67444cca18fc655b",
+      "bytes": 22488
+    },
+    {
+      "path": "holdout/calculated/holdout_sequential_leap_clamp.xlsx",
+      "sha256": "ed99fa5195941ea26943b9cd806c325d445703dfca49de39f399410699e2db6e",
+      "bytes": 22434
+    },
+    {
+      "path": "holdout/calculated/holdout_term_maturity_funded.xlsx",
+      "sha256": "c4425519079d2881f8323dfdef9e572703f83cd11603f747b677eeb063155ba7",
+      "bytes": 22438
+    },
+    {
+      "path": "holdout/calculated/holdout_term_maturity_retained_prefix.xlsx",
+      "sha256": "7d4e36cb8f34aafd661f11019af37e403218a2b56b18a20431bf10ea5b7a1b0d",
+      "bytes": 22371
+    },
+    {
+      "path": "holdout/cases.json",
+      "sha256": "a451fc01a6c331cad4bcf972f985417023646e2447beb2a9d2ccc71fc7cc617c",
+      "bytes": 103166
+    },
+    {
+      "path": "holdout/frozen_submission.py",
+      "sha256": "6966f0c0788aeccbdd55cc9d5c5a21022d1a9669092ea0b0fb25e02b4fb3cd36",
+      "bytes": 11266
+    },
+    {
+      "path": "holdout/holdout_leap_close_dated_returns.xlsx",
+      "sha256": "d477b18e03b629ddeb831cf4112f81d83a57b87b93f7ae9a06c6b7f6bc4ddc0c",
+      "bytes": 16696
+    },
+    {
+      "path": "holdout/holdout_liquidity_inside_large.xlsx",
+      "sha256": "7121ac21874fa713ab6106d1b6f42795f15f5e7c7f94a75785dc9f2829865e44",
+      "bytes": 16718
+    },
+    {
+      "path": "holdout/holdout_liquidity_inside_small.xlsx",
+      "sha256": "249ebf5fb330004fbd3f5c456560140bbbd7a00a4858fbdfc8edef6ae292e0e8",
+      "bytes": 16716
+    },
+    {
+      "path": "holdout/holdout_liquidity_inside_unit.xlsx",
+      "sha256": "aa336436fcd61fe1ffbe321f0b834f498e362fb7c5eb6f5c1e6cb94aa29cdb7b",
+      "bytes": 16712
+    },
+    {
+      "path": "holdout/holdout_liquidity_outside_large.xlsx",
+      "sha256": "26b149df14846c56602896680a49318b411a1d09e7783f4095d233189e24d2ac",
+      "bytes": 16721
+    },
+    {
+      "path": "holdout/holdout_liquidity_outside_small.xlsx",
+      "sha256": "5274c305d0743abfdb1a6c60986019a9e6da6a9d23243eac9baf2e845a725cd2",
+      "bytes": 16716
+    },
+    {
+      "path": "holdout/holdout_liquidity_outside_unit.xlsx",
+      "sha256": "2ada2af9c21c678729f6af79d820d27f8f23e1820ed5606ee5f6741a18a845af",
+      "bytes": 16712
+    },
+    {
+      "path": "holdout/holdout_one_day_stub_full_working_capital.xlsx",
+      "sha256": "34859e0b268c3ad7326aeee62a66d5f7d22dbe372807ec6a8feea30a2e5e9515",
+      "bytes": 16705
+    },
+    {
+      "path": "holdout/holdout_preferred_above_large.xlsx",
+      "sha256": "2f74717b2eaf2fcec5b67eb0c93df6bdfda89e84502f875d6d583a155e47c262",
+      "bytes": 16711
+    },
+    {
+      "path": "holdout/holdout_preferred_above_small.xlsx",
+      "sha256": "c017fb51888eafaa5d9577f009bb3c3f4484bd228d18bbbbeb918227b87ccd59",
+      "bytes": 16707
+    },
+    {
+      "path": "holdout/holdout_preferred_above_unit.xlsx",
+      "sha256": "0873f40f387af8b61fd29e3b99f2715ac1e1acb3f31602f96f3162e0787f2ade",
+      "bytes": 16703
+    },
+    {
+      "path": "holdout/holdout_preferred_below_large.xlsx",
+      "sha256": "66556983bdf0069f836146adc1dba5d3d3668e3bc100de4440c1679a7324ab9b",
+      "bytes": 16710
+    },
+    {
+      "path": "holdout/holdout_preferred_below_small.xlsx",
+      "sha256": "27adc547d026439a4aeb8707136d66c788132b8b5de1e68e5aba810fa2db1f5c",
+      "bytes": 16707
+    },
+    {
+      "path": "holdout/holdout_preferred_below_unit.xlsx",
+      "sha256": "58b729334ec9708e788ebe401dc786e1eb30cfc18458ba652b9a120a25cf5b91",
+      "bytes": 16703
+    },
+    {
+      "path": "holdout/holdout_preferred_equal_large.xlsx",
+      "sha256": "5da9f3eecd85d5ebfbf4d5994c42f1a65c68531c9edf9e0ff03a4999ed4155fe",
+      "bytes": 16705
+    },
+    {
+      "path": "holdout/holdout_preferred_equal_small.xlsx",
+      "sha256": "694bbbf3b0d9628c64767a5cc47eb05fc9150f8d240f54a0dce3e7350e43facb",
+      "bytes": 16703
+    },
+    {
+      "path": "holdout/holdout_preferred_equal_unit.xlsx",
+      "sha256": "07127712059dc615b539c0fd11721ea8463b989444b4e3d968d238e9a12abf04",
+      "bytes": 16699
+    },
+    {
+      "path": "holdout/holdout_revolver_no_redraw_failure.xlsx",
+      "sha256": "a49233fdbc7070cede256c5340588971e147499673f0233e6ee5f2e4c264cf3f",
+      "bytes": 16701
+    },
+    {
+      "path": "holdout/holdout_revolver_repaid_then_no_redraw.xlsx",
+      "sha256": "3e60fcd40af82bbea133098e3e2daa17b5f822622ff1d18d113eba1842fd9b86",
+      "bytes": 16711
+    },
+    {
+      "path": "holdout/holdout_sequential_leap_clamp.xlsx",
+      "sha256": "f5eeb979aec891fc968378da1b55e3bc1081b567da4d8f43e76093a284fa98ff",
+      "bytes": 16697
+    },
+    {
+      "path": "holdout/holdout_term_maturity_funded.xlsx",
+      "sha256": "026bba83524b96c7d1a7762925021093c424c88fa724d964b02e949916f957a2",
+      "bytes": 16698
+    },
+    {
+      "path": "holdout/holdout_term_maturity_retained_prefix.xlsx",
+      "sha256": "86c1443d42d5640873b6747d49bbf451e68ce8699465ec7e42aefe20b66256d2",
+      "bytes": 16697
+    },
+    {
+      "path": "holdout/report.json",
+      "sha256": "ce668995725eb545e5f0eca920e51c3c0d83873c885b48a26c22f5a5aacf2f4e",
+      "bytes": 345610
+    },
+    {
+      "path": "holdout/sources/evaluator/benchmarks.py",
+      "sha256": "6d5f88cd156156ad8b0d396d6f267fb6f129f4a8d9dc6c67a845e561c78fbf27",
+      "bytes": 2483
+    },
+    {
+      "path": "holdout/sources/evaluator/grader.py",
+      "sha256": "9fb98dcc5ffaea817b37c6b2019bafebfea7a0e9bb3f526c41dd0111aa32be47",
+      "bytes": 5262
+    },
+    {
+      "path": "holdout/sources/evaluator/pierre_lbo_cases.py",
+      "sha256": "f0791e839dc0c36ee160dd70f868bf33c75d7d9a89fc3f3c270f0cb64294d994",
+      "bytes": 10895
+    },
+    {
+      "path": "holdout/sources/evaluator/run_grader.py",
+      "sha256": "84ff8619b7455faaf0967d4f2a8ef44a01b0e69c19dfffd7d934c8a2e66edce2",
+      "bytes": 5530
+    },
+    {
+      "path": "holdout/sources/harness/executor.py",
+      "sha256": "36c763a1b96a9f4f587e1e6eb09b2282de8a217cbcb52e23258a09e0c65c5583",
+      "bytes": 11596
+    },
+    {
+      "path": "holdout/sources/reference/pierre_lbo/hand_examples.json",
+      "sha256": "6461bd6a3cb1967fe240a62f0a5c59e50fbcb759d57f9354a8d96b8e76d74053",
+      "bytes": 41177
+    },
+    {
+      "path": "holdout/sources/reference/pierre_lbo/holdout.py",
+      "sha256": "b8e39ea4ee3df946ebc8cbe07d55eda160033e44725e1b2d7a4c74d59b7629b6",
+      "bytes": 18100
+    },
+    {
+      "path": "holdout/sources/reference/pierre_lbo/qualify.py",
+      "sha256": "90754f30b7b7341c3ead47012aaf4de923a99dcf9fefd82f595bab03238dcaf3",
+      "bytes": 9980
+    },
+    {
+      "path": "holdout/sources/reference/pierre_lbo/reference.py",
+      "sha256": "3b31ee3adc7e17e4190ae5a0d37fc3f775ce01ea04d70a753e672c1c0857b096",
+      "bytes": 11850
+    },
+    {
+      "path": "holdout/sources/reference/pierre_lbo/workbook.py",
+      "sha256": "fa147736b271c9b8df20b89a58813e672368508c9fa3e1cf11b74a4a093af45f",
+      "bytes": 30342
+    },
+    {
+      "path": "holdout/sources/tasks/pierre_lbo/task.md",
+      "sha256": "522eb5fb1b719374f03fa9a53b0b452ba503868b3a62479b0947c8507c897b07",
+      "bytes": 11282
+    },
+    {
+      "path": "holdout-summary.json",
+      "sha256": "770c7eeb9d177a92ce05bf8d7e2714460a31ae7b61fa04d78de6791458e917a0",
+      "bytes": 468
+    },
+    {
+      "path": "ledger-snapshot.json",
+      "sha256": "d6f4aea014ff2b028ffcf9b7e3e9a48bf4af89efc5e1da913f50af392a41681d",
+      "bytes": 39874
+    },
+    {
+      "path": "outcome.json",
+      "sha256": "bee3fa1d61d458ab397993ee9ddb3b9c83ccc1a5ff506fc5ec3e9ddcdd6de5ed",
+      "bytes": 8428
+    },
+    {
+      "path": "policy.json",
+      "sha256": "bc2bb059ac1d4abff94a7fa35c4eef9cd49ce3c4cd421d236d6c1a57481ed023",
+      "bytes": 4338
+    },
+    {
+      "path": "protocol.json",
+      "sha256": "ea6356ade5d9f8c30705af0d80dd6a529f61637857abf9a93f4021561597c4e2",
+      "bytes": 2680
+    },
+    {
+      "path": "release-closed.json",
+      "sha256": "f366fd32a9ef749f587c305da3d6d74b3b68b97d36dbc78f7c7fc6b22dd7c417",
+      "bytes": 840
+    },
+    {
+      "path": "source-manifest.json",
+      "sha256": "633146844af664d7376c34a78bd0556e7c944ed2e1b134dbf687bb333489b334",
+      "bytes": 6637
+    },
+    {
+      "path": "sources/evaluator/benchmarks.py",
+      "sha256": "6d5f88cd156156ad8b0d396d6f267fb6f129f4a8d9dc6c67a845e561c78fbf27",
+      "bytes": 2483
+    },
+    {
+      "path": "sources/evaluator/grader.py",
+      "sha256": "9fb98dcc5ffaea817b37c6b2019bafebfea7a0e9bb3f526c41dd0111aa32be47",
+      "bytes": 5262
+    },
+    {
+      "path": "sources/evaluator/hidden_cases.py",
+      "sha256": "2273791fae8595a1fd71d153ae90f5222ad9c74bb288970522259b59e76c4949",
+      "bytes": 5709
+    },
+    {
+      "path": "sources/evaluator/pierre_lbo_cases.py",
+      "sha256": "f0791e839dc0c36ee160dd70f868bf33c75d7d9a89fc3f3c270f0cb64294d994",
+      "bytes": 10895
+    },
+    {
+      "path": "sources/evaluator/run_grader.py",
+      "sha256": "84ff8619b7455faaf0967d4f2a8ef44a01b0e69c19dfffd7d934c8a2e66edce2",
+      "bytes": 5530
+    },
+    {
+      "path": "sources/evaluator/schemas.py",
+      "sha256": "5e2500628a81cc53f89022d9c2adf3626606c83f9f31d15aed2ad3d7b956f321",
+      "bytes": 1033
+    },
+    {
+      "path": "sources/harness/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "sources/harness/agent.py",
+      "sha256": "f88157751983a1575f5a615057c6699246e56fa05f49b33398784fec9d035036",
+      "bytes": 6423
+    },
+    {
+      "path": "sources/harness/config.py",
+      "sha256": "383bb0b9dec7e194638edc160939f356db33e0723cad3ec3963d62ed6e998807",
+      "bytes": 1094
+    },
+    {
+      "path": "sources/harness/direct_campaign.py",
+      "sha256": "711452203998c2e9d318e0c00f4594f6c442212c2aed1932231eb7884f583a41",
+      "bytes": 9690
+    },
+    {
+      "path": "sources/harness/direct_policy.json",
+      "sha256": "bc2bb059ac1d4abff94a7fa35c4eef9cd49ce3c4cd421d236d6c1a57481ed023",
+      "bytes": 4338
+    },
+    {
+      "path": "sources/harness/executor.py",
+      "sha256": "36c763a1b96a9f4f587e1e6eb09b2282de8a217cbcb52e23258a09e0c65c5583",
+      "bytes": 11596
+    },
+    {
+      "path": "sources/harness/mcp_server.py",
+      "sha256": "eaa9049603707409ac20c27c257b74f0e0e3f596dbbc6deaf4d27a5d8fc48daf",
+      "bytes": 2732
+    },
+    {
+      "path": "sources/harness/protocol.py",
+      "sha256": "5b76e3beb5af0ff65d1cbfd45ccf4e617358583805e4d25e0c841b97635cbe98",
+      "bytes": 575
+    },
+    {
+      "path": "sources/harness/providers/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "sources/harness/providers/anthropic.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "sources/harness/providers/common.py",
+      "sha256": "d2699fb80c32df1cb4877fe53a305a5855f83d327aa02ac8eb8c4af36a8ac08c",
+      "bytes": 5970
+    },
+    {
+      "path": "sources/harness/providers/gemini.py",
+      "sha256": "20839045b73a14903db527423a31b9f86581ea00782175701fb0cc73b321ac33",
+      "bytes": 8579
+    },
+    {
+      "path": "sources/harness/providers/gemini_cli.py",
+      "sha256": "bfabf393647f6b708dbdb86e1343cdd7af476eb5622805db2aa91a65a65039cd",
+      "bytes": 4098
+    },
+    {
+      "path": "sources/harness/providers/groq.py",
+      "sha256": "7527756d9b127c03ab365c82fac889b596cd012322add9f43d2428e9284c892f",
+      "bytes": 156
+    },
+    {
+      "path": "sources/harness/providers/mistral.py",
+      "sha256": "bc44c17515c453f23c4586c3e9776c0d1748bec9c145469bbe4a3c38fe2ff6d8",
+      "bytes": 147
+    },
+    {
+      "path": "sources/harness/providers/mistral_cli.py",
+      "sha256": "c561e13a6032ec3ded764d8ce42b2b211b46bb265e2650ea585e73bdfe17e1ad",
+      "bytes": 3888
+    },
+    {
+      "path": "sources/harness/request_guard.py",
+      "sha256": "9efae4dec0f3dc591c9fa79712cbe8f9e8e0d24ac47e740cfba923afe822f9a6",
+      "bytes": 34702
+    },
+    {
+      "path": "sources/harness/run_benchmark.py",
+      "sha256": "72923ad689e1523ff3077570451efd13ad2805474b4da80512b9521d47b25584",
+      "bytes": 10096
+    },
+    {
+      "path": "sources/harness/run_terminal.py",
+      "sha256": "118ef5c7d4222d6bbe072fa60694117a8f24785f87da7724d7b76f15352561a5",
+      "bytes": 11020
+    },
+    {
+      "path": "sources/harness/submission.py",
+      "sha256": "cf5289925cb73f54ba6686460601548a23f71b5ccd8f521fab86040fe4c58a70",
+      "bytes": 4742
+    },
+    {
+      "path": "sources/reference/pierre_lbo/controls.py",
+      "sha256": "8d0ab096fc1f8415b7524196e1ac51a0241c40a93e6632cd7ff6067840e420ed",
+      "bytes": 4243
+    },
+    {
+      "path": "sources/reference/pierre_lbo/hand_examples.json",
+      "sha256": "6461bd6a3cb1967fe240a62f0a5c59e50fbcb759d57f9354a8d96b8e76d74053",
+      "bytes": 41177
+    },
+    {
+      "path": "sources/reference/pierre_lbo/holdout.py",
+      "sha256": "b8e39ea4ee3df946ebc8cbe07d55eda160033e44725e1b2d7a4c74d59b7629b6",
+      "bytes": 18100
+    },
+    {
+      "path": "sources/reference/pierre_lbo/qualify.py",
+      "sha256": "90754f30b7b7341c3ead47012aaf4de923a99dcf9fefd82f595bab03238dcaf3",
+      "bytes": 9980
+    },
+    {
+      "path": "sources/reference/pierre_lbo/reference.py",
+      "sha256": "3b31ee3adc7e17e4190ae5a0d37fc3f775ce01ea04d70a753e672c1c0857b096",
+      "bytes": 11850
+    },
+    {
+      "path": "sources/reference/pierre_lbo/workbook.py",
+      "sha256": "fa147736b271c9b8df20b89a58813e672368508c9fa3e1cf11b74a4a093af45f",
+      "bytes": 30342
+    },
+    {
+      "path": "sources/requirements.txt",
+      "sha256": "54836f174749c66210f774eea4f1c70385cf7278d3c09cfd65d8dea24cef4e79",
+      "bytes": 847
+    },
+    {
+      "path": "sources/tasks/pierre_lbo/inputs/base_case.json",
+      "sha256": "b61f95e9cc376eafd9db632f9b457cc787c66057b4898890fcc6a83a339d9771",
+      "bytes": 4586
+    },
+    {
+      "path": "sources/tasks/pierre_lbo/metadata.json",
+      "sha256": "cb5a26f214a38b9c997bd14b91ab81e844751370778ec0ee1a6bb69a869b48e1",
+      "bytes": 1852
+    },
+    {
+      "path": "sources/tasks/pierre_lbo/pierre_lbo_one.xlsx",
+      "sha256": "d6bc5b024392448dbb9d17dada181947ac8598b217a000a738ef7b6124967e96",
+      "bytes": 23982
+    },
+    {
+      "path": "sources/tasks/pierre_lbo/task.md",
+      "sha256": "522eb5fb1b719374f03fa9a53b0b452ba503868b3a62479b0947c8507c897b07",
+      "bytes": 11282
+    },
+    {
+      "path": "sources/tests/test_direct_campaign.py",
+      "sha256": "083eab7f3ddce5c371fc3966dbd297be87a6158cc710bca3684c6730bc4f1f6b",
+      "bytes": 10174
+    },
+    {
+      "path": "sources/tests/test_direct_providers.py",
+      "sha256": "00750451738faf98e5cc5fbe7cd1c68d63f9065ad99602888e0b4ff8636b9938",
+      "bytes": 15813
+    },
+    {
+      "path": "sources/tests/test_executor.py",
+      "sha256": "4c24bcca5c5baee05b6c57d6c0edfb849dcf688cb80254614170f530e4e98a08",
+      "bytes": 7712
+    },
+    {
+      "path": "sources/tests/test_grader.py",
+      "sha256": "3acc8300c3b4267401574d928f9b0c02f808545e026c25f4b3e2c64d1bfcc321",
+      "bytes": 5544
+    },
+    {
+      "path": "sources/tests/test_mcp_server.py",
+      "sha256": "898ebe982f56a64221a210eb16b401d9308aafb8390fe4a5f275416d9cd4bf52",
+      "bytes": 4987
+    },
+    {
+      "path": "sources/tests/test_pierre_holdout.py",
+      "sha256": "36e6351bf4eab1794f8b4e5118aea21e667709aa9df4c88e150de9086375501f",
+      "bytes": 4684
+    },
+    {
+      "path": "sources/tests/test_pierre_lbo.py",
+      "sha256": "c71ce32dd3744ccfce579ed9331d07217bb1659fa4391a324ef20318c39defee",
+      "bytes": 25399
+    },
+    {
+      "path": "sources/tests/test_request_guard.py",
+      "sha256": "8b2fedd2e1ebe27972501509e625f61e110eb19d2ef31bfa457c65ca17d8edbe",
+      "bytes": 31321
+    },
+    {
+      "path": "sources/tests/test_submission.py",
+      "sha256": "ca678f5c4b98b769099cc43ba66128932d4d953a67a19a3b70866b0757f2d9f7",
+      "bytes": 5044
+    },
+    {
+      "path": "sources/tests/test_terminal.py",
+      "sha256": "f444b4c3dcf483f6616ce7152e53ee44df8cefd703ce82b7c1e2f05da6cd14db",
+      "bytes": 1423
+    },
+    {
+      "path": "tests.txt",
+      "sha256": "8a2dc06a8057a9ede4f6037c019823ca3cfc87f0a840492d806d563d4148593c",
+      "bytes": 17957
+    },
+    {
+      "path": "typecheck.txt",
+      "sha256": "42dee264e9521331ccbd49d1edd67f57ad61496d692be7818b2c3aac678c1c49",
+      "bytes": 155
+    }
+  ]
+}

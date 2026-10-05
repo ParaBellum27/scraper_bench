@@ -1,0 +1,90 @@
+{
+  "provider": "gemini",
+  "requested_model": "gemini-3.8-flash",
+  "transport": "native-generateContent",
+  "started_at": "2026-10-05T05:50:46.813233+00:00",
+  "status": "frozen",
+  "candidate_started": true,
+  "access_only": false,
+  "score": null,
+  "requested_temperature": "provider_default",
+  "requested_thinking": "provider_default",
+  "effective_temperature": null,
+  "effective_thinking": null,
+  "unexposed_defaults": "unavailable; no values inferred",
+  "limits": {
+    "max_steps": 32,
+    "max_run_calls": 24,
+    "execution_timeout_seconds": 10,
+    "wall_timeout_seconds": 1800,
+    "max_output_tokens": 65536,
+    "access_check_output_tokens": 512
+  },
+  "workflow_instruction": "Submit a working candidate early. Test the exact submitted source on the public base input, inspect the output and execution errors, and reserve at least three execution calls for correction and explicit resubmission. Do not wait until your last call to submit.",
+  "public_sha256": {
+    "task.md": "522eb5fb1b719374f03fa9a53b0b452ba503868b3a62479b0947c8507c897b07",
+    "inputs/base_case.json": "b61f95e9cc376eafd9db632f9b457cc787c66057b4898890fcc6a83a339d9771",
+    "pierre_lbo_one.xlsx": "d6bc5b024392448dbb9d17dada181947ac8598b217a000a738ef7b6124967e96"
+  },
+  "policy_sha256": "a98ed1558d812c5d94a5c4584f4e940625a1fb0d909c988272e14b76eb4927b2",
+  "request_policy": {
+    "provider": "gemini",
+    "model": "gemini-3.8-flash",
+    "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",
+    "credential_env": "GEMINI_API_KEY",
+    "rpm": 1000,
+    "tpm": 2000000,
+    "tpm_scope": "input",
+    "rpd": 10000,
+    "tpd": null,
+    "min_interval_seconds": 0.06,
+    "input_limit": 1048576,
+    "output_limit": 65536,
+    "billable_output_limit": 65536,
+    "input_usd_per_million": "0.75",
+    "output_usd_per_million": "3.75",
+    "spend_cap_usd": "4",
+    "request_timeout_seconds": 180,
+    "max_retries": 2,
+    "entitlement": "Default Gemini Project, Tier 1; user-authorized cumulative $4 including all prior attempts, checks and retries",
+    "sources": [
+      "https://ai.google.dev/gemini-api/docs/models/gemini-3.8-flash",
+      "https://ai.google.dev/gemini-api/docs/pricing",
+      "https://ai.google.dev/api/generate-content"
+    ],
+    "pricing_note": "Standard text, output includes thinking. Promotional rates through 2026-12-31; no grounding, paid built-in tools, explicit caching, batch, flex or priority. Reserve full model output ceiling conservatively."
+  },
+  "credential_source": "local .env only; no exported-key fallback",
+  "local_preflight": {
+    "exit_code": 0,
+    "stdout": "[\"Inputs\", \"Scenarios\", \"Forecast\", \"Debt\", \"Returns\"]\n",
+    "stderr": ""
+  },
+  "access_returned_model": "gemini-3.8-flash",
+  "stop_reason": "stop",
+  "model_turns": 18,
+  "returned_models": [
+    "gemini-3.8-flash"
+  ],
+  "solution_sha256": "6966f0c0788aeccbdd55cc9d5c5a21022d1a9669092ea0b0fb25e02b4fb3cd36",
+  "submission_run_call": 17,
+  "run_calls": 17,
+  "accounting": {
+    "provider": "gemini",
+    "money_unit": "USD/10^12",
+    "attempts": 52,
+    "run_attempts": 19,
+    "consumed_units": 1541516250000,
+    "consumed_usd": "1.54151625",
+    "reserved_units": 0,
+    "reserved_usd": "0",
+    "committed_units": 1541516250000,
+    "committed_usd": "1.54151625",
+    "spend_cap_units": 4000000000000,
+    "spend_cap_usd": "4",
+    "remaining_units": 2458483750000,
+    "remaining_usd": "2.45848375"
+  },
+  "finished_at": "2026-10-05T05:53:38.543763+00:00",
+  "elapsed_seconds": 171.73028929100838
+}

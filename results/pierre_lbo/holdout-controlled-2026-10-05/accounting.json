@@ -1,0 +1,20 @@
+{
+  "prior_usd": "1.54151625",
+  "calls24_usd": "0.77267925",
+  "calls12_usd": "0.34812975",
+  "pair_usd": "1.12080900",
+  "cumulative_usd": "2.66232525",
+  "cap_usd": "4",
+  "remaining_usd": "1.33767475",
+  "uncertain_gemini_hold_usd": "0",
+  "total_gemini_requests": 86,
+  "new_requests": 34,
+  "preserved_claims": [
+    "gemini-trial-claim-02.json",
+    "gemini-trial-claim-03.json",
+    "gemini-trial-claim-04.json",
+    "gemini-trial-claim-05.json",
+    "gemini-trial-claim-06.json",
+    "gemini-trial-claim.json"
+  ]
+}

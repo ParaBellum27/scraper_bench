@@ -1,0 +1,80 @@
+{
+  "provider": "mistral",
+  "requested_model": "mistral-medium-latest",
+  "transport": "chat-completions",
+  "started_at": "2026-10-05T05:14:53.473592+00:00",
+  "status": "access_failed",
+  "candidate_started": false,
+  "access_only": false,
+  "score": null,
+  "requested_temperature": "provider_default",
+  "requested_thinking": "provider_default",
+  "effective_temperature": null,
+  "effective_thinking": null,
+  "unexposed_defaults": "unavailable; no values inferred",
+  "limits": {
+    "max_steps": 20,
+    "max_run_calls": 12,
+    "execution_timeout_seconds": 10,
+    "wall_timeout_seconds": 900,
+    "max_output_tokens": 4096,
+    "access_check_output_tokens": 512
+  },
+  "public_sha256": {
+    "task.md": "522eb5fb1b719374f03fa9a53b0b452ba503868b3a62479b0947c8507c897b07",
+    "inputs/base_case.json": "b61f95e9cc376eafd9db632f9b457cc787c66057b4898890fcc6a83a339d9771",
+    "pierre_lbo_one.xlsx": "d6bc5b024392448dbb9d17dada181947ac8598b217a000a738ef7b6124967e96"
+  },
+  "policy_sha256": "4cf741c80e3b9da93f10a8adebec632c68d09addb60b97a069d7040aa7e32dac",
+  "request_policy": {
+    "provider": "mistral",
+    "model": "mistral-medium-latest",
+    "endpoint": "https://api.mistral.ai/v1/chat/completions",
+    "credential_env": "MISTRAL_API_KEY",
+    "rpm": 60,
+    "tpm": 20000,
+    "tpm_scope": "combined",
+    "rpd": null,
+    "tpd": null,
+    "min_interval_seconds": 1,
+    "input_limit": 262144,
+    "output_limit": 262144,
+    "input_usd_per_million": "1.50",
+    "output_usd_per_million": "7.50",
+    "spend_cap_usd": "10",
+    "request_timeout_seconds": 180,
+    "max_retries": 2,
+    "entitlement": "User-reserved $10 included allowance; $0 additional cash spend; no competing use",
+    "sources": [
+      "https://docs.mistral.ai/models/mistral-medium-latest",
+      "https://docs.mistral.ai/api/endpoint/chat"
+    ],
+    "pricing_note": "Alias advertises Medium 3.5 on verification date; actual returned revision recorded, never fabricated. 262144 is a conservative 256k context ceiling, not a claimed separate output entitlement. Unknown daily/monthly token quota is not assumed unlimited."
+  },
+  "credential_source": "local .env only; no exported-key fallback",
+  "local_preflight": {
+    "exit_code": 0,
+    "stdout": "[\"Inputs\", \"Scenarios\", \"Forecast\", \"Debt\", \"Returns\"]\n",
+    "stderr": ""
+  },
+  "accounting": {
+    "provider": "mistral",
+    "money_unit": "USD/10^12",
+    "attempts": 1,
+    "run_attempts": 1,
+    "consumed_units": 0,
+    "consumed_usd": "0",
+    "reserved_units": 397056000000,
+    "reserved_usd": "0.397056",
+    "committed_units": 397056000000,
+    "committed_usd": "0.397056",
+    "spend_cap_units": 10000000000000,
+    "spend_cap_usd": "10",
+    "remaining_units": 9602944000000,
+    "remaining_usd": "9.602944"
+  },
+  "error_category": "quota",
+  "error": "GuardError: Provider rejected the request (HTTP 429); full hold retained",
+  "finished_at": "2026-10-05T05:14:54.100564+00:00",
+  "elapsed_seconds": 0.6272190000017872
+}

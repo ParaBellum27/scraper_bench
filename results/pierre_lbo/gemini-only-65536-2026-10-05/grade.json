@@ -1,0 +1,4803 @@
+{
+  "primary_metric": "hidden_cases_fully_correct",
+  "hidden_cases_fully_correct": 0,
+  "hidden_cases_total": 45,
+  "all_hidden_cases_correct": false,
+  "base_case_fully_correct": false,
+  "all_cases_correct": false,
+  "score_role": "weighted_partial_credit_diagnostic",
+  "score": 0,
+  "base_case_score": 0,
+  "hidden_average_score": 0,
+  "base_case": {
+    "name": "base_case",
+    "score": 0,
+    "group_scores": {},
+    "missing_fields": [],
+    "mismatches": {},
+    "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-625qsotf/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-625qsotf/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-625qsotf/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+    "exercised_features": {
+      "operating_forecast": {
+        "periods": 5
+      },
+      "entry_funding": {
+        "equity": 50416
+      },
+      "fiscal_dates": {
+        "dates": [
+          "2022-12-01",
+          "2023-12-01",
+          "2024-12-01",
+          "2025-12-01",
+          "2026-12-01"
+        ]
+      },
+      "stub_operations": {
+        "periods": [
+          1
+        ],
+        "fractions": [
+          0.8301369863013699,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "actual_365_interest_fractions": {
+        "periods": [
+          1,
+          3
+        ],
+        "fractions": [
+          0.8301369863013699,
+          1,
+          1.0027397260273974,
+          1,
+          1
+        ]
+      },
+      "change_working_capital": {
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "amounts": [
+          3785,
+          2369.000000000002,
+          1898.9999999999964,
+          2029.0000000000018,
+          2157
+        ]
+      },
+      "cash_interest": {
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "amounts": [
+          2988.4931506849316,
+          3600,
+          3609.8630136986303,
+          3600,
+          3600
+        ]
+      },
+      "cash_taxes": {
+        "periods": [
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "amounts": [
+          2117.264383561644,
+          3916.500000000001,
+          5507.78424657534,
+          7284.25,
+          9067.25
+        ]
+      },
+      "exit_equity_bridge": {
+        "before_floor": 319610.73931506847,
+        "proceeds": 319610.73931506847
+      },
+      "exit_fees": {
+        "amount": 9568.56
+      },
+      "preferred_payout": {
+        "amount": 65817.86412992828
+      },
+      "ordinary_payout": {
+        "amount": 253792.87518514018
+      },
+      "deal_dated_return": {
+        "holding_years": 4.832876712328767,
+        "irr": 0.4654050167577315
+      },
+      "sponsor_dated_return": {
+        "holding_years": 4.832876712328767,
+        "irr": 0.4435301447616393
+      },
+      "management_dated_return": {
+        "holding_years": 4.832876712328767,
+        "irr": 1.249846012995473
+      }
+    }
+  },
+  "hidden_cases": [
+    {
+      "name": "original_profile_2",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-sfnwdm_o/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-sfnwdm_o/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-sfnwdm_o/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785,
+            2316.5575602362915,
+            1830.5288638105249,
+            1942.2136298752612,
+            2049.721806763584
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2988.4931506849316,
+            3600,
+            3609.8630136986303,
+            3600,
+            3600
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2117.264383561644,
+            3174.788344374412,
+            4587.60534902721,
+            6160.119889691099,
+            7721.302371471895
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 265603.5981888383,
+          "proceeds": 265603.5981888383
+        },
+        "exit_fees": {
+          "amount": 8276.450276613019
+        },
+        "preferred_payout": {
+          "amount": 65817.86412992828
+        },
+        "ordinary_payout": {
+          "amount": 199785.73405891
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.41034130295915583
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.39059359491811096
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 1.1411698427733699
+        }
+      }
+    },
+    {
+      "name": "original_profile_3",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-48ba41y5/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-48ba41y5/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-48ba41y5/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785,
+            2264.115120472581,
+            1762.5568428703173,
+            1856.653677210188,
+            1944.6726963133242
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2988.4931506849316,
+            3600,
+            3609.8630136986303,
+            3600,
+            3600
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2117.264383561644,
+            2151.405698748823,
+            3337.843095090046,
+            4658.396901944433,
+            5952.939061298084
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 194226.93097241275,
+          "proceeds": 194226.93097241275
+        },
+        "exit_fees": {
+          "amount": 6578.8214988461605
+        },
+        "preferred_payout": {
+          "amount": 65817.86412992828
+        },
+        "ordinary_payout": {
+          "amount": 128409.06684248448
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.32190198893583144
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.30603805733513934
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.954023065807867
+        }
+      }
+    },
+    {
+      "name": "original_profile_4",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-py86ln9o/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-py86ln9o/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-py86ln9o/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785,
+            2211.672680708869,
+            1695.0839371793772,
+            1772.312944951067,
+            1841.8266300514606
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2988.4931506849316,
+            3600,
+            3609.8630136986303,
+            3600,
+            3600
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2117.264383561644,
+            515.756858123234,
+            1368.8166408103757,
+            2328.575997590675,
+            3252.5598412072895
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 84605.6358667207,
+          "proceeds": 84605.6358667207
+        },
+        "exit_fees": {
+          "amount": 3986.457447558998
+        },
+        "preferred_payout": {
+          "amount": 65817.86412992828
+        },
+        "ordinary_payout": {
+          "amount": 18787.77173679242
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.11306655796922249
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.11021292742718103
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.31284239667419245
+        }
+      }
+    },
+    {
+      "name": "entry_multiple_shock",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-krje7hhx/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-krje7hhx/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-krje7hhx/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 84921
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785,
+            2369.000000000002,
+            1898.9999999999964,
+            2029.0000000000018,
+            2157
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2988.4931506849316,
+            3600,
+            3609.8630136986303,
+            3600,
+            3600
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2117.264383561644,
+            3916.500000000001,
+            5507.78424657534,
+            7284.25,
+            9067.25
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 319610.73931506847,
+          "proceeds": 319610.73931506847
+        },
+        "exit_fees": {
+          "amount": 9568.56
+        },
+        "preferred_payout": {
+          "amount": 110863.98841196523
+        },
+        "ordinary_payout": {
+          "amount": 208746.75090310324
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.31553438244499676
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.29997719908101916
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.9397175058895504
+        }
+      }
+    },
+    {
+      "name": "exit_multiple_shock",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-enahte_m/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-enahte_m/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-enahte_m/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785,
+            2369.000000000002,
+            1898.9999999999964,
+            2029.0000000000018,
+            2157
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2988.4931506849316,
+            3600,
+            3609.8630136986303,
+            3600,
+            3600
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2117.264383561644,
+            3916.500000000001,
+            5507.78424657534,
+            7284.25,
+            9067.25
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 203591.9493150685,
+          "proceeds": 203591.9493150685
+        },
+        "exit_fees": {
+          "amount": 5980.349999999999
+        },
+        "preferred_payout": {
+          "amount": 65817.86412992828
+        },
+        "ordinary_payout": {
+          "amount": 137774.0851851402
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.33484527577107315
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.31837023161458977
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.9826930903870681
+        }
+      }
+    },
+    {
+      "name": "exit_fee_shock",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-bvyhxbzk/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-bvyhxbzk/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-bvyhxbzk/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785,
+            2369.000000000002,
+            1898.9999999999964,
+            2029.0000000000018,
+            2157
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2988.4931506849316,
+            3600,
+            3609.8630136986303,
+            3600,
+            3600
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2117.264383561644,
+            3916.500000000001,
+            5507.78424657534,
+            7284.25,
+            9067.25
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 290905.05931506853,
+          "proceeds": 290905.05931506853
+        },
+        "exit_fees": {
+          "amount": 38274.24
+        },
+        "preferred_payout": {
+          "amount": 65817.86412992828
+        },
+        "ordinary_payout": {
+          "amount": 225087.19518514024
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4371463443635655
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4163393377530087
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 1.1946564231712267
+        }
+      }
+    },
+    {
+      "name": "tax_shock",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-ckif8yiv/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-ckif8yiv/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-ckif8yiv/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785,
+            2369.000000000002,
+            1898.9999999999964,
+            2029.0000000000018,
+            2157
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2988.4931506849316,
+            3600,
+            3609.8630136986303,
+            3600,
+            3600
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3387.6230136986305,
+            6266.4000000000015,
+            8812.454794520545,
+            11654.800000000001,
+            14507.6
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 302874.9101369863,
+          "proceeds": 302874.9101369863
+        },
+        "exit_fees": {
+          "amount": 9568.56
+        },
+        "preferred_payout": {
+          "amount": 65817.86412992828
+        },
+        "ordinary_payout": {
+          "amount": 237057.046007058
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4491872825621879
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4279194339739443
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 1.2183117665250114
+        }
+      }
+    },
+    {
+      "name": "preferred_accretion_shock",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-nu1un7co/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-nu1un7co/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-nu1un7co/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785,
+            2369.000000000002,
+            1898.9999999999964,
+            2029.0000000000018,
+            2157
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2988.4931506849316,
+            3600,
+            3609.8630136986303,
+            3600,
+            3600
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2117.264383561644,
+            3916.500000000001,
+            5507.78424657534,
+            7284.25,
+            9067.25
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 319610.73931506847,
+          "proceeds": 319610.73931506847
+        },
+        "exit_fees": {
+          "amount": 9568.56
+        },
+        "preferred_payout": {
+          "amount": 109517.64472784437
+        },
+        "ordinary_payout": {
+          "amount": 210093.0945872241
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4654050167577315
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4479404389915831
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 1.163573617165683
+        }
+      }
+    },
+    {
+      "name": "ordinary_split_shock",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-i8rg2448/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-i8rg2448/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-i8rg2448/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785,
+            2369.000000000002,
+            1898.9999999999964,
+            2029.0000000000018,
+            2157
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2988.4931506849316,
+            3600,
+            3609.8630136986303,
+            3600,
+            3600
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2117.264383561644,
+            3916.500000000001,
+            5507.78424657534,
+            7284.25,
+            9067.25
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 319610.73931506847,
+          "proceeds": 319610.73931506847
+        },
+        "exit_fees": {
+          "amount": 9568.56
+        },
+        "preferred_payout": {
+          "amount": 21939.28804330943
+        },
+        "ordinary_payout": {
+          "amount": 297671.45127175906
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4654050167577315
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.45778637393673893
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.5546010244616615
+        }
+      }
+    },
+    {
+      "name": "management_share_shock",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-y9jmju82/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-y9jmju82/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-y9jmju82/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785,
+            2369.000000000002,
+            1898.9999999999964,
+            2029.0000000000018,
+            2157
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2988.4931506849316,
+            3600,
+            3609.8630136986303,
+            3600,
+            3600
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2117.264383561644,
+            3916.500000000001,
+            5507.78424657534,
+            7284.25,
+            9067.25
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 319610.73931506847,
+          "proceeds": 319610.73931506847
+        },
+        "exit_fees": {
+          "amount": 9568.56
+        },
+        "preferred_payout": {
+          "amount": 65817.86412992828
+        },
+        "ordinary_payout": {
+          "amount": 253792.87518514018
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4654050167577315
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.36547082373849027
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 1.249846012995473
+        }
+      }
+    },
+    {
+      "name": "early_exit",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-4w9a5dqg/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-4w9a5dqg/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-4w9a5dqg/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 1
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1
+          ],
+          "amounts": [
+            3785
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1
+          ],
+          "amounts": [
+            2988.4931506849316
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1
+          ],
+          "amounts": [
+            2117.264383561644
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 49630.46657534247,
+          "proceeds": 49630.46657534247
+        },
+        "exit_fees": {
+          "amount": 3312.48
+        },
+        "preferred_payout": {
+          "amount": 48367.89543194817
+        },
+        "ordinary_payout": {
+          "amount": 1262.5711433942997
+        },
+        "deal_dated_return": {
+          "holding_years": 0.8301369863013699,
+          "irr": -0.018739188233874993
+        },
+        "sponsor_dated_return": {
+          "holding_years": 0.8301369863013699,
+          "irr": -0.009829910073116399
+        },
+        "management_dated_return": {
+          "holding_years": 0.8301369863013699,
+          "irr": -0.8113544233968544
+        }
+      }
+    },
+    {
+      "name": "full_horizon",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-e3exscoo/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-e3exscoo/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-e3exscoo/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 8
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01",
+            "2027-12-01",
+            "2028-12-01",
+            "2029-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3,
+            7
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1,
+            1,
+            1.0027397260273974,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "amounts": [
+            3785,
+            2369.000000000002,
+            1898.9999999999964,
+            2029.0000000000018,
+            2157,
+            2455.9599999999955,
+            2561.7552000000032,
+            2630.0686720000012
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7
+          ],
+          "amounts": [
+            2988.4931506849316,
+            3600,
+            3609.8630136986303,
+            3600,
+            3600,
+            3600,
+            3609.8630136986303,
+            0
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "amounts": [
+            2117.264383561644,
+            3916.500000000001,
+            5507.78424657534,
+            7284.25,
+            9067.25,
+            10634.140802499998,
+            12319.45804417534,
+            15013.426985004
+          ]
+        },
+        "tlb_maturity_repayment": {
+          "periods": [
+            7
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 581039.3665526307,
+          "proceeds": 581039.3665526307
+        },
+        "exit_fees": {
+          "amount": 14412.889905603839
+        },
+        "preferred_payout": {
+          "amount": 82929.03718275219
+        },
+        "ordinary_payout": {
+          "amount": 498110.3293698785
+        },
+        "deal_dated_return": {
+          "holding_years": 7.835616438356165,
+          "irr": 0.36611940419129274
+        },
+        "sponsor_dated_return": {
+          "holding_years": 7.835616438356165,
+          "irr": 0.35231570501170983
+        },
+        "management_dated_return": {
+          "holding_years": 7.835616438356165,
+          "irr": 0.797114100652424
+        }
+      }
+    },
+    {
+      "name": "cash_interest_shock",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-um5owvax/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-um5owvax/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-um5owvax/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785,
+            2369.000000000002,
+            1898.9999999999964,
+            2029.0000000000018,
+            2157
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            6973.150684931507,
+            8423.077328767124,
+            8423.013698630139,
+            8400,
+            8400
+          ]
+        },
+        "rcf_interest": {
+          "periods": [
+            2
+          ],
+          "amounts": [
+            0,
+            23.0773287671233,
+            0,
+            0,
+            0
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            1121.1000000000001,
+            2710.73066780822,
+            4304.496575342464,
+            6084.25,
+            7867.25
+          ]
+        },
+        "rcf_draw": {
+          "periods": [
+            1
+          ],
+          "amounts": [
+            461.546575342466,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "voluntary_rcf_repayment": {
+          "periods": [
+            2
+          ],
+          "amounts": [
+            0,
+            461.546575342466,
+            0,
+            0,
+            0
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 302195.07515410957,
+          "proceeds": 302195.07515410957
+        },
+        "exit_fees": {
+          "amount": 9568.56
+        },
+        "preferred_payout": {
+          "amount": 65817.86412992828
+        },
+        "ordinary_payout": {
+          "amount": 236377.21102418128
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4485136145714341
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4272713156952852
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 1.2169939287366658
+        }
+      }
+    },
+    {
+      "name": "pik_interest_shock",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-f8nhhs7u/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-f8nhhs7u/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-f8nhhs7u/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785,
+            2369.000000000002,
+            1898.9999999999964,
+            2029.0000000000018,
+            2157
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2988.4931506849316,
+            3868.964383561644,
+            4228.7250717207735,
+            4597.756434537061,
+            5011.554513645397
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2117.264383561644,
+            3849.25890410959,
+            5353.068732069805,
+            7034.810891365734,
+            8714.361371588651
+          ]
+        },
+        "tlb_pik": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            4482.739726027397,
+            5803.446575342466,
+            6343.08760758116,
+            6896.634651805591,
+            7517.331770468095
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 286094.6459415191,
+          "proceeds": 286094.6459415191
+        },
+        "exit_fees": {
+          "amount": 9568.56
+        },
+        "preferred_payout": {
+          "amount": 65817.86412992828
+        },
+        "ordinary_payout": {
+          "amount": 220276.78181159083
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.43219648155307966
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4115815406119778
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 1.1848681803984893
+        }
+      }
+    },
+    {
+      "name": "scheduled_amortization",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-c9ct0at0/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-c9ct0at0/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-c9ct0at0/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785,
+            2369.000000000002,
+            1898.9999999999964,
+            2029.0000000000018,
+            2157
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2988.4931506849316,
+            3383.9978767123284,
+            2816.267517081066,
+            1951.295328979581,
+            1118.0712328767122
+          ]
+        },
+        "rcf_interest": {
+          "periods": [
+            2,
+            3,
+            4
+          ],
+          "amounts": [
+            0,
+            321.92664383561646,
+            395.58239041565025,
+            185.22409610286888,
+            0
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2117.264383561644,
+            3970.500530821919,
+            5706.183120729732,
+            7696.426167755105,
+            9687.732191780822
+          ]
+        },
+        "rcf_draw": {
+          "periods": [
+            1,
+            2
+          ],
+          "amounts": [
+            6438.532876712328,
+            1451.4984075342472,
+            0,
+            0,
+            0
+          ]
+        },
+        "scheduled_tlb_amortization": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "voluntary_rcf_repayment": {
+          "periods": [
+            3,
+            4
+          ],
+          "amounts": [
+            0,
+            0,
+            4185.549362189198,
+            3704.4819220573772,
+            0
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 323465.91260860517,
+          "proceeds": 323465.91260860517
+        },
+        "exit_fees": {
+          "amount": 9568.56
+        },
+        "preferred_payout": {
+          "amount": 65817.86412992828
+        },
+        "ordinary_payout": {
+          "amount": 257648.04847867688
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4690450651090834
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4470360174729122
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 1.2568753002147908
+        }
+      }
+    },
+    {
+      "name": "cash_sweep",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-zw43766t/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-zw43766t/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-zw43766t/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785,
+            2369.000000000002,
+            1898.9999999999964,
+            2029.0000000000018,
+            2157
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2988.4931506849316,
+            3486.287404109589,
+            3048.959445313427,
+            2262.717974034037,
+            1146.5632104097738
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2117.264383561644,
+            3944.9281489726036,
+            5648.0101386716415,
+            7618.570506491491,
+            9680.609197397556
+          ]
+        },
+        "tlb_sweep": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            1895.20993150685,
+            7427.640818065068,
+            12965.183016527462,
+            18602.57939373772,
+            19109.386840162897
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 322959.74054994236,
+          "proceeds": 322959.74054994236
+        },
+        "exit_fees": {
+          "amount": 9568.56
+        },
+        "preferred_payout": {
+          "amount": 65817.86412992828
+        },
+        "ordinary_payout": {
+          "amount": 257141.87642001407
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.46856910702428634
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4465775615954859
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 1.2559571541928523
+        }
+      }
+    },
+    {
+      "name": "term_maturity",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-vv6hn9ji/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-vv6hn9ji/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-vv6hn9ji/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785,
+            2369.000000000002,
+            1898.9999999999964,
+            2029.0000000000018,
+            2157
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1
+          ],
+          "amounts": [
+            2988.4931506849316
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1
+          ],
+          "amounts": [
+            2117.264383561644
+          ]
+        },
+        "liquidity_failure": {
+          "period": 2,
+          "funding_shortfall": 33286.55342465753,
+          "funded_periods": 1
+        },
+        "failure_at_or_after_tlb_maturity": {
+          "period": 2
+        }
+      }
+    },
+    {
+      "name": "entry_leverage_shock",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-h0ty0asx/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-h0ty0asx/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-h0ty0asx/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 80416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785,
+            2369.000000000002,
+            1898.9999999999964,
+            2029.0000000000018,
+            2157
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            1494.2465753424658,
+            1800,
+            1804.9315068493152,
+            1800,
+            1800
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2490.8260273972605,
+            4366.500000000001,
+            5959.017123287669,
+            7734.25,
+            9517.25
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 356135.12287671235,
+          "proceeds": 356135.12287671235
+        },
+        "exit_fees": {
+          "amount": 9568.56
+        },
+        "preferred_payout": {
+          "amount": 104982.73091622326
+        },
+        "ordinary_payout": {
+          "amount": 251152.3919604891
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.3605802170298815
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.342936553591207
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 1.038241958043951
+        }
+      }
+    },
+    {
+      "name": "interacting_finance_shocks",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-dz91o642/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-dz91o642/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-dz91o642/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785,
+            2369.000000000002,
+            1898.9999999999964,
+            2029.0000000000018,
+            2157
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            4980.821917808219,
+            5980.748643835617,
+            5684.690601225185,
+            5109.94904234757,
+            4202.383245923979
+          ]
+        },
+        "rcf_interest": {
+          "periods": [
+            2,
+            3
+          ],
+          "amounts": [
+            0,
+            179.98152054794517,
+            116.67964832595233,
+            0,
+            0
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2266.855068493151,
+            4649.837974657535,
+            6984.708289571182,
+            9669.46783517835,
+            12483.315863926608
+          ]
+        },
+        "tlb_pik": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            1992.3287671232877,
+            2320.3068493150686,
+            2227.204381159693,
+            2043.979616939028,
+            1680.9532983695917
+          ]
+        },
+        "rcf_draw": {
+          "periods": [
+            1
+          ],
+          "amounts": [
+            3599.630410958903,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "tlb_sweep": {
+          "periods": [
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            0,
+            0,
+            1855.6920398757868,
+            6319.637581174933,
+            11072.969235662174
+          ]
+        },
+        "scheduled_tlb_amortization": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ]
+        },
+        "voluntary_rcf_repayment": {
+          "periods": [
+            2,
+            3
+          ],
+          "amounts": [
+            0,
+            1272.413381506849,
+            2327.2170294520542,
+            0,
+            0
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 234615.19771371497,
+          "proceeds": 234615.19771371497
+        },
+        "exit_fees": {
+          "amount": 7774.455
+        },
+        "preferred_payout": {
+          "amount": 59156.61508639866
+        },
+        "ordinary_payout": {
+          "amount": 175458.5826273163
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.3745990448171823
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.34216138145514763
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.6084468367563558
+        }
+      }
+    },
+    {
+      "name": "revolver_draw_then_priority_repayment",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-6eikgb5r/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-6eikgb5r/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-6eikgb5r/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 2
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2024-12-01",
+            "2025-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.9972677595628415,
+            1
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            2
+          ],
+          "amounts": [
+            0,
+            16.953551912568305
+          ]
+        },
+        "rcf_interest": {
+          "periods": [
+            2
+          ],
+          "amounts": [
+            0,
+            16.953551912568305
+          ]
+        },
+        "rcf_draw": {
+          "periods": [
+            1
+          ],
+          "amounts": [
+            99.72677595628414,
+            0
+          ]
+        },
+        "tlb_sweep": {
+          "periods": [
+            2
+          ],
+          "amounts": [
+            0,
+            100
+          ]
+        },
+        "voluntary_rcf_repayment": {
+          "periods": [
+            2
+          ],
+          "amounts": [
+            0,
+            99.72677595628414
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 515.3196721311476,
+          "proceeds": 515.3196721311476
+        },
+        "preferred_payout": {
+          "amount": 133
+        },
+        "ordinary_payout": {
+          "amount": 382.3196721311476
+        },
+        "deal_dated_return": {
+          "holding_years": 2,
+          "irr": 0.3918663730735923
+        },
+        "sponsor_dated_return": {
+          "holding_years": 2,
+          "irr": 0.35393812446606976
+        },
+        "management_dated_return": {
+          "holding_years": 2,
+          "irr": 0.6954598199267572
+        }
+      }
+    },
+    {
+      "name": "first_period_liquidity_shortfall",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-b8rbbvbk/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-b8rbbvbk/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-b8rbbvbk/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 2
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2024-12-01",
+            "2025-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.9972677595628415,
+            1
+          ]
+        },
+        "liquidity_failure": {
+          "period": 1,
+          "funding_shortfall": 89.72677595628414,
+          "funded_periods": 0
+        }
+      }
+    },
+    {
+      "name": "later_period_liquidity_shortfall",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-s0ck1m9t/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-s0ck1m9t/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-s0ck1m9t/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 3
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.9972677595628415,
+            1,
+            1
+          ]
+        },
+        "liquidity_failure": {
+          "period": 2,
+          "funding_shortfall": 1624,
+          "funded_periods": 1
+        }
+      }
+    },
+    {
+      "name": "term_maturity_refinanced_by_revolver",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-zbpglvzh/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-zbpglvzh/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-zbpglvzh/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 1
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2024-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.9972677595628415
+          ]
+        },
+        "tlb_pik": {
+          "periods": [
+            1
+          ],
+          "amounts": [
+            10
+          ]
+        },
+        "rcf_draw": {
+          "periods": [
+            1
+          ],
+          "amounts": [
+            110
+          ]
+        },
+        "tlb_maturity_repayment": {
+          "periods": [
+            1
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 256,
+          "proceeds": 256
+        },
+        "preferred_payout": {
+          "amount": 133
+        },
+        "ordinary_payout": {
+          "amount": 123
+        },
+        "deal_dated_return": {
+          "holding_years": 1,
+          "irr": -0.03759398496240607
+        },
+        "sponsor_dated_return": {
+          "holding_years": 1,
+          "irr": -0.03341687552213868
+        },
+        "management_dated_return": {
+          "holding_years": 1,
+          "irr": -0.07518796992481203
+        }
+      }
+    },
+    {
+      "name": "revolver_maturity_no_redraw",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-fr4t851z/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-fr4t851z/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-fr4t851z/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 2
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2024-12-01",
+            "2025-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.9972677595628415,
+            1
+          ]
+        },
+        "rcf_draw": {
+          "periods": [
+            1
+          ],
+          "amounts": [
+            99.72677595628414
+          ]
+        },
+        "liquidity_failure": {
+          "period": 2,
+          "funding_shortfall": 109.69945355191255,
+          "funded_periods": 1
+        },
+        "failure_with_revolver_redraw_prohibited": {
+          "period": 2
+        }
+      }
+    },
+    {
+      "name": "revolver_maturity_funded",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-aw0w0r3_/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-aw0w0r3_/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-aw0w0r3_/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 2
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2024-12-01",
+            "2025-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.9972677595628415,
+            1
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            2
+          ],
+          "amounts": [
+            0,
+            9.972677595628415
+          ]
+        },
+        "rcf_interest": {
+          "periods": [
+            2
+          ],
+          "amounts": [
+            0,
+            9.972677595628415
+          ]
+        },
+        "rcf_draw": {
+          "periods": [
+            1
+          ],
+          "amounts": [
+            99.72677595628414,
+            0
+          ]
+        },
+        "mandatory_rcf_repayment": {
+          "periods": [
+            2
+          ],
+          "amounts": [
+            0,
+            99.72677595628414
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 522.3005464480875,
+          "proceeds": 522.3005464480875
+        },
+        "preferred_payout": {
+          "amount": 133
+        },
+        "ordinary_payout": {
+          "amount": 389.3005464480875
+        },
+        "deal_dated_return": {
+          "holding_years": 2,
+          "irr": 0.4012622484398074
+        },
+        "sponsor_dated_return": {
+          "holding_years": 2,
+          "irr": 0.36252572294661145
+        },
+        "management_dated_return": {
+          "holding_years": 2,
+          "irr": 0.7108687202135555
+        }
+      }
+    },
+    {
+      "name": "capped_sweep_and_amortization",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-ex86eumd/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-ex86eumd/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-ex86eumd/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 3
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.9972677595628415,
+            1,
+            1
+          ]
+        },
+        "tlb_pik": {
+          "periods": [
+            1
+          ],
+          "amounts": [
+            2,
+            0,
+            0
+          ]
+        },
+        "tlb_sweep": {
+          "periods": [
+            1
+          ],
+          "amounts": [
+            22.21857923497268,
+            0,
+            0
+          ]
+        },
+        "scheduled_tlb_amortization": {
+          "periods": [
+            1
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 1361,
+          "proceeds": 1361
+        },
+        "preferred_payout": {
+          "amount": 133
+        },
+        "ordinary_payout": {
+          "amount": 1228
+        },
+        "deal_dated_return": {
+          "holding_years": 3,
+          "irr": 0.723159569382982
+        },
+        "sponsor_dated_return": {
+          "holding_years": 3,
+          "irr": 0.6702013537647933
+        },
+        "management_dated_return": {
+          "holding_years": 3,
+          "irr": 1.097887725431367
+        }
+      }
+    },
+    {
+      "name": "preferred_waterfall_below_boundary",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-eaipqnt7/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-eaipqnt7/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-eaipqnt7/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 1
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2024-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.9972677595628415
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 132,
+          "proceeds": 132
+        },
+        "preferred_payout": {
+          "amount": 132
+        },
+        "preferred_not_fully_paid": {
+          "equity": 132,
+          "preferred_accrued": 133
+        },
+        "deal_dated_return": {
+          "holding_years": 1,
+          "irr": -0.5037593984962406
+        },
+        "sponsor_dated_return": {
+          "holding_years": 1,
+          "irr": -0.4486215538847118
+        },
+        "management_nonpositive_payout": {
+          "irr": null
+        }
+      }
+    },
+    {
+      "name": "preferred_waterfall_at_boundary",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-xpe5acpw/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-xpe5acpw/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-xpe5acpw/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 1
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2024-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.9972677595628415
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 133.00000000000003,
+          "proceeds": 133.00000000000003
+        },
+        "preferred_payout": {
+          "amount": 133.00000000000003
+        },
+        "preferred_hurdle": {
+          "equity": 133.00000000000003,
+          "preferred_accrued": 133
+        },
+        "deal_dated_return": {
+          "holding_years": 1,
+          "irr": -0.4999999999999999
+        },
+        "sponsor_dated_return": {
+          "holding_years": 1,
+          "irr": -0.4444444444444443
+        },
+        "management_nonpositive_payout": {
+          "irr": null
+        }
+      }
+    },
+    {
+      "name": "preferred_waterfall_above_boundary",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-b0s7gtj5/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-b0s7gtj5/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-b0s7gtj5/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 1
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2024-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.9972677595628415
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 134.00000000000003,
+          "proceeds": 134.00000000000003
+        },
+        "preferred_payout": {
+          "amount": 133
+        },
+        "ordinary_payout": {
+          "amount": 1.0000000000000284
+        },
+        "deal_dated_return": {
+          "holding_years": 1,
+          "irr": -0.49624060150375926
+        },
+        "sponsor_dated_return": {
+          "holding_years": 1,
+          "irr": -0.44110275689223055
+        },
+        "management_dated_return": {
+          "holding_years": 1,
+          "irr": -0.9924812030075186
+        }
+      }
+    },
+    {
+      "name": "no_management_investment",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-5bjo24yp/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-5bjo24yp/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-5bjo24yp/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 1
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2024-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.9972677595628415
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 266,
+          "proceeds": 266
+        },
+        "preferred_payout": {
+          "amount": 133
+        },
+        "ordinary_payout": {
+          "amount": 133
+        },
+        "deal_dated_return": {
+          "holding_years": 1,
+          "irr": 0
+        },
+        "sponsor_dated_return": {
+          "holding_years": 1,
+          "irr": 0
+        },
+        "management_zero_investment": {
+          "mom": null,
+          "irr": null
+        }
+      }
+    },
+    {
+      "name": "no_ordinary_equity",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-joon7j4d/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-joon7j4d/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-joon7j4d/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 1
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2024-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.9972677595628415
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 266,
+          "proceeds": 266
+        },
+        "preferred_payout": {
+          "amount": 266
+        },
+        "preferred_hurdle": {
+          "equity": 266,
+          "preferred_accrued": 266
+        },
+        "deal_dated_return": {
+          "holding_years": 1,
+          "irr": 0
+        },
+        "sponsor_dated_return": {
+          "holding_years": 1,
+          "irr": 0
+        },
+        "management_zero_investment": {
+          "mom": null,
+          "irr": null
+        }
+      }
+    },
+    {
+      "name": "no_preferred_equity",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-rs0iwx8k/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-rs0iwx8k/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-rs0iwx8k/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 1
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2024-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.9972677595628415
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 266,
+          "proceeds": 266
+        },
+        "ordinary_payout": {
+          "amount": 266
+        },
+        "deal_dated_return": {
+          "holding_years": 1,
+          "irr": 0
+        },
+        "sponsor_dated_return": {
+          "holding_years": 1,
+          "irr": 0
+        },
+        "management_dated_return": {
+          "holding_years": 1,
+          "irr": 0
+        }
+      }
+    },
+    {
+      "name": "zero_sponsor_investment",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-t0besgvm/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-t0besgvm/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-t0besgvm/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 1
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2024-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.9972677595628415
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 266,
+          "proceeds": 266
+        },
+        "ordinary_payout": {
+          "amount": 266
+        },
+        "deal_dated_return": {
+          "holding_years": 1,
+          "irr": 0
+        },
+        "sponsor_zero_investment": {
+          "mom": null,
+          "irr": null
+        },
+        "management_dated_return": {
+          "holding_years": 1,
+          "irr": 0
+        }
+      }
+    },
+    {
+      "name": "underwater_exit",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-5tzpey6g/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-5tzpey6g/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-5tzpey6g/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 1
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2024-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.9972677595628415
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": -100,
+          "proceeds": 0
+        },
+        "equity_floor": {
+          "before_floor": -100
+        },
+        "preferred_not_fully_paid": {
+          "equity": 0,
+          "preferred_accrued": 133
+        },
+        "deal_nonpositive_payout": {
+          "irr": null
+        },
+        "sponsor_nonpositive_payout": {
+          "irr": null
+        },
+        "management_nonpositive_payout": {
+          "irr": null
+        }
+      }
+    },
+    {
+      "name": "negative_exit_ebitda_no_negative_fees",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-jt82r57l/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-jt82r57l/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-jt82r57l/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 2
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2024-12-01",
+            "2025-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.9972677595628415,
+            1
+          ]
+        },
+        "rcf_draw": {
+          "periods": [
+            2
+          ],
+          "amounts": [
+            0,
+            732
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": -1198,
+          "proceeds": 0
+        },
+        "equity_floor": {
+          "before_floor": -1198
+        },
+        "negative_ev_zero_fees": {
+          "ev": -366,
+          "fees": 0
+        },
+        "preferred_not_fully_paid": {
+          "equity": 0,
+          "preferred_accrued": 133
+        },
+        "deal_nonpositive_payout": {
+          "irr": null
+        },
+        "sponsor_nonpositive_payout": {
+          "irr": null
+        },
+        "management_nonpositive_payout": {
+          "irr": null
+        }
+      }
+    },
+    {
+      "name": "full_working_capital_in_short_stub",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-bc5e41f5/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-bc5e41f5/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-bc5e41f5/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 1
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2024-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.00273224043715847
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.0027397260273972603
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1
+          ],
+          "amounts": [
+            146.4
+          ]
+        },
+        "rcf_draw": {
+          "periods": [
+            1
+          ],
+          "amounts": [
+            146.4
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 119.6,
+          "proceeds": 119.6
+        },
+        "preferred_payout": {
+          "amount": 119.6
+        },
+        "preferred_not_fully_paid": {
+          "equity": 119.6,
+          "preferred_accrued": 133
+        },
+        "deal_dated_return": {
+          "holding_years": 0.0027397260273972603,
+          "irr": -1
+        },
+        "sponsor_dated_return": {
+          "holding_years": 0.0027397260273972603,
+          "irr": -1
+        },
+        "management_nonpositive_payout": {
+          "irr": null
+        }
+      }
+    },
+    {
+      "name": "one_day_december_stub",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-ey21mkgv/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-ey21mkgv/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-ey21mkgv/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.0027397260273972603,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.0027397260273972603,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785,
+            2369.000000000002,
+            1898.9999999999964,
+            2029.0000000000018,
+            2157
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            9.863013698630137,
+            3788.208424657534,
+            3609.8630136986303,
+            3600,
+            3600
+          ]
+        },
+        "rcf_interest": {
+          "periods": [
+            2
+          ],
+          "amounts": [
+            0,
+            188.20842465753427,
+            0,
+            0,
+            0
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            6.987671232876711,
+            3869.4478938356174,
+            5507.78424657534,
+            7284.25,
+            9067.25
+          ]
+        },
+        "rcf_draw": {
+          "periods": [
+            1
+          ],
+          "amounts": [
+            3764.168493150685,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "voluntary_rcf_repayment": {
+          "periods": [
+            2
+          ],
+          "amounts": [
+            0,
+            3764.168493150685,
+            0,
+            0,
+            0
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 313178.4679280822,
+          "proceeds": 313178.4679280822
+        },
+        "exit_fees": {
+          "amount": 9568.56
+        },
+        "preferred_payout": {
+          "amount": 61757.40814282724
+        },
+        "ordinary_payout": {
+          "amount": 251421.05978525497
+        },
+        "deal_dated_return": {
+          "holding_years": 4.005479452054795,
+          "irr": 0.577736951491026
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.005479452054795,
+          "irr": 0.5489970506516835
+        },
+        "management_dated_return": {
+          "holding_years": 4.005479452054795,
+          "irr": 1.653857884081762
+        }
+      }
+    },
+    {
+      "name": "leap_day_sequential_clamp",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-aswixgit/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-aswixgit/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-aswixgit/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2021-02-28",
+            "2022-02-28",
+            "2023-02-28",
+            "2024-02-28",
+            "2025-02-28"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.9972602739726028,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            5
+          ],
+          "fractions": [
+            0.9972602739726028,
+            1,
+            1,
+            1,
+            1.0027397260273974
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 2094.9972602739726,
+          "proceeds": 2094.9972602739726
+        },
+        "preferred_payout": {
+          "amount": 133
+        },
+        "ordinary_payout": {
+          "amount": 1961.9972602739726
+        },
+        "deal_dated_return": {
+          "holding_years": 5,
+          "irr": 0.5109857360386183
+        },
+        "sponsor_dated_return": {
+          "holding_years": 5,
+          "irr": 0.48046309165834233
+        },
+        "management_dated_return": {
+          "holding_years": 5,
+          "irr": 0.7130472858928796
+        }
+      }
+    },
+    {
+      "name": "leap_day_close",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-qasojqkv/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-qasojqkv/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-qasojqkv/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 1
+        },
+        "entry_funding": {
+          "equity": 266
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2024-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.7540983606557377
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.7561643835616438
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 266,
+          "proceeds": 266
+        },
+        "preferred_payout": {
+          "amount": 133
+        },
+        "ordinary_payout": {
+          "amount": 133
+        },
+        "deal_dated_return": {
+          "holding_years": 0.7561643835616438,
+          "irr": 0
+        },
+        "sponsor_dated_return": {
+          "holding_years": 0.7561643835616438,
+          "irr": 0
+        },
+        "management_dated_return": {
+          "holding_years": 0.7561643835616438,
+          "irr": 0
+        }
+      }
+    },
+    {
+      "name": "currency_scale_small",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-dfngf8z8/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-dfngf8z8/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-dfngf8z8/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50.41599999999998
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3.7849999999999984,
+            2.3690000000000015,
+            1.8989999999999956,
+            2.029,
+            2.1569999999999965
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2.9884931506849313,
+            3.5999999999999996,
+            3.60986301369863,
+            3.5999999999999996,
+            3.5999999999999996
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2.1172643835616434,
+            3.9164999999999996,
+            5.507784246575341,
+            7.284249999999998,
+            9.067249999999998
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 319.61073931506843,
+          "proceeds": 319.61073931506843
+        },
+        "exit_fees": {
+          "amount": 9.568559999999998
+        },
+        "preferred_payout": {
+          "amount": 65.81786412992825
+        },
+        "ordinary_payout": {
+          "amount": 253.7928751851402
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4654050167577317
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.44353014476163954
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 1.2498460129954734
+        }
+      }
+    },
+    {
+      "name": "currency_scale_large",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-7mdz67ot/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-7mdz67ot/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-7mdz67ot/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50416000
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3785000,
+            2369000.000000002,
+            1898999.9999999963,
+            2029000.0000000019,
+            2157000
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2988493.150684932,
+            3600000,
+            3609863.0136986305,
+            3600000,
+            3600000
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2117264.383561644,
+            3916500.000000001,
+            5507784.246575341,
+            7284250,
+            9067250
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 319610739.3150685,
+          "proceeds": 319610739.3150685
+        },
+        "exit_fees": {
+          "amount": 9568560
+        },
+        "preferred_payout": {
+          "amount": 65817864.129928276
+        },
+        "ordinary_payout": {
+          "amount": 253792875.1851402
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4654050167577315
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4435301447616393
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 1.2498460129954734
+        }
+      }
+    },
+    {
+      "name": "seeded_operating_finance_mix_1",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-fmh3_48j/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-fmh3_48j/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-fmh3_48j/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 3
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3
+          ],
+          "amounts": [
+            2560.7899535668694,
+            1141.4283097099087,
+            2488.7440649237415
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3
+          ],
+          "amounts": [
+            2543.7211005457257,
+            2930.4101631174676,
+            2500.104383737069
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3
+          ],
+          "amounts": [
+            2011.7994079540213,
+            3686.847460039763,
+            5222.76532881815
+          ]
+        },
+        "tlb_pik": {
+          "periods": [
+            1,
+            2,
+            3
+          ],
+          "amounts": [
+            569.9586168594554,
+            656.6020634270786,
+            560.1856415207363
+          ]
+        },
+        "tlb_sweep": {
+          "periods": [
+            1,
+            2,
+            3
+          ],
+          "amounts": [
+            3190.0392322536823,
+            9216.109176857659,
+            13580.893123558526
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 89568.95882766692,
+          "proceeds": 89568.95882766692
+        },
+        "exit_fees": {
+          "amount": 3732.295151982393
+        },
+        "preferred_payout": {
+          "amount": 56428.20998793576
+        },
+        "ordinary_payout": {
+          "amount": 33140.74883973116
+        },
+        "deal_dated_return": {
+          "holding_years": 2.8328767123287673,
+          "irr": 0.22491085600911953
+        },
+        "sponsor_dated_return": {
+          "holding_years": 2.8328767123287673,
+          "irr": 0.21301262486348005
+        },
+        "management_dated_return": {
+          "holding_years": 2.8328767123287673,
+          "irr": 0.9439257652208533
+        }
+      }
+    },
+    {
+      "name": "seeded_operating_finance_mix_2",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-5vr8j_1p/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-5vr8j_1p/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-5vr8j_1p/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 5
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            1515.3412955692338,
+            1930.4751823861397,
+            9919.895969243586,
+            2449.9411007389717,
+            -3681.9578532766427
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2448.8395085499387,
+            2837.033050389189,
+            2592.1743701400133,
+            2373.9399071145617,
+            1819.325485076463
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            2182.1279163063755,
+            3260.851414070758,
+            4691.425085805419,
+            6265.502042078141,
+            7912.467831788835
+          ]
+        },
+        "tlb_pik": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            839.0710816169988,
+            972.0818297246473,
+            888.1833802906765,
+            813.4074603916627,
+            623.3742134781261
+          ]
+        },
+        "tlb_sweep": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "amounts": [
+            3135.181751228817,
+            6096.443256655925,
+            5182.9140169907605,
+            12093.998367125498,
+            21609.555647989215
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 356593.7112193461,
+          "proceeds": 356593.7112193461
+        },
+        "exit_fees": {
+          "amount": 11070.743221251954
+        },
+        "preferred_payout": {
+          "amount": 65817.86412992828
+        },
+        "ordinary_payout": {
+          "amount": 290775.8470894178
+        },
+        "deal_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4989840570198685
+        },
+        "sponsor_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 0.4758984496689409
+        },
+        "management_dated_return": {
+          "holding_years": 4.832876712328767,
+          "irr": 1.3140736168605929
+        }
+      }
+    },
+    {
+      "name": "seeded_operating_finance_mix_3",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-7cjk9f9m/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-7cjk9f9m/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-7cjk9f9m/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 2
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2
+          ],
+          "amounts": [
+            6132.600103261069,
+            -386.957088684625
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2
+          ],
+          "amounts": [
+            4546.85744532535,
+            5831.323927232763
+          ]
+        },
+        "rcf_interest": {
+          "periods": [
+            2
+          ],
+          "amounts": [
+            0,
+            101.7363951718507
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2
+          ],
+          "amounts": [
+            2758.662115930085,
+            2544.540206376556
+          ]
+        },
+        "tlb_pik": {
+          "periods": [
+            1,
+            2
+          ],
+          "amounts": [
+            2764.34988968002,
+            3483.4135119957054
+          ]
+        },
+        "rcf_draw": {
+          "periods": [
+            1
+          ],
+          "amounts": [
+            2034.727903437014,
+            0
+          ]
+        },
+        "tlb_sweep": {
+          "periods": [
+            2
+          ],
+          "amounts": [
+            0,
+            1072.1283079120187
+          ]
+        },
+        "voluntary_rcf_repayment": {
+          "periods": [
+            2
+          ],
+          "amounts": [
+            0,
+            2034.727903437014
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 4975.218775568944,
+          "proceeds": 4975.218775568944
+        },
+        "exit_fees": {
+          "amount": 2145.88351751647
+        },
+        "preferred_payout": {
+          "amount": 4975.218775568944
+        },
+        "preferred_not_fully_paid": {
+          "equity": 4975.218775568944,
+          "preferred_accrued": 52237.32706650403
+        },
+        "deal_dated_return": {
+          "holding_years": 1.83013698630137,
+          "irr": -0.7178710947596671
+        },
+        "sponsor_dated_return": {
+          "holding_years": 1.83013698630137,
+          "irr": -0.7163175005756932
+        },
+        "management_nonpositive_payout": {
+          "irr": null
+        }
+      }
+    },
+    {
+      "name": "seeded_operating_finance_mix_4",
+      "score": 0,
+      "group_scores": {},
+      "missing_fields": [],
+      "mismatches": {},
+      "execution_error": "non-zero exit 1: Traceback (most recent call last):\n  File \"/private/tmp/finance-grade-e_5ps33o/solution.py\", line 317, in <module>\n    main()\n    ~~~~^^\n  File \"/private/tmp/finance-grade-e_5ps33o/solution.py\", line 313, in main\n    out = run_model(inp)\n  File \"/private/tmp/finance-grade-e_5ps33o/solution.py\", line 297, in run_model\n    \"preferred_accrued\": preferred_accrued,\n                         ^^^^^^^^^^^^^^^^^\nNameError: name 'preferred_accrued' is not defined. Did you mean: 'pref_accrued'?",
+      "exercised_features": {
+        "operating_forecast": {
+          "periods": 6
+        },
+        "entry_funding": {
+          "equity": 50416
+        },
+        "fiscal_dates": {
+          "dates": [
+            "2022-12-01",
+            "2023-12-01",
+            "2024-12-01",
+            "2025-12-01",
+            "2026-12-01",
+            "2027-12-01"
+          ]
+        },
+        "stub_operations": {
+          "periods": [
+            1
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1,
+            1,
+            1,
+            1
+          ]
+        },
+        "actual_365_interest_fractions": {
+          "periods": [
+            1,
+            3
+          ],
+          "fractions": [
+            0.8301369863013699,
+            1,
+            1.0027397260273974,
+            1,
+            1,
+            1
+          ]
+        },
+        "change_working_capital": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "amounts": [
+            6093.553565905851,
+            3457.5751419262615,
+            520.1511850641964,
+            2085.708563437496,
+            -923.379537058765,
+            4848.536151592751
+          ]
+        },
+        "cash_interest": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "amounts": [
+            2668.999364425721,
+            3300.98600668162,
+            3513.48383445215,
+            3513.035988828436,
+            3582.8844750623466,
+            3576.178031178606
+          ]
+        },
+        "rcf_interest": {
+          "periods": [
+            3
+          ],
+          "amounts": [
+            0,
+            0,
+            93.56936403029799,
+            0,
+            0,
+            0
+          ]
+        },
+        "cash_taxes": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "amounts": [
+            2334.0051792916797,
+            627.2952982230338,
+            1479.680728472663,
+            2496.726412269195,
+            3459.718522009683,
+            4238.96957428819
+          ]
+        },
+        "tlb_pik": {
+          "periods": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6
+          ],
+          "amounts": [
+            1653.507634548849,
+            2045.038165365543,
+            2118.7171348627694,
+            2176.408097130645,
+            2219.6808707359323,
+            2215.5260716339762
+          ]
+        },
+        "rcf_draw": {
+          "periods": [
+            2
+          ],
+          "amounts": [
+            0,
+            1866.274200604304,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "tlb_sweep": {
+          "periods": [
+            1,
+            3,
+            4,
+            5,
+            6
+          ],
+          "amounts": [
+            51.30693115629299,
+            0,
+            206.52993395342693,
+            872.9125781856784,
+            2344.834900863892,
+            2993.4627852277513
+          ]
+        },
+        "voluntary_rcf_repayment": {
+          "periods": [
+            3
+          ],
+          "amounts": [
+            0,
+            0,
+            1866.274200604304,
+            0,
+            0,
+            0
+          ]
+        },
+        "exit_equity_bridge": {
+          "before_floor": 153596.2143854395,
+          "proceeds": 153596.2143854395
+        },
+        "exit_fees": {
+          "amount": 6315.084979692768
+        },
+        "preferred_payout": {
+          "amount": 71083.29326032255
+        },
+        "ordinary_payout": {
+          "amount": 82512.92112511695
+        },
+        "deal_dated_return": {
+          "holding_years": 5.832876712328767,
+          "irr": 0.21044682172509965
+        },
+        "sponsor_dated_return": {
+          "holding_years": 5.832876712328767,
+          "irr": 0.20110986879813209
+        },
+        "management_dated_return": {
+          "holding_years": 5.832876712328767,
+          "irr": 0.6148144195021756
+        }
+      }
+    }
+  ],
+  "submission_sha256": "d7c008b17c07b10e8885f9d2bab20aaea011849f391f8963164e5b3f0325edbe",
+  "grading_timeout_seconds": 5,
+  "benchmark": "pierre_lbo",
+  "seed": 20261004,
+  "rel_tol": 1e-7,
+  "abs_tol": 1e-7
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "synthetic_reference_infrastructure_check",
+  "provider_requests": 0,
+  "workbook_sheets": [
+    "Inputs",
+    "Scenarios",
+    "Forecast",
+    "Debt",
+    "Returns"
+  ],
+  "tools": [
+    "run_solution"
+  ],
+  "accepted_calls": 3,
+  "remaining": 0,
+  "explicit_submission_preserved_after_inspection_and_mutation": true,
+  "frozen": {
+    "solution_sha256": "3b31ee3adc7e17e4190ae5a0d37fc3f775ce01ea04d70a753e672c1c0857b096",
+    "submission_run_call": 2,
+    "run_calls": 3
+  },
+  "fields_matched_to_independent_spreadsheet": 55,
+  "grading_execution_error": null,
+  "grading_mismatches": {}
+}

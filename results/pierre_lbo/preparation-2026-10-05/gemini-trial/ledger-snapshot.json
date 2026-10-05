@@ -1,0 +1,261 @@
+{
+  "money_unit": "USD/10^12",
+  "providers": {
+    "gemini": {
+      "attempts": [
+        {
+          "billable_output_tokens": 65536,
+          "charged_units": 95250000,
+          "estimated_input_tokens": 767,
+          "estimator": "ceil(utf8-full-json-bytes/3)+512",
+          "id": 1,
+          "quota_input_tokens": 122,
+          "quota_output_tokens": 1,
+          "requested_output_tokens": 512,
+          "reserved_units": 1032192000000,
+          "run_id": "gemini-20261005T051654799451Z",
+          "started_at": 1791177415.230784,
+          "state": "settled",
+          "usage": {
+            "input_tokens": 122,
+            "output_tokens": 1,
+            "reasoning_tokens": 0
+          }
+        },
+        {
+          "billable_output_tokens": 65536,
+          "charged_units": 3646500000,
+          "estimated_input_tokens": 4987,
+          "estimator": "ceil(utf8-full-json-bytes/3)+512",
+          "id": 2,
+          "quota_input_tokens": 2962,
+          "quota_output_tokens": 380,
+          "requested_output_tokens": 4096,
+          "reserved_units": 1032192000000,
+          "run_id": "gemini-20261005T051654799451Z",
+          "started_at": 1791177416.183598,
+          "state": "settled",
+          "usage": {
+            "input_tokens": 2962,
+            "output_tokens": 380,
+            "reasoning_tokens": 128
+          }
+        },
+        {
+          "billable_output_tokens": 65536,
+          "charged_units": 9534000000,
+          "estimated_input_tokens": 10285,
+          "estimator": "ceil(utf8-full-json-bytes/3)+512",
+          "id": 3,
+          "quota_input_tokens": 11012,
+          "quota_output_tokens": 340,
+          "requested_output_tokens": 4096,
+          "reserved_units": 1032192000000,
+          "run_id": "gemini-20261005T051654799451Z",
+          "started_at": 1791177418.321346,
+          "state": "settled",
+          "usage": {
+            "input_tokens": 11012,
+            "output_tokens": 340,
+            "reasoning_tokens": 30
+          }
+        },
+        {
+          "billable_output_tokens": 65536,
+          "charged_units": 18137250000,
+          "estimated_input_tokens": 17331,
+          "estimator": "ceil(utf8-full-json-bytes/3)+512",
+          "id": 4,
+          "quota_input_tokens": 22533,
+          "quota_output_tokens": 330,
+          "requested_output_tokens": 4096,
+          "reserved_units": 1032192000000,
+          "run_id": "gemini-20261005T051654799451Z",
+          "started_at": 1791177420.6248589,
+          "state": "settled",
+          "usage": {
+            "input_tokens": 22533,
+            "output_tokens": 330,
+            "reasoning_tokens": 66
+          }
+        },
+        {
+          "billable_output_tokens": 65536,
+          "charged_units": 32695500000,
+          "estimated_input_tokens": 19861,
+          "estimator": "ceil(utf8-full-json-bytes/3)+512",
+          "id": 5,
+          "quota_input_tokens": 27064,
+          "quota_output_tokens": 3306,
+          "requested_output_tokens": 4096,
+          "reserved_units": 1032192000000,
+          "run_id": "gemini-20261005T051654799451Z",
+          "started_at": 1791177422.8877928,
+          "state": "settled",
+          "usage": {
+            "input_tokens": 27064,
+            "output_tokens": 3306,
+            "reasoning_tokens": 3105
+          }
+        },
+        {
+          "billable_output_tokens": 65536,
+          "charged_units": 26431500000,
+          "estimated_input_tokens": 23899,
+          "estimator": "ceil(utf8-full-json-bytes/3)+512",
+          "id": 6,
+          "quota_input_tokens": 30652,
+          "quota_output_tokens": 918,
+          "requested_output_tokens": 4096,
+          "reserved_units": 1032192000000,
+          "run_id": "gemini-20261005T051654799451Z",
+          "started_at": 1791177435.97607,
+          "state": "settled",
+          "usage": {
+            "input_tokens": 30652,
+            "output_tokens": 918,
+            "reasoning_tokens": 745
+          }
+        },
+        {
+          "billable_output_tokens": 65536,
+          "charged_units": 39762750000,
+          "estimated_input_tokens": 26049,
+          "estimator": "ceil(utf8-full-json-bytes/3)+512",
+          "id": 7,
+          "quota_input_tokens": 32557,
+          "quota_output_tokens": 4092,
+          "requested_output_tokens": 4096,
+          "reserved_units": 1032192000000,
+          "run_id": "gemini-20261005T051654799451Z",
+          "started_at": 1791177440.090267,
+          "state": "settled",
+          "usage": {
+            "input_tokens": 32557,
+            "output_tokens": 4092,
+            "reasoning_tokens": 3929
+          }
+        }
+      ],
+      "consumed_units": 130302750000,
+      "fingerprint": "06786122e8ce28c0e5d927b01f96bd47e265cd5ac4e59a7c5251f48cd65b21ff",
+      "not_before": 0,
+      "policy": {
+        "billable_output_limit": 65536,
+        "endpoint": "https://generativelanguage.googleapis.com/v1beta/models/gemini-3.8-flash:generateContent",
+        "input_limit": 1048576,
+        "input_usd_per_million": "0.75",
+        "max_retries": 2,
+        "min_interval_seconds": 0.06,
+        "model": "gemini-3.8-flash",
+        "output_limit": 65536,
+        "output_usd_per_million": "3.75",
+        "provider": "gemini",
+        "quota_estimator": "ceil(utf8-full-json-bytes/3)+512",
+        "request_timeout_seconds": 180,
+        "rpd": 10000,
+        "rpm": 1000,
+        "spend_cap_usd": "2",
+        "test_only_localhost": false,
+        "tpd": null,
+        "tpm": 2000000,
+        "tpm_scope": "input"
+      },
+      "reserved_units": 0,
+      "spend_cap_units": 2000000000000
+    },
+    "groq": {
+      "attempts": [
+        {
+          "billable_output_tokens": 512,
+          "charged_units": 0,
+          "error_category": "access",
+          "estimated_input_tokens": 697,
+          "estimator": "o200k_harmony-full-json+512",
+          "http_status": 403,
+          "id": 1,
+          "quota_input_tokens": 697,
+          "quota_output_tokens": 512,
+          "requested_output_tokens": 512,
+          "reserved_units": 0,
+          "run_id": "groq-20261005T051105621785Z",
+          "started_at": 1791177066.283339,
+          "state": "uncertain"
+        }
+      ],
+      "consumed_units": 0,
+      "fingerprint": "7fba23f3eac4bb938d405c585febc9d148db8212c5bf07ca8874fde108171dfb",
+      "not_before": 0,
+      "policy": {
+        "billable_output_limit": null,
+        "endpoint": "https://api.groq.com/openai/v1/chat/completions",
+        "input_limit": 131072,
+        "input_usd_per_million": "0",
+        "max_retries": 2,
+        "min_interval_seconds": 2,
+        "model": "openai/gpt-oss-120b",
+        "output_limit": 65536,
+        "output_usd_per_million": "0",
+        "provider": "groq",
+        "quota_estimator": "o200k_harmony-full-json+512",
+        "request_timeout_seconds": 180,
+        "rpd": 1000,
+        "rpm": 30,
+        "spend_cap_usd": "0",
+        "test_only_localhost": false,
+        "tpd": 200000,
+        "tpm": 8000,
+        "tpm_scope": "combined"
+      },
+      "reserved_units": 0,
+      "spend_cap_units": 0
+    },
+    "mistral": {
+      "attempts": [
+        {
+          "billable_output_tokens": 512,
+          "charged_units": 397056000000,
+          "error_category": "quota",
+          "estimated_input_tokens": 774,
+          "estimator": "ceil(utf8-full-json-bytes/3)+512",
+          "http_status": 429,
+          "id": 1,
+          "quota_input_tokens": 774,
+          "quota_output_tokens": 512,
+          "requested_output_tokens": 512,
+          "reserved_units": 397056000000,
+          "run_id": "mistral-20261005T051453473592Z",
+          "started_at": 1791177293.903857,
+          "state": "uncertain"
+        }
+      ],
+      "consumed_units": 0,
+      "fingerprint": "d8fbc30f2f8931fe555542c84730de6ebf6d92a143e704529a7ad1fa67bf4c62",
+      "not_before": 1791263694.098655,
+      "policy": {
+        "billable_output_limit": null,
+        "endpoint": "https://api.mistral.ai/v1/chat/completions",
+        "input_limit": 262144,
+        "input_usd_per_million": "1.5",
+        "max_retries": 2,
+        "min_interval_seconds": 1,
+        "model": "mistral-medium-latest",
+        "output_limit": 262144,
+        "output_usd_per_million": "7.5",
+        "provider": "mistral",
+        "quota_estimator": "ceil(utf8-full-json-bytes/3)+512",
+        "request_timeout_seconds": 180,
+        "rpd": null,
+        "rpm": 60,
+        "spend_cap_usd": "10",
+        "test_only_localhost": false,
+        "tpd": null,
+        "tpm": 20000,
+        "tpm_scope": "combined"
+      },
+      "reserved_units": 397056000000,
+      "spend_cap_units": 10000000000000
+    }
+  },
+  "version": 1
+}

@@ -1,0 +1,2052 @@
+[
+  {
+    "name": "hand_repayment_priority",
+    "inputs": {
+      "case": 1,
+      "last_fiscal_year_end": "2023-12-01",
+      "deal_date": "2023-12-02",
+      "exit_period": 2,
+      "opening_revenue": 1464.0,
+      "opening_working_capital": 0.0,
+      "entry_multiple": 1.0,
+      "exit_multiple": 1.0,
+      "exit_fee_rate": 0.0,
+      "tax_rate": 0.0,
+      "ordinary_equity_fraction": 0.5,
+      "management_ordinary_fraction": 0.2,
+      "preferred_pik_rate": 0.0,
+      "working_capital_ratio": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "term_loan": {
+        "principal": 100.0,
+        "cash_rate": 0.0,
+        "pik_rate": 0.0,
+        "amortization_rate": 0.0,
+        "cash_sweep": 1,
+        "maturity_period": 20
+      },
+      "revolver": {
+        "commitment": 1000.0,
+        "cash_rate": 0.1,
+        "maturity_period": 20
+      },
+      "scenarios": [
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            466,
+            0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "rcf_draw": [
+        99.72677595628416,
+        0
+      ],
+      "rcf_interest": [
+        0,
+        9.972677595628415
+      ],
+      "rcf_repayment": [
+        0,
+        99.72677595628416
+      ],
+      "tlb_sweep": [
+        0,
+        100
+      ],
+      "tlb_balance": [
+        100,
+        0
+      ],
+      "rcf_balance": [
+        99.72677595628416,
+        0
+      ],
+      "cash_balance": [
+        0,
+        156.30054644808743
+      ]
+    },
+    "derivation": "First deficit D=100*365/366. Second cash366 less opening RCF interest D/10, then RCF principal D, then TLB100; residual=366-1.1D-100.",
+    "rel_tol": 1e-07,
+    "abs_tol": 1e-09
+  },
+  {
+    "name": "hand_later_liquidity_prefix",
+    "inputs": {
+      "case": 1,
+      "last_fiscal_year_end": "2023-12-01",
+      "deal_date": "2023-12-02",
+      "exit_period": 3,
+      "opening_revenue": 1464.0,
+      "opening_working_capital": 0.0,
+      "entry_multiple": 1.0,
+      "exit_multiple": 1.0,
+      "exit_fee_rate": 0.0,
+      "tax_rate": 0.0,
+      "ordinary_equity_fraction": 0.5,
+      "management_ordinary_fraction": 0.2,
+      "preferred_pik_rate": 0.0,
+      "working_capital_ratio": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "term_loan": {
+        "principal": 100.0,
+        "cash_rate": 0.0,
+        "pik_rate": 0.0,
+        "amortization_rate": 0.0,
+        "cash_sweep": 0.0,
+        "maturity_period": 20
+      },
+      "revolver": {
+        "commitment": 10,
+        "cash_rate": 0.1,
+        "maturity_period": 20
+      },
+      "scenarios": [
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            500,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "status": "liquidity_shortfall",
+      "failure_period": 2,
+      "funding_shortfall": 124,
+      "dates": [
+        "2024-12-01",
+        "2025-12-01",
+        "2026-12-01"
+      ],
+      "cash_balance": [
+        0
+      ],
+      "rcf_draw": [
+        0
+      ],
+      "tlb_balance": [
+        100
+      ],
+      "exit_date": "2026-12-01",
+      "holding_period_years": 3,
+      "exit_ev": null,
+      "exit_fees": null,
+      "exit_debt": null,
+      "exit_cash": null,
+      "equity_value_before_floor": null,
+      "equity_proceeds": null,
+      "preferred_accrued": null,
+      "preferred_payout": null,
+      "ordinary_payout": null,
+      "sponsor_proceeds": null,
+      "management_proceeds": null,
+      "deal_mom": null,
+      "sponsor_mom": null,
+      "management_mom": null,
+      "deal_irr": null,
+      "sponsor_irr": null,
+      "management_irr": null
+    },
+    "derivation": "Period1 cash365-capex365=0. Period2 deficit500-366=134, capacity10 -> shortage124. Only period1 financing is executed; all three planned dates survive.",
+    "rel_tol": 1e-07,
+    "abs_tol": 1e-09
+  },
+  {
+    "name": "hand_preferred_132",
+    "inputs": {
+      "case": 1,
+      "last_fiscal_year_end": "2023-12-01",
+      "deal_date": "2023-12-02",
+      "exit_period": 1,
+      "opening_revenue": 1464.0,
+      "opening_working_capital": 0.0,
+      "entry_multiple": 1.0,
+      "exit_multiple": 0.6338797814207651,
+      "exit_fee_rate": 0.0,
+      "tax_rate": 0.0,
+      "ordinary_equity_fraction": 0.5,
+      "management_ordinary_fraction": 0.2,
+      "preferred_pik_rate": 0.0,
+      "working_capital_ratio": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "term_loan": {
+        "principal": 100.0,
+        "cash_rate": 0.0,
+        "pik_rate": 0.0,
+        "amortization_rate": 0.0,
+        "cash_sweep": 0.0,
+        "maturity_period": 20
+      },
+      "revolver": {
+        "commitment": 1000.0,
+        "cash_rate": 0.1,
+        "maturity_period": 20
+      },
+      "scenarios": [
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "equity_proceeds": 132,
+      "preferred_accrued": 133,
+      "preferred_payout": 132,
+      "ordinary_payout": 0,
+      "management_proceeds": 0.0,
+      "management_irr": null
+    },
+    "derivation": "Entry equity366-100=266, preferred133 and management investment26.6. Exit proceeds132; preferred=min(proceeds,133), ordinary residual, management20%; exact365-day hold.",
+    "rel_tol": 1e-07,
+    "abs_tol": 1e-09
+  },
+  {
+    "name": "hand_preferred_133",
+    "inputs": {
+      "case": 1,
+      "last_fiscal_year_end": "2023-12-01",
+      "deal_date": "2023-12-02",
+      "exit_period": 1,
+      "opening_revenue": 1464.0,
+      "opening_working_capital": 0.0,
+      "entry_multiple": 1.0,
+      "exit_multiple": 0.6366120218579235,
+      "exit_fee_rate": 0.0,
+      "tax_rate": 0.0,
+      "ordinary_equity_fraction": 0.5,
+      "management_ordinary_fraction": 0.2,
+      "preferred_pik_rate": 0.0,
+      "working_capital_ratio": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "term_loan": {
+        "principal": 100.0,
+        "cash_rate": 0.0,
+        "pik_rate": 0.0,
+        "amortization_rate": 0.0,
+        "cash_sweep": 0.0,
+        "maturity_period": 20
+      },
+      "revolver": {
+        "commitment": 1000.0,
+        "cash_rate": 0.1,
+        "maturity_period": 20
+      },
+      "scenarios": [
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "equity_proceeds": 133,
+      "preferred_accrued": 133,
+      "preferred_payout": 133,
+      "ordinary_payout": 0,
+      "management_proceeds": 0.0,
+      "management_irr": null
+    },
+    "derivation": "Entry equity366-100=266, preferred133 and management investment26.6. Exit proceeds133; preferred=min(proceeds,133), ordinary residual, management20%; exact365-day hold.",
+    "rel_tol": 1e-07,
+    "abs_tol": 1e-09
+  },
+  {
+    "name": "hand_preferred_134",
+    "inputs": {
+      "case": 1,
+      "last_fiscal_year_end": "2023-12-01",
+      "deal_date": "2023-12-02",
+      "exit_period": 1,
+      "opening_revenue": 1464.0,
+      "opening_working_capital": 0.0,
+      "entry_multiple": 1.0,
+      "exit_multiple": 0.639344262295082,
+      "exit_fee_rate": 0.0,
+      "tax_rate": 0.0,
+      "ordinary_equity_fraction": 0.5,
+      "management_ordinary_fraction": 0.2,
+      "preferred_pik_rate": 0.0,
+      "working_capital_ratio": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "term_loan": {
+        "principal": 100.0,
+        "cash_rate": 0.0,
+        "pik_rate": 0.0,
+        "amortization_rate": 0.0,
+        "cash_sweep": 0.0,
+        "maturity_period": 20
+      },
+      "revolver": {
+        "commitment": 1000.0,
+        "cash_rate": 0.1,
+        "maturity_period": 20
+      },
+      "scenarios": [
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "equity_proceeds": 134,
+      "preferred_accrued": 133,
+      "preferred_payout": 133,
+      "ordinary_payout": 1,
+      "management_proceeds": 0.2,
+      "management_irr": -0.9924812030075187
+    },
+    "derivation": "Entry equity366-100=266, preferred133 and management investment26.6. Exit proceeds134; preferred=min(proceeds,133), ordinary residual, management20%; exact365-day hold.",
+    "rel_tol": 1e-07,
+    "abs_tol": 1e-09
+  },
+  {
+    "name": "hand_dated_return",
+    "inputs": {
+      "case": 1,
+      "last_fiscal_year_end": "2023-12-01",
+      "deal_date": "2024-02-29",
+      "exit_period": 1,
+      "opening_revenue": 1464.0,
+      "opening_working_capital": 0.0,
+      "entry_multiple": 1.0,
+      "exit_multiple": 2,
+      "exit_fee_rate": 0.0,
+      "tax_rate": 0.0,
+      "ordinary_equity_fraction": 0.5,
+      "management_ordinary_fraction": 0.2,
+      "preferred_pik_rate": 0.0,
+      "working_capital_ratio": [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      "term_loan": {
+        "principal": 100.0,
+        "cash_rate": 0.0,
+        "pik_rate": 0.0,
+        "amortization_rate": 0.0,
+        "cash_sweep": 0.0,
+        "maturity_period": 20
+      },
+      "revolver": {
+        "commitment": 1000.0,
+        "cash_rate": 0.1,
+        "maturity_period": 20
+      },
+      "scenarios": [
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "holding_period_years": 0.7561643835616438,
+      "deal_mom": 2.3759398496240602,
+      "deal_irr": 2.1407166318162596,
+      "preferred_payout": 133,
+      "ordinary_payout": 499,
+      "management_proceeds": 99.8
+    },
+    "derivation": "Feb29 to Dec1 2024 is276 days. Cash EBITDA equals capex; exit debt100. Proceeds=2*366-100=632; MoM632/266; IRR=(632/266)^(365/276)-1, not632/266-1.",
+    "rel_tol": 1e-07,
+    "abs_tol": 1e-09
+  },
+  {
+    "name": "hand_scaled_real_shortfall_0_001",
+    "inputs": {
+      "case": 1,
+      "last_fiscal_year_end": "2023-12-01",
+      "deal_date": "2023-12-02",
+      "exit_period": 1,
+      "opening_revenue": 1.464,
+      "opening_working_capital": 0.0,
+      "entry_multiple": 1.0,
+      "exit_multiple": 1.0,
+      "exit_fee_rate": 0.0,
+      "tax_rate": 0.0,
+      "ordinary_equity_fraction": 0.5,
+      "management_ordinary_fraction": 0.2,
+      "preferred_pik_rate": 0.0,
+      "working_capital_ratio": [
+        0.006830601096311476,
+        0.006830601096311476,
+        0.006830601096311476,
+        0.006830601096311476,
+        0.006830601096311476,
+        0.006830601096311476,
+        0.006830601096311476,
+        0.006830601096311476
+      ],
+      "term_loan": {
+        "principal": 0.1,
+        "cash_rate": 0.0,
+        "pik_rate": 0.0,
+        "amortization_rate": 0.0,
+        "cash_sweep": 0.0,
+        "maturity_period": 20
+      },
+      "revolver": {
+        "commitment": 0.01,
+        "cash_rate": 0.1,
+        "maturity_period": 20
+      },
+      "scenarios": [
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            0.366,
+            0.366,
+            0.366,
+            0.366,
+            0.366,
+            0.366,
+            0.366,
+            0.366
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            0.366,
+            0.366,
+            0.366,
+            0.366,
+            0.366,
+            0.366,
+            0.366,
+            0.366
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            0.366,
+            0.366,
+            0.366,
+            0.366,
+            0.366,
+            0.366,
+            0.366,
+            0.366
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            0.366,
+            0.366,
+            0.366,
+            0.366,
+            0.366,
+            0.366,
+            0.366,
+            0.366
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "status": "liquidity_shortfall",
+      "failure_period": 1,
+      "funding_shortfall": 5.0000000000000005e-12,
+      "cash_balance": [],
+      "rcf_draw": [],
+      "management_irr": null
+    },
+    "derivation": "Cash EBITDA and capex cancel. Full WC draw=(10+5e-9)*scale; capacity=10*scale. Economic shortage=5e-9*scale exceeds1e-12*365*scale. Old absolute1e-8 decision differed by scale.",
+    "rel_tol": 1e-07,
+    "abs_tol": 1e-16
+  },
+  {
+    "name": "hand_scaled_real_shortfall_1",
+    "inputs": {
+      "case": 1,
+      "last_fiscal_year_end": "2023-12-01",
+      "deal_date": "2023-12-02",
+      "exit_period": 1,
+      "opening_revenue": 1464.0,
+      "opening_working_capital": 0.0,
+      "entry_multiple": 1.0,
+      "exit_multiple": 1.0,
+      "exit_fee_rate": 0.0,
+      "tax_rate": 0.0,
+      "ordinary_equity_fraction": 0.5,
+      "management_ordinary_fraction": 0.2,
+      "preferred_pik_rate": 0.0,
+      "working_capital_ratio": [
+        0.006830601096311476,
+        0.006830601096311476,
+        0.006830601096311476,
+        0.006830601096311476,
+        0.006830601096311476,
+        0.006830601096311476,
+        0.006830601096311476,
+        0.006830601096311476
+      ],
+      "term_loan": {
+        "principal": 100.0,
+        "cash_rate": 0.0,
+        "pik_rate": 0.0,
+        "amortization_rate": 0.0,
+        "cash_sweep": 0.0,
+        "maturity_period": 20
+      },
+      "revolver": {
+        "commitment": 10,
+        "cash_rate": 0.1,
+        "maturity_period": 20
+      },
+      "scenarios": [
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0,
+            366.0
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "status": "liquidity_shortfall",
+      "failure_period": 1,
+      "funding_shortfall": 5e-09,
+      "cash_balance": [],
+      "rcf_draw": [],
+      "management_irr": null
+    },
+    "derivation": "Cash EBITDA and capex cancel. Full WC draw=(10+5e-9)*scale; capacity=10*scale. Economic shortage=5e-9*scale exceeds1e-12*365*scale. Old absolute1e-8 decision differed by scale.",
+    "rel_tol": 1e-07,
+    "abs_tol": 1e-13
+  },
+  {
+    "name": "hand_scaled_real_shortfall_1000",
+    "inputs": {
+      "case": 1,
+      "last_fiscal_year_end": "2023-12-01",
+      "deal_date": "2023-12-02",
+      "exit_period": 1,
+      "opening_revenue": 1464000.0,
+      "opening_working_capital": 0.0,
+      "entry_multiple": 1.0,
+      "exit_multiple": 1.0,
+      "exit_fee_rate": 0.0,
+      "tax_rate": 0.0,
+      "ordinary_equity_fraction": 0.5,
+      "management_ordinary_fraction": 0.2,
+      "preferred_pik_rate": 0.0,
+      "working_capital_ratio": [
+        0.006830601096311476,
+        0.006830601096311476,
+        0.006830601096311476,
+        0.006830601096311476,
+        0.006830601096311476,
+        0.006830601096311476,
+        0.006830601096311476,
+        0.006830601096311476
+      ],
+      "term_loan": {
+        "principal": 100000.0,
+        "cash_rate": 0.0,
+        "pik_rate": 0.0,
+        "amortization_rate": 0.0,
+        "cash_sweep": 0.0,
+        "maturity_period": 20
+      },
+      "revolver": {
+        "commitment": 10000,
+        "cash_rate": 0.1,
+        "maturity_period": 20
+      },
+      "scenarios": [
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0
+          ]
+        },
+        {
+          "revenue_growth": [
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          "gross_profit_margin": [
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5,
+            0.5
+          ],
+          "opex_margin": [
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25,
+            0.25
+          ],
+          "capex": [
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0,
+            366000.0
+          ]
+        }
+      ]
+    },
+    "expected": {
+      "status": "liquidity_shortfall",
+      "failure_period": 1,
+      "funding_shortfall": 5e-06,
+      "cash_balance": [],
+      "rcf_draw": [],
+      "management_irr": null
+    },
+    "derivation": "Cash EBITDA and capex cancel. Full WC draw=(10+5e-9)*scale; capacity=10*scale. Economic shortage=5e-9*scale exceeds1e-12*365*scale. Old absolute1e-8 decision differed by scale.",
+    "rel_tol": 1e-07,
+    "abs_tol": 1e-10
+  }
+]
