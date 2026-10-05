@@ -24,6 +24,7 @@ def main():
     parser.add_argument("--task", type=Path, default=REPO / "tasks/damodaran_fcff2st/task.md")
     parser.add_argument("--base-input", type=Path, default=REPO / "tasks/damodaran_fcff2st/inputs/base_case.json")
     parser.add_argument("--workbook", type=Path, required=True)
+    parser.add_argument("--workbook-name", default="fcff2st.xlsx", help="Public .xlsx basename specified by the task.")
     parser.add_argument("--run-dir", type=Path)
     parser.add_argument("--max-steps", type=int, default=MAX_AGENT_TURNS)
     parser.add_argument("--max-run-calls", type=int, default=MAX_RUN_CALLS)
@@ -32,6 +33,8 @@ def main():
     args = parser.parse_args()
     if min(args.max_steps, args.max_run_calls, args.timeout, args.max_tokens) <= 0:
         parser.error("All execution and generation limits must be positive.")
+    if Path(args.workbook_name).name != args.workbook_name or Path(args.workbook_name).suffix.lower() != ".xlsx":
+        parser.error("--workbook-name must be a single .xlsx filename")
 
     task_prompt = args.task.read_text()
     base_input = args.base_input.read_text()
@@ -50,7 +53,7 @@ def main():
         "public_sha256": {
             "task.md": hashlib.sha256(task_prompt.encode()).hexdigest(),
             "inputs/base_case.json": hashlib.sha256(base_input.encode()).hexdigest(),
-            "fcff2st.xlsx": hashlib.sha256(workbook).hexdigest(),
+            args.workbook_name: hashlib.sha256(workbook).hexdigest(),
         },
     }
     metadata_path = run_dir / "metadata.json"
@@ -62,10 +65,11 @@ def main():
             (workspace / "inputs").mkdir()
             (workspace / "task.md").write_text(task_prompt)
             (workspace / "inputs/base_case.json").write_text(base_input)
-            (workspace / "fcff2st.xlsx").write_bytes(workbook)
+            (workspace / args.workbook_name).write_bytes(workbook)
             trajectory = Agent(
                 provider, workspace, run_dir, base_input,
                 max_steps=args.max_steps, max_run_calls=args.max_run_calls, timeout=args.timeout,
+                workbook_name=args.workbook_name,
             ).run(task_prompt)
             solution = workspace / "solution.py"
             if solution.is_symlink() or not solution.is_file():

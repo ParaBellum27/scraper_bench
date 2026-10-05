@@ -8,7 +8,7 @@ from harness.executor import run_solution
 SYSTEM_PROMPT = """You are participating in a finance coding benchmark.
 Solve the supplied task by writing executable Python, not hard-coded public outputs.
 
-Your workspace contains only task.md, fcff2st.xlsx, and inputs/base_case.json.
+Your workspace contains only task.md, {workbook_name}, and inputs/base_case.json.
 Use run_solution(code) to replace solution.py and execute that source with the public
 base-case JSON on stdin. Python's standard library and openpyxl are available.
 You may first write inspection scripts to examine the workbook's formulas and cached
@@ -26,7 +26,7 @@ class Agent:
     def __init__(
         self, provider, workspace: Path, run_dir: Path, base_input: str,
         max_steps: int = MAX_AGENT_TURNS, max_run_calls: int = MAX_RUN_CALLS,
-        timeout: float = EXECUTION_TIMEOUT_SECONDS,
+        timeout: float = EXECUTION_TIMEOUT_SECONDS, workbook_name: str = "fcff2st.xlsx",
     ):
         self.provider = provider
         self.workspace = workspace
@@ -35,10 +35,11 @@ class Agent:
         self.max_steps = max_steps
         self.max_run_calls = max_run_calls
         self.timeout = timeout
+        self.workbook_name = workbook_name
 
     def run(self, task_prompt: str):
         messages = [
-            {"role": "system", "content": SYSTEM_PROMPT + (
+            {"role": "system", "content": SYSTEM_PROMPT.format(workbook_name=self.workbook_name) + (
                 f"\nLimits: {self.max_steps} model turns, {self.max_run_calls} executions, "
                 f"{self.timeout} seconds per execution."
             )},

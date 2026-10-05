@@ -1,0 +1,41 @@
+{
+  "public_workbook": {
+    "sheets": [
+      "Inputs",
+      "Scenarios",
+      "Forecast",
+      "Debt",
+      "Returns"
+    ],
+    "formula_cells": 405,
+    "external_link_parts": [],
+    "macro_parts": [],
+    "hidden_sheets": [],
+    "contains_original_filename": false,
+    "contains_absolute_user_path": false,
+    "sha256": "0ca95f1cb28a7f422a66189b5f48336edf11e900da9bbaf6fc7e3cc4a5d67101",
+    "output_fields": 55
+  },
+  "runtime": {
+    "python": "3.13.5",
+    "openpyxl": "3.1.5",
+    "mcp": "1.30.0",
+    "platform": "Darwin",
+    "architecture": "arm64"
+  },
+  "observed_regression_run": {
+    "command": "python -m unittest discover -s tests -v",
+    "tests_run": 29,
+    "failures": 0,
+    "errors": 0,
+    "exit_code": 0
+  },
+  "observed_type_check": {
+    "command": "ty check --python <external-runtime-python> --output-format concise harness evaluator reference tests",
+    "exit_code": 0,
+    "result": "All checks passed!"
+  },
+  "provider_requests": 0,
+  "native_excel_verified": false,
+  "visual_formatting_verified": false
+}

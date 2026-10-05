@@ -33,7 +33,7 @@ def create_server(workspace: Path, run_dir: Path, max_run_calls: int, timeout: f
     def execute(code: str) -> str:
         """Replace solution.py with complete Python source and execute the public input.
 
-        The workspace contains task.md, fcff2st.xlsx, and inputs/base_case.json.
+        The workspace contains task.md, the task's .xlsx workbook, and inputs/base_case.json.
         Use Python (including openpyxl) to inspect those public artifacts. Every
         call overwrites solution.py. The last saved file is the final submission.
         Execution receives the public JSON on stdin and returns exit_code,

@@ -69,6 +69,7 @@ def main() -> int:
     parser.add_argument("--provider", choices=["mistral", "gemini"], required=True)
     parser.add_argument("--model", help="Exact CLI model selection; provider defaults are recorded explicitly.")
     parser.add_argument("--workbook", type=Path, required=True)
+    parser.add_argument("--workbook-name", default="fcff2st.xlsx", help="Public .xlsx basename specified by the task.")
     parser.add_argument("--task", type=Path, default=REPO / "tasks/damodaran_fcff2st/task.md")
     parser.add_argument("--base-input", type=Path, default=REPO / "tasks/damodaran_fcff2st/inputs/base_case.json")
     parser.add_argument("--run-dir", type=Path)
@@ -80,6 +81,8 @@ def main() -> int:
     args = parser.parse_args()
     if any(not math.isfinite(value) or value <= 0 for value in (args.max_steps, args.max_run_calls, args.timeout, args.wall_timeout)):
         parser.error("All limits must be finite and positive")
+    if Path(args.workbook_name).name != args.workbook_name or Path(args.workbook_name).suffix.lower() != ".xlsx":
+        parser.error("--workbook-name must be a single .xlsx filename")
     if args.mistral_auth_dir and args.provider != "mistral":
         parser.error("--mistral-auth-dir applies only to Mistral")
     model = args.model or ("mistral-medium-3.5" if args.provider == "mistral" else gemini_cli.TARGET_MODEL)
@@ -96,7 +99,7 @@ def main() -> int:
     public_files = {
         "task.md": args.task.read_bytes(),
         "inputs/base_case.json": args.base_input.read_bytes(),
-        "fcff2st.xlsx": args.workbook.read_bytes(),
+        args.workbook_name: args.workbook.read_bytes(),
     }
     json.loads(public_files["inputs/base_case.json"])
     started = datetime.now(timezone.utc)
@@ -127,13 +130,13 @@ def main() -> int:
                 target.write_bytes(data)
             # Prove workbook imports and sandbox startup before using model quota.
             probe = workspace / "solution.py"
-            probe.write_text("import openpyxl\nw = openpyxl.load_workbook('fcff2st.xlsx', read_only=True)\nprint(w.sheetnames)\n")
+            probe.write_text(f"import openpyxl\nw = openpyxl.load_workbook({args.workbook_name!r}, read_only=True)\nprint(w.sheetnames)\n")
             preflight = run_solution(str(probe), timeout=args.timeout)
             (run_dir / "runtime-preflight.json").write_text(json.dumps(preflight, indent=2))
             probe.unlink()
             if preflight["exit_code"] != 0:
                 raise RuntimeError(f"Python runtime preflight failed: {preflight['stderr']}")
-            prompt = SYSTEM_PROMPT + f"\nLimits: {args.max_steps} model turns, {args.max_run_calls} executions, {args.timeout} seconds per execution.\n\n" + public_files["task.md"].decode()
+            prompt = SYSTEM_PROMPT.format(workbook_name=args.workbook_name) + f"\nLimits: {args.max_steps} model turns, {args.max_run_calls} executions, {args.timeout} seconds per execution.\n\n" + public_files["task.md"].decode()
             (run_dir / "prompt.txt").write_text(prompt)
             mcp_command = [sys.executable, str(REPO / "harness/mcp_server.py"), "--workspace", str(workspace), "--run-dir", str(run_dir), "--max-run-calls", str(args.max_run_calls), "--timeout", str(args.timeout)]
             command, additions = adapter.build_command(control, settings, prompt, model, mcp_command, args.max_steps)

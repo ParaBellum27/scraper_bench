@@ -1,4 +1,4 @@
-"""Scoring logic for Task 001: Damodaran two-stage FCFF coding benchmark."""
+"""Deterministic weighted grading for the financial coding tasks."""
 from __future__ import annotations
 
 from dataclasses import dataclass, asdict
@@ -39,30 +39,41 @@ class CaseResult:
     execution_error: str | None = None
 
 
-def _numeric_ok(actual: Any, expected: float) -> bool:
+def _numeric_ok(actual: Any, expected: float, rel_tol: float, abs_tol: float) -> bool:
     if isinstance(actual, bool) or not isinstance(actual, (int, float)):
         return False
-    a = float(actual)
-    return isfinite(a) and isclose(a, float(expected), rel_tol=REL_TOL, abs_tol=ABS_TOL)
+    try:
+        a = float(actual)
+    except OverflowError:
+        return False
+    return isfinite(a) and isclose(a, float(expected), rel_tol=rel_tol, abs_tol=abs_tol)
 
 
-def _field_fraction(actual: Any, expected: Any) -> Tuple[float, Any | None]:
+def _field_fraction(actual: Any, expected: Any, rel_tol: float, abs_tol: float) -> Tuple[float, Any | None]:
     if isinstance(expected, list):
         if not isinstance(actual, list) or len(actual) != len(expected):
             return 0.0, {
                 "expected_length": len(expected),
                 "actual_length": len(actual) if isinstance(actual, list) else None,
             }
-        oks = [_numeric_ok(a, e) for a, e in zip(actual, expected)]
+        oks = [_field_fraction(a, e, rel_tol, abs_tol)[0] == 1.0 for a, e in zip(actual, expected)]
         bad = [i for i, ok in enumerate(oks) if not ok]
         return (sum(oks) / len(oks) if oks else 1.0), ({"bad_indices": bad} if bad else None)
-    ok = _numeric_ok(actual, expected)
+    if expected is None or isinstance(expected, (str, bool)):
+        ok = type(actual) is type(expected) and actual == expected
+    else:
+        ok = _numeric_ok(actual, expected, rel_tol, abs_tol)
     if ok:
         return 1.0, None
     return 0.0, {"expected": expected, "actual": actual}
 
 
-def grade_case(name: str, actual: Dict[str, Any] | None, expected: Dict[str, Any], execution_error: str | None = None) -> CaseResult:
+def grade_case(
+    name: str, actual: Dict[str, Any] | None, expected: Dict[str, Any],
+    execution_error: str | None = None, *,
+    scoring_groups: dict[str, tuple[float, list[str]]] = SCORING_GROUPS,
+    rel_tol: float = REL_TOL, abs_tol: float = ABS_TOL,
+) -> CaseResult:
     if execution_error is not None or not isinstance(actual, dict):
         return CaseResult(
             name=name,
@@ -78,14 +89,14 @@ def grade_case(name: str, actual: Dict[str, Any] | None, expected: Dict[str, Any
     mismatches: Dict[str, Any] = {}
     total = 0.0
 
-    for group, (weight, fields) in SCORING_GROUPS.items():
+    for group, (weight, fields) in scoring_groups.items():
         field_scores = []
         for field in fields:
             if field not in actual:
                 missing.append(field)
                 field_scores.append(0.0)
                 continue
-            fraction, mismatch = _field_fraction(actual[field], expected[field])
+            fraction, mismatch = _field_fraction(actual[field], expected[field], rel_tol, abs_tol)
             field_scores.append(fraction)
             if mismatch is not None:
                 mismatches[field] = mismatch
@@ -104,13 +115,19 @@ def grade_case(name: str, actual: Dict[str, Any] | None, expected: Dict[str, Any
 
 def summarize(base_result: CaseResult, hidden_results: Iterable[CaseResult]) -> Dict[str, Any]:
     hidden = list(hidden_results)
+
+    def fully_correct(result: CaseResult) -> bool:
+        return result.execution_error is None and not result.missing_fields and not result.mismatches
+
     hidden_avg = sum(x.score for x in hidden) / len(hidden) if hidden else 0.0
     final_score = 0.20 * base_result.score + 0.80 * hidden_avg
     return {
         "score": final_score,
         "base_case_score": base_result.score,
+        "base_case_fully_correct": fully_correct(base_result),
         "hidden_average_score": hidden_avg,
         "hidden_cases_passed_95": sum(r.score >= 95.0 for r in hidden),
+        "hidden_cases_fully_correct": sum(fully_correct(r) for r in hidden),
         "hidden_cases_total": len(hidden),
         "base_case": asdict(base_result),
         "hidden_cases": [asdict(r) for r in hidden],

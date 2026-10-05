@@ -1,0 +1,23 @@
+{
+  "transport": "real MCP stdio",
+  "tools": [
+    "run_solution"
+  ],
+  "public_workbook_inspection": {
+    "sheets": [
+      "Inputs",
+      "Scenarios",
+      "Forecast",
+      "Debt",
+      "Returns"
+    ],
+    "status": "ok",
+    "deal_irr": 0.465405016757732
+  },
+  "reference_public_score": 100.0,
+  "all_required_fields_match": true,
+  "run_calls": 2,
+  "remaining": 0,
+  "fcff_system_prompt_unchanged": true,
+  "provider_requests": 0
+}

@@ -1,0 +1,56 @@
+[
+  {
+    "control": "reference",
+    "score": 100.0,
+    "base_case_score": 100.0,
+    "hidden_average_score": 100.0,
+    "hidden_cases_fully_correct": 45,
+    "hidden_cases_total": 45,
+    "hidden_cases_passed_95": 45
+  },
+  {
+    "control": "constant_base",
+    "score": 44.762831489498154,
+    "base_case_score": 100.0,
+    "hidden_average_score": 30.953539361872693,
+    "hidden_cases_fully_correct": 0,
+    "hidden_cases_total": 45,
+    "hidden_cases_passed_95": 0
+  },
+  {
+    "control": "ignore_cash_interest",
+    "score": 78.35933621933623,
+    "base_case_score": 69.512987012987,
+    "hidden_average_score": 80.57092352092351,
+    "hidden_cases_fully_correct": 16,
+    "hidden_cases_total": 45,
+    "hidden_cases_passed_95": 17
+  },
+  {
+    "control": "ignore_cash_sweep",
+    "score": 96.1131313131313,
+    "base_case_score": 100.0,
+    "hidden_average_score": 95.14141414141413,
+    "hidden_cases_fully_correct": 37,
+    "hidden_cases_total": 45,
+    "hidden_cases_passed_95": 37
+  },
+  {
+    "control": "ignore_preferred_priority",
+    "score": 90.86060606060607,
+    "base_case_score": 89.0909090909091,
+    "hidden_average_score": 91.30303030303031,
+    "hidden_cases_fully_correct": 8,
+    "hidden_cases_total": 45,
+    "hidden_cases_passed_95": 9
+  },
+  {
+    "control": "integer_year_irr",
+    "score": 97.33939393939394,
+    "base_case_score": 95.9090909090909,
+    "hidden_average_score": 97.69696969696969,
+    "hidden_cases_fully_correct": 19,
+    "hidden_cases_total": 45,
+    "hidden_cases_passed_95": 45
+  }
+]

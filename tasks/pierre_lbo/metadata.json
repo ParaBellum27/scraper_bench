@@ -1,0 +1,37 @@
+{
+  "task_id": "pierre_lbo",
+  "title": "Pierre LBO One",
+  "version": "0.1",
+  "domain": "finance",
+  "task_type": "code_generation",
+  "language": "python",
+  "source_artifact": "author-supplied private LBO workbook",
+  "source_sha256": "7958823b280bdb326998f06884a6feb73cf6e7301a4f9410b10133689075397a",
+  "public_workbook": "pierre_lbo_one.xlsx",
+  "status": "qualified",
+  "replication_target": "corrected derivative, not original cached outputs",
+  "output_fields": 55,
+  "hidden_scenarios": 45,
+  "default_seed": 20261004,
+  "oracle_qualification": {
+    "engine": "LibreOffice 26.8.0.3",
+    "cases_passed": 46,
+    "cases_total": 46,
+    "native_excel_verified": false,
+    "native_excel_limitation": "Excel 16.113.3 automation timed out opening the derivative and querying workbook state; existing workbooks were not closed or saved.",
+    "evidence": "results/pierre_lbo/qualification-2026-10-04/qualification.json"
+  },
+  "scoring": {
+    "base_case_weight": 0.2,
+    "hidden_scenarios_weight": 0.8,
+    "relative_tolerance": 1e-7,
+    "absolute_tolerance": 1e-7,
+    "fully_correct_cases_reported_separately": true
+  },
+  "public_artifact_sha256": {
+    "task.md": "ae037e4f38bda880c96d0a15f7233e7ba649d10a87387d0b92f1ba6a15458074",
+    "inputs/base_case.json": "b61f95e9cc376eafd9db632f9b457cc787c66057b4898890fcc6a83a339d9771",
+    "pierre_lbo_one.xlsx": "0ca95f1cb28a7f422a66189b5f48336edf11e900da9bbaf6fc7e3cc4a5d67101"
+  },
+  "candidate_model_runs": 0
+}

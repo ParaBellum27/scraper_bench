@@ -13,7 +13,7 @@ The model does **not** receive the hidden grader, reference implementation, hidd
 
 ## Execution-side environment
 
-During development, the runner creates a temporary workspace outside the repository containing only `task.md`, `fcff2st.xlsx`, and `inputs/base_case.json`. The model must write Python to inspect these artifacts. Every tool call replaces `solution.py`; the last saved file becomes the frozen submission.
+During development, the runner creates a temporary workspace outside the repository containing only `task.md`, the task's workbook, and `inputs/base_case.json`. The public workbook name defaults to `fcff2st.xlsx`; set `--workbook-name` for another task. The model must write Python to inspect these artifacts. Every tool call replaces `solution.py`; the last saved file becomes the frozen submission.
 
 Execution requires macOS `sandbox-exec` and fails closed elsewhere. The profile permits public-workspace reads/writes and runtime/library reads, and configures denial of external files, network access, and process forking. Candidate environment construction excludes provider credentials. Output capture is bounded to 64 KiB per stream. Tests exercised private-file/symlink/network denial, time/output limits, and fresh grading state; direct fork denial and seeded credential-canary checks are not recorded. See the [tested-controls and limitations matrix](../BENCHMARK_SUMMARY.md#c-leakage-grading-exploits-and-evidence-gaps).
 
@@ -126,6 +126,8 @@ The earliest Gemini pilot predates native-session/settings preservation; its nat
 
 The original public bundle is preserved locally at `runs/private/frozen-public-inputs/`. Its hashes match the scored pilots; the Desktop workbook changed afterward and was not overwritten. Use all three frozen artifacts for comparable reruns:
 
+The frozen artifacts preserve the public inputs, not later harness source changes. The pre-Pierre publication snapshot is `c58ca03ef26b80b22f2fa137919221c31791a600`; its manifest records publication-time source hashes, not immutable per-run build provenance. The new generic workbook support changes the MCP tool description even though the default system prompt and historical grading results remain unchanged.
+
 ```bash
 PY="$HOME/.local/share/scraper-bench/runtime/bin/python"
 PUBLIC="runs/private/frozen-public-inputs"
@@ -143,6 +145,49 @@ An existing Google-account credential authenticated but the legacy Gemini CLI re
 ### Design references
 
 The one host-owned MCP tool follows [Inspect's Agent Bridge](https://inspect.aisi.org.uk/agent-bridge.html) boundary. Frozen artifact handoff follows [Harbor's separate verifier](https://docs.harborframework.com/tasks/separate-verifier.md); native transcript retention follows its [Gemini adapter](https://github.com/harbor-framework/harbor/blob/main/src/harbor/agents/installed/gemini_cli.py). These patterns do not remove provider entitlement or quota requirements.
+
+## Pierre LBO One
+
+Use the qualified derivative, never the author's original or its stale cached results. The checked-in public files are the frozen version-0.1 bundle; local identical copies are under `runs/private/pierre_lbo/frozen-public/`. Their hashes are in `tasks/pierre_lbo/metadata.json`. These commands preserve the existing client, model, authentication and budget conditions:
+
+```bash
+PY="$HOME/.local/share/scraper-bench/runtime/bin/python"
+PUBLIC="tasks/pierre_lbo"
+"$PY" -m harness.run_terminal \
+  --provider mistral --model mistral-medium-3.5 \
+  --mistral-auth-dir runs/private/mistral-cli-auth \
+  --task "$PUBLIC/task.md" --base-input "$PUBLIC/inputs/base_case.json" \
+  --workbook "$PUBLIC/pierre_lbo_one.xlsx" --workbook-name pierre_lbo_one.xlsx
+
+# Run only when the recorded Gemini API quota condition is available again.
+"$PY" -m harness.run_terminal \
+  --provider gemini --model gemini-3.8-flash \
+  --task "$PUBLIC/task.md" --base-input "$PUBLIC/inputs/base_case.json" \
+  --workbook "$PUBLIC/pierre_lbo_one.xlsx" --workbook-name pierre_lbo_one.xlsx
+```
+
+Grade the actual frozen submission path printed by the runner:
+
+```bash
+"$PY" -m evaluator.run_grader runs/private/RUN_DIRECTORY/solution.py \
+  --benchmark pierre_lbo --seed 20261004
+```
+
+Read `hidden_cases_fully_correct` and per-field mismatches, not just the overall score or `hidden_cases_passed_95`. Keep all hidden feedback out of generation. The direct API runner accepts the same public task/base/workbook/name flags, but its existing entitlement and generation-setting differences remain; do not substitute it as an equivalent Vibe condition.
+
+To independently requalify the oracle, choose a new output directory so existing evidence is not overwritten:
+
+```bash
+SOFFICE="$HOME/.local/share/scraper-bench/tools/LibreOffice-26.8.0.app/Contents/MacOS/soffice"
+"$PY" -m reference.pierre_lbo.qualify \
+  --engine libreoffice --soffice "$SOFFICE" \
+  --output-dir runs/private/pierre_lbo/new-qualification
+```
+
+Alternatively use `--engine excel` on macOS when Excel automation is accessible. It requests calculation only for the newly generated workbook's sheets; it does not change global calculation/alert settings or close/save unrelated books. Native Excel verification was blocked in this campaign; the recorded 46/46 result uses LibreOffice, with an isolated profile per conversion. See the [full qualification and limitations](../analysis/pierre_lbo_report.md).
+
+The public workbook can be rebuilt from source with `python -m reference.pierre_lbo.workbook build --inputs tasks/pierre_lbo/inputs/base_case.json --output /new/path/pierre_lbo_one.xlsx`, then recalculated. Rebuilding is not a byte-identical substitute for the frozen campaign bundle: use the same frozen files for competing trials.
+
 
 ## Local verification
 

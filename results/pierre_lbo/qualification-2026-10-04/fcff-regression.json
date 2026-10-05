@@ -1,0 +1,47 @@
+[
+  {
+    "name": "gemini-cli-pilot-01",
+    "exit_code": 0,
+    "actual": {
+      "base_case_fully_correct": true,
+      "base_case_score": 100,
+      "hidden_average_score": 100,
+      "hidden_cases_fully_correct": 13,
+      "hidden_cases_passed_95": 13,
+      "hidden_cases_total": 13,
+      "score": 100
+    },
+    "historical_score_metrics_unchanged": true,
+    "stderr": ""
+  },
+  {
+    "name": "mistral-cli-pilot-01",
+    "exit_code": 0,
+    "actual": {
+      "base_case_fully_correct": false,
+      "base_case_score": 0,
+      "hidden_average_score": 0,
+      "hidden_cases_fully_correct": 0,
+      "hidden_cases_passed_95": 0,
+      "hidden_cases_total": 13,
+      "score": 0
+    },
+    "historical_score_metrics_unchanged": true,
+    "stderr": ""
+  },
+  {
+    "name": "mistral-cli-paired-02",
+    "exit_code": 0,
+    "actual": {
+      "base_case_fully_correct": true,
+      "base_case_score": 100,
+      "hidden_average_score": 100,
+      "hidden_cases_fully_correct": 13,
+      "hidden_cases_passed_95": 13,
+      "hidden_cases_total": 13,
+      "score": 100
+    },
+    "historical_score_metrics_unchanged": true,
+    "stderr": ""
+  }
+]

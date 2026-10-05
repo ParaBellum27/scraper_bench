@@ -1,0 +1,48 @@
+{
+  "generated_at": "2026-10-05T00:18:51.221Z",
+  "scope": "Pierre LBO One v0.1 qualification, not candidate-model trial results",
+  "branch": "pierre-lbo",
+  "pre_pierre_publication_commit": "c58ca03ef26b80b22f2fa137919221c31791a600",
+  "original_source_sha256": "7958823b280bdb326998f06884a6feb73cf6e7301a4f9410b10133689075397a",
+  "engine": "LibreOffice 26.8.0.3 bce0998afefdbc355585ca324285661a2170ba77",
+  "qualification_cases": 46,
+  "seed": 20261004,
+  "public_artifact_sha256": {
+    "task.md": "ae037e4f38bda880c96d0a15f7233e7ba649d10a87387d0b92f1ba6a15458074",
+    "inputs/base_case.json": "b61f95e9cc376eafd9db632f9b457cc787c66057b4898890fcc6a83a339d9771",
+    "pierre_lbo_one.xlsx": "0ca95f1cb28a7f422a66189b5f48336edf11e900da9bbaf6fc7e3cc4a5d67101"
+  },
+  "source_sha256": {
+    "README.md": "afcfccea2693df6d8f673980acb8daae76e8fc145d2020f905255efd46456fca",
+    "harness/README.md": "18319a600991fa7aa053b44a44514338df1d34a98f3be58702ce428c5c1191da",
+    "harness/agent.py": "38f8d0924ef6ce9887dfdcfdf0a78119c12ac55e65e7e44347c0096581982891",
+    "harness/run_benchmark.py": "21d6f2eff8efced3d0406c1481c83528e53f9c6ed7e64ce82c7b034770745904",
+    "harness/run_terminal.py": "9b8124893317228dedfa8fdef15240a2327b5d4e9e79309b65d807bbae71ec73",
+    "harness/mcp_server.py": "013325e2f05c5e854afe9c86f663ed81f866540146179b43dc9e83f1a1d75da7",
+    "evaluator/grader.py": "d78e2373526b8254a5010d05261f5b890d8ecfb10f6cc4bf07534516c1aac7bf",
+    "evaluator/run_grader.py": "c63b2b99ff2b9b564468198676618ec4af8f165bc8f3bf01527414496ba8f45a",
+    "evaluator/benchmarks.py": "d33e330964adc07b09628a2f19592192cb583736ef568dc87365785537528492",
+    "evaluator/pierre_lbo_cases.py": "98ef8a6167da7b2016be407a545d108aca9b0b14ee6fea4258b640ee483e5be5",
+    "reference/pierre_lbo/reference.py": "efdd71cc82df3cc4b665ffd4d8d0f61896fcef609215272d08305541247b824e",
+    "reference/pierre_lbo/workbook.py": "a8abe482c8e6d6fa87405c28723d2d8d1223445a9dd62242c766ac44aab825ad",
+    "reference/pierre_lbo/qualify.py": "1cf2f6f4bdb5515053a7ee5e6a369066dded19e782f87a15cd02a951176dc790",
+    "reference/pierre_lbo/SOURCES.md": "44022f6ee31bcb96231f264c89a7cba30b11947895efd4bafc612600966ab2bd",
+    "tests/test_grader.py": "9ddee43c546d7e5dfba773a716bb03308a4e701b9b55748e8f4143bc58725218",
+    "tests/test_pierre_lbo.py": "b85677636fbaafc1d924b5fedc4f1076d954812f23a21a3d7f4a6399e46ba616",
+    "tasks/pierre_lbo/task.md": "ae037e4f38bda880c96d0a15f7233e7ba649d10a87387d0b92f1ba6a15458074",
+    "tasks/pierre_lbo/metadata.json": "44ec5f69f32e103c3808c50e6b0025afdc55b61c3e6784f66e9e524ef0a3bd2b",
+    "tasks/pierre_lbo/inputs/base_case.json": "b61f95e9cc376eafd9db632f9b457cc787c66057b4898890fcc6a83a339d9771",
+    "tasks/pierre_lbo/pierre_lbo_one.xlsx": "0ca95f1cb28a7f422a66189b5f48336edf11e900da9bbaf6fc7e3cc4a5d67101",
+    "analysis/pierre_lbo_report.md": "d40d15bde9bd59f658bd3af9a9ca2fc44ac09152d61ebd02b3ef9c92eb0d6903"
+  },
+  "payload_sha256": {
+    "qualification.json": "11b8ba3df84026d0e56c8ee55c84cad39f84b287acbb09296b01e7a9bc110af8",
+    "controls.json": "ab0d23ffb689abbb1a947fd9e68340a186be03ab84fc65c59420fcd982a6743a",
+    "fcff-regression.json": "ca30fe25ad1d6aa37902c227fb9d99f7703eec6a3d80cad86f660589b67f518c",
+    "mcp-smoke.json": "1cfd6a5be4c0e841ffb78ea563b23d9b0452ec977aaee4a118e01f12acc1bf6c",
+    "verification.json": "013047b5faf0f5543ab2659ef3cfb32294f5612399688cca41f7c45fdaacc23e"
+  },
+  "candidate_model_requests": 0,
+  "native_excel_verified": false,
+  "visual_workbook_formatting_verified": false
+}
